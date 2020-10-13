@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lnkSetupBusinessInfo = new System.Windows.Forms.LinkLabel();
             this.lnkCreateAdminAccount = new System.Windows.Forms.LinkLabel();
+            this.lnkSetupBusinessInfo = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.panelAdminAccountCreation = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmbUserType = new System.Windows.Forms.ComboBox();
+            this.cmbUserRole = new System.Windows.Forms.ComboBox();
             this.txtUserEmail = new System.Windows.Forms.TextBox();
             this.txtUserContact = new System.Windows.Forms.TextBox();
+            this.txtVerifyPassword = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,8 +64,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtVerifyPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelAdminAccountCreation.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,26 +83,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 411);
+            this.panel1.Size = new System.Drawing.Size(200, 491);
             this.panel1.TabIndex = 5;
-            // 
-            // lnkSetupBusinessInfo
-            // 
-            this.lnkSetupBusinessInfo.ActiveLinkColor = System.Drawing.Color.Gainsboro;
-            this.lnkSetupBusinessInfo.AutoSize = true;
-            this.lnkSetupBusinessInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lnkSetupBusinessInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkSetupBusinessInfo.ForeColor = System.Drawing.Color.White;
-            this.lnkSetupBusinessInfo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkSetupBusinessInfo.LinkColor = System.Drawing.Color.White;
-            this.lnkSetupBusinessInfo.Location = new System.Drawing.Point(18, 90);
-            this.lnkSetupBusinessInfo.Name = "lnkSetupBusinessInfo";
-            this.lnkSetupBusinessInfo.Size = new System.Drawing.Size(161, 13);
-            this.lnkSetupBusinessInfo.TabIndex = 0;
-            this.lnkSetupBusinessInfo.TabStop = true;
-            this.lnkSetupBusinessInfo.Text = "Setup Business Information";
-            this.lnkSetupBusinessInfo.VisitedLinkColor = System.Drawing.Color.White;
-            this.lnkSetupBusinessInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSetupBusinessInfo_LinkClicked);
             // 
             // lnkCreateAdminAccount
             // 
@@ -120,6 +104,24 @@
             this.lnkCreateAdminAccount.VisitedLinkColor = System.Drawing.Color.White;
             this.lnkCreateAdminAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCreateAdminAccount_LinkClicked);
             // 
+            // lnkSetupBusinessInfo
+            // 
+            this.lnkSetupBusinessInfo.ActiveLinkColor = System.Drawing.Color.Gainsboro;
+            this.lnkSetupBusinessInfo.AutoSize = true;
+            this.lnkSetupBusinessInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lnkSetupBusinessInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkSetupBusinessInfo.ForeColor = System.Drawing.Color.White;
+            this.lnkSetupBusinessInfo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkSetupBusinessInfo.LinkColor = System.Drawing.Color.White;
+            this.lnkSetupBusinessInfo.Location = new System.Drawing.Point(18, 90);
+            this.lnkSetupBusinessInfo.Name = "lnkSetupBusinessInfo";
+            this.lnkSetupBusinessInfo.Size = new System.Drawing.Size(161, 13);
+            this.lnkSetupBusinessInfo.TabIndex = 0;
+            this.lnkSetupBusinessInfo.TabStop = true;
+            this.lnkSetupBusinessInfo.Text = "Setup Business Information";
+            this.lnkSetupBusinessInfo.VisitedLinkColor = System.Drawing.Color.White;
+            this.lnkSetupBusinessInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSetupBusinessInfo_LinkClicked);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -133,12 +135,13 @@
             // 
             // btnBack
             // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBack.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(468, 368);
+            this.btnBack.Location = new System.Drawing.Point(568, 448);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(99, 31);
             this.btnBack.TabIndex = 3;
@@ -149,12 +152,13 @@
             // 
             // btnNext
             // 
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNext.FlatAppearance.BorderSize = 0;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(573, 368);
+            this.btnNext.Location = new System.Drawing.Point(673, 448);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(99, 31);
             this.btnNext.TabIndex = 4;
@@ -169,13 +173,15 @@
             this.panelAdminAccountCreation.Controls.Add(this.label15);
             this.panelAdminAccountCreation.Location = new System.Drawing.Point(206, 88);
             this.panelAdminAccountCreation.Name = "panelAdminAccountCreation";
-            this.panelAdminAccountCreation.Size = new System.Drawing.Size(466, 274);
+            this.panelAdminAccountCreation.Size = new System.Drawing.Size(566, 354);
             this.panelAdminAccountCreation.TabIndex = 2;
             this.panelAdminAccountCreation.Visible = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cmbUserType);
+            this.groupBox2.Controls.Add(this.txtFullName);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.cmbUserRole);
             this.groupBox2.Controls.Add(this.txtUserEmail);
             this.groupBox2.Controls.Add(this.txtUserContact);
             this.groupBox2.Controls.Add(this.txtVerifyPassword);
@@ -187,112 +193,120 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Location = new System.Drawing.Point(58, 43);
+            this.groupBox2.Location = new System.Drawing.Point(98, 62);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(360, 222);
+            this.groupBox2.Size = new System.Drawing.Size(370, 230);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "User Information";
             // 
-            // cmbUserType
+            // cmbUserRole
             // 
-            this.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbUserType.FormattingEnabled = true;
-            this.cmbUserType.Items.AddRange(new object[] {
+            this.cmbUserRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUserRole.FormattingEnabled = true;
+            this.cmbUserRole.Items.AddRange(new object[] {
             "Administrator",
             "Cashier",
             "Manager"});
-            this.cmbUserType.Location = new System.Drawing.Point(128, 113);
-            this.cmbUserType.Name = "cmbUserType";
-            this.cmbUserType.Size = new System.Drawing.Size(212, 24);
-            this.cmbUserType.TabIndex = 9;
+            this.cmbUserRole.Location = new System.Drawing.Point(133, 136);
+            this.cmbUserRole.Name = "cmbUserRole";
+            this.cmbUserRole.Size = new System.Drawing.Size(212, 24);
+            this.cmbUserRole.TabIndex = 11;
+            this.cmbUserRole.SelectedIndexChanged += new System.EventHandler(this.cmbUserRole_SelectedIndexChanged);
             // 
             // txtUserEmail
             // 
-            this.txtUserEmail.Location = new System.Drawing.Point(128, 171);
+            this.txtUserEmail.Location = new System.Drawing.Point(133, 194);
             this.txtUserEmail.Name = "txtUserEmail";
             this.txtUserEmail.Size = new System.Drawing.Size(212, 22);
-            this.txtUserEmail.TabIndex = 11;
+            this.txtUserEmail.TabIndex = 13;
             // 
             // txtUserContact
             // 
-            this.txtUserContact.Location = new System.Drawing.Point(128, 143);
+            this.txtUserContact.Location = new System.Drawing.Point(133, 166);
             this.txtUserContact.Name = "txtUserContact";
             this.txtUserContact.Size = new System.Drawing.Size(212, 22);
-            this.txtUserContact.TabIndex = 10;
+            this.txtUserContact.TabIndex = 12;
+            // 
+            // txtVerifyPassword
+            // 
+            this.txtVerifyPassword.Location = new System.Drawing.Point(133, 108);
+            this.txtVerifyPassword.Name = "txtVerifyPassword";
+            this.txtVerifyPassword.Size = new System.Drawing.Size(212, 22);
+            this.txtVerifyPassword.TabIndex = 10;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(128, 57);
+            this.txtPassword.Location = new System.Drawing.Point(133, 80);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(212, 22);
-            this.txtPassword.TabIndex = 7;
+            this.txtPassword.TabIndex = 9;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(128, 29);
+            this.txtUsername.Location = new System.Drawing.Point(133, 52);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(212, 22);
-            this.txtUsername.TabIndex = 6;
+            this.txtUsername.TabIndex = 8;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 174);
+            this.label9.Location = new System.Drawing.Point(25, 197);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(39, 15);
-            this.label9.TabIndex = 5;
+            this.label9.TabIndex = 6;
             this.label9.Text = "Email";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(20, 146);
+            this.label10.Location = new System.Drawing.Point(25, 169);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 15);
-            this.label10.TabIndex = 4;
+            this.label10.TabIndex = 5;
             this.label10.Text = "Contact";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(20, 116);
+            this.label11.Location = new System.Drawing.Point(25, 139);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(59, 15);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "UserType";
+            this.label11.Size = new System.Drawing.Size(62, 15);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "User Role";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(20, 88);
+            this.label12.Location = new System.Drawing.Point(25, 111);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 15);
-            this.label12.TabIndex = 2;
+            this.label12.TabIndex = 3;
             this.label12.Text = "Verify Password*";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(20, 60);
+            this.label13.Location = new System.Drawing.Point(25, 83);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(66, 15);
-            this.label13.TabIndex = 1;
+            this.label13.TabIndex = 2;
             this.label13.Text = "Password*";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(20, 33);
+            this.label14.Location = new System.Drawing.Point(25, 56);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 15);
-            this.label14.TabIndex = 0;
+            this.label14.TabIndex = 1;
             this.label14.Text = "Username*";
             // 
             // label15
@@ -312,7 +326,7 @@
             this.panelBusiness.Controls.Add(this.label2);
             this.panelBusiness.Location = new System.Drawing.Point(206, 88);
             this.panelBusiness.Name = "panelBusiness";
-            this.panelBusiness.Size = new System.Drawing.Size(466, 274);
+            this.panelBusiness.Size = new System.Drawing.Size(566, 354);
             this.panelBusiness.TabIndex = 1;
             this.panelBusiness.Visible = false;
             // 
@@ -330,7 +344,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(58, 43);
+            this.groupBox1.Location = new System.Drawing.Point(103, 66);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(360, 222);
             this.groupBox1.TabIndex = 1;
@@ -348,6 +362,7 @@
             this.cmbBusinessType.Name = "cmbBusinessType";
             this.cmbBusinessType.Size = new System.Drawing.Size(212, 24);
             this.cmbBusinessType.TabIndex = 8;
+            this.cmbBusinessType.SelectedIndexChanged += new System.EventHandler(this.cmbBusinessType_SelectedIndexChanged);
             // 
             // txtEmailAddress
             // 
@@ -455,13 +470,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Configure Business";
             // 
-            // txtVerifyPassword
-            // 
-            this.txtVerifyPassword.Location = new System.Drawing.Point(128, 85);
-            this.txtVerifyPassword.Name = "txtVerifyPassword";
-            this.txtVerifyPassword.Size = new System.Drawing.Size(212, 22);
-            this.txtVerifyPassword.TabIndex = 8;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PointOfSaleUI.Properties.Resources.setupwizard;
@@ -472,12 +480,29 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // txtFullName
+            // 
+            this.txtFullName.Location = new System.Drawing.Point(133, 24);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(212, 22);
+            this.txtFullName.TabIndex = 7;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(25, 27);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(69, 15);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Full Name*";
+            // 
             // Wizard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(684, 411);
+            this.ClientSize = new System.Drawing.Size(784, 491);
             this.Controls.Add(this.panelAdminAccountCreation);
             this.Controls.Add(this.panelBusiness);
             this.Controls.Add(this.btnNext);
@@ -520,7 +545,7 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Panel panelAdminAccountCreation;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cmbUserType;
+        private System.Windows.Forms.ComboBox cmbUserRole;
         private System.Windows.Forms.TextBox txtUserEmail;
         private System.Windows.Forms.TextBox txtUserContact;
         private System.Windows.Forms.TextBox txtPassword;
@@ -548,5 +573,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtVerifyPassword;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.Label label16;
     }
 }

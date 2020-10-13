@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\setupwizard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PointOfSale.Lib\PointOfSale.Lib.csproj">
+      <Project>{338C19AB-DEA0-4EC9-96BF-A403EFFC1EFC}</Project>
+      <Name>PointOfSale.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

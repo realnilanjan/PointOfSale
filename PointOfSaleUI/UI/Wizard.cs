@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PointOfSale.Lib.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace PointOfSaleUI.UI
 {
     public partial class Wizard : Form
     {
+        int businessTypeSelected;
+        int userRoleSelected;
+
         public Wizard()
         {
             InitializeComponent();
@@ -22,7 +26,7 @@ namespace PointOfSaleUI.UI
                 panelBusiness.Visible = true;
                 panelAdminAccountCreation.Visible = false;
                 txtBusinessName.Focus();
-                cmbBusinessType.SelectedIndex = 1;
+                cmbBusinessType.SelectedIndex = 1; businessTypeSelected = cmbBusinessType.SelectedIndex;
             }
             else
             {
@@ -30,8 +34,8 @@ namespace PointOfSaleUI.UI
                 lnkSetupBusinessInfo.Font = new Font(lnkSetupBusinessInfo.Font, FontStyle.Regular);
                 lnkCreateAdminAccount.Font = new Font(lnkCreateAdminAccount.Font, FontStyle.Bold);
                 panelBusiness.Visible = false;
-                txtUsername.Focus();
-                cmbUserType.SelectedIndex = 1;
+                txtFullName.Focus();
+                cmbUserRole.SelectedIndex = 1; userRoleSelected = cmbUserRole.SelectedIndex;
                 btnBack.Visible = true;
                 btnNext.Text = "Finish";
             }
@@ -47,13 +51,32 @@ namespace PointOfSaleUI.UI
                 panelAdminAccountCreation.Visible = true;
                 lnkSetupBusinessInfo.Font = new Font(lnkSetupBusinessInfo.Font, FontStyle.Regular);
                 lnkCreateAdminAccount.Font = new Font(lnkCreateAdminAccount.Font, FontStyle.Bold);
-                txtUsername.Focus();
+                cmbUserRole.SelectedIndex = userRoleSelected;
+                txtFullName.Focus();
                 btnBack.Visible = true;
                 btnNext.Text = "Finish";
+
+                if (true)
+                {
+                    BusinessModel businessModel = new BusinessModel
+                    {
+                        BusinessName = txtBusinessName.Text,
+                        GSTNumber = txtGSTIN.Text,
+                        BusinessType = cmbBusinessType.GetItemText(cmbBusinessType.SelectedItem),
+                        BusinsessAddress = txtBusinessAddress.Text,
+                        BusinessContact = txtContactNumber.Text,
+                        BusinessEmail = txtEmailAddress.Text
+                    };
+                }
+                else
+                {
+                    //Message Box Error
+                }
             }
             else
             {
                 //TODO: Finish Wizard
+                //Get Business model details + user details (after validation) and insert
             }
         }
 
@@ -65,6 +88,7 @@ namespace PointOfSaleUI.UI
             lnkCreateAdminAccount.Font = new Font(lnkCreateAdminAccount.Font, FontStyle.Regular);
             panelAdminAccountCreation.Visible = false; 
             panelBusiness.Visible = true;
+            cmbBusinessType.SelectedIndex = businessTypeSelected;
             txtBusinessName.Focus();
             btnBack.Visible = false;
             btnNext.Text = "Next >>";
@@ -78,6 +102,16 @@ namespace PointOfSaleUI.UI
         private void lnkCreateAdminAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             btnNext.PerformClick();
+        }
+
+        private void cmbUserRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            userRoleSelected = cmbUserRole.SelectedIndex;
+        }
+
+        private void cmbBusinessType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            businessTypeSelected = cmbBusinessType.SelectedIndex;
         }
     }
 }
