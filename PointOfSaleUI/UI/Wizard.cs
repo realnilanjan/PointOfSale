@@ -1,4 +1,6 @@
-﻿using PointOfSale.Lib.Models;
+﻿using PointOfSale.Lib.DataAccess;
+using PointOfSale.Lib.Encryptions;
+using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,9 @@ namespace PointOfSaleUI.UI
     {
         int businessTypeSelected;
         int userRoleSelected;
+
+        BusinessModel businessModel;
+        NewUserModel newUserModel;
 
         public Wizard()
         {
@@ -45,20 +50,20 @@ namespace PointOfSaleUI.UI
         {
             if (Properties.Settings.Default.WizardStep == 1)
             {
-                Properties.Settings.Default.WizardStep++;
-                Properties.Settings.Default.Save();
-                panelAdminAccountCreation.Visible = false;
-                panelAdminAccountCreation.Visible = true;
-                lnkSetupBusinessInfo.Font = new Font(lnkSetupBusinessInfo.Font, FontStyle.Regular);
-                lnkCreateAdminAccount.Font = new Font(lnkCreateAdminAccount.Font, FontStyle.Bold);
-                cmbUserRole.SelectedIndex = userRoleSelected;
-                txtFullName.Focus();
-                btnBack.Visible = true;
-                btnNext.Text = "Finish";
-
-                if (true)
+                if ((txtBusinessName.Text != "") && (txtGSTIN.Text != "") && (txtBusinessAddress.Text != "") && (txtContactNumber.Text != "") && (txtEmailAddress.Text != ""))
                 {
-                    BusinessModel businessModel = new BusinessModel
+                    Properties.Settings.Default.WizardStep++;
+                    Properties.Settings.Default.Save();
+                    panelAdminAccountCreation.Visible = false;
+                    panelAdminAccountCreation.Visible = true;
+                    lnkSetupBusinessInfo.Font = new Font(lnkSetupBusinessInfo.Font, FontStyle.Regular);
+                    lnkCreateAdminAccount.Font = new Font(lnkCreateAdminAccount.Font, FontStyle.Bold);
+                    cmbUserRole.SelectedIndex = userRoleSelected;
+                    txtFullName.Focus();
+                    btnBack.Visible = true;
+                    btnNext.Text = "Finish";
+
+                    businessModel = new BusinessModel
                     {
                         BusinessName = txtBusinessName.Text,
                         GSTNumber = txtGSTIN.Text,
@@ -70,13 +75,49 @@ namespace PointOfSaleUI.UI
                 }
                 else
                 {
-                    //Message Box Error
+                    MessageBox.Show("Please fill in all the details first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
             else
             {
-                //TODO: Finish Wizard
-                //Get Business model details + user details (after validation) and insert
+                if ((txtFullName.Text != "") || (txtUsername.Text != "") || (txtBusinessAddress.Text != "") || (txtContactNumber.Text != "") || (txtEmailAddress.Text != ""))
+                {
+                    if (txtPassword.Text == txtVerifyPassword.Text)
+                    {
+                        newUserModel = new NewUserModel
+                        {
+                            Fullname = txtFullName.Text,
+                            Username = txtUsername.Text,
+                            Password = EncryptTo.MD5Hash(txtVerifyPassword.Text),
+                            UserRole = cmbUserRole.GetItemText(cmbUserRole.SelectedItem),
+                            Contact = txtUserContact.Text,
+                            EmailAddress = txtUserEmail.Text,
+                            Status = "1"
+                        };
+
+                        SQLDataAccess dataAccess = new SQLDataAccess();
+                        dataAccess.SaveData("dbo.SaveBusiness", businessModel, "POS");
+                        dataAccess.SaveData("dbo.SaveUser", newUserModel, "POS");
+
+                        Properties.Settings.Default.WizardStep++;
+                        Properties.Settings.Default.Save();
+
+                        Login login = new Login();
+                        this.Close();
+                        login.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Passwords do not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please fill in all the details first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
         }
 
