@@ -73,6 +73,16 @@ namespace PointOfSaleUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dashboard_png {
+            get {
+                object obj = ResourceManager.GetObject("dashboard.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap female {
             get {
                 object obj = ResourceManager.GetObject("female", resourceCulture);
