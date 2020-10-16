@@ -37,7 +37,7 @@ namespace PointOfSaleUI.UI
             SQLDataAccess dataAccess = new SQLDataAccess();
             users = dataAccess.LoadAllUsers();
             userGridView.DataSource = users;
-            txtTotalStaff.Text = String.Format(txtTotalStaff.Text, users.Count.ToString());
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, users.Count.ToString());
             this.ClearValues();
         } 
 
@@ -115,7 +115,7 @@ namespace PointOfSaleUI.UI
                 }
                 else
                 {
-                    MessageBox.Show("Passwords dont match");
+                    MessageBox.Show(Properties.Resources.PASS_DONT_MATCH, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if((txtNewPassword.Text == "") && (txtNewVerifyPassword.Text == ""))
@@ -126,7 +126,7 @@ namespace PointOfSaleUI.UI
             }
             else 
             {
-                MessageBox.Show("Put passwords");
+                MessageBox.Show(Properties.Resources.PUT_PASSWORDS, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -147,6 +147,16 @@ namespace PointOfSaleUI.UI
             string roleText = cmbSearchUserBy.GetItemText(cmbSearchUserBy.SelectedItem);
             var result = users.Where(x => x.UserRole.Contains(roleText)).ToList();
             userGridView.DataSource = result;
+        }
+
+        private void btnAddNewUser_Click(object sender, EventArgs e)
+        {
+            NewStaff staff = new NewStaff();
+            DialogResult result = staff.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.RefreshGrid();
+            }
         }
     }
 }
