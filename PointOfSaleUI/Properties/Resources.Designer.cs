@@ -91,6 +91,15 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please fill in all the details to proceed..
+        /// </summary>
+        internal static string FILL_ALL_DETAILS {
+            get {
+                return ResourceManager.GetString("FILL_ALL_DETAILS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
@@ -107,6 +116,33 @@ namespace PointOfSaleUI.Properties {
             get {
                 object obj = ResourceManager.GetObject("male", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of members in staff: {0}.
+        /// </summary>
+        internal static string NO_OF_STAFFS {
+            get {
+                return ResourceManager.GetString("NO_OF_STAFFS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The provided passwords do not match..
+        /// </summary>
+        internal static string PASS_DONT_MATCH {
+            get {
+                return ResourceManager.GetString("PASS_DONT_MATCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter new passwords..
+        /// </summary>
+        internal static string PUT_PASSWORDS {
+            get {
+                return ResourceManager.GetString("PUT_PASSWORDS", resourceCulture);
             }
         }
         
