@@ -73,6 +73,9 @@
     <Build Include="dbo\Stored Procedures\UserLogin.sql" />
     <Build Include="dbo\Stored Procedures\GetBusinessInfo.sql" />
     <Build Include="dbo\Stored Procedures\LoadAllUsers.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateUserWithPassword.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateUserWithoutPassword.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
