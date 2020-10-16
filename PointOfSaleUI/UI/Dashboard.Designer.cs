@@ -75,6 +75,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.staffPanel = new System.Windows.Forms.Panel();
             this.txtTotalStaff = new System.Windows.Forms.Label();
+            this.btnAddNewUser = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -755,6 +756,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.staffPanel.BackColor = System.Drawing.Color.Transparent;
             this.staffPanel.Controls.Add(this.txtTotalStaff);
+            this.staffPanel.Controls.Add(this.btnAddNewUser);
             this.staffPanel.Controls.Add(this.groupBox2);
             this.staffPanel.Controls.Add(this.userGridView);
             this.staffPanel.Controls.Add(this.groupBox1);
@@ -774,6 +776,21 @@
             this.txtTotalStaff.Size = new System.Drawing.Size(208, 14);
             this.txtTotalStaff.TabIndex = 4;
             this.txtTotalStaff.Text = "Total number of members in staff: {0}";
+            // 
+            // btnAddNewUser
+            // 
+            this.btnAddNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddNewUser.BackColor = System.Drawing.Color.Green;
+            this.btnAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNewUser.FlatAppearance.BorderSize = 0;
+            this.btnAddNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewUser.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewUser.Location = new System.Drawing.Point(753, 39);
+            this.btnAddNewUser.Name = "btnAddNewUser";
+            this.btnAddNewUser.Size = new System.Drawing.Size(139, 41);
+            this.btnAddNewUser.TabIndex = 13;
+            this.btnAddNewUser.Text = "Add New User";
+            this.btnAddNewUser.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -803,6 +820,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Enabled = false;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -813,10 +831,12 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Enabled = false;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -827,6 +847,7 @@
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtFullName
             // 
@@ -993,6 +1014,7 @@
             this.userGridView.Name = "userGridView";
             this.userGridView.ReadOnly = true;
             this.userGridView.RowHeadersVisible = false;
+            this.userGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.userGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.userGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.userGridView.ShowEditingIcon = false;
@@ -1049,6 +1071,7 @@
             this.cmbSearchUserBy.Name = "cmbSearchUserBy";
             this.cmbSearchUserBy.Size = new System.Drawing.Size(216, 22);
             this.cmbSearchUserBy.TabIndex = 1;
+            this.cmbSearchUserBy.SelectedIndexChanged += new System.EventHandler(this.cmbSearchUserBy_SelectedIndexChanged);
             // 
             // txtStaffSearch
             // 
@@ -1058,6 +1081,7 @@
             this.txtStaffSearch.Name = "txtStaffSearch";
             this.txtStaffSearch.Size = new System.Drawing.Size(530, 22);
             this.txtStaffSearch.TabIndex = 0;
+            this.txtStaffSearch.TextChanged += new System.EventHandler(this.txtStaffSearch_TextChanged);
             // 
             // label21
             // 
@@ -1187,5 +1211,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.Button btnAddNewUser;
     }
 }

@@ -15,10 +15,10 @@ namespace PointOfSaleUI.UI
     public partial class Dashboard : Form
     {
         private readonly LoggedInUserModel _loggedInUser;
+        List<UserModel> users = new List<UserModel>();
 
         public Dashboard(LoggedInUserModel loggedInUser)
         {
-            
             InitializeComponent();
             this._loggedInUser = loggedInUser;
             txtUserFullName.Text = _loggedInUser.Fullname;
@@ -32,10 +32,34 @@ namespace PointOfSaleUI.UI
             txtTime.Text = DateTime.Now.ToString("T");
         }
 
+        private void RefreshGrid()
+        {
+            SQLDataAccess dataAccess = new SQLDataAccess();
+            users = dataAccess.LoadAllUsers();
+            userGridView.DataSource = users;
+            txtTotalStaff.Text = String.Format(txtTotalStaff.Text, users.Count.ToString());
+            this.ClearValues();
+        } 
+
+        private void ClearValues()
+        {
+            txtUserId.Text = "";
+            txtFullName.Text = "";
+            txtUserName.Text = "";
+            cmbUserRole.SelectedIndex = 0;
+            txtContact.Text = "";
+            txtEmailAddress.Text = "";
+            txtNewPassword.Text = "";
+            txtNewVerifyPassword.Text = "";
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
+        }
+
         private void LoadDashboard()
         {
             dashPanel.Visible = true;
 
+            staffPanel.Visible = false;
             //TODO: Make all other panels invisible
         }
 
@@ -46,15 +70,10 @@ namespace PointOfSaleUI.UI
             cmbSearchUserBy.SelectedIndex = 0;
             cmbUserRole.SelectedIndex = 0;
 
-
-
             dashPanel.Visible = false;
             //TODO: Make all other panels invisible
 
-            SQLDataAccess dataAccess = new SQLDataAccess();
-            List<UserModel> users = dataAccess.LoadAllUsers();
-            userGridView.DataSource = users;
-            txtTotalStaff.Text = String.Format(txtTotalStaff.Text, users.Count.ToString());
+            this.RefreshGrid();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -82,6 +101,52 @@ namespace PointOfSaleUI.UI
                 txtContact.Text = grid.Cells[4].Value.ToString();
                 txtEmailAddress.Text = grid.Cells[5].Value.ToString();
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if ((txtNewPassword.Text != "") && (txtNewVerifyPassword.Text != ""))
+            {
+                //TODO: Update with password
+                if (txtNewPassword.Text == txtNewVerifyPassword.Text)
+                {
+                    MessageBox.Show("With passwords");
+                    this.RefreshGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Passwords dont match");
+                }
+            }
+            else if((txtNewPassword.Text == "") && (txtNewVerifyPassword.Text == ""))
+            {
+                //TODO: Update without passwords
+                MessageBox.Show("Without passwords");
+                this.RefreshGrid();
+            }
+            else 
+            {
+                MessageBox.Show("Put passwords");
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //TODO: Delete user || set status to 0
+            this.RefreshGrid();
+        }
+
+        private void txtStaffSearch_TextChanged(object sender, EventArgs e)
+        {
+            var result = users.Where(x => x.Username.Contains(txtStaffSearch.Text) || x.Fullname.Contains(txtStaffSearch.Text) || x.Contact.Contains(txtStaffSearch.Text)).ToList();
+            userGridView.DataSource = result;
+        }
+
+        private void cmbSearchUserBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string roleText = cmbSearchUserBy.GetItemText(cmbSearchUserBy.SelectedItem);
+            var result = users.Where(x => x.UserRole.Contains(roleText)).ToList();
+            userGridView.DataSource = result;
         }
     }
 }
