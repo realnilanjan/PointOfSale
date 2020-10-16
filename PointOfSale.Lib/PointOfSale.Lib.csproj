@@ -53,6 +53,8 @@
     <Compile Include="Models\LoggedInUserModel.cs" />
     <Compile Include="Models\NewUserModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\WithoutPasswordModel.cs" />
+    <Compile Include="Models\WithPasswordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

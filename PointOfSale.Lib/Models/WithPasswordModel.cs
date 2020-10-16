@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PointOfSale.Lib.Models
 {
-    public class UserModel
+    public class WithPasswordModel
     {
         public int UserId { get; set; }
         public string Fullname { get; set; }
