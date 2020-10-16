@@ -31,7 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.imagesList = new System.Windows.Forms.ImageList(this.components);
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnCategories = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.txtTime = new System.Windows.Forms.Label();
             this.txtUserRole = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,28 +49,35 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBusinessName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimer = new System.Windows.Forms.Timer(this.components);
             this.dashPanel = new System.Windows.Forms.Panel();
             this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
             this.txtTotalTransations = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
             this.txtStockSold = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.txtTotalStock = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.txtTotalSales = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.txtTodaysSales = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.staffPanel = new System.Windows.Forms.Panel();
             this.txtTotalStaff = new System.Windows.Forms.Label();
             this.btnAddNewUser = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkBlock = new System.Windows.Forms.CheckBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtFullName = new System.Windows.Forms.TextBox();
@@ -72,6 +87,7 @@
             this.txtContact = new System.Windows.Forms.TextBox();
             this.txtUserId = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.chkShowPasswords = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtNewPassword = new System.Windows.Forms.TextBox();
@@ -84,45 +100,66 @@
             this.label8 = new System.Windows.Forms.Label();
             this.userGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbSearchUserBy = new System.Windows.Forms.ComboBox();
             this.txtStaffSearch = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnStaff = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.chkShowPasswords = new System.Windows.Forms.CheckBox();
+            this.categoryPanel = new System.Windows.Forms.Panel();
+            this.txtNumberOfCategories = new System.Windows.Forms.Label();
+            this.btnNewCategory = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btnDeleteCategory = new System.Windows.Forms.Button();
+            this.btnUpdateCategory = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.gridCategory = new System.Windows.Forms.DataGridView();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.txtSearchCategory = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.dashPanel.SuspendLayout();
             this.metroPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.metroPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.metroPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.metroPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.staffPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.categoryPanel.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCategory)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -133,7 +170,7 @@
             this.menuPanel.Controls.Add(this.button6);
             this.menuPanel.Controls.Add(this.button5);
             this.menuPanel.Controls.Add(this.button4);
-            this.menuPanel.Controls.Add(this.button3);
+            this.menuPanel.Controls.Add(this.btnCategories);
             this.menuPanel.Controls.Add(this.btnStaff);
             this.menuPanel.Controls.Add(this.btnDashboard);
             this.menuPanel.Controls.Add(this.txtTime);
@@ -152,6 +189,26 @@
             this.menuPanel.Size = new System.Drawing.Size(289, 686);
             this.menuPanel.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.ImageKey = "logout.png";
+            this.button1.ImageList = this.imagesList;
+            this.button1.Location = new System.Drawing.Point(3, 560);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.button1.Size = new System.Drawing.Size(286, 53);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Logout";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // imagesList
             // 
             this.imagesList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imagesList.ImageStream")));
@@ -164,6 +221,142 @@
             this.imagesList.Images.SetKeyName(5, "terminal.png");
             this.imagesList.Images.SetKeyName(6, "settings.png");
             this.imagesList.Images.SetKeyName(7, "logout.png");
+            // 
+            // button7
+            // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.ImageKey = "settings.png";
+            this.button7.ImageList = this.imagesList;
+            this.button7.Location = new System.Drawing.Point(3, 501);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.button7.Size = new System.Drawing.Size(286, 53);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "Settings";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.ImageKey = "terminal.png";
+            this.button6.ImageList = this.imagesList;
+            this.button6.Location = new System.Drawing.Point(3, 442);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.button6.Size = new System.Drawing.Size(286, 53);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Terminal";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.ImageKey = "report.png";
+            this.button5.ImageList = this.imagesList;
+            this.button5.Location = new System.Drawing.Point(3, 383);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.button5.Size = new System.Drawing.Size(286, 53);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Report";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.ImageKey = "stock.png";
+            this.button4.ImageList = this.imagesList;
+            this.button4.Location = new System.Drawing.Point(3, 324);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.button4.Size = new System.Drawing.Size(286, 53);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Stock";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // btnCategories
+            // 
+            this.btnCategories.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCategories.FlatAppearance.BorderSize = 0;
+            this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategories.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategories.ForeColor = System.Drawing.Color.White;
+            this.btnCategories.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategories.ImageKey = "categories.png";
+            this.btnCategories.ImageList = this.imagesList;
+            this.btnCategories.Location = new System.Drawing.Point(3, 265);
+            this.btnCategories.Name = "btnCategories";
+            this.btnCategories.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.btnCategories.Size = new System.Drawing.Size(286, 53);
+            this.btnCategories.TabIndex = 2;
+            this.btnCategories.Text = "Categories";
+            this.btnCategories.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCategories.UseVisualStyleBackColor = true;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
+            // 
+            // btnStaff
+            // 
+            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStaff.FlatAppearance.BorderSize = 0;
+            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaff.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.ForeColor = System.Drawing.Color.White;
+            this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff.ImageKey = "staff.png";
+            this.btnStaff.ImageList = this.imagesList;
+            this.btnStaff.Location = new System.Drawing.Point(3, 206);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.btnStaff.Size = new System.Drawing.Size(286, 53);
+            this.btnStaff.TabIndex = 2;
+            this.btnStaff.Text = "Staff";
+            this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.ImageIndex = 0;
+            this.btnDashboard.ImageList = this.imagesList;
+            this.btnDashboard.Location = new System.Drawing.Point(3, 147);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(286, 53);
+            this.btnDashboard.TabIndex = 2;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // txtTime
             // 
@@ -267,6 +460,16 @@
             this.txtBusinessName.TabIndex = 1;
             this.txtBusinessName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PointOfSaleUI.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // dateTimer
             // 
             this.dateTimer.Enabled = true;
@@ -282,9 +485,9 @@
             this.dashPanel.Controls.Add(this.metroPanel2);
             this.dashPanel.Controls.Add(this.metroPanel1);
             this.dashPanel.Controls.Add(this.label5);
-            this.dashPanel.Location = new System.Drawing.Point(1245, 0);
+            this.dashPanel.Location = new System.Drawing.Point(290, 0);
             this.dashPanel.Name = "dashPanel";
-            this.dashPanel.Size = new System.Drawing.Size(620, 686);
+            this.dashPanel.Size = new System.Drawing.Size(932, 686);
             this.dashPanel.TabIndex = 1;
             // 
             // metroPanel5
@@ -333,6 +536,18 @@
             this.label15.Text = "Transactions";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox6.Image = global::PointOfSaleUI.Properties.Resources.transactions;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
             // metroPanel4
             // 
             this.metroPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(188)))), ((int)(((byte)(0)))));
@@ -378,6 +593,18 @@
             this.label13.TabIndex = 3;
             this.label13.Text = "Stocks Sold";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox5.Image = global::PointOfSaleUI.Properties.Resources.stock_sold;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // metroPanel3
             // 
@@ -425,6 +652,18 @@
             this.label11.Text = "Stocks";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Image = global::PointOfSaleUI.Properties.Resources.stock_button;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // metroPanel2
             // 
             this.metroPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(188)))), ((int)(((byte)(0)))));
@@ -471,6 +710,18 @@
             this.label9.Text = "Total Sales";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = global::PointOfSaleUI.Properties.Resources.totalsales;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // metroPanel1
             // 
             this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(188)))), ((int)(((byte)(0)))));
@@ -515,6 +766,18 @@
             this.label6.Text = "Today\'s Sales";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::PointOfSaleUI.Properties.Resources.todays_sale1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -537,9 +800,9 @@
             this.staffPanel.Controls.Add(this.userGridView);
             this.staffPanel.Controls.Add(this.groupBox1);
             this.staffPanel.Controls.Add(this.label21);
-            this.staffPanel.Location = new System.Drawing.Point(292, 0);
+            this.staffPanel.Location = new System.Drawing.Point(290, 0);
             this.staffPanel.Name = "staffPanel";
-            this.staffPanel.Size = new System.Drawing.Size(911, 686);
+            this.staffPanel.Size = new System.Drawing.Size(931, 686);
             this.staffPanel.TabIndex = 2;
             this.staffPanel.Visible = false;
             // 
@@ -561,7 +824,7 @@
             this.btnAddNewUser.FlatAppearance.BorderSize = 0;
             this.btnAddNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewUser.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewUser.Location = new System.Drawing.Point(753, 39);
+            this.btnAddNewUser.Location = new System.Drawing.Point(773, 39);
             this.btnAddNewUser.Name = "btnAddNewUser";
             this.btnAddNewUser.Size = new System.Drawing.Size(139, 41);
             this.btnAddNewUser.TabIndex = 13;
@@ -572,6 +835,7 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.chkBlock);
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnUpdate);
             this.groupBox2.Controls.Add(this.txtFullName);
@@ -587,12 +851,23 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(540, 152);
+            this.groupBox2.Location = new System.Drawing.Point(562, 152);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(352, 462);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Staff Information";
+            // 
+            // chkBlock
+            // 
+            this.chkBlock.AutoSize = true;
+            this.chkBlock.Location = new System.Drawing.Point(143, 250);
+            this.chkBlock.Name = "chkBlock";
+            this.chkBlock.Size = new System.Drawing.Size(83, 18);
+            this.chkBlock.TabIndex = 14;
+            this.chkBlock.Text = "Block User";
+            this.chkBlock.UseVisualStyleBackColor = true;
+            this.chkBlock.CheckedChanged += new System.EventHandler(this.chkBlock_CheckedChanged);
             // 
             // btnDelete
             // 
@@ -602,7 +877,7 @@
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(195, 392);
+            this.btnDelete.Location = new System.Drawing.Point(195, 405);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(139, 41);
             this.btnDelete.TabIndex = 13;
@@ -618,7 +893,7 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(19, 392);
+            this.btnUpdate.Location = new System.Drawing.Point(19, 405);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(139, 41);
             this.btnUpdate.TabIndex = 13;
@@ -683,12 +958,23 @@
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.txtNewPassword);
             this.groupBox3.Controls.Add(this.txtNewVerifyPassword);
-            this.groupBox3.Location = new System.Drawing.Point(19, 257);
+            this.groupBox3.Location = new System.Drawing.Point(19, 274);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(315, 113);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Change Password";
+            // 
+            // chkShowPasswords
+            // 
+            this.chkShowPasswords.AutoSize = true;
+            this.chkShowPasswords.Location = new System.Drawing.Point(124, 85);
+            this.chkShowPasswords.Name = "chkShowPasswords";
+            this.chkShowPasswords.Size = new System.Drawing.Size(116, 18);
+            this.chkShowPasswords.TabIndex = 10;
+            this.chkShowPasswords.Text = "Show Passwords";
+            this.chkShowPasswords.UseVisualStyleBackColor = true;
+            this.chkShowPasswords.CheckedChanged += new System.EventHandler(this.chkShowPasswords_CheckedChanged);
             // 
             // label18
             // 
@@ -714,6 +1000,7 @@
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.Size = new System.Drawing.Size(167, 22);
             this.txtNewPassword.TabIndex = 8;
+            this.txtNewPassword.UseSystemPasswordChar = true;
             // 
             // txtNewVerifyPassword
             // 
@@ -721,6 +1008,7 @@
             this.txtNewVerifyPassword.Name = "txtNewVerifyPassword";
             this.txtNewVerifyPassword.Size = new System.Drawing.Size(167, 22);
             this.txtNewVerifyPassword.TabIndex = 9;
+            this.txtNewVerifyPassword.UseSystemPasswordChar = true;
             // 
             // label17
             // 
@@ -796,7 +1084,7 @@
             this.userGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.userGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.userGridView.ShowEditingIcon = false;
-            this.userGridView.Size = new System.Drawing.Size(515, 455);
+            this.userGridView.Size = new System.Drawing.Size(537, 455);
             this.userGridView.TabIndex = 2;
             this.userGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userGridView_CellClick);
             // 
@@ -810,16 +1098,26 @@
             this.groupBox1.Controls.Add(this.txtStaffSearch);
             this.groupBox1.Location = new System.Drawing.Point(19, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(873, 60);
+            this.groupBox1.Size = new System.Drawing.Size(893, 60);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search Staff Members";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::PointOfSaleUI.Properties.Resources.search;
+            this.pictureBox7.Location = new System.Drawing.Point(9, 25);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(573, 29);
+            this.label7.Location = new System.Drawing.Point(593, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 14);
             this.label7.TabIndex = 2;
@@ -832,10 +1130,13 @@
             this.cmbSearchUserBy.FormattingEnabled = true;
             this.cmbSearchUserBy.Items.AddRange(new object[] {
             "- Select -",
-            "Administrator",
-            "Manager",
-            "Cashier"});
-            this.cmbSearchUserBy.Location = new System.Drawing.Point(640, 25);
+            "ID",
+            "Full Name",
+            "Usename",
+            "User Role",
+            "Contact Number",
+            "Email Address"});
+            this.cmbSearchUserBy.Location = new System.Drawing.Point(660, 25);
             this.cmbSearchUserBy.Name = "cmbSearchUserBy";
             this.cmbSearchUserBy.Size = new System.Drawing.Size(216, 22);
             this.cmbSearchUserBy.TabIndex = 1;
@@ -845,9 +1146,10 @@
             // 
             this.txtStaffSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtStaffSearch.Enabled = false;
             this.txtStaffSearch.Location = new System.Drawing.Point(37, 25);
             this.txtStaffSearch.Name = "txtStaffSearch";
-            this.txtStaffSearch.Size = new System.Drawing.Size(530, 22);
+            this.txtStaffSearch.Size = new System.Drawing.Size(550, 22);
             this.txtStaffSearch.TabIndex = 0;
             this.txtStaffSearch.TextChanged += new System.EventHandler(this.txtStaffSearch_TextChanged);
             // 
@@ -861,260 +1163,351 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Staff";
             // 
-            // pictureBox7
+            // categoryPanel
             // 
-            this.pictureBox7.Image = global::PointOfSaleUI.Properties.Resources.search;
-            this.pictureBox7.Location = new System.Drawing.Point(9, 25);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
+            this.categoryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.categoryPanel.Controls.Add(this.txtNumberOfCategories);
+            this.categoryPanel.Controls.Add(this.btnNewCategory);
+            this.categoryPanel.Controls.Add(this.groupBox4);
+            this.categoryPanel.Controls.Add(this.gridCategory);
+            this.categoryPanel.Controls.Add(this.groupBox6);
+            this.categoryPanel.Controls.Add(this.label31);
+            this.categoryPanel.Location = new System.Drawing.Point(290, 0);
+            this.categoryPanel.Name = "categoryPanel";
+            this.categoryPanel.Size = new System.Drawing.Size(932, 686);
+            this.categoryPanel.TabIndex = 3;
+            this.categoryPanel.Visible = false;
             // 
-            // pictureBox6
+            // txtNumberOfCategories
             // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox6.Image = global::PointOfSaleUI.Properties.Resources.transactions;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
+            this.txtNumberOfCategories.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNumberOfCategories.AutoSize = true;
+            this.txtNumberOfCategories.Location = new System.Drawing.Point(17, 617);
+            this.txtNumberOfCategories.Name = "txtNumberOfCategories";
+            this.txtNumberOfCategories.Size = new System.Drawing.Size(173, 14);
+            this.txtNumberOfCategories.TabIndex = 18;
+            this.txtNumberOfCategories.Text = "Total number of categories: {0}";
             // 
-            // pictureBox5
+            // btnNewCategory
             // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox5.Image = global::PointOfSaleUI.Properties.Resources.stock_sold;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.btnNewCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewCategory.BackColor = System.Drawing.Color.Green;
+            this.btnNewCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewCategory.FlatAppearance.BorderSize = 0;
+            this.btnNewCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewCategory.ForeColor = System.Drawing.Color.White;
+            this.btnNewCategory.Location = new System.Drawing.Point(1043, 39);
+            this.btnNewCategory.Name = "btnNewCategory";
+            this.btnNewCategory.Size = new System.Drawing.Size(139, 41);
+            this.btnNewCategory.TabIndex = 19;
+            this.btnNewCategory.Text = "Add New Catrgory";
+            this.btnNewCategory.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
+            // groupBox4
             // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Image = global::PointOfSaleUI.Properties.Resources.stock_button;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.checkBox1);
+            this.groupBox4.Controls.Add(this.btnDeleteCategory);
+            this.groupBox4.Controls.Add(this.btnUpdateCategory);
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.comboBox1);
+            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.groupBox5);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Location = new System.Drawing.Point(562, 152);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(352, 462);
+            this.groupBox4.TabIndex = 17;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Category Information";
             // 
-            // pictureBox3
+            // checkBox1
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox3.Image = global::PointOfSaleUI.Properties.Resources.totalsales;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(143, 250);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 18);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Block User";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // btnDeleteCategory
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::PointOfSaleUI.Properties.Resources.todays_sale1;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 58);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.btnDeleteCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDeleteCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteCategory.Enabled = false;
+            this.btnDeleteCategory.FlatAppearance.BorderSize = 0;
+            this.btnDeleteCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteCategory.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteCategory.Location = new System.Drawing.Point(195, 405);
+            this.btnDeleteCategory.Name = "btnDeleteCategory";
+            this.btnDeleteCategory.Size = new System.Drawing.Size(139, 41);
+            this.btnDeleteCategory.TabIndex = 13;
+            this.btnDeleteCategory.Text = "Delete";
+            this.btnDeleteCategory.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnUpdateCategory
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImageKey = "logout.png";
-            this.button1.ImageList = this.imagesList;
-            this.button1.Location = new System.Drawing.Point(3, 560);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.button1.Size = new System.Drawing.Size(286, 53);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Logout";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdateCategory.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnUpdateCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateCategory.Enabled = false;
+            this.btnUpdateCategory.FlatAppearance.BorderSize = 0;
+            this.btnUpdateCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateCategory.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateCategory.Location = new System.Drawing.Point(19, 405);
+            this.btnUpdateCategory.Name = "btnUpdateCategory";
+            this.btnUpdateCategory.Size = new System.Drawing.Size(139, 41);
+            this.btnUpdateCategory.TabIndex = 13;
+            this.btnUpdateCategory.Text = "Update";
+            this.btnUpdateCategory.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // textBox1
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.ImageKey = "settings.png";
-            this.button7.ImageList = this.imagesList;
-            this.button7.Location = new System.Drawing.Point(3, 501);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.button7.Size = new System.Drawing.Size(286, 53);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Settings";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(143, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 22);
+            this.textBox1.TabIndex = 8;
             // 
-            // button6
+            // textBox2
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.ImageKey = "terminal.png";
-            this.button6.ImageList = this.imagesList;
-            this.button6.Location = new System.Drawing.Point(3, 442);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.button6.Size = new System.Drawing.Size(286, 53);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Terminal";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(143, 108);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(167, 22);
+            this.textBox2.TabIndex = 9;
             // 
-            // button5
+            // comboBox1
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.ImageKey = "report.png";
-            this.button5.ImageList = this.imagesList;
-            this.button5.Location = new System.Drawing.Point(3, 383);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.button5.Size = new System.Drawing.Size(286, 53);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Report";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "- Select -",
+            "Administrator",
+            "Manager",
+            "Cashier"});
+            this.comboBox1.Location = new System.Drawing.Point(143, 144);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(167, 22);
+            this.comboBox1.TabIndex = 12;
             // 
-            // button4
+            // textBox3
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.ImageKey = "stock.png";
-            this.button4.ImageList = this.imagesList;
-            this.button4.Location = new System.Drawing.Point(3, 324);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.button4.Size = new System.Drawing.Size(286, 53);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Stock";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(143, 216);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(167, 22);
+            this.textBox3.TabIndex = 11;
             // 
-            // button3
+            // textBox4
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.ImageKey = "categories.png";
-            this.button3.ImageList = this.imagesList;
-            this.button3.Location = new System.Drawing.Point(3, 265);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.button3.Size = new System.Drawing.Size(286, 53);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Categories";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.textBox4.Location = new System.Drawing.Point(143, 180);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(167, 22);
+            this.textBox4.TabIndex = 10;
             // 
-            // btnStaff
+            // textBox5
             // 
-            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStaff.FlatAppearance.BorderSize = 0;
-            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStaff.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaff.ForeColor = System.Drawing.Color.White;
-            this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaff.ImageKey = "staff.png";
-            this.btnStaff.ImageList = this.imagesList;
-            this.btnStaff.Location = new System.Drawing.Point(3, 206);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.btnStaff.Size = new System.Drawing.Size(286, 53);
-            this.btnStaff.TabIndex = 2;
-            this.btnStaff.Text = "Staff";
-            this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStaff.UseVisualStyleBackColor = true;
-            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            this.textBox5.Location = new System.Drawing.Point(143, 36);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(104, 22);
+            this.textBox5.TabIndex = 7;
             // 
-            // btnDashboard
+            // groupBox5
             // 
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.ImageIndex = 0;
-            this.btnDashboard.ImageList = this.imagesList;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 147);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(286, 53);
-            this.btnDashboard.TabIndex = 2;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.groupBox5.Controls.Add(this.checkBox2);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.label23);
+            this.groupBox5.Controls.Add(this.textBox6);
+            this.groupBox5.Controls.Add(this.textBox7);
+            this.groupBox5.Location = new System.Drawing.Point(19, 274);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(315, 113);
+            this.groupBox5.TabIndex = 6;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Change Password";
             // 
-            // pictureBox1
+            // checkBox2
             // 
-            this.pictureBox1.Image = global::PointOfSaleUI.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(124, 85);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(116, 18);
+            this.checkBox2.TabIndex = 10;
+            this.checkBox2.Text = "Show Passwords";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // chkShowPasswords
+            // label22
             // 
-            this.chkShowPasswords.AutoSize = true;
-            this.chkShowPasswords.Location = new System.Drawing.Point(124, 85);
-            this.chkShowPasswords.Name = "chkShowPasswords";
-            this.chkShowPasswords.Size = new System.Drawing.Size(116, 18);
-            this.chkShowPasswords.TabIndex = 10;
-            this.chkShowPasswords.Text = "Show Passwords";
-            this.chkShowPasswords.UseVisualStyleBackColor = true;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(17, 28);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(86, 14);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "New Password";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(11, 61);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(92, 14);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Verify Password";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(124, 24);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(167, 22);
+            this.textBox6.TabIndex = 8;
+            this.textBox6.UseSystemPasswordChar = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(124, 57);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(167, 22);
+            this.textBox7.TabIndex = 9;
+            this.textBox7.UseSystemPasswordChar = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(42, 220);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(85, 14);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Email Address";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(80, 184);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(47, 14);
+            this.label25.TabIndex = 4;
+            this.label25.Text = "Contact";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(67, 148);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(60, 14);
+            this.label26.TabIndex = 3;
+            this.label26.Text = "User Role";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(64, 112);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(63, 14);
+            this.label27.TabIndex = 2;
+            this.label27.Text = "Username";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(64, 76);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(63, 14);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Full Name";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(81, 40);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(46, 14);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "User Id";
+            // 
+            // gridCategory
+            // 
+            this.gridCategory.AllowUserToAddRows = false;
+            this.gridCategory.AllowUserToDeleteRows = false;
+            this.gridCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridCategory.BackgroundColor = System.Drawing.Color.White;
+            this.gridCategory.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.gridCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCategory.Location = new System.Drawing.Point(19, 159);
+            this.gridCategory.MultiSelect = false;
+            this.gridCategory.Name = "gridCategory";
+            this.gridCategory.ReadOnly = true;
+            this.gridCategory.RowHeadersVisible = false;
+            this.gridCategory.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCategory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.gridCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridCategory.ShowEditingIcon = false;
+            this.gridCategory.Size = new System.Drawing.Size(537, 455);
+            this.gridCategory.TabIndex = 16;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.pictureBox8);
+            this.groupBox6.Controls.Add(this.txtSearchCategory);
+            this.groupBox6.Location = new System.Drawing.Point(19, 86);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(895, 60);
+            this.groupBox6.TabIndex = 15;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Search Category";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::PointOfSaleUI.Properties.Resources.search;
+            this.pictureBox8.Location = new System.Drawing.Point(9, 25);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // txtSearchCategory
+            // 
+            this.txtSearchCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchCategory.Location = new System.Drawing.Point(37, 25);
+            this.txtSearchCategory.Name = "txtSearchCategory";
+            this.txtSearchCategory.Size = new System.Drawing.Size(840, 22);
+            this.txtSearchCategory.TabIndex = 0;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(15, 12);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(101, 29);
+            this.label31.TabIndex = 14;
+            this.label31.Text = "Category";
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1204, 686);
+            this.ClientSize = new System.Drawing.Size(1224, 686);
+            this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.staffPanel);
             this.Controls.Add(this.dashPanel);
-            this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.categoryPanel);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimumSize = new System.Drawing.Size(1220, 725);
@@ -1123,13 +1516,19 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.dashPanel.ResumeLayout(false);
             this.dashPanel.PerformLayout();
             this.metroPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.metroPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.metroPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.metroPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.metroPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.staffPanel.ResumeLayout(false);
             this.staffPanel.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1140,12 +1539,16 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.categoryPanel.ResumeLayout(false);
+            this.categoryPanel.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCategory)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1158,7 +1561,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button button1;
@@ -1226,5 +1629,36 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Button btnAddNewUser;
         private System.Windows.Forms.CheckBox chkShowPasswords;
+        private System.Windows.Forms.CheckBox chkBlock;
+        private System.Windows.Forms.Panel categoryPanel;
+        private System.Windows.Forms.Label txtNumberOfCategories;
+        private System.Windows.Forms.Button btnNewCategory;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnDeleteCategory;
+        private System.Windows.Forms.Button btnUpdateCategory;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.DataGridView gridCategory;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.TextBox txtSearchCategory;
+        private System.Windows.Forms.Label label31;
     }
 }

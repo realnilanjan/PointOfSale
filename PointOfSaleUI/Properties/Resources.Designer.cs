@@ -100,6 +100,24 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please fill in all the details to login.
+        /// </summary>
+        internal static string FILL_ALL_DETAILS_LOGIN {
+            get {
+                return ResourceManager.GetString("FILL_ALL_DETAILS_LOGIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid login credentials provided..
+        /// </summary>
+        internal static string INVALID_CREDENTIALS {
+            get {
+                return ResourceManager.GetString("INVALID_CREDENTIALS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
@@ -223,6 +241,15 @@ namespace PointOfSaleUI.Properties {
             get {
                 object obj = ResourceManager.GetObject("transactions", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry! The user is blocked by the administrator..
+        /// </summary>
+        internal static string USER_BLOCKED {
+            get {
+                return ResourceManager.GetString("USER_BLOCKED", resourceCulture);
             }
         }
     }

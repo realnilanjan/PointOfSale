@@ -169,4 +169,13 @@
   <data name="PUT_PASSWORDS" xml:space="preserve">
     <value>Please enter new passwords.</value>
   </data>
+  <data name="FILL_ALL_DETAILS_LOGIN" xml:space="preserve">
+    <value>Please fill in all the details to login</value>
+  </data>
+  <data name="INVALID_CREDENTIALS" xml:space="preserve">
+    <value>Invalid login credentials provided.</value>
+  </data>
+  <data name="USER_BLOCKED" xml:space="preserve">
+    <value>Sorry! The user is blocked by the administrator.</value>
+  </data>
 </root>

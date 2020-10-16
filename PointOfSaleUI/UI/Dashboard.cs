@@ -1,4 +1,5 @@
 ﻿using PointOfSale.Lib.DataAccess;
+using PointOfSale.Lib.Encryptions;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace PointOfSaleUI.UI
     {
         private readonly LoggedInUserModel _loggedInUser;
         List<UserModel> users = new List<UserModel>();
+
+        string IsBlocked = "1"; //1 Is not blocked || 0 is blocked
 
         public Dashboard(LoggedInUserModel loggedInUser)
         {
@@ -59,20 +62,27 @@ namespace PointOfSaleUI.UI
         {
             dashPanel.Visible = true;
 
-            staffPanel.Visible = false;
             //TODO: Make all other panels invisible
+            staffPanel.Visible = false;
+            categoryPanel.Visible = false;
+
+            //Refresh Data
         }
 
         private void LoadStaffPanel()
         {
             staffPanel.Visible = true;
-            txtStaffSearch.Focus();
             cmbSearchUserBy.SelectedIndex = 0;
             cmbUserRole.SelectedIndex = 0;
 
-            dashPanel.Visible = false;
             //TODO: Make all other panels invisible
+            dashPanel.Visible = false;
+            categoryPanel.Visible = false;
 
+
+
+
+            //Refresh Data
             this.RefreshGrid();
         }
 
@@ -97,9 +107,17 @@ namespace PointOfSaleUI.UI
                 txtUserId.Text = grid.Cells[0].Value.ToString();
                 txtFullName.Text = grid.Cells[1].Value.ToString();
                 txtUserName.Text = grid.Cells[2].Value.ToString();
-                cmbUserRole.SelectedItem = grid.Cells[3].Value.ToString();
-                txtContact.Text = grid.Cells[4].Value.ToString();
-                txtEmailAddress.Text = grid.Cells[5].Value.ToString();
+                cmbUserRole.SelectedItem = grid.Cells[4].Value.ToString();
+                txtContact.Text = grid.Cells[5].Value.ToString();
+                txtEmailAddress.Text = grid.Cells[6].Value.ToString();
+                if (grid.Cells[7].Value.ToString() == "0")
+                {
+                    chkBlock.CheckState = CheckState.Checked;
+                }
+                else
+                {
+                    chkBlock.CheckState = CheckState.Unchecked;
+                }
             }
         }
 
@@ -110,7 +128,20 @@ namespace PointOfSaleUI.UI
                 //TODO: Update with password
                 if (txtNewPassword.Text == txtNewVerifyPassword.Text)
                 {
-                    MessageBox.Show("With passwords");
+                    WithPasswordModel user = new WithPasswordModel
+                    {
+                        UserId = Convert.ToInt32(txtUserId.Text),
+                        Fullname = txtUserFullName.Text,
+                        Username = txtUserName.Text,
+                        Password = EncryptTo.MD5Hash(txtNewVerifyPassword.Text),
+                        UserRole = cmbUserRole.GetItemText(cmbUserRole.SelectedItem),
+                        Contact = txtContact.Text,
+                        EmailAddress = txtEmailAddress.Text,
+                        Status = IsBlocked
+                    };
+
+                    SQLDataAccess dataAccess = new SQLDataAccess();
+                    dataAccess.SaveData("dbo.UpdateUserWithPassword", user, "POS");
                     this.RefreshGrid();
                 }
                 else
@@ -120,8 +151,19 @@ namespace PointOfSaleUI.UI
             }
             else if((txtNewPassword.Text == "") && (txtNewVerifyPassword.Text == ""))
             {
-                //TODO: Update without passwords
-                MessageBox.Show("Without passwords");
+                WithoutPasswordModel user = new WithoutPasswordModel
+                {
+                    UserId = Convert.ToInt32(txtUserId.Text),
+                    Fullname = txtUserFullName.Text,
+                    Username = txtUserName.Text,
+                    UserRole = cmbUserRole.GetItemText(cmbUserRole.SelectedItem),
+                    Contact = txtContact.Text,
+                    EmailAddress = txtEmailAddress.Text,
+                    Status = IsBlocked
+                };
+
+                SQLDataAccess dataAccess = new SQLDataAccess();
+                dataAccess.SaveData("dbo.UpdateUserWithoutPassword", user, "POS");
                 this.RefreshGrid();
             }
             else 
@@ -132,21 +174,58 @@ namespace PointOfSaleUI.UI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //TODO: Delete user || set status to 0
-            this.RefreshGrid();
+            DialogResult result = MessageBox.Show("Do you want to delete this user?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                int UserId = Convert.ToInt32(txtUserId.Text);
+                SQLDataAccess dataAccess = new SQLDataAccess();
+                dataAccess.SaveData("dbo.DeleteUser", new { UserId = UserId }, "POS");
+                this.RefreshGrid();
+            }
+            else { return; }
         }
 
         private void txtStaffSearch_TextChanged(object sender, EventArgs e)
         {
-            var result = users.Where(x => x.Username.Contains(txtStaffSearch.Text) || x.Fullname.Contains(txtStaffSearch.Text) || x.Contact.Contains(txtStaffSearch.Text)).ToList();
-            userGridView.DataSource = result;
+            switch (cmbSearchUserBy.GetItemText(cmbSearchUserBy.SelectedItem))
+            {
+                case "ID":
+                    var IdResult = users.Where(x => x.UserId.ToString().Contains(txtStaffSearch.Text)).ToList();
+                    userGridView.DataSource = IdResult;
+                    break;
+                case "Full Name":
+                    var NameResult = users.Where(x => x.Fullname.Contains(txtStaffSearch.Text)).ToList();
+                    userGridView.DataSource = NameResult;
+                    break;
+                case "Username":
+                    var UsernameResult = users.Where(x => x.Username.Contains(txtStaffSearch.Text)).ToList();
+                    userGridView.DataSource = UsernameResult;
+                    break;
+                case "User Role":
+                    var UserRoleResult = users.Where(x => x.UserRole.Contains(txtStaffSearch.Text)).ToList();
+                    userGridView.DataSource = UserRoleResult;
+                    break;
+                case "Contact Number":
+                    var ContactResult = users.Where(x => x.Contact.Contains(txtStaffSearch.Text)).ToList();
+                    userGridView.DataSource = ContactResult;
+                    break;
+                case "Email Address":
+                    var EmailResult = users.Where(x => x.EmailAddress.Contains(txtStaffSearch.Text)).ToList();
+                    userGridView.DataSource = EmailResult;
+                    break;
+            }
         }
 
         private void cmbSearchUserBy_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string roleText = cmbSearchUserBy.GetItemText(cmbSearchUserBy.SelectedItem);
-            var result = users.Where(x => x.UserRole.Contains(roleText)).ToList();
-            userGridView.DataSource = result;
+            if (cmbSearchUserBy.SelectedIndex > 0)
+            {
+                txtStaffSearch.Enabled = true;
+                txtStaffSearch.Focus();
+            }
+            //string roleText = cmbSearchUserBy.GetItemText(cmbSearchUserBy.SelectedItem);
+            //var result = users.Where(x => x.UserRole.Contains(roleText)).ToList();
+            //userGridView.DataSource = result;
         }
 
         private void btnAddNewUser_Click(object sender, EventArgs e)
@@ -157,6 +236,50 @@ namespace PointOfSaleUI.UI
             {
                 this.RefreshGrid();
             }
+        }
+
+        private void chkBlock_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBlock.CheckState == CheckState.Checked)
+            {
+                IsBlocked = "0";
+            }
+            else
+            {
+                IsBlocked = "1";
+            }
+        }
+
+        private void chkShowPasswords_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPasswords.CheckState == CheckState.Checked)
+            {
+                txtNewPassword.UseSystemPasswordChar = false;
+                txtNewVerifyPassword.UseSystemPasswordChar = false;
+                chkShowPasswords.Text = "Hide Password";
+            }
+            else
+            {
+                txtNewPassword.UseSystemPasswordChar = true;
+                txtNewVerifyPassword.UseSystemPasswordChar = true;
+                chkShowPasswords.Text = "Show Password";
+            }
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            this.LoadCategoryPanel();
+        }
+
+        private void LoadCategoryPanel()
+        {
+            categoryPanel.Visible = true;
+
+            //Make all other panel invisible
+            dashPanel.Visible = false;
+            staffPanel.Visible = false;
+
+            //Refresh Data
         }
     }
 }

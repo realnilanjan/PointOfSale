@@ -62,17 +62,17 @@ namespace PointOfSaleUI.UI
                     }
                     else
                     {
-                        MessageBox.Show("Sorry! THe user is blocked by the administrator.", "User Blocked", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(Properties.Resources.USER_BLOCKED, "User Blocked", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Invalid login credentials provided.", "Invalid Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.INVALID_CREDENTIALS, "Invalid Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Please fill in all the details to login.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.FILL_ALL_DETAILS_LOGIN, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
