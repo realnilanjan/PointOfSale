@@ -76,6 +76,10 @@
     <Build Include="dbo\Stored Procedures\UpdateUserWithPassword.sql" />
     <Build Include="dbo\Stored Procedures\UpdateUserWithoutPassword.sql" />
     <Build Include="dbo\Stored Procedures\DeleteUser.sql" />
+    <Build Include="dbo\Tables\Category.sql" />
+    <Build Include="dbo\Stored Procedures\InsertCategory.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateCategory.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteCategory.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
