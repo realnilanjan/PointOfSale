@@ -45,8 +45,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(118, 35);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(118, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(343, 39);
             this.label1.TabIndex = 0;
@@ -55,6 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(166, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 14);
@@ -64,6 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(166, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 14);
@@ -106,6 +108,7 @@
             // chkRememberMe
             // 
             this.chkRememberMe.AutoSize = true;
+            this.chkRememberMe.ForeColor = System.Drawing.Color.White;
             this.chkRememberMe.Location = new System.Drawing.Point(235, 223);
             this.chkRememberMe.Name = "chkRememberMe";
             this.chkRememberMe.Size = new System.Drawing.Size(105, 18);
@@ -117,9 +120,11 @@
             // 
             this.lnkForgotPassword.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
             this.lnkForgotPassword.AutoSize = true;
+            this.lnkForgotPassword.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lnkForgotPassword.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkForgotPassword.ForeColor = System.Drawing.Color.White;
             this.lnkForgotPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkForgotPassword.LinkColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lnkForgotPassword.LinkColor = System.Drawing.Color.Silver;
             this.lnkForgotPassword.Location = new System.Drawing.Point(233, 244);
             this.lnkForgotPassword.Name = "lnkForgotPassword";
             this.lnkForgotPassword.Size = new System.Drawing.Size(126, 14);
@@ -131,6 +136,7 @@
             // chkShowHidePassword
             // 
             this.chkShowHidePassword.AutoSize = true;
+            this.chkShowHidePassword.ForeColor = System.Drawing.Color.White;
             this.chkShowHidePassword.Location = new System.Drawing.Point(235, 202);
             this.chkShowHidePassword.Name = "chkShowHidePassword";
             this.chkShowHidePassword.Size = new System.Drawing.Size(110, 18);
@@ -154,7 +160,7 @@
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(579, 400);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lnkForgotPassword);

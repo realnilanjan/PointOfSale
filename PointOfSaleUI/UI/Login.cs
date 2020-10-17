@@ -75,5 +75,10 @@ namespace PointOfSaleUI.UI
                 MessageBox.Show(Properties.Resources.FILL_ALL_DETAILS_LOGIN, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
