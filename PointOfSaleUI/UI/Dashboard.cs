@@ -1,5 +1,7 @@
 ﻿using PointOfSale.Lib.DataAccess;
+using PointOfSale.Lib.DataModel;
 using PointOfSale.Lib.Encryptions;
+using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
@@ -16,7 +18,13 @@ namespace PointOfSaleUI.UI
     public partial class Dashboard : Form
     {
         private readonly LoggedInUserModel _loggedInUser;
-        List<UserModel> users = new List<UserModel>();
+
+        List<UserDataModel> users = new List<UserDataModel>();
+        List<CategoryDataModel> categories = new List<CategoryDataModel>();
+        List<ProductDataModel> products = new List<ProductDataModel>();
+
+
+
         string IsBlocked = "1";  //1 Is not blocked || 0 is blocked
 
         public Dashboard(LoggedInUserModel loggedInUser)
@@ -29,16 +37,44 @@ namespace PointOfSaleUI.UI
         }
 
         #region Functions
-        private void RefreshGrid()
+        private void RefreshStaffGrid()
         {
             SQLDataAccess dataAccess = new SQLDataAccess();
             users = dataAccess.LoadAllUsers();
             userGridView.DataSource = users;
-            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, users.Count.ToString());
-            this.ClearValues();
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, categories.ToString());
+            this.ClearStaffValues();
         }
 
-        private void ClearValues()
+        private void RefreshCategoryGrid()
+        {
+            SQLDataAccess dataAccess = new SQLDataAccess();
+            categories = dataAccess.LoadAllCategories();
+            categoryGridView.DataSource = categories;
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, users.Count.ToString());
+            this.ClearCategoryValues();
+        }
+
+        private void RefreshStockGrid()
+        {
+            SQLDataAccess dataAccess = new SQLDataAccess();
+            products = dataAccess.LoadAllStocks();
+            stockGridView.DataSource = products;
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count.ToString());
+            Functions.ProcessGridColor(stockGridView, 8);
+            this.ClearStockValues();
+        }
+
+        private void RefreshSupplierGrid()
+        {
+            //SQLDataAccess dataAccess = new SQLDataAccess();
+            //categories = dataAccess.LoadAllCategories();
+            //categoryGridView.DataSource = categories;
+            //txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, users.Count.ToString());
+            //this.ClearCategoryValues();
+        }
+
+        private void ClearStaffValues()
         {
             txtUserId.Text = "";
             txtFullName.Text = "";
@@ -52,6 +88,41 @@ namespace PointOfSaleUI.UI
             btnDelete.Enabled = false;
         }
 
+        private void ClearCategoryValues()
+        {
+            txtCategoryId.Text = "";
+            txtCategoryName.Text = "";
+            txtCategoryDescription.Text = "";
+            btnUpdateCategory.Enabled = false;
+            btnDeleteCategory.Enabled = false;
+        }
+
+        private void ClearStockValues()
+        {
+            List<CategoryDataModel> categories;
+            List<SupplierDataModel> suppliers;
+            List<QuantityDescriptionModel> quantityDescriptions;
+
+            SQLDataAccess dataAccess = new SQLDataAccess();
+            categories = dataAccess.LoadAllCategories();
+            suppliers = dataAccess.LoadAllSuppliers();
+            quantityDescriptions = dataAccess.LoadAllQuantityDescriptions();
+
+            txtStockId.Text = "";
+            txtBarcode.Text = "";
+            Functions.FillCombo(quantityDescriptions, cmbQtyDescId);
+            txtQtyDesc.Text = "";
+            txtBrandName.Text = "";
+            txtProductName.Text = "";
+            txtUnitPrice.Text = "";
+            txtRetailPrice.Text = "";
+            txtStockInHand.Text = "";
+            Functions.FillCombo(categories, cmbCategory);
+            Functions.FillCombo(suppliers, cmbSupplier);
+            btnUpdateStock.Enabled = false;
+            btnDeleteStock.Enabled = false;
+        }
+
         private void LoadDashboard()
         {
             dashPanel.Visible = true;
@@ -59,8 +130,10 @@ namespace PointOfSaleUI.UI
             //TODO: Make all other panels invisible
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
+            supplierPanel.Visible = false;
 
             //Refresh Data
+
         }
 
         private void LoadStaffPanel()
@@ -72,23 +145,63 @@ namespace PointOfSaleUI.UI
             //TODO: Make all other panels invisible
             dashPanel.Visible = false;
             categoryPanel.Visible = false;
-
+            supplierPanel.Visible = false;
+            stockPanel.Visible = false;
 
 
 
             //Refresh Data
-            this.RefreshGrid();
+            this.RefreshStaffGrid();
         }
 
         private void LoadCategoryPanel()
         {
             categoryPanel.Visible = true;
 
+
             //Make all other panel invisible
             dashPanel.Visible = false;
             staffPanel.Visible = false;
+            supplierPanel.Visible = false;
+            stockPanel.Visible = false;
+
+
 
             //Refresh Data
+            this.RefreshCategoryGrid();
+        }
+
+        private void LoadStockPanel()
+        {
+
+            stockPanel.Visible = true;
+
+            //Make all other panel invisible
+            dashPanel.Visible = false;
+            staffPanel.Visible = false;
+            categoryPanel.Visible = false;
+            supplierPanel.Visible = false;
+
+
+            //Refresh Data
+            this.RefreshStockGrid();
+        }
+
+        private void LoadSupplierPanel()
+        {
+            supplierPanel.Visible = true;
+
+
+            //Make all other panel invisible
+            dashPanel.Visible = false;
+            staffPanel.Visible = false;
+            categoryPanel.Visible = false;
+            stockPanel.Visible = false;
+
+
+
+            //Refresh Data
+            this.RefreshSupplierGrid();
         }
 
         #endregion
@@ -154,7 +267,7 @@ namespace PointOfSaleUI.UI
 
                     SQLDataAccess dataAccess = new SQLDataAccess();
                     dataAccess.SaveData("dbo.UpdateUserWithPassword", user, "POS");
-                    this.RefreshGrid();
+                    this.RefreshStaffGrid();
                 }
                 else
                 {
@@ -176,7 +289,7 @@ namespace PointOfSaleUI.UI
 
                 SQLDataAccess dataAccess = new SQLDataAccess();
                 dataAccess.SaveData("dbo.UpdateUserWithoutPassword", user, "POS");
-                this.RefreshGrid();
+                this.RefreshStaffGrid();
             }
             else
             {
@@ -223,7 +336,7 @@ namespace PointOfSaleUI.UI
                 int UserId = Convert.ToInt32(txtUserId.Text);
                 SQLDataAccess dataAccess = new SQLDataAccess();
                 dataAccess.SaveData("dbo.DeleteUser", new { UserId = UserId }, "POS");
-                this.RefreshGrid();
+                this.RefreshStaffGrid();
             }
             else { return; }
         }
@@ -270,7 +383,7 @@ namespace PointOfSaleUI.UI
             DialogResult result = staff.ShowDialog();
             if (result == DialogResult.OK)
             {
-                this.RefreshGrid();
+                this.RefreshStaffGrid();
             }
         }
 
@@ -302,6 +415,143 @@ namespace PointOfSaleUI.UI
                     chkBlock.CheckState = CheckState.Unchecked;
                 }
             }
+        }
+
+        private void btnAddNewcategory_Click(object sender, EventArgs e)
+        {
+            Category category = new Category();
+            DialogResult result = category.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.RefreshCategoryGrid();
+            }
+        }
+
+        private void btnUpdateCategory_Click(object sender, EventArgs e)
+        {
+            CategoryDataModel category = new CategoryDataModel
+            {
+                Id = Convert.ToInt32(txtCategoryId.Text),
+                CategoryName = txtCategoryName.Text,
+                CategoryDescription = txtCategoryDescription.Text
+            };
+
+            SQLDataAccess dataAccess = new SQLDataAccess();
+            dataAccess.SaveData("dbo.UpdateCategory", category, "POS");
+            this.RefreshCategoryGrid();
+        }
+
+        private void categoryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdateCategory.Enabled = true;
+            btnDeleteCategory.Enabled = true;
+
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow grid = categoryGridView.Rows[e.RowIndex];
+                txtCategoryId.Text = grid.Cells[0].Value.ToString();
+                txtCategoryName.Text = grid.Cells[1].Value.ToString();
+                txtCategoryDescription.Text = grid.Cells[2].Value.ToString();
+            }
+        }
+
+        private void btnDeleteCategory_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to delete this category?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                int Id = Convert.ToInt32(txtCategoryId.Text);
+                SQLDataAccess dataAccess = new SQLDataAccess();
+                dataAccess.SaveData("dbo.DeleteCategory", new { Id = Id }, "POS");
+                this.RefreshCategoryGrid();
+            }
+            else { return; }
+        }
+
+        private void txtSearchCategory_TextChanged(object sender, EventArgs e)
+        {
+            var result = categories.Where(x => x.CategoryName.Contains(txtSearchCategory.Text)).ToList();
+            categoryGridView.DataSource = result;
+        }
+
+        private void btnSupplier_Click(object sender, EventArgs e)
+        {
+            this.LoadSupplierPanel();
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            this.LoadStockPanel();
+        }
+
+        private void btnAddNewStock_Click(object sender, EventArgs e)
+        {
+            NewStock stock = new NewStock();
+            DialogResult result = stock.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.RefreshStockGrid();
+            }
+        }
+
+        private void stockGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdateStock.Enabled = true;
+            btnDeleteStock.Enabled = true;
+
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow grid = stockGridView.Rows[e.RowIndex];
+                txtStockId.Text = grid.Cells[0].Value.ToString();
+                txtBarcode.Text = grid.Cells[1].Value.ToString();
+                cmbQtyDescId.SelectedIndex = Convert.ToInt32(grid.Cells[2].Value);
+                txtQtyDesc.Text = grid.Cells[3].Value.ToString();
+                txtBrandName.Text = grid.Cells[4].Value.ToString();
+                txtProductName.Text = grid.Cells[5].Value.ToString();
+                txtUnitPrice.Text = grid.Cells[6].Value.ToString();
+                txtRetailPrice.Text = grid.Cells[7].Value.ToString();
+                txtStockInHand.Text = grid.Cells[8].Value.ToString();
+                cmbCategory.SelectedValue = Convert.ToInt32(grid.Cells[9].Value);
+                cmbSupplier.SelectedValue = Convert.ToInt32(grid.Cells[10].Value);
+                chkIsTaxable.Checked = Convert.ToBoolean(grid.Cells[11].Value);
+            }
+        }
+
+        private void btnUpdateStock_Click(object sender, EventArgs e)
+        {
+            ProductDataModel product = new ProductDataModel
+            {
+                StockId = Convert.ToInt32(txtStockId.Text),
+                Barcode = txtBarcode.Text,
+                QtyDescId = Convert.ToInt32(cmbQtyDescId.SelectedValue),
+                QtyDescription = txtQtyDesc.Text,
+                Brand = txtBrandName.Text,
+                Name = txtProductName.Text,
+                StockPrice = Convert.ToDecimal(txtUnitPrice.Text),
+                RetailPrice = Convert.ToDecimal(txtRetailPrice.Text),
+                StockInHand = Convert.ToInt32(txtStockInHand.Text),
+                CategoryId = Convert.ToInt32(cmbCategory.SelectedValue),
+                SupplierId = Convert.ToInt32(cmbSupplier.SelectedValue),
+                IsTaxable = chkIsTaxable.Checked
+
+            };
+
+            SQLDataAccess dataAccess = new SQLDataAccess();
+            dataAccess.SaveData("dbo.UpdateStock", product, "POS");
+            this.RefreshStockGrid();
+        }
+
+        private void btnDeleteStock_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to delete this product?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                int StockId = Convert.ToInt32(txtStockId.Text);
+                SQLDataAccess dataAccess = new SQLDataAccess();
+                dataAccess.SaveData("dbo.DeleteStock", new { StockId = StockId }, "POS");
+                this.RefreshStockGrid();
+            }
+            else { return; }
         }
     }
 }
