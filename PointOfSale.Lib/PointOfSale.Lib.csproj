@@ -38,6 +38,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,12 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\SQLDataAccess.cs" />
+    <Compile Include="DataModel\ProductDataModel.cs" />
+    <Compile Include="DataModel\QuantityDescriptionModel.cs" />
+    <Compile Include="DataModel\SupplierDataModel.cs" />
     <Compile Include="Encryptions\EncryptTo.cs" />
+    <Compile Include="Helpers\Functions.cs" />
     <Compile Include="Models\BusinessInformation.cs" />
     <Compile Include="Models\BusinessModel.cs" />
+    <Compile Include="DataModel\CategoryDataModel.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\LoggedInUserModel.cs" />
+    <Compile Include="Models\NewProductMOdel.cs" />
     <Compile Include="Models\NewUserModel.cs" />
-    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="DataModel\UserDataModel.cs" />
     <Compile Include="Models\WithoutPasswordModel.cs" />
     <Compile Include="Models\WithPasswordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

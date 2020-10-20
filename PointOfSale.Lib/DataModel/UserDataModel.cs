@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PointOfSale.Lib.Models
+﻿namespace PointOfSale.Lib.DataModel
 {
-    public class UserModel
+    public class UserDataModel
     {
         public int UserId { get; set; }
         public string Fullname { get; set; }

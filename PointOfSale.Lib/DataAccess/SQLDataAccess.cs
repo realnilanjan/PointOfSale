@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using PointOfSale.Lib.Models;
+using PointOfSale.Lib.DataModel;
 
 namespace PointOfSale.Lib.DataAccess
 {
@@ -50,10 +51,35 @@ namespace PointOfSale.Lib.DataAccess
             return rows;
         }
 
-        public List<UserModel> LoadAllUsers()
+        public List<UserDataModel> LoadAllUsers()
         {
-            var rows = LoadData<UserModel, dynamic>("dbo.LoadAllUsers", new { }, "POS");
+            var rows = LoadData<UserDataModel, dynamic>("dbo.LoadAllUsers", new { }, "POS");
             return rows;
         }
+
+        public List<CategoryDataModel> LoadAllCategories()
+        {
+            var rows = LoadData<CategoryDataModel, dynamic>("dbo.LoadAllCategories", new { }, "POS");
+            return rows;
+        }
+        
+        public List<SupplierDataModel> LoadAllSuppliers()
+        {
+            var rows = LoadData<SupplierDataModel, dynamic>("dbo.LoadAllSuppliers", new { }, "POS");
+            return rows;
+        }
+
+        public List<QuantityDescriptionModel> LoadAllQuantityDescriptions()
+        {
+            var rows = LoadData<QuantityDescriptionModel, dynamic>("dbo.LoadAllQuantityDescriptions", new { }, "POS");
+            return rows;
+        }
+
+        public List<ProductDataModel> LoadAllStocks()
+        {
+            var rows = LoadData<ProductDataModel, dynamic>("dbo.LoadAllStocks", new { }, "POS");
+            return rows;
+        }
+
     }
 }
