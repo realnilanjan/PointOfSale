@@ -80,6 +80,16 @@
     <Build Include="dbo\Stored Procedures\InsertCategory.sql" />
     <Build Include="dbo\Stored Procedures\UpdateCategory.sql" />
     <Build Include="dbo\Stored Procedures\DeleteCategory.sql" />
+    <Build Include="dbo\Stored Procedures\LoadAllCategories.sql" />
+    <Build Include="dbo\Tables\Products.sql" />
+    <Build Include="dbo\Tables\Suppliers.sql" />
+    <Build Include="dbo\Stored Procedures\LoadAllSuppliers.sql" />
+    <Build Include="dbo\Stored Procedures\LoadAllQuantityDescriptions.sql" />
+    <Build Include="dbo\Tables\QuantityDescription.sql" />
+    <Build Include="dbo\Stored Procedures\LoadAllStocks.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStock.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteStock.sql" />
+    <Build Include="dbo\Stored Procedures\InsertStock.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
