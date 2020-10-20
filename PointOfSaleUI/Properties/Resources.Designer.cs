@@ -188,6 +188,24 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total number of categories: {0}.
+        /// </summary>
+        internal static string NO_OF_CATEGORIES {
+            get {
+                return ResourceManager.GetString("NO_OF_CATEGORIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of products: {0}.
+        /// </summary>
+        internal static string NO_OF_PRODUCTS {
+            get {
+                return ResourceManager.GetString("NO_OF_PRODUCTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total number of members in staff: {0}.
         /// </summary>
         internal static string NO_OF_STAFFS {
@@ -300,6 +318,16 @@ namespace PointOfSaleUI.Properties {
         internal static System.Drawing.Bitmap stock_sold {
             get {
                 object obj = ResourceManager.GetObject("stock_sold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap supplier {
+            get {
+                object obj = ResourceManager.GetObject("supplier", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
