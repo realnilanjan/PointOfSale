@@ -5,25 +5,22 @@ using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
 {
     public partial class Dashboard : Form
     {
+        SQLDataAccess dataAccess = new SQLDataAccess();
         private readonly LoggedInUserModel _loggedInUser;
-
         List<UserDataModel> users = new List<UserDataModel>();
         List<CategoryDataModel> categories = new List<CategoryDataModel>();
-        List<ProductDataModel> products = new List<ProductDataModel>();
+        List<SupplierDataModel> suppliers = new List<SupplierDataModel>();
 
-
+        List<CategoryDataModel> productCategories = new List<CategoryDataModel>();
+        List<SupplierDataModel> productSuppliers = new List<SupplierDataModel>();
 
         string IsBlocked = "1";  //1 Is not blocked || 0 is blocked
 
@@ -34,30 +31,43 @@ namespace PointOfSaleUI.UI
             txtUserFullName.Text = _loggedInUser.Fullname;
             txtUserRole.Text = _loggedInUser.UserRole;
             txtBusinessName.Text = BusinessInformation.BusinessInfo[0].BusinessName;
+            this.RefreshDashboard();
         }
 
         #region Functions
+        private void RefreshDashboard()
+        {
+            List<ProductDataModel> products = new List<ProductDataModel>();
+            products = dataAccess.LoadAllStocks();
+            txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, products.Count.ToString());
+            var stockInfo = from sl in products
+                            group sl by sl.StockInHand into g
+                            select new
+                            {
+                                Total = g.Sum(x => x.StockInHand)
+                            };
+            txtTotalStock.Text = String.Format(Properties.Resources.TOTAL_STOCK, stockInfo.Sum(x => x.Total));
+        }
+
         private void RefreshStaffGrid()
         {
-            SQLDataAccess dataAccess = new SQLDataAccess();
             users = dataAccess.LoadAllUsers();
             userGridView.DataSource = users;
-            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, categories.ToString());
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, users.ToString());
             this.ClearStaffValues();
         }
 
         private void RefreshCategoryGrid()
         {
-            SQLDataAccess dataAccess = new SQLDataAccess();
             categories = dataAccess.LoadAllCategories();
             categoryGridView.DataSource = categories;
-            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, users.Count.ToString());
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, categories.Count.ToString());
             this.ClearCategoryValues();
         }
 
         private void RefreshStockGrid()
         {
-            SQLDataAccess dataAccess = new SQLDataAccess();
+            List<ProductDataModel> products = new List<ProductDataModel>();
             products = dataAccess.LoadAllStocks();
             stockGridView.DataSource = products;
             txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count.ToString());
@@ -67,11 +77,10 @@ namespace PointOfSaleUI.UI
 
         private void RefreshSupplierGrid()
         {
-            //SQLDataAccess dataAccess = new SQLDataAccess();
-            //categories = dataAccess.LoadAllCategories();
-            //categoryGridView.DataSource = categories;
-            //txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, users.Count.ToString());
-            //this.ClearCategoryValues();
+            suppliers = dataAccess.LoadAllSuppliers();
+            supplierGridView.DataSource = suppliers;
+            txtTotalSuppliers.Text = String.Format(Properties.Resources.NO_OF_SUPPLIERS, suppliers.Count.ToString());
+            this.ClearSupplierValues();
         }
 
         private void ClearStaffValues()
@@ -99,13 +108,11 @@ namespace PointOfSaleUI.UI
 
         private void ClearStockValues()
         {
-            List<CategoryDataModel> categories;
-            List<SupplierDataModel> suppliers;
-            List<QuantityDescriptionModel> quantityDescriptions;
+            
+            List<QuantityDescriptionModel> quantityDescriptions = new List<QuantityDescriptionModel>();
 
-            SQLDataAccess dataAccess = new SQLDataAccess();
-            categories = dataAccess.LoadAllCategories();
-            suppliers = dataAccess.LoadAllSuppliers();
+            productCategories = dataAccess.LoadAllCategories();
+            productSuppliers = dataAccess.LoadAllSuppliers();
             quantityDescriptions = dataAccess.LoadAllQuantityDescriptions();
 
             txtStockId.Text = "";
@@ -117,10 +124,15 @@ namespace PointOfSaleUI.UI
             txtUnitPrice.Text = "";
             txtRetailPrice.Text = "";
             txtStockInHand.Text = "";
-            Functions.FillCombo(categories, cmbCategory);
-            Functions.FillCombo(suppliers, cmbSupplier);
+            Functions.FillCombo(productCategories, cmbCategory);
+            Functions.FillCombo(productSuppliers, cmbSupplier);
             btnUpdateStock.Enabled = false;
             btnDeleteStock.Enabled = false;
+        }
+
+        private void ClearSupplierValues()
+        {
+            //TODO: Clear Supplier Values
         }
 
         private void LoadDashboard()
@@ -130,10 +142,11 @@ namespace PointOfSaleUI.UI
             //TODO: Make all other panels invisible
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
+            stockPanel.Visible = false;
             supplierPanel.Visible = false;
 
             //Refresh Data
-
+            this.RefreshDashboard();
         }
 
         private void LoadStaffPanel()
@@ -265,7 +278,7 @@ namespace PointOfSaleUI.UI
                         Status = IsBlocked
                     };
 
-                    SQLDataAccess dataAccess = new SQLDataAccess();
+                    
                     dataAccess.SaveData("dbo.UpdateUserWithPassword", user, "POS");
                     this.RefreshStaffGrid();
                 }
@@ -287,7 +300,7 @@ namespace PointOfSaleUI.UI
                     Status = IsBlocked
                 };
 
-                SQLDataAccess dataAccess = new SQLDataAccess();
+                
                 dataAccess.SaveData("dbo.UpdateUserWithoutPassword", user, "POS");
                 this.RefreshStaffGrid();
             }
@@ -334,7 +347,6 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.Yes)
             {
                 int UserId = Convert.ToInt32(txtUserId.Text);
-                SQLDataAccess dataAccess = new SQLDataAccess();
                 dataAccess.SaveData("dbo.DeleteUser", new { UserId = UserId }, "POS");
                 this.RefreshStaffGrid();
             }
@@ -436,7 +448,7 @@ namespace PointOfSaleUI.UI
                 CategoryDescription = txtCategoryDescription.Text
             };
 
-            SQLDataAccess dataAccess = new SQLDataAccess();
+            
             dataAccess.SaveData("dbo.UpdateCategory", category, "POS");
             this.RefreshCategoryGrid();
         }
@@ -461,7 +473,7 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.Yes)
             {
                 int Id = Convert.ToInt32(txtCategoryId.Text);
-                SQLDataAccess dataAccess = new SQLDataAccess();
+                
                 dataAccess.SaveData("dbo.DeleteCategory", new { Id = Id }, "POS");
                 this.RefreshCategoryGrid();
             }
@@ -504,15 +516,16 @@ namespace PointOfSaleUI.UI
                 DataGridViewRow grid = stockGridView.Rows[e.RowIndex];
                 txtStockId.Text = grid.Cells[0].Value.ToString();
                 txtBarcode.Text = grid.Cells[1].Value.ToString();
-                cmbQtyDescId.SelectedIndex = Convert.ToInt32(grid.Cells[2].Value);
+                cmbQtyDescId.SelectedValue = grid.Cells[2].Value;
+                //ntityDescriptions.Where(x => x.Id == grid.Cells[2].Value.ToString()).FirstOrDefault();
                 txtQtyDesc.Text = grid.Cells[3].Value.ToString();
                 txtBrandName.Text = grid.Cells[4].Value.ToString();
                 txtProductName.Text = grid.Cells[5].Value.ToString();
                 txtUnitPrice.Text = grid.Cells[6].Value.ToString();
                 txtRetailPrice.Text = grid.Cells[7].Value.ToString();
                 txtStockInHand.Text = grid.Cells[8].Value.ToString();
-                cmbCategory.SelectedValue = Convert.ToInt32(grid.Cells[9].Value);
-                cmbSupplier.SelectedValue = Convert.ToInt32(grid.Cells[10].Value);
+                cmbCategory.SelectedValue = grid.Cells[9].Value;
+                cmbSupplier.SelectedValue = grid.Cells[10].Value;
                 chkIsTaxable.Checked = Convert.ToBoolean(grid.Cells[11].Value);
             }
         }
@@ -536,7 +549,7 @@ namespace PointOfSaleUI.UI
 
             };
 
-            SQLDataAccess dataAccess = new SQLDataAccess();
+            
             dataAccess.SaveData("dbo.UpdateStock", product, "POS");
             this.RefreshStockGrid();
         }
@@ -547,11 +560,21 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.Yes)
             {
                 int StockId = Convert.ToInt32(txtStockId.Text);
-                SQLDataAccess dataAccess = new SQLDataAccess();
+                
                 dataAccess.SaveData("dbo.DeleteStock", new { StockId = StockId }, "POS");
                 this.RefreshStockGrid();
             }
             else { return; }
+        }
+
+        private void btnAddNewSupplier_Click(object sender, EventArgs e)
+        {
+            NewSupplier supplier = new NewSupplier();
+            DialogResult result = supplier.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.RefreshSupplierGrid();
+            }
         }
     }
 }

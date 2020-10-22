@@ -81,9 +81,9 @@
             this.panel1.Controls.Add(this.txtQtyDesc);
             this.panel1.Controls.Add(this.label32);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(24, 79);
+            this.panel1.Location = new System.Drawing.Point(24, 78);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(665, 293);
+            this.panel1.Size = new System.Drawing.Size(666, 295);
             this.panel1.TabIndex = 1;
             // 
             // chkIsTaxable
@@ -91,7 +91,7 @@
             this.chkIsTaxable.AutoSize = true;
             this.chkIsTaxable.Location = new System.Drawing.Point(409, 186);
             this.chkIsTaxable.Name = "chkIsTaxable";
-            this.chkIsTaxable.Size = new System.Drawing.Size(75, 17);
+            this.chkIsTaxable.Size = new System.Drawing.Size(72, 17);
             this.chkIsTaxable.TabIndex = 21;
             this.chkIsTaxable.Text = "Is Taxable";
             this.chkIsTaxable.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(28, 88);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(47, 13);
+            this.label21.Size = new System.Drawing.Size(46, 13);
             this.label21.TabIndex = 1;
             this.label21.Text = "Barcode";
             // 
@@ -137,7 +137,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(26, 114);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 13);
+            this.label20.Size = new System.Drawing.Size(48, 13);
             this.label20.TabIndex = 2;
             this.label20.Text = "Qty Desc";
             // 
@@ -145,7 +145,7 @@
             // 
             this.txtStockInHand.Location = new System.Drawing.Point(409, 160);
             this.txtStockInHand.Name = "txtStockInHand";
-            this.txtStockInHand.Size = new System.Drawing.Size(69, 20);
+            this.txtStockInHand.Size = new System.Drawing.Size(69, 21);
             this.txtStockInHand.TabIndex = 20;
             // 
             // label24
@@ -161,7 +161,7 @@
             // 
             this.txtRetailPrice.Location = new System.Drawing.Point(409, 134);
             this.txtRetailPrice.Name = "txtRetailPrice";
-            this.txtRetailPrice.Size = new System.Drawing.Size(69, 20);
+            this.txtRetailPrice.Size = new System.Drawing.Size(69, 21);
             this.txtRetailPrice.TabIndex = 19;
             // 
             // label25
@@ -177,7 +177,7 @@
             // 
             this.txtUnitPrice.Location = new System.Drawing.Point(409, 107);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(69, 20);
+            this.txtUnitPrice.Size = new System.Drawing.Size(69, 21);
             this.txtUnitPrice.TabIndex = 17;
             // 
             // label26
@@ -193,7 +193,7 @@
             // 
             this.txtProductName.Location = new System.Drawing.Point(409, 81);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(229, 20);
+            this.txtProductName.Size = new System.Drawing.Size(229, 21);
             this.txtProductName.TabIndex = 16;
             // 
             // label31
@@ -209,7 +209,7 @@
             // 
             this.txtBrandName.Location = new System.Drawing.Point(89, 137);
             this.txtBrandName.Name = "txtBrandName";
-            this.txtBrandName.Size = new System.Drawing.Size(229, 20);
+            this.txtBrandName.Size = new System.Drawing.Size(229, 21);
             this.txtBrandName.TabIndex = 10;
             // 
             // label33
@@ -225,7 +225,7 @@
             // 
             this.txtBarcode.Location = new System.Drawing.Point(89, 84);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(229, 20);
+            this.txtBarcode.Size = new System.Drawing.Size(229, 21);
             this.txtBarcode.TabIndex = 7;
             // 
             // label30
@@ -233,7 +233,7 @@
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(324, 164);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(75, 13);
+            this.label30.Size = new System.Drawing.Size(70, 13);
             this.label30.TabIndex = 15;
             this.label30.Text = "Stock in Hand";
             // 
@@ -241,7 +241,7 @@
             // 
             this.txtQtyDesc.Location = new System.Drawing.Point(214, 110);
             this.txtQtyDesc.Name = "txtQtyDesc";
-            this.txtQtyDesc.Size = new System.Drawing.Size(104, 20);
+            this.txtQtyDesc.Size = new System.Drawing.Size(104, 21);
             this.txtQtyDesc.TabIndex = 9;
             // 
             // label32
@@ -249,7 +249,7 @@
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(26, 194);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(45, 13);
+            this.label32.Size = new System.Drawing.Size(46, 13);
             this.label32.TabIndex = 5;
             this.label32.Text = "Supplier";
             // 
@@ -262,7 +262,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(550, 397);
+            this.btnAdd.Location = new System.Drawing.Point(551, 398);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(139, 41);
             this.btnAdd.TabIndex = 2;
@@ -277,23 +277,26 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(25, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 29);
+            this.label1.Size = new System.Drawing.Size(161, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add New Staff";
+            this.label1.Text = "Add New Stock";
             // 
             // NewStock
             // 
+            this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(713, 450);
+            this.ClientSize = new System.Drawing.Size(714, 451);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "NewStock";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add New Stock";
             this.panel1.ResumeLayout(false);

@@ -36,7 +36,7 @@ namespace PointOfSaleUI.UI
                 && (txtRetailPrice.Text != "")
                 && (txtStockInHand.Text != ""))
             {
-                NewProductMOdel newProduct = new NewProductMOdel
+                ProductModel newProduct = new ProductModel
                 {
                     Barcode = txtBarcode.Text,
                     QtyDescId = Convert.ToInt32(cmbQtyDescId.SelectedValue),
