@@ -2,6 +2,6 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT [Id], [SupplierName]
+	SELECT [Id], [SupplierName], [Address], [Contact], [EmailAddress]
 	FROM [dbo].[Suppliers];
 END
