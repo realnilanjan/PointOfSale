@@ -1,8 +1,7 @@
-﻿namespace PointOfSale.Lib.DataModel
+﻿namespace PointOfSale.Lib.Models
 {
-    public class SupplierDataModel
+    public class SupplierModel
     {
-        public int Id { get; set; }
         public string SupplierName { get; set; }
         public string Address { get; set; }
         public string Contact { get; set; }

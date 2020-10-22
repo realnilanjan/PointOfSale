@@ -1,7 +1,6 @@
 ﻿using PointOfSale.Lib.DataModel;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Windows.Forms;
 

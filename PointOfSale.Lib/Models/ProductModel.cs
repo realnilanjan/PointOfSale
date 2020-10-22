@@ -1,6 +1,6 @@
 ﻿namespace PointOfSale.Lib.Models
 {
-    public class NewProductMOdel
+    public class ProductModel
     {
         public string Barcode { get; set; }
         public int QtyDescId { get; set; }

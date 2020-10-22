@@ -2,7 +2,7 @@
 {
     public class QuantityDescriptionModel
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string QtyDescription { get; set; }
     }
 }
