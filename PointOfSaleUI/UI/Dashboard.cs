@@ -18,7 +18,7 @@ namespace PointOfSaleUI.UI
         List<UserDataModel> users = new List<UserDataModel>();
         List<CategoryDataModel> categories = new List<CategoryDataModel>();
         List<SupplierDataModel> suppliers = new List<SupplierDataModel>();
-
+        List<ProductDataModel> products = new List<ProductDataModel>();
         List<CategoryDataModel> productCategories = new List<CategoryDataModel>();
         List<SupplierDataModel> productSuppliers = new List<SupplierDataModel>();
 
@@ -37,7 +37,6 @@ namespace PointOfSaleUI.UI
         #region Functions
         private void RefreshDashboard()
         {
-            List<ProductDataModel> products = new List<ProductDataModel>();
             products = dataAccess.LoadAllStocks();
             txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, products.Count.ToString());
             var stockInfo = from sl in products
@@ -53,7 +52,7 @@ namespace PointOfSaleUI.UI
         {
             users = dataAccess.LoadAllUsers();
             userGridView.DataSource = users;
-            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, users.ToString());
+            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, users.Count);
             this.ClearStaffValues();
         }
 
@@ -61,16 +60,15 @@ namespace PointOfSaleUI.UI
         {
             categories = dataAccess.LoadAllCategories();
             categoryGridView.DataSource = categories;
-            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, categories.Count.ToString());
+            txtNumberOfCategories.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, categories.Count);
             this.ClearCategoryValues();
         }
 
         private void RefreshStockGrid()
         {
-            List<ProductDataModel> products = new List<ProductDataModel>();
             products = dataAccess.LoadAllStocks();
             stockGridView.DataSource = products;
-            txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count.ToString());
+            txtTotalProducts.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count);
             Functions.ProcessGridColor(stockGridView, 8);
             this.ClearStockValues();
         }
@@ -79,7 +77,7 @@ namespace PointOfSaleUI.UI
         {
             suppliers = dataAccess.LoadAllSuppliers();
             supplierGridView.DataSource = suppliers;
-            txtTotalSuppliers.Text = String.Format(Properties.Resources.NO_OF_SUPPLIERS, suppliers.Count.ToString());
+            txtTotalSuppliers.Text = String.Format(Properties.Resources.NO_OF_SUPPLIERS, suppliers.Count);
             this.ClearSupplierValues();
         }
 
@@ -188,6 +186,7 @@ namespace PointOfSaleUI.UI
         {
 
             stockPanel.Visible = true;
+            cmbSearchStockBy.SelectedIndex = 0;
 
             //Make all other panel invisible
             dashPanel.Visible = false;
@@ -517,7 +516,6 @@ namespace PointOfSaleUI.UI
                 txtStockId.Text = grid.Cells[0].Value.ToString();
                 txtBarcode.Text = grid.Cells[1].Value.ToString();
                 cmbQtyDescId.SelectedValue = grid.Cells[2].Value;
-                //ntityDescriptions.Where(x => x.Id == grid.Cells[2].Value.ToString()).FirstOrDefault();
                 txtQtyDesc.Text = grid.Cells[3].Value.ToString();
                 txtBrandName.Text = grid.Cells[4].Value.ToString();
                 txtProductName.Text = grid.Cells[5].Value.ToString();
@@ -575,6 +573,83 @@ namespace PointOfSaleUI.UI
             {
                 this.RefreshSupplierGrid();
             }
+        }
+
+        private void supplierGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdateSupplier.Enabled = true;
+            btnDeleteSupplier.Enabled = true;
+
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow grid = supplierGridView.Rows[e.RowIndex];
+                txtSupplierId.Text = grid.Cells[0].Value.ToString();
+                txtSupplierName.Text = grid.Cells[1].Value.ToString();
+                txtSupplierAddress.Text = grid.Cells[2].Value.ToString();
+                txtSupplierContact.Text = grid.Cells[3].Value.ToString();
+                txtSupplierEmail.Text = grid.Cells[4].Value.ToString();
+            }
+        }
+
+        private void btnUpdateSupplier_Click(object sender, EventArgs e)
+        {
+            SupplierDataModel supplier = new SupplierDataModel
+            {
+                Id = Convert.ToInt32(txtSupplierId.Text),
+                SupplierName = txtSupplierName.Text,
+                Address = txtSupplierAddress.Text,
+                Contact = txtSupplierContact.Text,
+                EmailAddress = txtSupplierEmail.Text
+            };
+            dataAccess.SaveData("dbo.UpdateSupplier", supplier, "POS");
+            this.RefreshSupplierGrid();
+        }
+
+        private void btnDeleteSupplier_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to delete this supplier?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                int Id = Convert.ToInt32(txtSupplierId.Text);
+
+                dataAccess.SaveData("dbo.DeleteSupplier", new { Id = Id }, "POS");
+                this.RefreshCategoryGrid();
+            }
+            else { return; }
+        }
+
+        private void cmbSearchStockBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSearchStockBy.SelectedIndex > 0) { txtProductSearch.Enabled = true; }
+        }
+
+        private void txtProductSearch_TextChanged(object sender, EventArgs e)
+        {
+            switch (cmbSearchStockBy.GetItemText(cmbSearchStockBy.SelectedItem))
+            {
+                case "Stock ID":
+                    var IdResult = products.Where(x => x.StockId.ToString().Contains(txtProductSearch.Text)).ToList();
+                    stockGridView.DataSource = IdResult;
+                    break;
+                case "Barcode":
+                    var BarcodeResult = products.Where(x => x.Barcode.Contains(txtProductSearch.Text)).ToList();
+                    stockGridView.DataSource = BarcodeResult;
+                    break;
+                case "Brand":
+                    var BrandResult = products.Where(x => x.Brand.Contains(txtProductSearch.Text)).ToList();
+                    stockGridView.DataSource = BrandResult;
+                    break;
+                case "Name":
+                    var NameResult = products.Where(x => x.Name.Contains(txtProductSearch.Text)).ToList();
+                    stockGridView.DataSource = NameResult;
+                    break;
+            }
+        }
+
+        private void txtSearchSupplier_TextChanged(object sender, EventArgs e)
+        {
+            var result = suppliers.Where(x => x.SupplierName.Contains(txtSearchSupplier.Text)).ToList();
+            supplierGridView.DataSource = result;
         }
     }
 }
