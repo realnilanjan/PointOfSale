@@ -90,6 +90,7 @@
     <Build Include="dbo\Stored Procedures\UpdateStock.sql" />
     <Build Include="dbo\Stored Procedures\DeleteStock.sql" />
     <Build Include="dbo\Stored Procedures\InsertStock.sql" />
+    <Build Include="dbo\Stored Procedures\InsertSupplier.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
