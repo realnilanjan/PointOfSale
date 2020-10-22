@@ -206,7 +206,7 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total number of members in staff: {0}.
+        ///   Looks up a localized string similar to Total number of staff: {0}.
         /// </summary>
         internal static string NO_OF_STAFFS {
             get {
