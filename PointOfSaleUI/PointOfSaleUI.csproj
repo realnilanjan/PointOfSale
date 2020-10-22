@@ -81,6 +81,12 @@
     <Compile Include="UI\NewStock.Designer.cs">
       <DependentUpon>NewStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\NewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewSupplier.Designer.cs">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Terminal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\NewStock.resx">
       <DependentUpon>NewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewSupplier.resx">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Terminal.resx">
       <DependentUpon>Terminal.cs</DependentUpon>

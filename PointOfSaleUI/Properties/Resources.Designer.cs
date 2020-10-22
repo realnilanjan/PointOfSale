@@ -215,6 +215,15 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total number of suppliers: {0}.
+        /// </summary>
+        internal static string NO_OF_SUPPLIERS {
+            get {
+                return ResourceManager.GetString("NO_OF_SUPPLIERS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The provided passwords do not match..
         /// </summary>
         internal static string PASS_DONT_MATCH {
@@ -359,6 +368,24 @@ namespace PointOfSaleUI.Properties {
             get {
                 object obj = ResourceManager.GetObject("todays_sale1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Products: {0}.
+        /// </summary>
+        internal static string TOTAL_PRODUCTS {
+            get {
+                return ResourceManager.GetString("TOTAL_PRODUCTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Stock: {0}.
+        /// </summary>
+        internal static string TOTAL_STOCK {
+            get {
+                return ResourceManager.GetString("TOTAL_STOCK", resourceCulture);
             }
         }
         

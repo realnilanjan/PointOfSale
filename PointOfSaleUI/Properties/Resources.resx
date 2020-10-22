@@ -220,4 +220,13 @@
   <data name="NO_OF_PRODUCTS" xml:space="preserve">
     <value>Total number of products: {0}</value>
   </data>
+  <data name="NO_OF_SUPPLIERS" xml:space="preserve">
+    <value>Total number of suppliers: {0}</value>
+  </data>
+  <data name="TOTAL_PRODUCTS" xml:space="preserve">
+    <value>Products: {0}</value>
+  </data>
+  <data name="TOTAL_STOCK" xml:space="preserve">
+    <value>Total Stock: {0}</value>
+  </data>
 </root>
