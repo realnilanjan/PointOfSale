@@ -651,5 +651,13 @@ namespace PointOfSaleUI.UI
             var result = suppliers.Where(x => x.SupplierName.Contains(txtSearchSupplier.Text)).ToList();
             supplierGridView.DataSource = result;
         }
+
+        private void btnTerminal_Click(object sender, EventArgs e)
+        {
+            Terminal terminal = new Terminal(_loggedInUser);
+            this.Hide();
+            terminal.ShowDialog();
+            this.Close();
+        }
     }
 }
