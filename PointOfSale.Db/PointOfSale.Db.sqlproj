@@ -93,6 +93,11 @@
     <Build Include="dbo\Stored Procedures\InsertSupplier.sql" />
     <Build Include="dbo\Stored Procedures\UpdateSupplier.sql" />
     <Build Include="dbo\Stored Procedures\DeleteSupplier.sql" />
+    <Build Include="dbo\Tables\StockPurchaseOrder.sql" />
+    <Build Include="dbo\Stored Procedures\ProductToOrder.sql" />
+    <Build Include="dbo\Stored Procedures\InsertOrder.sql" />
+    <Build Include="dbo\Stored Procedures\SavePurchaseOrder.sql" />
+    <Build Include="dbo\Stored Procedures\LoadStockPurchaseOrders.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
