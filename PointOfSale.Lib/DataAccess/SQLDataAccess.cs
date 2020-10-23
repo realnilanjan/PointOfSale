@@ -79,5 +79,16 @@ namespace PointOfSale.Lib.DataAccess
             return rows;
         }
 
+        public List<PurchaseOrderDataModel> LoadAllPurchaseOrders(string Barcode)
+        {
+            var rows = LoadData<PurchaseOrderDataModel, dynamic>("dbo.ProductToOrder", new { Barcode }, "POS");
+            return rows;
+        }
+
+        public List<StockOrderDataModel> LoadAllStockPurchaseOrders()
+        {
+            var rows = LoadData<StockOrderDataModel, dynamic>("dbo.LoadStockPurchaseOrders", new { }, "POS");
+            return rows;
+        }
     }
 }

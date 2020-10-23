@@ -50,7 +50,9 @@
   <ItemGroup>
     <Compile Include="DataAccess\SQLDataAccess.cs" />
     <Compile Include="DataModel\ProductDataModel.cs" />
+    <Compile Include="DataModel\PurchaseOrderDataModel.cs" />
     <Compile Include="DataModel\QuantityDescriptionModel.cs" />
+    <Compile Include="DataModel\StockOrderDataModel.cs" />
     <Compile Include="DataModel\SupplierDataModel.cs" />
     <Compile Include="Encryptions\EncryptTo.cs" />
     <Compile Include="Helpers\Functions.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\NewUserModel.cs" />
     <Compile Include="DataModel\UserDataModel.cs" />
+    <Compile Include="Models\PurchaseOrderModel.cs" />
     <Compile Include="Models\SupplierModel.cs" />
     <Compile Include="Models\WithoutPasswordModel.cs" />
     <Compile Include="Models\WithPasswordModel.cs" />
