@@ -659,5 +659,15 @@ namespace PointOfSaleUI.UI
             terminal.ShowDialog();
             this.Close();
         }
+
+        private void btnPurchaseOrder_Click(object sender, EventArgs e)
+        {
+            OrderStock order = new OrderStock();
+            DialogResult result = order.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
+            //    this.RefreshSupplierGrid();
+            //}
+        }
     }
 }

@@ -25,6 +25,18 @@ namespace PointOfSaleUI.UI
             txtCashierName.Text = _loggedInUser.Fullname;
             txtUserRole.Text = _loggedInUser.UserRole;
             txtBarcode.Focus();
+            switch (_loggedInUser.UserRole)
+            {
+                case "Administrator":
+                    btnAdmin.Enabled = true;
+                    break;
+                case "Manager":
+                    btnAdmin.Enabled = true;
+                    break;
+                case "Cashier":
+                    btnAdmin.Enabled = false;
+                    break;
+            }
         }
 
         private void dateTimeTimer_Tick(object sender, EventArgs e)

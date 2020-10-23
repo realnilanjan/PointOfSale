@@ -56,7 +56,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(25, 23);
+            this.label21.Location = new System.Drawing.Point(25, 25);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(153, 29);
             this.label21.TabIndex = 1;
