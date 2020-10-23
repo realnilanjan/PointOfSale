@@ -1,13 +1,11 @@
 ﻿using Dapper;
+using PointOfSale.Lib.DataModel;
+using PointOfSale.Lib.Models;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Data.Entity;
-using PointOfSale.Lib.Models;
-using PointOfSale.Lib.DataModel;
 
 namespace PointOfSale.Lib.DataAccess
 {

@@ -1,10 +1,7 @@
 ﻿using PointOfSale.Lib.DataAccess;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using PointOfSale.Lib.Models;
+using System;
+using System.Windows.Forms;
 
 namespace PointOfSaleUI
 {
