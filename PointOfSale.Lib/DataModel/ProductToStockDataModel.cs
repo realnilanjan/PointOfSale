@@ -1,6 +1,6 @@
 ﻿namespace PointOfSale.Lib.DataModel
 {
-    public class PurchaseOrderDataModel
+    public class ProductToStockDataModel
     {
         public string Barcode { get; set; }
         public string Name{ get; set; }

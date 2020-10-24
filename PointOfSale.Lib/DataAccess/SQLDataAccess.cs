@@ -73,21 +73,33 @@ namespace PointOfSale.Lib.DataAccess
             return rows;
         }
 
-        public List<ProductDataModel> LoadAllStocks()
+        public List<ProductDataModel> LoadAllProducts()
         {
-            var rows = LoadData<ProductDataModel, dynamic>("dbo.LoadAllStocks", new { }, "POS");
+            var rows = LoadData<ProductDataModel, dynamic>("dbo.LoadAllProducts", new { }, "POS");
             return rows;
         }
 
-        public List<PurchaseOrderDataModel> LoadAllPurchaseOrders(string Barcode)
+        public List<OrderedStockPurchasesModel> GetOrderedStockPurchases(string Barcode)
         {
-            var rows = LoadData<PurchaseOrderDataModel, dynamic>("dbo.ProductToOrder", new { Barcode }, "POS");
+            var rows = LoadData<OrderedStockPurchasesModel, dynamic>("dbo.GetOrderedStockPurchases", new { Barcode }, "POS");
             return rows;
         }
 
-        public List<StockOrderDataModel> LoadAllStockPurchaseOrders()
+        public List<PurchaseOrdersDataModel> LoadPurchasedStock()
         {
-            var rows = LoadData<StockOrderDataModel, dynamic>("dbo.LoadStockPurchaseOrders", new { }, "POS");
+            var rows = LoadData<PurchaseOrdersDataModel, dynamic>("dbo.GetAllPurchaseOrders", new { }, "POS");
+            return rows;
+        }
+
+        public List<ProductToStockDataModel> ProductToStock(string Barcode)
+        {
+            var rows = LoadData<ProductToStockDataModel, dynamic>("dbo.ProductToStock", new { Barcode }, "POS");
+            return rows;
+        }
+
+        public List<PurchasedStockDataModel> LoadAllStockPurchased()
+        {
+            var rows = LoadData<PurchasedStockDataModel, dynamic>("dbo.GetAllPurchasedStock", new { }, "POS");
             return rows;
         }
     }
