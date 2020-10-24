@@ -19,8 +19,8 @@ namespace PointOfSaleUI.UI
         SQLDataAccess dataAccess = new SQLDataAccess();
         List<CategoryDataModel> categories = new List<CategoryDataModel>();
         List<SupplierDataModel> suppliers = new List<SupplierDataModel>();
-        List<PurchaseOrderDataModel> purchaseOrder = new List<PurchaseOrderDataModel>();
-        List<StockOrderDataModel> stockOrders = new List<StockOrderDataModel>();
+        List<ProductToStockDataModel> purchaseOrder = new List<ProductToStockDataModel>();
+        List<PurchaseOrdersDataModel> stockOrders = new List<PurchaseOrdersDataModel>();
         double totalPrice;
 
         public OrderStock()
@@ -40,7 +40,7 @@ namespace PointOfSaleUI.UI
                 if (txtBarcode.Text.Length >= 10)
                 {
                     string Barcode = txtBarcode.Text;
-                    purchaseOrder = dataAccess.LoadAllPurchaseOrders(Barcode);
+                    purchaseOrder = dataAccess.ProductToStock(Barcode);
 
                     txtProductName.Text = purchaseOrder[0].Name;
                     txtBrandName.Text = purchaseOrder[0].Brand;
@@ -72,7 +72,7 @@ namespace PointOfSaleUI.UI
                 Supplier = Convert.ToInt32(cmbCategory.SelectedValue),
                 Remarks = "Ordered"
             };
-            dataAccess.SaveData("dbo.SavePurchaseOrder", purchaseOrder, "POS");
+            dataAccess.SaveData("dbo.InsertStockPurchaseOrder", purchaseOrder, "POS");
             this.LoadPurchaseOrders();
             this.ClearAll();
             btnAdd.Enabled = true;
@@ -80,7 +80,7 @@ namespace PointOfSaleUI.UI
 
         private void LoadPurchaseOrders()
         {
-            stockOrders = dataAccess.LoadAllStockPurchaseOrders();
+            stockOrders = dataAccess.LoadPurchasedStock();
             gridStockPurchaseOrders.DataSource = stockOrders;
         }
 

@@ -50,7 +50,7 @@ namespace PointOfSaleUI.UI
                     SupplierId = Convert.ToInt32(cmbSupplier.SelectedValue),
                     IsTaxable = chkIsTaxable.Checked
                 };
-                dataAccess.SaveData("dbo.InsertStock", newProduct, "POS");
+                dataAccess.SaveData("dbo.InsertProduct", newProduct, "POS");
                 this.ClearFields();
             }
             else

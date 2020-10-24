@@ -37,7 +37,7 @@ namespace PointOfSaleUI.UI
         #region Functions
         private void RefreshDashboard()
         {
-            products = dataAccess.LoadAllStocks();
+            products = dataAccess.LoadAllProducts();
             txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, products.Count.ToString());
             var stockInfo = from sl in products
                             group sl by sl.StockInHand into g
@@ -66,7 +66,7 @@ namespace PointOfSaleUI.UI
 
         private void RefreshStockGrid()
         {
-            products = dataAccess.LoadAllStocks();
+            products = dataAccess.LoadAllProducts();
             stockGridView.DataSource = products;
             txtTotalProducts.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count);
             Functions.ProcessGridColor(stockGridView, 8);
@@ -548,7 +548,7 @@ namespace PointOfSaleUI.UI
             };
 
             
-            dataAccess.SaveData("dbo.UpdateStock", product, "POS");
+            dataAccess.SaveData("dbo.UpdateProduct", product, "POS");
             this.RefreshStockGrid();
         }
 
@@ -559,7 +559,7 @@ namespace PointOfSaleUI.UI
             {
                 int StockId = Convert.ToInt32(txtStockId.Text);
                 
-                dataAccess.SaveData("dbo.DeleteStock", new { StockId = StockId }, "POS");
+                dataAccess.SaveData("dbo.DeleteProduct", new { StockId = StockId }, "POS");
                 this.RefreshStockGrid();
             }
             else { return; }
@@ -668,6 +668,12 @@ namespace PointOfSaleUI.UI
             //{
             //    this.RefreshSupplierGrid();
             //}
+        }
+
+        private void btnViewPurchaseOrder_Click(object sender, EventArgs e)
+        {
+            PurchaseOrders purchaseorder = new PurchaseOrders(_loggedInUser);
+            DialogResult result = purchaseorder.ShowDialog();
         }
     }
 }
