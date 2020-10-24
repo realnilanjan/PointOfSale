@@ -38,11 +38,26 @@ namespace PointOfSale.Lib.Helpers
 
             foreach (DataGridViewRow rw in grid.Rows)
             {
-                if (Convert.ToInt32(rw.Cells[cellvalue].Value) < 10)
+                if (Convert.ToInt32(rw.Cells[cellvalue].Value) <= 5)
                 {
                     rw.DefaultCellStyle.BackColor = Color.Red;
-                    rw.DefaultCellStyle.SelectionBackColor = Color.Red;
+                    rw.DefaultCellStyle.SelectionBackColor = Color.FromName("Highlight");
+                    rw.DefaultCellStyle.SelectionForeColor = Color.White;
                     rw.DefaultCellStyle.ForeColor = Color.White;
+                }
+                else if (Convert.ToInt32(rw.Cells[cellvalue].Value) > 5 && Convert.ToInt32(rw.Cells[cellvalue].Value) <= 10)
+                {
+                    rw.DefaultCellStyle.BackColor = Color.LightCoral;
+                    rw.DefaultCellStyle.SelectionBackColor = Color.FromName("Highlight");
+                    rw.DefaultCellStyle.SelectionForeColor = Color.Black;
+                    rw.DefaultCellStyle.ForeColor = Color.Black;
+                }
+                else if (Convert.ToInt32(rw.Cells[cellvalue].Value) > 10 && Convert.ToInt32(rw.Cells[cellvalue].Value) <= 15)
+                {
+                    rw.DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 128);
+                    rw.DefaultCellStyle.SelectionBackColor = Color.FromName("Highlight");
+                    rw.DefaultCellStyle.SelectionForeColor = Color.Black;
+                    rw.DefaultCellStyle.ForeColor = Color.Black;
                 }
             }
         }

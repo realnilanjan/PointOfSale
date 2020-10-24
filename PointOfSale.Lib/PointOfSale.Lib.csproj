@@ -57,6 +57,7 @@
     <Compile Include="DataModel\SupplierDataModel.cs" />
     <Compile Include="Encryptions\EncryptTo.cs" />
     <Compile Include="Helpers\Functions.cs" />
+    <Compile Include="Helpers\Messages.cs" />
     <Compile Include="Models\BusinessInformation.cs" />
     <Compile Include="Models\BusinessModel.cs" />
     <Compile Include="DataModel\CategoryDataModel.cs" />
