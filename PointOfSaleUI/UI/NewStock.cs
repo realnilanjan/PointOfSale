@@ -4,6 +4,7 @@ using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
@@ -55,7 +56,7 @@ namespace PointOfSaleUI.UI
             }
             else
             {
-                MessageBox.Show(Properties.Resources.FILL_ALL_DETAILS, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Messages.DisplayMessage(Properties.Resources.FILL_ALL_DETAILS, lblWarning, Color.Red);
                 this.DialogResult = DialogResult.None;
             }
         }

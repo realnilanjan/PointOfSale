@@ -1,7 +1,9 @@
 ﻿using PointOfSale.Lib.DataAccess;
 using PointOfSale.Lib.Encryptions;
+using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
@@ -25,6 +27,13 @@ namespace PointOfSaleUI.UI
                 txtPassword.UseSystemPasswordChar = true;
                 chkShowHidePassword.Text = "Show Password";
             }
+        }
+
+        private void ClearAll()
+        {
+            txtUserName.Text = "";
+            txtPassword.Text = "";
+            txtUserName.Focus();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -62,17 +71,33 @@ namespace PointOfSaleUI.UI
                     }
                     else
                     {
-                        MessageBox.Show(Properties.Resources.USER_BLOCKED, "User Blocked", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Messages.DisplayMessage(Properties.Resources.USER_BLOCKED, lblWarning, Color.Red);
+                        this.ClearAll();
                     }
                 }
                 else
                 {
-                    MessageBox.Show(Properties.Resources.INVALID_CREDENTIALS, "Invalid Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Messages.DisplayMessage(Properties.Resources.INVALID_CREDENTIALS, lblWarning, Color.Red);
+                    this.ClearAll();
                 }
             }
             else
             {
-                MessageBox.Show(Properties.Resources.FILL_ALL_DETAILS_LOGIN, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (txtUserName.Text == "")
+                {
+                    Messages.DisplayMessage("Please provide the username.", lblWarning, Color.Red);
+                    txtUserName.Focus();
+                }
+                else if (txtPassword.Text == "")
+                {
+                    Messages.DisplayMessage("Please provide the password.", lblWarning, Color.Red);
+                    txtPassword.Focus();
+                }
+                else if ((txtUserName.Text == "") && (txtPassword.Text == ""))
+                {
+                    Messages.DisplayMessage(Properties.Resources.FILL_ALL_DETAILS_LOGIN, lblWarning, Color.Red);
+                    txtUserName.Focus();
+                }
             }
         }
 

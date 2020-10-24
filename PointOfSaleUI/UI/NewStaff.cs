@@ -1,7 +1,9 @@
 ﻿using PointOfSale.Lib.DataAccess;
 using PointOfSale.Lib.Encryptions;
+using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
@@ -43,13 +45,13 @@ namespace PointOfSaleUI.UI
                 }
                 else
                 {
-                    MessageBox.Show(Properties.Resources.PASS_DONT_MATCH, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Messages.DisplayMessage(Properties.Resources.PASS_DONT_MATCH, lblWarning, Color.Red);
                     this.DialogResult = DialogResult.None;
                 }
             }
             else
             {
-                MessageBox.Show(Properties.Resources.FILL_ALL_DETAILS, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Messages.DisplayMessage(Properties.Resources.FILL_ALL_DETAILS, lblWarning, Color.Red);
                 this.DialogResult = DialogResult.None;
             }
         }

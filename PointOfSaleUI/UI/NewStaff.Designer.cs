@@ -47,6 +47,7 @@
             this.groupBox2 = new System.Windows.Forms.Panel();
             this.chkShowPasswords = new System.Windows.Forms.CheckBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -202,6 +203,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.groupBox2.Controls.Add(this.lblWarning);
             this.groupBox2.Controls.Add(this.chkShowPasswords);
             this.groupBox2.Controls.Add(this.txtUserName);
             this.groupBox2.Controls.Add(this.label12);
@@ -214,7 +216,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(30, 204);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(322, 178);
+            this.groupBox2.Size = new System.Drawing.Size(322, 204);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.Text = "Login Information";
             // 
@@ -237,7 +239,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(213, 392);
+            this.btnAdd.Location = new System.Drawing.Point(213, 414);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(139, 38);
             this.btnAdd.TabIndex = 29;
@@ -245,13 +247,27 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 180);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(322, 24);
+            this.lblWarning.TabIndex = 38;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
+            // 
             // NewStaff
             // 
             this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(384, 451);
+            this.ClientSize = new System.Drawing.Size(384, 474);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -294,5 +310,6 @@
         private System.Windows.Forms.Panel groupBox2;
         private System.Windows.Forms.CheckBox chkShowPasswords;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblWarning;
     }
 }

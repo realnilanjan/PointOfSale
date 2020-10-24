@@ -51,6 +51,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel1.Controls.Add(this.lblWarning);
             this.panel1.Controls.Add(this.chkIsTaxable);
             this.panel1.Controls.Add(this.cmbSupplier);
             this.panel1.Controls.Add(this.cmbCategory);
@@ -281,6 +283,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Stock";
             // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 260);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(666, 35);
+            this.lblWarning.TabIndex = 36;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
+            // 
             // NewStock
             // 
             this.AcceptButton = this.btnAdd;
@@ -331,5 +347,6 @@
         private System.Windows.Forms.TextBox txtQtyDesc;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWarning;
     }
 }

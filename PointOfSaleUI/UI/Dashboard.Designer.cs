@@ -2245,6 +2245,7 @@
             this.stockGridView.Size = new System.Drawing.Size(706, 523);
             this.stockGridView.TabIndex = 27;
             this.stockGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellClick);
+            this.stockGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellDoubleClick);
             // 
             // btnAddNewStock
             // 

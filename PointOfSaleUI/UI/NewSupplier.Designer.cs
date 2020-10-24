@@ -39,6 +39,7 @@
             this.txtContact = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +74,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel1.Controls.Add(this.lblWarning);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.label2);
@@ -153,6 +155,20 @@
             this.txtName.Size = new System.Drawing.Size(229, 21);
             this.txtName.TabIndex = 4;
             // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 236);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(363, 24);
+            this.lblWarning.TabIndex = 37;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
+            // 
             // NewSupplier
             // 
             this.AcceptButton = this.btnAdd;
@@ -192,5 +208,6 @@
         private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblWarning;
     }
 }

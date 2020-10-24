@@ -52,6 +52,7 @@ namespace PointOfSaleUI.UI
         {
             users = dataAccess.LoadAllUsers();
             userGridView.DataSource = users;
+            userGridView.ClearSelection();
             txtTotalStaff.Text = String.Format(Properties.Resources.NO_OF_STAFFS, users.Count);
             this.ClearStaffValues();
         }
@@ -60,6 +61,7 @@ namespace PointOfSaleUI.UI
         {
             categories = dataAccess.LoadAllCategories();
             categoryGridView.DataSource = categories;
+            categoryGridView.ClearSelection();
             txtNumberOfCategories.Text = String.Format(Properties.Resources.NO_OF_CATEGORIES, categories.Count);
             this.ClearCategoryValues();
         }
@@ -68,6 +70,7 @@ namespace PointOfSaleUI.UI
         {
             products = dataAccess.LoadAllProducts();
             stockGridView.DataSource = products;
+            stockGridView.ClearSelection();
             txtTotalProducts.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count);
             Functions.ProcessGridColor(stockGridView, 8);
             this.ClearStockValues();
@@ -77,6 +80,7 @@ namespace PointOfSaleUI.UI
         {
             suppliers = dataAccess.LoadAllSuppliers();
             supplierGridView.DataSource = suppliers;
+            supplierGridView.ClearSelection();
             txtTotalSuppliers.Text = String.Format(Properties.Resources.NO_OF_SUPPLIERS, suppliers.Count);
             this.ClearSupplierValues();
         }
@@ -644,6 +648,7 @@ namespace PointOfSaleUI.UI
                     stockGridView.DataSource = NameResult;
                     break;
             }
+            Functions.ProcessGridColor(stockGridView, 8);
         }
 
         private void txtSearchSupplier_TextChanged(object sender, EventArgs e)
@@ -664,16 +669,25 @@ namespace PointOfSaleUI.UI
         {
             OrderStock order = new OrderStock();
             DialogResult result = order.ShowDialog();
-            //if (result == DialogResult.OK)
-            //{
-            //    this.RefreshSupplierGrid();
-            //}
         }
 
         private void btnViewPurchaseOrder_Click(object sender, EventArgs e)
         {
-            PurchaseOrders purchaseorder = new PurchaseOrders(_loggedInUser);
-            DialogResult result = purchaseorder.ShowDialog();
+            using (PurchaseOrders purchaseorder = new PurchaseOrders(_loggedInUser))
+            {
+                purchaseorder.FormClosed += new FormClosedEventHandler(PurchaseOrderClosed);
+                purchaseorder.ShowDialog();
+            }
+        }
+
+        private void PurchaseOrderClosed(object sender, FormClosedEventArgs e)
+        {
+            this.RefreshStockGrid();
+        }
+
+        private void stockGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Clipboard.SetText(stockGridView[e.ColumnIndex, e.RowIndex].Value.ToString());
         }
     }
 }

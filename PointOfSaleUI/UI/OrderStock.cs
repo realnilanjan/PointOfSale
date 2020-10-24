@@ -4,12 +4,7 @@ using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
@@ -28,72 +23,117 @@ namespace PointOfSaleUI.UI
             InitializeComponent();
             categories = dataAccess.LoadAllCategories();
             suppliers = dataAccess.LoadAllSuppliers();
-            Functions.FillCombo(categories, cmbCategory);
             Functions.FillCombo(suppliers, cmbSupplier);
             this.LoadPurchaseOrders();
-        }
-
-        private void txtBarcode_TextChanged(object sender, EventArgs e)
-        {
-            if (txtBarcode.Text != "")
-            {
-                if (txtBarcode.Text.Length >= 10)
-                {
-                    string Barcode = txtBarcode.Text;
-                    purchaseOrder = dataAccess.ProductToStock(Barcode);
-
-                    txtProductName.Text = purchaseOrder[0].Name;
-                    txtBrandName.Text = purchaseOrder[0].Brand;
-                    txtUnitPrice.Text = purchaseOrder[0].StockPrice.ToString("N2");
-                    cmbCategory.SelectedValue = purchaseOrder[0].CategoryId;
-                    cmbSupplier.SelectedValue = purchaseOrder[0].SupplierId;
-                }
-            }
-        }
-
-        private void txtOrderQty_TextChanged(object sender, EventArgs e)
-        {
-            double price = double.Parse(txtUnitPrice.Text.ToString());
-            int qty = int.Parse(txtOrderQty.Text.ToString());
-            totalPrice = price * qty;
-
-            txtUnitPrice.Text = totalPrice.ToString("N2");
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            btnAdd.Enabled = false;
-
-            PurchaseOrderModel purchaseOrder = new PurchaseOrderModel
-            {
-                Barcode = txtBarcode.Text,
-                OrderQuantity = Convert.ToInt32(txtOrderQty.Text),
-                OrderTotal = Convert.ToDecimal(txtUnitPrice.Text),
-                Supplier = Convert.ToInt32(cmbCategory.SelectedValue),
-                Remarks = "Ordered"
-            };
-            dataAccess.SaveData("dbo.InsertStockPurchaseOrder", purchaseOrder, "POS");
-            this.LoadPurchaseOrders();
-            this.ClearAll();
-            btnAdd.Enabled = true;
         }
 
         private void LoadPurchaseOrders()
         {
             stockOrders = dataAccess.LoadPurchasedStock();
-            gridStockPurchaseOrders.DataSource = stockOrders;
+            if (stockOrders.Count > 0)
+            {
+                gridStockPurchaseOrders.Visible = true;
+                gridStockPurchaseOrders.DataSource = stockOrders;
+            }
+            else
+            {
+                gridStockPurchaseOrders.Visible = false;
+            }
+        }
+
+        private void txtBarcode_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtBarcode.Text != "")
+                {
+                    if ((txtBarcode.Text.Length >= 10) || (txtBarcode.Text.Length <= 10))
+                    {
+                        string Barcode = txtBarcode.Text;
+                        purchaseOrder = dataAccess.ProductToStock(Barcode);
+                        if (purchaseOrder.Count > 0)
+                        {
+                            txtProductName.Text = purchaseOrder[0].Name;
+                            txtBrandName.Text = purchaseOrder[0].Brand;
+                            txtUnitPrice.Text = purchaseOrder[0].StockPrice.ToString("N2");
+                            cmbSupplier.SelectedValue = purchaseOrder[0].SupplierId;
+                            double price = double.Parse(txtUnitPrice.Text.ToString());
+                            int qty = int.Parse(txtOrderQty.Text.ToString());
+                            totalPrice = price * qty;
+                            txtSubtotal.Text = totalPrice.ToString("N2");
+                            btnAdd.Enabled = true;
+                        }
+                        else
+                        {
+                            btnAdd.Enabled = false;
+                        }
+                    }
+                }
+                else
+                {
+                    btnAdd.Enabled = false;
+                }
+            }
+            catch (Exception)
+            {
+                Messages.DisplayMessage("This product is not found in database.", lblWarning, Color.Red);
+                this.ClearAll();
+            }
+        }
+
+        private void txtOrderQty_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double price = double.Parse(txtUnitPrice.Text.ToString());
+                int qty = int.Parse(txtOrderQty.Text.ToString());
+                totalPrice = price * qty;
+                txtSubtotal.Text = totalPrice.ToString("N2");
+            }
+            catch (Exception)
+            {
+                txtOrderQty.Text = "1";
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            btnAdd.Enabled = false;
+            PurchaseOrderModel purchaseOrder = new PurchaseOrderModel
+            {
+                Barcode = txtBarcode.Text,
+                OrderQuantity = Convert.ToInt32(txtOrderQty.Text),
+                OrderTotal = Convert.ToDecimal(txtSubtotal.Text),
+                Remarks = "Ordered"
+            };
+            dataAccess.SaveData("dbo.InsertStockPurchaseOrder", purchaseOrder, "POS");
+            Messages.DisplayMessage("Purchase order for the product is placed.", lblWarning, Color.LimeGreen);
+            this.LoadPurchaseOrders();
+            this.ClearAll();
+            btnAdd.Enabled = true;
         }
 
         private void ClearAll()
         {
             txtBarcode.Text = "";
+
+            txtProductName.ReadOnly = false;
+            txtBrandName.ReadOnly = false;
+            txtUnitPrice.ReadOnly = false;
+            txtSubtotal.ReadOnly = false;
+
             txtProductName.Text = "";
             txtBrandName.Text = "";
             txtUnitPrice.Text = "0.00";
             txtOrderQty.Text = "1";
-            cmbCategory.SelectedIndex = 0;
+            txtSubtotal.Text = "0.00";
             cmbSupplier.SelectedIndex = 0;
             txtBarcode.Focus();
+        }
+
+        private void gridStockPurchaseOrders_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Clipboard.SetText(gridStockPurchaseOrders[e.ColumnIndex, e.RowIndex].Value.ToString());
         }
     }
 }

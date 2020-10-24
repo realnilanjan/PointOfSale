@@ -38,6 +38,7 @@
             this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
             this.chkShowHidePassword = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblWarning = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,6 +156,21 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 365);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(579, 35);
+            this.lblWarning.TabIndex = 36;
+            this.lblWarning.Text = "Warning";
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
+            // 
             // Login
             // 
             this.AcceptButton = this.btnLogin;
@@ -162,6 +178,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(579, 400);
+            this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lnkForgotPassword);
             this.Controls.Add(this.chkShowHidePassword);
@@ -196,5 +213,6 @@
         private System.Windows.Forms.LinkLabel lnkForgotPassword;
         private System.Windows.Forms.CheckBox chkShowHidePassword;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblWarning;
     }
 }
