@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[InsertStock]
+﻿CREATE PROCEDURE [dbo].[InsertProduct]
 	@Barcode nvarchar(MAX),
 	@QtyDescId int,
 	@QtyDescription nvarchar(50),

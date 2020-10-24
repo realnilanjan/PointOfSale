@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[LoadAllStocks]
+﻿CREATE PROCEDURE [dbo].[LoadAllProducts]
 AS
 BEGIN
 	SET NOCOUNT ON;

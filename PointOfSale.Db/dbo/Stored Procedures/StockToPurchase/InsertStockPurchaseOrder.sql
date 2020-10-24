@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[InsertOrder]
+﻿CREATE PROCEDURE [dbo].[InsertStockPurchaseOrder]
 	@Barcode nvarchar(MAX),
 	@OrderQuantity int,
 	@OrderTotal money,
