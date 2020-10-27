@@ -5,5 +5,50 @@
     <Setting Name="WizardStep" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
+    <Setting Name="DeliveryRate" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">49.00</Value>
+    </Setting>
+    <Setting Name="ZeroToFiveBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Red</Value>
+    </Setting>
+    <Setting Name="ZeroToFiveRowSelectionBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Highlight</Value>
+    </Setting>
+    <Setting Name="ZeroToFiveRowRowSelectionForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="ZeroToFiveRowSelectionForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="FiveToTenBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LightCoral</Value>
+    </Setting>
+    <Setting Name="FiveToTenRowSelectionBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Highlight</Value>
+    </Setting>
+    <Setting Name="FiveToTenRowRowSelectionForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="FiveToTenRowSelectionForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="TenToFifteenBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">255, 255, 128</Value>
+    </Setting>
+    <Setting Name="TenToFifteenRowSelectionBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Highlight</Value>
+    </Setting>
+    <Setting Name="TenToFifteenRowRowSelectionForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="TenToFifteenRowSelectionForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="TaxRateSelected" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TaxRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

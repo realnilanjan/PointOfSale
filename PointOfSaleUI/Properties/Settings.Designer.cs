@@ -34,5 +34,185 @@ namespace PointOfSaleUI.Properties {
                 this["WizardStep"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("49.00")]
+        public decimal DeliveryRate {
+            get {
+                return ((decimal)(this["DeliveryRate"]));
+            }
+            set {
+                this["DeliveryRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Red")]
+        public global::System.Drawing.Color ZeroToFiveBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["ZeroToFiveBackColor"]));
+            }
+            set {
+                this["ZeroToFiveBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Highlight")]
+        public global::System.Drawing.Color ZeroToFiveRowSelectionBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["ZeroToFiveRowSelectionBackColor"]));
+            }
+            set {
+                this["ZeroToFiveRowSelectionBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color ZeroToFiveRowRowSelectionForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["ZeroToFiveRowRowSelectionForeColor"]));
+            }
+            set {
+                this["ZeroToFiveRowRowSelectionForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color ZeroToFiveRowSelectionForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["ZeroToFiveRowSelectionForeColor"]));
+            }
+            set {
+                this["ZeroToFiveRowSelectionForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightCoral")]
+        public global::System.Drawing.Color FiveToTenBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["FiveToTenBackColor"]));
+            }
+            set {
+                this["FiveToTenBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Highlight")]
+        public global::System.Drawing.Color FiveToTenRowSelectionBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["FiveToTenRowSelectionBackColor"]));
+            }
+            set {
+                this["FiveToTenRowSelectionBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color FiveToTenRowRowSelectionForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["FiveToTenRowRowSelectionForeColor"]));
+            }
+            set {
+                this["FiveToTenRowRowSelectionForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color FiveToTenRowSelectionForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["FiveToTenRowSelectionForeColor"]));
+            }
+            set {
+                this["FiveToTenRowSelectionForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 255, 128")]
+        public global::System.Drawing.Color TenToFifteenBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["TenToFifteenBackColor"]));
+            }
+            set {
+                this["TenToFifteenBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Highlight")]
+        public global::System.Drawing.Color TenToFifteenRowSelectionBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["TenToFifteenRowSelectionBackColor"]));
+            }
+            set {
+                this["TenToFifteenRowSelectionBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color TenToFifteenRowRowSelectionForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["TenToFifteenRowRowSelectionForeColor"]));
+            }
+            set {
+                this["TenToFifteenRowRowSelectionForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color TenToFifteenRowSelectionForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["TenToFifteenRowSelectionForeColor"]));
+            }
+            set {
+                this["TenToFifteenRowSelectionForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int TaxRateSelected {
+            get {
+                return ((int)(this["TaxRateSelected"]));
+            }
+            set {
+                this["TaxRateSelected"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TaxRate {
+            get {
+                return ((int)(this["TaxRate"]));
+            }
+            set {
+                this["TaxRate"] = value;
+            }
+        }
     }
 }
