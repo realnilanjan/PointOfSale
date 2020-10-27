@@ -6,6 +6,7 @@ using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -72,7 +73,7 @@ namespace PointOfSaleUI.UI
             stockGridView.DataSource = products;
             stockGridView.ClearSelection();
             txtTotalProducts.Text = String.Format(Properties.Resources.NO_OF_PRODUCTS, products.Count);
-            Functions.ProcessGridColor(stockGridView, 8);
+            Helpers.Functions.ProcessGridColor(stockGridView, 8);
             this.ClearStockValues();
         }
 
@@ -83,6 +84,28 @@ namespace PointOfSaleUI.UI
             supplierGridView.ClearSelection();
             txtTotalSuppliers.Text = String.Format(Properties.Resources.NO_OF_SUPPLIERS, suppliers.Count);
             this.ClearSupplierValues();
+        }
+
+        private void RefreshSettings()
+        {
+            row11.BackColor = Properties.Settings.Default.ZeroToFiveBackColor;
+            row12.BackColor = Properties.Settings.Default.ZeroToFiveRowSelectionBackColor;
+            row13.BackColor = Properties.Settings.Default.ZeroToFiveRowRowSelectionForeColor;
+            row14.BackColor = Properties.Settings.Default.ZeroToFiveRowSelectionForeColor;
+
+            row21.BackColor = Properties.Settings.Default.FiveToTenBackColor;
+            row22.BackColor = Properties.Settings.Default.FiveToTenRowSelectionBackColor;
+            row23.BackColor = Properties.Settings.Default.FiveToTenRowRowSelectionForeColor;
+            row24.BackColor = Properties.Settings.Default.FiveToTenRowSelectionForeColor;
+
+            row31.BackColor = Properties.Settings.Default.TenToFifteenBackColor;
+            row32.BackColor = Properties.Settings.Default.TenToFifteenRowSelectionBackColor;
+            row33.BackColor = Properties.Settings.Default.TenToFifteenRowRowSelectionForeColor;
+            row34.BackColor = Properties.Settings.Default.TenToFifteenRowSelectionForeColor;
+
+            cmbTaxRate.SelectedIndex = Properties.Settings.Default.TaxRateSelected;
+
+            //TODO: Load Settings Here
         }
 
         private void ClearStaffValues()
@@ -130,6 +153,7 @@ namespace PointOfSaleUI.UI
             Functions.FillCombo(productSuppliers, cmbSupplier);
             btnUpdateStock.Enabled = false;
             btnDeleteStock.Enabled = false;
+            panel1.Enabled = false;
         }
 
         private void ClearSupplierValues()
@@ -146,6 +170,9 @@ namespace PointOfSaleUI.UI
             categoryPanel.Visible = false;
             stockPanel.Visible = false;
             supplierPanel.Visible = false;
+            settingsPanel.Visible = false;
+
+
 
             //Refresh Data
             this.RefreshDashboard();
@@ -162,6 +189,7 @@ namespace PointOfSaleUI.UI
             categoryPanel.Visible = false;
             supplierPanel.Visible = false;
             stockPanel.Visible = false;
+            settingsPanel.Visible = false;
 
 
 
@@ -179,6 +207,7 @@ namespace PointOfSaleUI.UI
             staffPanel.Visible = false;
             supplierPanel.Visible = false;
             stockPanel.Visible = false;
+            settingsPanel.Visible = false;
 
 
 
@@ -197,6 +226,7 @@ namespace PointOfSaleUI.UI
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
             supplierPanel.Visible = false;
+            settingsPanel.Visible = false;
 
 
             //Refresh Data
@@ -213,11 +243,28 @@ namespace PointOfSaleUI.UI
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
             stockPanel.Visible = false;
-
+            settingsPanel.Visible = false;
 
 
             //Refresh Data
             this.RefreshSupplierGrid();
+        }
+
+        private void LoadSettingsPanel()
+        {
+            settingsPanel.Visible = true;
+
+
+            //Make all other panel invisible
+            dashPanel.Visible = false;
+            staffPanel.Visible = false;
+            categoryPanel.Visible = false;
+            stockPanel.Visible = false;
+            supplierPanel.Visible = false;
+
+
+            //Refresh Data
+            this.RefreshSettings();
         }
 
         #endregion
@@ -511,6 +558,7 @@ namespace PointOfSaleUI.UI
 
         private void stockGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            panel1.Enabled = true;
             btnUpdateStock.Enabled = true;
             btnDeleteStock.Enabled = true;
 
@@ -648,7 +696,7 @@ namespace PointOfSaleUI.UI
                     stockGridView.DataSource = NameResult;
                     break;
             }
-            Functions.ProcessGridColor(stockGridView, 8);
+            Helpers.Functions.ProcessGridColor(stockGridView, 8);
         }
 
         private void txtSearchSupplier_TextChanged(object sender, EventArgs e)
@@ -688,6 +736,171 @@ namespace PointOfSaleUI.UI
         private void stockGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Clipboard.SetText(stockGridView[e.ColumnIndex, e.RowIndex].Value.ToString());
+        }
+
+        //Settings Panel
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            this.LoadSettingsPanel();
+        }
+
+        private void row11_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row11.BackColor = resultColor;
+                Properties.Settings.Default.ZeroToFiveBackColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row12_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row12.BackColor = resultColor;
+                Properties.Settings.Default.ZeroToFiveRowSelectionBackColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row13_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row13.BackColor = resultColor;
+                Properties.Settings.Default.ZeroToFiveRowRowSelectionForeColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row14_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row14.BackColor = resultColor;
+                Properties.Settings.Default.ZeroToFiveRowSelectionForeColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row21_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row21.BackColor = resultColor;
+                Properties.Settings.Default.FiveToTenBackColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row22_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row22.BackColor = resultColor;
+                Properties.Settings.Default.FiveToTenRowSelectionBackColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row23_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row23.BackColor = resultColor;
+                Properties.Settings.Default.FiveToTenRowRowSelectionForeColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row24_Click(object sender, EventArgs e)
+        {
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row24.BackColor = resultColor;
+                Properties.Settings.Default.FiveToTenRowSelectionForeColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row31_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row31.BackColor = resultColor;
+                Properties.Settings.Default.TenToFifteenBackColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row32_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row32.BackColor = resultColor;
+                Properties.Settings.Default.TenToFifteenRowSelectionBackColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row33_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row33.BackColor = resultColor;
+                Properties.Settings.Default.TenToFifteenRowRowSelectionForeColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void row34_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = stockColorDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Color resultColor = stockColorDialog.Color;
+                row34.BackColor = resultColor;
+                Properties.Settings.Default.TenToFifteenRowSelectionForeColor = resultColor;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void cmbTaxRate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblTaxRate.Text = cmbTaxRate.GetItemText(cmbTaxRate.SelectedItem);
+            Properties.Settings.Default.TaxRateSelected = cmbTaxRate.SelectedIndex;
+            string taxratepercent = cmbTaxRate.GetItemText(cmbTaxRate.SelectedItem);
+            string[] percentremoved = taxratepercent.Split('%');
+            int TaxRate = Convert.ToInt32(percentremoved[0]);
+            Properties.Settings.Default.TaxRate = TaxRate;
+            Properties.Settings.Default.Save();
         }
     }
 }

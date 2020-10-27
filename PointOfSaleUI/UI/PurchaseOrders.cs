@@ -15,7 +15,7 @@ namespace PointOfSaleUI.UI
         private readonly LoggedInUserModel loggedInUser;
         List<OrderedStockPurchasesModel> purchaseOrders = new List<OrderedStockPurchasesModel>();
         List<PurchasedStockDataModel> stockIns = new List<PurchasedStockDataModel>();
-        
+
         public PurchaseOrders(LoggedInUserModel loggedInUser)
         {
             InitializeComponent();
@@ -35,6 +35,8 @@ namespace PointOfSaleUI.UI
             {
                 gridReceivedOrders.Visible = false;
             }
+            gridReceivedOrders.ClearSelection();
+            btnDeleteStock.Enabled = false;
         }
 
         private void txtBarcode_TextChanged(object sender, EventArgs e)
@@ -101,10 +103,43 @@ namespace PointOfSaleUI.UI
             }
             txtBarcode.Text = "";
             txtBarcode.Focus();
+            gridPurchaseOrders.DataSource = null;
+            gridPurchaseOrders.Visible = false;
             Messages.DisplayMessage("Stocks purchased are received.", lblWarning, Color.LimeGreen);
             this.LoadAllPurchasedStocks();
         }
 
-       
+        private void btnDeleteStock_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you really want to delete the selected stocks?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                foreach (DataGridViewRow r in gridReceivedOrders.Rows)
+                {
+                    if (r.Selected == true)
+                    {
+                        int StockinId = Convert.ToInt32(r.Cells[0].Value);
+                        dataAccess.SaveData("dbo.DeletePurchasedStock", new { StockinId = StockinId }, "POS");
+
+                        DeleteReceivedStock receivedStock = new DeleteReceivedStock
+                        {
+                            Barcode = r.Cells[1].Value.ToString(),
+                            ReceivedQty = Convert.ToInt32(r.Cells[3].Value)
+                        };
+                        dataAccess.SaveData("dbo.DeleteStockPurchased", receivedStock, "POS");
+                    }
+                }
+                this.LoadAllPurchasedStocks();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void gridReceivedOrders_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnDeleteStock.Enabled = true;
+        }
     }
 }

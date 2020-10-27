@@ -92,6 +92,7 @@
             this.gridReceivedOrders.Size = new System.Drawing.Size(743, 230);
             this.gridReceivedOrders.TabIndex = 28;
             this.gridReceivedOrders.Visible = false;
+            this.gridReceivedOrders.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReceivedOrders_CellClick);
             // 
             // label1
             // 
@@ -178,6 +179,7 @@
             this.gridPurchaseOrders.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.gridPurchaseOrders.HeaderForeColor = System.Drawing.Color.White;
             this.gridPurchaseOrders.Location = new System.Drawing.Point(29, 102);
+            this.gridPurchaseOrders.MultiSelect = false;
             this.gridPurchaseOrders.Name = "gridPurchaseOrders";
             this.gridPurchaseOrders.ReadOnly = true;
             this.gridPurchaseOrders.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -232,7 +234,6 @@
             this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.lblWarning.Size = new System.Drawing.Size(800, 35);
             this.lblWarning.TabIndex = 35;
-            this.lblWarning.Text = "Warning";
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblWarning.Visible = false;
             // 
@@ -250,6 +251,7 @@
             this.btnDeleteStock.TabIndex = 36;
             this.btnDeleteStock.Text = "Delete Received Stock";
             this.btnDeleteStock.UseVisualStyleBackColor = false;
+            this.btnDeleteStock.Click += new System.EventHandler(this.btnDeleteStock_Click);
             // 
             // PurchaseOrders
             // 

@@ -39,6 +39,8 @@ namespace PointOfSaleUI.UI
             {
                 gridStockPurchaseOrders.Visible = false;
             }
+            btnDeleteStock.Enabled = false;
+            gridStockPurchaseOrders.ClearSelection();
         }
 
         private void txtBarcode_TextChanged(object sender, EventArgs e)
@@ -134,6 +136,32 @@ namespace PointOfSaleUI.UI
         private void gridStockPurchaseOrders_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Clipboard.SetText(gridStockPurchaseOrders[e.ColumnIndex, e.RowIndex].Value.ToString());
+        }
+
+        private void btnDeleteStock_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you really want to delete the selected stocks?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                foreach (DataGridViewRow r in gridStockPurchaseOrders.Rows)
+                {
+                    if (r.Selected == true)
+                    {
+                        int Id = Convert.ToInt32(r.Cells[0].Value);
+                        dataAccess.SaveData("dbo.DeletePurchaseOrder", new { Id = Id }, "POS");
+                    }
+                }
+                this.LoadPurchaseOrders();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void gridStockPurchaseOrders_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnDeleteStock.Enabled = true;
         }
     }
 }

@@ -15,6 +15,11 @@ namespace PointOfSaleUI.UI
     {
         private readonly LoggedInUserModel _loggedInUser;
 
+
+
+        private decimal DeliveryRate = Properties.Settings.Default.DeliveryRate;
+        private decimal Total;
+
         public Terminal(LoggedInUserModel loggedInUser)
         {
             InitializeComponent();
@@ -59,6 +64,42 @@ namespace PointOfSaleUI.UI
             else
             {
                 btnClearCode.Enabled = false;
+            }
+        }
+
+        private void txtCouponCode_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCouponCode.Text.Length == 8)
+            {
+                btnApplyCoupon.Enabled = true;
+            }
+            else
+            {
+                btnApplyCoupon.Enabled = false;
+            }
+        }
+
+        private void chkDelivery_OnChange(object sender, EventArgs e)
+        {
+            if (chkDelivery.Checked == true)
+            {
+                lblDelivery.ForeColor = Color.White;
+                lblDeliveryRupee.ForeColor = Color.White;
+                txtDelivery.ForeColor = Color.White;
+                txtDelivery.Text = DeliveryRate.ToString("N2");
+                Total += DeliveryRate;
+                txtTotal.Text = Total.ToString("N2");
+
+                //TODO: Get Delivery Rates and set to txtDelivery and count total
+            }
+            else
+            {
+                lblDelivery.ForeColor = Color.Gray;
+                lblDeliveryRupee.ForeColor = Color.Gray;
+                txtDelivery.ForeColor = Color.Gray;
+                txtDelivery.Text = "0.00";
+                Total -= DeliveryRate;
+                txtTotal.Text = Total.ToString("N2");
             }
         }
     }
