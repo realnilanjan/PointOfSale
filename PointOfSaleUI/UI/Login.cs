@@ -72,12 +72,14 @@ namespace PointOfSaleUI.UI
                     else
                     {
                         Messages.DisplayMessage(Properties.Resources.USER_BLOCKED, lblWarning, Color.Red);
+                        Functions.DoErrorShake(this);
                         this.ClearAll();
                     }
                 }
                 else
                 {
                     Messages.DisplayMessage(Properties.Resources.INVALID_CREDENTIALS, lblWarning, Color.Red);
+                    Functions.DoErrorShake(this);
                     this.ClearAll();
                 }
             }
@@ -86,16 +88,19 @@ namespace PointOfSaleUI.UI
                 if (txtUserName.Text == "")
                 {
                     Messages.DisplayMessage("Please provide the username.", lblWarning, Color.Red);
+                    Functions.DoErrorShake(this);
                     txtUserName.Focus();
                 }
                 else if (txtPassword.Text == "")
                 {
                     Messages.DisplayMessage("Please provide the password.", lblWarning, Color.Red);
+                    Functions.DoErrorShake(this);
                     txtPassword.Focus();
                 }
                 else if ((txtUserName.Text == "") && (txtPassword.Text == ""))
                 {
                     Messages.DisplayMessage(Properties.Resources.FILL_ALL_DETAILS_LOGIN, lblWarning, Color.Red);
+                    Functions.DoErrorShake(this);
                     txtUserName.Focus();
                 }
             }

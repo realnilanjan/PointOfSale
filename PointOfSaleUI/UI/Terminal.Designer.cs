@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Terminal));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.Panel();
             this.txtBusinessName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbl1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -68,16 +69,25 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.chkDelivery = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.txtTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtDelivery = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblDelivery = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtDiscount = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel20 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtTax = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblDeliveryRupee = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel21 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel28 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtSubTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtTotalItems = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel19 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.gridCart = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtDate = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -94,20 +104,14 @@
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnApplyCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtCouponCode = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel25 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel26 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtCouponCode = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.btnApplyCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.lblDeliveryRupee = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblDelivery = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtDelivery = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.chkDelivery = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtSubTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel28 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.gridCart = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnSaveDraft = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnOpenDrafts = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.controlTimer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -116,9 +120,9 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCart)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCart)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -252,7 +256,7 @@
             this.panel3.Controls.Add(this.bunifuCustomLabel7);
             this.panel3.Location = new System.Drawing.Point(12, 64);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1125, 151);
+            this.panel3.Size = new System.Drawing.Size(1125, 159);
             this.panel3.TabIndex = 0;
             // 
             // btnClearCode
@@ -262,7 +266,7 @@
             this.btnClearCode.Enabled = false;
             this.btnClearCode.Image = global::PointOfSaleUI.Properties.Resources.close;
             this.btnClearCode.ImageActive = null;
-            this.btnClearCode.Location = new System.Drawing.Point(971, 46);
+            this.btnClearCode.Location = new System.Drawing.Point(971, 50);
             this.btnClearCode.Name = "btnClearCode";
             this.btnClearCode.Size = new System.Drawing.Size(40, 40);
             this.btnClearCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -273,48 +277,49 @@
             // 
             // txtTotalQtyAmount
             // 
-            this.txtTotalQtyAmount.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtTotalQtyAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotalQtyAmount.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtTotalQtyAmount.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalQtyAmount.Location = new System.Drawing.Point(1024, 109);
+            this.txtTotalQtyAmount.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalQtyAmount.Location = new System.Drawing.Point(991, 119);
             this.txtTotalQtyAmount.Name = "txtTotalQtyAmount";
             this.txtTotalQtyAmount.ReadOnly = true;
-            this.txtTotalQtyAmount.Size = new System.Drawing.Size(88, 40);
+            this.txtTotalQtyAmount.Size = new System.Drawing.Size(121, 33);
             this.txtTotalQtyAmount.TabIndex = 14;
             this.txtTotalQtyAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUnitPrice
             // 
-            this.txtUnitPrice.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUnitPrice.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtUnitPrice.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitPrice.Location = new System.Drawing.Point(867, 109);
+            this.txtUnitPrice.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitPrice.Location = new System.Drawing.Point(786, 119);
             this.txtUnitPrice.Name = "txtUnitPrice";
             this.txtUnitPrice.ReadOnly = true;
-            this.txtUnitPrice.Size = new System.Drawing.Size(88, 40);
+            this.txtUnitPrice.Size = new System.Drawing.Size(121, 33);
             this.txtUnitPrice.TabIndex = 12;
             this.txtUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUnitQuantity
             // 
-            this.txtUnitQuantity.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtUnitQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUnitQuantity.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtUnitQuantity.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitQuantity.Location = new System.Drawing.Point(961, 109);
+            this.txtUnitQuantity.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitQuantity.Location = new System.Drawing.Point(913, 119);
             this.txtUnitQuantity.Name = "txtUnitQuantity";
             this.txtUnitQuantity.ReadOnly = true;
-            this.txtUnitQuantity.Size = new System.Drawing.Size(57, 40);
+            this.txtUnitQuantity.Size = new System.Drawing.Size(72, 33);
             this.txtUnitQuantity.TabIndex = 13;
             this.txtUnitQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtStockId
             // 
+            this.txtStockId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtStockId.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtStockId.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStockId.Location = new System.Drawing.Point(13, 109);
+            this.txtStockId.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStockId.Location = new System.Drawing.Point(13, 119);
             this.txtStockId.Name = "txtStockId";
             this.txtStockId.ReadOnly = true;
-            this.txtStockId.Size = new System.Drawing.Size(95, 40);
+            this.txtStockId.Size = new System.Drawing.Size(95, 33);
             this.txtStockId.TabIndex = 10;
             this.txtStockId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -323,22 +328,24 @@
             this.txtItemQuantity.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtItemQuantity.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtItemQuantity.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtItemQuantity.Location = new System.Drawing.Point(1017, 46);
+            this.txtItemQuantity.Location = new System.Drawing.Point(1017, 50);
             this.txtItemQuantity.Name = "txtItemQuantity";
             this.txtItemQuantity.Size = new System.Drawing.Size(95, 40);
             this.txtItemQuantity.TabIndex = 4;
             this.txtItemQuantity.Text = "1";
             this.txtItemQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtItemQuantity.TextChanged += new System.EventHandler(this.txtItemQuantity_TextChanged);
             // 
             // txtProductDescription
             // 
-            this.txtProductDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProductDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProductDescription.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtProductDescription.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductDescription.Location = new System.Drawing.Point(114, 109);
+            this.txtProductDescription.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductDescription.Location = new System.Drawing.Point(114, 119);
             this.txtProductDescription.Name = "txtProductDescription";
             this.txtProductDescription.ReadOnly = true;
-            this.txtProductDescription.Size = new System.Drawing.Size(747, 40);
+            this.txtProductDescription.Size = new System.Drawing.Size(666, 33);
             this.txtProductDescription.TabIndex = 11;
             // 
             // txtBarcode
@@ -346,7 +353,7 @@
             this.txtBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBarcode.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtBarcode.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarcode.Location = new System.Drawing.Point(13, 46);
+            this.txtBarcode.Location = new System.Drawing.Point(13, 50);
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Size = new System.Drawing.Size(959, 40);
             this.txtBarcode.TabIndex = 3;
@@ -354,11 +361,11 @@
             // 
             // bunifuCustomLabel12
             // 
-            this.bunifuCustomLabel12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bunifuCustomLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(1021, 90);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(988, 100);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
             this.bunifuCustomLabel12.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(48, 16);
@@ -368,10 +375,11 @@
             // 
             // bunifuCustomLabel14
             // 
+            this.bunifuCustomLabel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuCustomLabel14.AutoSize = true;
             this.bunifuCustomLabel14.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel14.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(111, 90);
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(111, 100);
             this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
             this.bunifuCustomLabel14.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel14.Size = new System.Drawing.Size(63, 16);
@@ -381,10 +389,11 @@
             // 
             // bunifuCustomLabel13
             // 
+            this.bunifuCustomLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(10, 90);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(10, 100);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
             this.bunifuCustomLabel13.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel13.Size = new System.Drawing.Size(46, 16);
@@ -394,11 +403,11 @@
             // 
             // bunifuCustomLabel11
             // 
-            this.bunifuCustomLabel11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bunifuCustomLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(864, 90);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(783, 100);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(55, 16);
@@ -408,11 +417,11 @@
             // 
             // bunifuCustomLabel10
             // 
-            this.bunifuCustomLabel10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bunifuCustomLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(958, 90);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(910, 100);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(25, 16);
@@ -426,7 +435,7 @@
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(1014, 23);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(1014, 27);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(50, 16);
@@ -603,6 +612,69 @@
             this.panel6.Size = new System.Drawing.Size(396, 236);
             this.panel6.TabIndex = 29;
             // 
+            // chkDelivery
+            // 
+            this.chkDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.chkDelivery.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.chkDelivery.Checked = false;
+            this.chkDelivery.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chkDelivery.ForeColor = System.Drawing.Color.White;
+            this.chkDelivery.Location = new System.Drawing.Point(23, 165);
+            this.chkDelivery.Name = "chkDelivery";
+            this.chkDelivery.Size = new System.Drawing.Size(20, 20);
+            this.chkDelivery.TabIndex = 9;
+            this.chkDelivery.OnChange += new System.EventHandler(this.chkDelivery_OnChange);
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.ForeColor = System.Drawing.Color.White;
+            this.txtTotal.Location = new System.Drawing.Point(256, 193);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.txtTotal.Size = new System.Drawing.Size(111, 25);
+            this.txtTotal.TabIndex = 8;
+            this.txtTotal.Text = "0.00";
+            this.txtTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // bunifuCustomLabel27
+            // 
+            this.bunifuCustomLabel27.AutoSize = true;
+            this.bunifuCustomLabel27.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel27.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel27.Location = new System.Drawing.Point(78, 193);
+            this.bunifuCustomLabel27.Name = "bunifuCustomLabel27";
+            this.bunifuCustomLabel27.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.bunifuCustomLabel27.Size = new System.Drawing.Size(53, 25);
+            this.bunifuCustomLabel27.TabIndex = 6;
+            this.bunifuCustomLabel27.Text = "Total:";
+            this.bunifuCustomLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtDelivery
+            // 
+            this.txtDelivery.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDelivery.ForeColor = System.Drawing.Color.Gray;
+            this.txtDelivery.Location = new System.Drawing.Point(256, 161);
+            this.txtDelivery.Name = "txtDelivery";
+            this.txtDelivery.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.txtDelivery.Size = new System.Drawing.Size(111, 25);
+            this.txtDelivery.TabIndex = 8;
+            this.txtDelivery.Text = "0.00";
+            this.txtDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblDelivery
+            // 
+            this.lblDelivery.AutoSize = true;
+            this.lblDelivery.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDelivery.ForeColor = System.Drawing.Color.Gray;
+            this.lblDelivery.Location = new System.Drawing.Point(49, 161);
+            this.lblDelivery.Name = "lblDelivery";
+            this.lblDelivery.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.lblDelivery.Size = new System.Drawing.Size(82, 25);
+            this.lblDelivery.TabIndex = 6;
+            this.lblDelivery.Text = "Delivery:";
+            this.lblDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // txtDiscount
             // 
             this.txtDiscount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -628,6 +700,18 @@
             this.bunifuCustomLabel20.Text = "Discount:";
             this.bunifuCustomLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // bunifuCustomLabel24
+            // 
+            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel24.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel24.Location = new System.Drawing.Point(206, 193);
+            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
+            this.bunifuCustomLabel24.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.bunifuCustomLabel24.Size = new System.Drawing.Size(44, 25);
+            this.bunifuCustomLabel24.TabIndex = 7;
+            this.bunifuCustomLabel24.Text = "₹";
+            this.bunifuCustomLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // txtTax
             // 
             this.txtTax.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -639,6 +723,18 @@
             this.txtTax.TabIndex = 5;
             this.txtTax.Text = "0.00";
             this.txtTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblDeliveryRupee
+            // 
+            this.lblDeliveryRupee.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeliveryRupee.ForeColor = System.Drawing.Color.Gray;
+            this.lblDeliveryRupee.Location = new System.Drawing.Point(206, 161);
+            this.lblDeliveryRupee.Name = "lblDeliveryRupee";
+            this.lblDeliveryRupee.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.lblDeliveryRupee.Size = new System.Drawing.Size(44, 25);
+            this.lblDeliveryRupee.TabIndex = 7;
+            this.lblDeliveryRupee.Text = "₹";
+            this.lblDeliveryRupee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // bunifuCustomLabel17
             // 
@@ -665,6 +761,18 @@
             this.bunifuCustomLabel21.Text = "₹";
             this.bunifuCustomLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // bunifuCustomLabel28
+            // 
+            this.bunifuCustomLabel28.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel28.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel28.Location = new System.Drawing.Point(206, 61);
+            this.bunifuCustomLabel28.Name = "bunifuCustomLabel28";
+            this.bunifuCustomLabel28.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.bunifuCustomLabel28.Size = new System.Drawing.Size(44, 25);
+            this.bunifuCustomLabel28.TabIndex = 4;
+            this.bunifuCustomLabel28.Text = "₹";
+            this.bunifuCustomLabel28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -676,6 +784,31 @@
             this.bunifuCustomLabel1.TabIndex = 4;
             this.bunifuCustomLabel1.Text = "₹";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtSubTotal
+            // 
+            this.txtSubTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubTotal.ForeColor = System.Drawing.Color.White;
+            this.txtSubTotal.Location = new System.Drawing.Point(260, 61);
+            this.txtSubTotal.Name = "txtSubTotal";
+            this.txtSubTotal.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.txtSubTotal.Size = new System.Drawing.Size(107, 25);
+            this.txtSubTotal.TabIndex = 2;
+            this.txtSubTotal.Text = "0.00";
+            this.txtSubTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // bunifuCustomLabel22
+            // 
+            this.bunifuCustomLabel22.AutoSize = true;
+            this.bunifuCustomLabel22.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel22.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel22.Location = new System.Drawing.Point(49, 61);
+            this.bunifuCustomLabel22.Name = "bunifuCustomLabel22";
+            this.bunifuCustomLabel22.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.bunifuCustomLabel22.Size = new System.Drawing.Size(82, 25);
+            this.bunifuCustomLabel22.TabIndex = 1;
+            this.bunifuCustomLabel22.Text = "Subtotal:";
+            this.bunifuCustomLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtTotalItems
             // 
@@ -714,35 +847,6 @@
             this.bunifuCustomLabel15.TabIndex = 0;
             this.bunifuCustomLabel15.Text = "Cart Information";
             this.bunifuCustomLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gridCart
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridCart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridCart.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.gridCart.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridCart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridCart.DoubleBuffered = true;
-            this.gridCart.EnableHeadersVisualStyles = false;
-            this.gridCart.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.gridCart.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.gridCart.Location = new System.Drawing.Point(12, 221);
-            this.gridCart.Name = "gridCart";
-            this.gridCart.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridCart.Size = new System.Drawing.Size(1125, 746);
-            this.gridCart.TabIndex = 1;
             // 
             // bunifuCustomLabel16
             // 
@@ -805,12 +909,12 @@
             this.btnCheckout.color = System.Drawing.Color.SeaGreen;
             this.btnCheckout.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnCheckout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCheckout.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckout.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
             this.btnCheckout.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckout.Image")));
-            this.btnCheckout.ImagePosition = 10;
+            this.btnCheckout.ImagePosition = 12;
             this.btnCheckout.ImageZoom = 50;
-            this.btnCheckout.LabelPosition = 41;
+            this.btnCheckout.LabelPosition = 47;
             this.btnCheckout.LabelText = "Checkout [F3]";
             this.btnCheckout.Location = new System.Drawing.Point(1143, 519);
             this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -825,14 +929,15 @@
             this.btnItemLookup.color = System.Drawing.Color.SeaGreen;
             this.btnItemLookup.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnItemLookup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnItemLookup.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemLookup.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemLookup.ForeColor = System.Drawing.Color.White;
             this.btnItemLookup.Image = ((System.Drawing.Image)(resources.GetObject("btnItemLookup.Image")));
-            this.btnItemLookup.ImagePosition = 10;
+            this.btnItemLookup.ImagePosition = 12;
             this.btnItemLookup.ImageZoom = 50;
-            this.btnItemLookup.LabelPosition = 41;
+            this.btnItemLookup.LabelPosition = 47;
             this.btnItemLookup.LabelText = "Item Look [F4]";
             this.btnItemLookup.Location = new System.Drawing.Point(1277, 519);
+            this.btnItemLookup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnItemLookup.Name = "btnItemLookup";
             this.btnItemLookup.Size = new System.Drawing.Size(128, 128);
             this.btnItemLookup.TabIndex = 3;
@@ -845,36 +950,40 @@
             this.btnAdmin.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdmin.Enabled = false;
-            this.btnAdmin.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
-            this.btnAdmin.ImagePosition = 10;
+            this.btnAdmin.ImagePosition = 12;
             this.btnAdmin.ImageZoom = 50;
-            this.btnAdmin.LabelPosition = 41;
+            this.btnAdmin.LabelPosition = 47;
             this.btnAdmin.LabelText = "Admin [F5]";
             this.btnAdmin.Location = new System.Drawing.Point(1411, 519);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(128, 128);
             this.btnAdmin.TabIndex = 4;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnLogout
             // 
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnLogout.color = System.Drawing.Color.SeaGreen;
-            this.btnLogout.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.color = System.Drawing.Color.Red;
+            this.btnLogout.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.ImagePosition = 10;
-            this.btnLogout.ImageZoom = 50;
-            this.btnLogout.LabelPosition = 41;
+            this.btnLogout.Image = global::PointOfSaleUI.Properties.Resources.logout;
+            this.btnLogout.ImagePosition = 29;
+            this.btnLogout.ImageZoom = 40;
+            this.btnLogout.LabelPosition = 47;
             this.btnLogout.LabelText = "Logout [F11]";
             this.btnLogout.Location = new System.Drawing.Point(1411, 787);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(128, 128);
             this.btnLogout.TabIndex = 10;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnClear
             // 
@@ -883,17 +992,20 @@
             this.btnClear.color = System.Drawing.Color.SeaGreen;
             this.btnClear.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Enabled = false;
+            this.btnClear.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
-            this.btnClear.ImagePosition = 10;
+            this.btnClear.ImagePosition = 12;
             this.btnClear.ImageZoom = 50;
-            this.btnClear.LabelPosition = 41;
+            this.btnClear.LabelPosition = 47;
             this.btnClear.LabelText = "Clear [F6]";
             this.btnClear.Location = new System.Drawing.Point(1143, 653);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(128, 129);
             this.btnClear.TabIndex = 5;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSalesHistory
             // 
@@ -902,14 +1014,15 @@
             this.btnSalesHistory.color = System.Drawing.Color.SeaGreen;
             this.btnSalesHistory.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnSalesHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalesHistory.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesHistory.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalesHistory.ForeColor = System.Drawing.Color.White;
             this.btnSalesHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnSalesHistory.Image")));
-            this.btnSalesHistory.ImagePosition = 10;
+            this.btnSalesHistory.ImagePosition = 12;
             this.btnSalesHistory.ImageZoom = 50;
-            this.btnSalesHistory.LabelPosition = 41;
+            this.btnSalesHistory.LabelPosition = 47;
             this.btnSalesHistory.LabelText = "Sales History [F8}";
             this.btnSalesHistory.Location = new System.Drawing.Point(1411, 653);
+            this.btnSalesHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalesHistory.Name = "btnSalesHistory";
             this.btnSalesHistory.Size = new System.Drawing.Size(128, 128);
             this.btnSalesHistory.TabIndex = 7;
@@ -921,14 +1034,15 @@
             this.btnOpenDrawer.color = System.Drawing.Color.SeaGreen;
             this.btnOpenDrawer.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnOpenDrawer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenDrawer.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenDrawer.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenDrawer.ForeColor = System.Drawing.Color.White;
             this.btnOpenDrawer.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenDrawer.Image")));
-            this.btnOpenDrawer.ImagePosition = 10;
+            this.btnOpenDrawer.ImagePosition = 12;
             this.btnOpenDrawer.ImageZoom = 50;
-            this.btnOpenDrawer.LabelPosition = 41;
+            this.btnOpenDrawer.LabelPosition = 47;
             this.btnOpenDrawer.LabelText = "Open Drawer [F9]";
             this.btnOpenDrawer.Location = new System.Drawing.Point(1143, 788);
+            this.btnOpenDrawer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenDrawer.Name = "btnOpenDrawer";
             this.btnOpenDrawer.Size = new System.Drawing.Size(128, 128);
             this.btnOpenDrawer.TabIndex = 8;
@@ -940,17 +1054,19 @@
             this.btnCalculator.color = System.Drawing.Color.SeaGreen;
             this.btnCalculator.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnCalculator.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalculator.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculator.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculator.ForeColor = System.Drawing.Color.White;
             this.btnCalculator.Image = ((System.Drawing.Image)(resources.GetObject("btnCalculator.Image")));
-            this.btnCalculator.ImagePosition = 10;
+            this.btnCalculator.ImagePosition = 12;
             this.btnCalculator.ImageZoom = 50;
-            this.btnCalculator.LabelPosition = 41;
+            this.btnCalculator.LabelPosition = 47;
             this.btnCalculator.LabelText = "Calculator [F10]";
             this.btnCalculator.Location = new System.Drawing.Point(1277, 787);
+            this.btnCalculator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalculator.Name = "btnCalculator";
             this.btnCalculator.Size = new System.Drawing.Size(128, 128);
             this.btnCalculator.TabIndex = 9;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
             // btnPrintInvoice
             // 
@@ -959,14 +1075,15 @@
             this.btnPrintInvoice.color = System.Drawing.Color.SeaGreen;
             this.btnPrintInvoice.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnPrintInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrintInvoice.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintInvoice.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintInvoice.ForeColor = System.Drawing.Color.White;
             this.btnPrintInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintInvoice.Image")));
-            this.btnPrintInvoice.ImagePosition = 10;
+            this.btnPrintInvoice.ImagePosition = 12;
             this.btnPrintInvoice.ImageZoom = 50;
-            this.btnPrintInvoice.LabelPosition = 41;
+            this.btnPrintInvoice.LabelPosition = 47;
             this.btnPrintInvoice.LabelText = "Re-Print Invoice [F7]";
             this.btnPrintInvoice.Location = new System.Drawing.Point(1277, 653);
+            this.btnPrintInvoice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrintInvoice.Name = "btnPrintInvoice";
             this.btnPrintInvoice.Size = new System.Drawing.Size(128, 128);
             this.btnPrintInvoice.TabIndex = 6;
@@ -1008,48 +1125,10 @@
             this.panel7.Size = new System.Drawing.Size(396, 100);
             this.panel7.TabIndex = 31;
             // 
-            // bunifuCustomLabel25
-            // 
-            this.bunifuCustomLabel25.AutoSize = true;
-            this.bunifuCustomLabel25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel25.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel25.Location = new System.Drawing.Point(21, 44);
-            this.bunifuCustomLabel25.Name = "bunifuCustomLabel25";
-            this.bunifuCustomLabel25.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel25.Size = new System.Drawing.Size(80, 17);
-            this.bunifuCustomLabel25.TabIndex = 1;
-            this.bunifuCustomLabel25.Text = "Coupon Code";
-            this.bunifuCustomLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // bunifuCustomLabel26
-            // 
-            this.bunifuCustomLabel26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuCustomLabel26.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel26.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel26.Location = new System.Drawing.Point(0, 0);
-            this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
-            this.bunifuCustomLabel26.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel26.Size = new System.Drawing.Size(396, 14);
-            this.bunifuCustomLabel26.TabIndex = 0;
-            this.bunifuCustomLabel26.Text = "Coupons";
-            this.bunifuCustomLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtCouponCode
-            // 
-            this.txtCouponCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCouponCode.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtCouponCode.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCouponCode.Location = new System.Drawing.Point(107, 32);
-            this.txtCouponCode.Name = "txtCouponCode";
-            this.txtCouponCode.Size = new System.Drawing.Size(168, 40);
-            this.txtCouponCode.TabIndex = 12;
-            this.txtCouponCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtCouponCode.TextChanged += new System.EventHandler(this.txtCouponCode_TextChanged);
-            // 
             // btnApplyCoupon
             // 
             this.btnApplyCoupon.Activecolor = System.Drawing.Color.Teal;
-            this.btnApplyCoupon.BackColor = System.Drawing.Color.Teal;
+            this.btnApplyCoupon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnApplyCoupon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnApplyCoupon.BorderRadius = 0;
             this.btnApplyCoupon.ButtonText = "Apply";
@@ -1081,129 +1160,169 @@
             this.btnApplyCoupon.Textcolor = System.Drawing.Color.White;
             this.btnApplyCoupon.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // lblDeliveryRupee
+            // txtCouponCode
             // 
-            this.lblDeliveryRupee.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeliveryRupee.ForeColor = System.Drawing.Color.Gray;
-            this.lblDeliveryRupee.Location = new System.Drawing.Point(206, 161);
-            this.lblDeliveryRupee.Name = "lblDeliveryRupee";
-            this.lblDeliveryRupee.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.lblDeliveryRupee.Size = new System.Drawing.Size(44, 25);
-            this.lblDeliveryRupee.TabIndex = 7;
-            this.lblDeliveryRupee.Text = "₹";
-            this.lblDeliveryRupee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtCouponCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCouponCode.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtCouponCode.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCouponCode.Location = new System.Drawing.Point(107, 32);
+            this.txtCouponCode.Name = "txtCouponCode";
+            this.txtCouponCode.Size = new System.Drawing.Size(168, 40);
+            this.txtCouponCode.TabIndex = 12;
+            this.txtCouponCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCouponCode.TextChanged += new System.EventHandler(this.txtCouponCode_TextChanged);
             // 
-            // lblDelivery
+            // bunifuCustomLabel25
             // 
-            this.lblDelivery.AutoSize = true;
-            this.lblDelivery.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDelivery.ForeColor = System.Drawing.Color.Gray;
-            this.lblDelivery.Location = new System.Drawing.Point(49, 161);
-            this.lblDelivery.Name = "lblDelivery";
-            this.lblDelivery.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.lblDelivery.Size = new System.Drawing.Size(82, 25);
-            this.lblDelivery.TabIndex = 6;
-            this.lblDelivery.Text = "Delivery:";
-            this.lblDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel25.AutoSize = true;
+            this.bunifuCustomLabel25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel25.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel25.Location = new System.Drawing.Point(21, 44);
+            this.bunifuCustomLabel25.Name = "bunifuCustomLabel25";
+            this.bunifuCustomLabel25.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.bunifuCustomLabel25.Size = new System.Drawing.Size(80, 17);
+            this.bunifuCustomLabel25.TabIndex = 1;
+            this.bunifuCustomLabel25.Text = "Coupon Code";
+            this.bunifuCustomLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtDelivery
+            // bunifuCustomLabel26
             // 
-            this.txtDelivery.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDelivery.ForeColor = System.Drawing.Color.Gray;
-            this.txtDelivery.Location = new System.Drawing.Point(256, 161);
-            this.txtDelivery.Name = "txtDelivery";
-            this.txtDelivery.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.txtDelivery.Size = new System.Drawing.Size(111, 25);
-            this.txtDelivery.TabIndex = 8;
-            this.txtDelivery.Text = "0.00";
-            this.txtDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuCustomLabel26.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel26.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel26.Location = new System.Drawing.Point(0, 0);
+            this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
+            this.bunifuCustomLabel26.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.bunifuCustomLabel26.Size = new System.Drawing.Size(396, 14);
+            this.bunifuCustomLabel26.TabIndex = 0;
+            this.bunifuCustomLabel26.Text = "Coupons";
+            this.bunifuCustomLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuCustomLabel24
+            // gridCart
             // 
-            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel24.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel24.Location = new System.Drawing.Point(206, 193);
-            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
-            this.bunifuCustomLabel24.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel24.Size = new System.Drawing.Size(44, 25);
-            this.bunifuCustomLabel24.TabIndex = 7;
-            this.bunifuCustomLabel24.Text = "₹";
-            this.bunifuCustomLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.gridCart.AllowUserToAddRows = false;
+            this.gridCart.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gainsboro;
+            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.gridCart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridCart.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridCart.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridCart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.gridCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCart.DoubleBuffered = true;
+            this.gridCart.EnableHeadersVisualStyles = false;
+            this.gridCart.GridColor = System.Drawing.Color.White;
+            this.gridCart.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.gridCart.HeaderForeColor = System.Drawing.Color.White;
+            this.gridCart.Location = new System.Drawing.Point(12, 229);
+            this.gridCart.MultiSelect = false;
+            this.gridCart.Name = "gridCart";
+            this.gridCart.ReadOnly = true;
+            this.gridCart.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.gridCart.RowHeadersVisible = false;
+            this.gridCart.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCart.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.gridCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridCart.Size = new System.Drawing.Size(1125, 687);
+            this.gridCart.TabIndex = 32;
+            this.gridCart.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridCart_KeyDown);
             // 
-            // bunifuCustomLabel27
+            // btnSaveDraft
             // 
-            this.bunifuCustomLabel27.AutoSize = true;
-            this.bunifuCustomLabel27.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel27.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel27.Location = new System.Drawing.Point(78, 193);
-            this.bunifuCustomLabel27.Name = "bunifuCustomLabel27";
-            this.bunifuCustomLabel27.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel27.Size = new System.Drawing.Size(53, 25);
-            this.bunifuCustomLabel27.TabIndex = 6;
-            this.bunifuCustomLabel27.Text = "Total:";
-            this.bunifuCustomLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveDraft.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnSaveDraft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSaveDraft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSaveDraft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSaveDraft.BorderRadius = 0;
+            this.btnSaveDraft.ButtonText = "Save Transaction";
+            this.btnSaveDraft.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveDraft.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSaveDraft.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveDraft.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSaveDraft.Iconimage = global::PointOfSaleUI.Properties.Resources.save;
+            this.btnSaveDraft.Iconimage_right = null;
+            this.btnSaveDraft.Iconimage_right_Selected = null;
+            this.btnSaveDraft.Iconimage_Selected = null;
+            this.btnSaveDraft.IconMarginLeft = 10;
+            this.btnSaveDraft.IconMarginRight = 0;
+            this.btnSaveDraft.IconRightVisible = true;
+            this.btnSaveDraft.IconRightZoom = 0D;
+            this.btnSaveDraft.IconVisible = true;
+            this.btnSaveDraft.IconZoom = 50D;
+            this.btnSaveDraft.IsTab = false;
+            this.btnSaveDraft.Location = new System.Drawing.Point(12, 922);
+            this.btnSaveDraft.Name = "btnSaveDraft";
+            this.btnSaveDraft.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSaveDraft.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(100)))));
+            this.btnSaveDraft.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnSaveDraft.selected = false;
+            this.btnSaveDraft.Size = new System.Drawing.Size(170, 45);
+            this.btnSaveDraft.TabIndex = 33;
+            this.btnSaveDraft.Text = "Save Transaction";
+            this.btnSaveDraft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSaveDraft.Textcolor = System.Drawing.Color.White;
+            this.btnSaveDraft.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // txtTotal
+            // btnOpenDrafts
             // 
-            this.txtTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.ForeColor = System.Drawing.Color.White;
-            this.txtTotal.Location = new System.Drawing.Point(256, 193);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.txtTotal.Size = new System.Drawing.Size(111, 25);
-            this.txtTotal.TabIndex = 8;
-            this.txtTotal.Text = "0.00";
-            this.txtTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOpenDrafts.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnOpenDrafts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnOpenDrafts.BackColor = System.Drawing.Color.Teal;
+            this.btnOpenDrafts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOpenDrafts.BorderRadius = 0;
+            this.btnOpenDrafts.ButtonText = "Open Drafts";
+            this.btnOpenDrafts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenDrafts.DisabledColor = System.Drawing.Color.Gray;
+            this.btnOpenDrafts.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenDrafts.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnOpenDrafts.Iconimage = global::PointOfSaleUI.Properties.Resources.open;
+            this.btnOpenDrafts.Iconimage_right = null;
+            this.btnOpenDrafts.Iconimage_right_Selected = null;
+            this.btnOpenDrafts.Iconimage_Selected = null;
+            this.btnOpenDrafts.IconMarginLeft = 10;
+            this.btnOpenDrafts.IconMarginRight = 0;
+            this.btnOpenDrafts.IconRightVisible = true;
+            this.btnOpenDrafts.IconRightZoom = 0D;
+            this.btnOpenDrafts.IconVisible = true;
+            this.btnOpenDrafts.IconZoom = 50D;
+            this.btnOpenDrafts.IsTab = false;
+            this.btnOpenDrafts.Location = new System.Drawing.Point(188, 922);
+            this.btnOpenDrafts.Name = "btnOpenDrafts";
+            this.btnOpenDrafts.Normalcolor = System.Drawing.Color.Teal;
+            this.btnOpenDrafts.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnOpenDrafts.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnOpenDrafts.selected = false;
+            this.btnOpenDrafts.Size = new System.Drawing.Size(136, 45);
+            this.btnOpenDrafts.TabIndex = 33;
+            this.btnOpenDrafts.Text = "Open Drafts";
+            this.btnOpenDrafts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOpenDrafts.Textcolor = System.Drawing.Color.White;
+            this.btnOpenDrafts.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // chkDelivery
+            // controlTimer
             // 
-            this.chkDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.chkDelivery.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.chkDelivery.Checked = false;
-            this.chkDelivery.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chkDelivery.ForeColor = System.Drawing.Color.White;
-            this.chkDelivery.Location = new System.Drawing.Point(23, 165);
-            this.chkDelivery.Name = "chkDelivery";
-            this.chkDelivery.Size = new System.Drawing.Size(20, 20);
-            this.chkDelivery.TabIndex = 9;
-            this.chkDelivery.OnChange += new System.EventHandler(this.chkDelivery_OnChange);
-            // 
-            // bunifuCustomLabel22
-            // 
-            this.bunifuCustomLabel22.AutoSize = true;
-            this.bunifuCustomLabel22.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel22.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel22.Location = new System.Drawing.Point(49, 61);
-            this.bunifuCustomLabel22.Name = "bunifuCustomLabel22";
-            this.bunifuCustomLabel22.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel22.Size = new System.Drawing.Size(82, 25);
-            this.bunifuCustomLabel22.TabIndex = 1;
-            this.bunifuCustomLabel22.Text = "Subtotal:";
-            this.bunifuCustomLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtSubTotal
-            // 
-            this.txtSubTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubTotal.ForeColor = System.Drawing.Color.White;
-            this.txtSubTotal.Location = new System.Drawing.Point(260, 61);
-            this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.txtSubTotal.Size = new System.Drawing.Size(107, 25);
-            this.txtSubTotal.TabIndex = 2;
-            this.txtSubTotal.Text = "0.00";
-            this.txtSubTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // bunifuCustomLabel28
-            // 
-            this.bunifuCustomLabel28.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel28.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel28.Location = new System.Drawing.Point(206, 61);
-            this.bunifuCustomLabel28.Name = "bunifuCustomLabel28";
-            this.bunifuCustomLabel28.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel28.Size = new System.Drawing.Size(44, 25);
-            this.bunifuCustomLabel28.TabIndex = 4;
-            this.bunifuCustomLabel28.Text = "₹";
-            this.bunifuCustomLabel28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.controlTimer.Enabled = true;
+            this.controlTimer.Interval = 10;
+            this.controlTimer.Tick += new System.EventHandler(this.controlTimer_Tick);
             // 
             // Terminal
             // 
@@ -1211,6 +1330,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1555, 979);
+            this.Controls.Add(this.btnOpenDrafts);
+            this.Controls.Add(this.btnSaveDraft);
+            this.Controls.Add(this.gridCart);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnPrintInvoice);
@@ -1222,7 +1344,6 @@
             this.Controls.Add(this.btnOpenDrawer);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnCheckout);
-            this.Controls.Add(this.gridCart);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -1247,10 +1368,10 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCart)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1300,7 +1421,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
         private Bunifu.Framework.UI.BunifuCustomLabel txtTotalItems;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel19;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid gridCart;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel18;
         private Bunifu.Framework.UI.BunifuCustomLabel txtDate;
@@ -1334,5 +1454,9 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel28;
         private Bunifu.Framework.UI.BunifuCustomLabel txtSubTotal;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel22;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid gridCart;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSaveDraft;
+        private Bunifu.Framework.UI.BunifuFlatButton btnOpenDrafts;
+        private System.Windows.Forms.Timer controlTimer;
     }
 }

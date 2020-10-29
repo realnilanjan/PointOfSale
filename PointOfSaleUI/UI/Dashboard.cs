@@ -133,7 +133,7 @@ namespace PointOfSaleUI.UI
 
         private void ClearStockValues()
         {
-            
+
             List<QuantityDescriptionModel> quantityDescriptions = new List<QuantityDescriptionModel>();
 
             productCategories = dataAccess.LoadAllCategories();
@@ -308,7 +308,7 @@ namespace PointOfSaleUI.UI
         {
             this.LoadStaffPanel();
         }
-               
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if ((txtNewPassword.Text != "") && (txtNewVerifyPassword.Text != ""))
@@ -328,7 +328,7 @@ namespace PointOfSaleUI.UI
                         Status = IsBlocked
                     };
 
-                    
+
                     dataAccess.SaveData("dbo.UpdateUserWithPassword", user, "POS");
                     this.RefreshStaffGrid();
                 }
@@ -350,7 +350,7 @@ namespace PointOfSaleUI.UI
                     Status = IsBlocked
                 };
 
-                
+
                 dataAccess.SaveData("dbo.UpdateUserWithoutPassword", user, "POS");
                 this.RefreshStaffGrid();
             }
@@ -498,7 +498,7 @@ namespace PointOfSaleUI.UI
                 CategoryDescription = txtCategoryDescription.Text
             };
 
-            
+
             dataAccess.SaveData("dbo.UpdateCategory", category, "POS");
             this.RefreshCategoryGrid();
         }
@@ -523,7 +523,7 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.Yes)
             {
                 int Id = Convert.ToInt32(txtCategoryId.Text);
-                
+
                 dataAccess.SaveData("dbo.DeleteCategory", new { Id = Id }, "POS");
                 this.RefreshCategoryGrid();
             }
@@ -599,7 +599,7 @@ namespace PointOfSaleUI.UI
 
             };
 
-            
+
             dataAccess.SaveData("dbo.UpdateProduct", product, "POS");
             this.RefreshStockGrid();
         }
@@ -610,7 +610,7 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.Yes)
             {
                 int StockId = Convert.ToInt32(txtStockId.Text);
-                
+
                 dataAccess.SaveData("dbo.DeleteProduct", new { StockId = StockId }, "POS");
                 this.RefreshStockGrid();
             }
@@ -901,6 +901,28 @@ namespace PointOfSaleUI.UI
             int TaxRate = Convert.ToInt32(percentremoved[0]);
             Properties.Settings.Default.TaxRate = TaxRate;
             Properties.Settings.Default.Save();
+        }
+
+        private void btnGenerateCoupons_Click(object sender, EventArgs e)
+        {
+            Coupons coupons = new Coupons();
+            coupons.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to want to logoff?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                this.Hide();
+                login.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
