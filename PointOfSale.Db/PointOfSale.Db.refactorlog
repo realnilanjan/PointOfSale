@@ -35,4 +35,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="CashierId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="86bf8f2f-8075-4a2e-8239-fe67cca1498b" ChangeDateTime="10/28/2020 10:20:02">
+    <Property Name="ElementName" Value="[dbo].[Sale].[Total]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sale]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GrandTotal" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6de9e2ce-2213-4196-b507-2a45409f192b" ChangeDateTime="10/28/2020 10:20:13">
+    <Property Name="ElementName" Value="[dbo].[Sale].[ShippingRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sale]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeliveryRate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e17737d7-0286-4991-b0ae-00ba020d7ee8" ChangeDateTime="10/28/2020 10:20:41">
+    <Property Name="ElementName" Value="[dbo].[Sale].[Tax]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sale]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaxRate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4de97811-b747-4c77-8ba4-16945a1ff339" ChangeDateTime="10/28/2020 10:28:40">
+    <Property Name="ElementName" Value="[dbo].[Sale].[TaxRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sale]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SaleTaxRate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3b61873d-6407-4c42-94ed-88b447510e21" ChangeDateTime="10/28/2020 17:05:39">
+    <Property Name="ElementName" Value="[dbo].[Sale].[DeliveryRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sale]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ShippingRate" />
+  </Operation>
 </Operations>
