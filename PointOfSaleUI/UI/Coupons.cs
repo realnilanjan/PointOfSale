@@ -49,13 +49,9 @@ namespace PointOfSaleUI.UI
             couponGridView.ClearSelection();
         }
 
-
-
         private void GenerateNewCoupon()
         {
-            txtCouponCode.Clear();
             txtCouponCode.Text = Generate.CouponCode;
-            this.GenerateNewCoupon();
         }
 
         private void rdoSinglePDiscount_CheckedChanged(object sender, EventArgs e)
@@ -131,10 +127,11 @@ namespace PointOfSaleUI.UI
                 dataAccess.SaveData("dbo.InsertCoupon", singleCoupon, "POS");
             }
 
+            this.GenerateNewCoupon();
             this.RefreshCouponsGrid();
         }
 
-        private void btbGenerateCoupon_Click(object sender, EventArgs e)
+        private void btnGenerateCoupon_Click(object sender, EventArgs e)
         {
             this.GenerateNewCoupon();
         }
@@ -223,6 +220,11 @@ namespace PointOfSaleUI.UI
         private void bulkStartDate_onValueChanged(object sender, EventArgs e)
         {
             bulkStartDate.Value = bulkStartDate.Value.Date;
+        }
+
+        private void couponGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Clipboard.SetText(couponGridView[e.ColumnIndex, e.RowIndex].Value.ToString());
         }
     }
 }

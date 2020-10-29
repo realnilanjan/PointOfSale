@@ -2158,12 +2158,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.settingsPanel);
             this.panel2.Controls.Add(this.stockPanel);
             this.panel2.Controls.Add(this.dashPanel);
             this.panel2.Controls.Add(this.supplierPanel);
             this.panel2.Controls.Add(this.staffPanel);
             this.panel2.Controls.Add(this.categoryPanel);
+            this.panel2.Controls.Add(this.settingsPanel);
             this.panelAnimator2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);

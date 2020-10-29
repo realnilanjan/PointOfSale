@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PointOfSale.Lib.DataAccess;
+using PointOfSale.Lib.DataModel;
 using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using PointOfSale.Lib.TerminalModels;
@@ -20,15 +21,18 @@ namespace PointOfSaleUI.UI
         List<CartItemModel> CartToCheckOut = new List<CartItemModel>();
         public ProductForCartModel ProductInCart { get; set; }
         private decimal TaxRate = Properties.Settings.Default.TaxRate;
+        CouponDataModel couponData = new CouponDataModel();
+        private bool IsCouponAdded = false;
 
-        private string InvoiceNumber { get; set; }
+        private string CartInvoiceNumber { get; set; }
         private int CashierId { get; set; }
-        private decimal SubTotal { get; set; }
-        private decimal SaleTaxRate { get; set; }
+        private decimal CartSubTotal { get; set; }
+        private decimal CartSaleTaxRate { get; set; }
+        private int CouponId { get; set; }
         private decimal ShippingRate { get; set; }
         private decimal GrandTotal { get; set; }
 
-        private decimal DeliveryRate { get; set; }
+        private decimal DeliveryRate { get { return Properties.Settings.Default.DeliveryRate; } }
         private decimal GetTaxRate
         {
             get { return TaxRate / 100; }
@@ -57,8 +61,8 @@ namespace PointOfSaleUI.UI
                     btnAdmin.Enabled = false;
                     break;
             }
-            InvoiceNumber = Generate.InvoiceNumber;
-            txtInvoiceNumber.Text = InvoiceNumber;
+            CartInvoiceNumber = Generate.InvoiceNumber;
+            txtInvoiceNumber.Text = CartInvoiceNumber;
         }
 
         private void CalculateTotal()
@@ -71,8 +75,8 @@ namespace PointOfSaleUI.UI
             foreach (DataGridViewRow row in gridCart.Rows)
             {
                 Quantity += Convert.ToInt32(row.Cells["Quantity"].Value);
-                TotalTax += Convert.ToDecimal(row.Cells["Tax"].Value);
                 SubTotal += Convert.ToDecimal(row.Cells["RetailPrice"].Value) * Convert.ToInt32(row.Cells["Quantity"].Value);
+                TotalTax += Convert.ToDecimal(row.Cells["Tax"].Value);
                 Total = SubTotal + TotalTax;
             }
             txtTotalItems.Text = Quantity.ToString();
@@ -81,6 +85,10 @@ namespace PointOfSaleUI.UI
             txtTotal.Text = Total.ToString("N2");
             GrandTotal = Total;
             txtBarcode.Focus();
+
+            CartSubTotal = SubTotal;
+            CartSaleTaxRate = TotalTax;
+
         }
 
         private void dateTimeTimer_Tick(object sender, EventArgs e)
@@ -107,29 +115,70 @@ namespace PointOfSaleUI.UI
                 bool ProductAlreadyInList = false;
                 string Barcode = txtBarcode.Text;
                 ProductInCart = dataAccess.GetProductForCart(Barcode);
-                
-                txtStockId.Text = ProductInCart.StockId.ToString();
-                txtProductDescription.Text = ProductInCart.Name;
-                txtUnitPrice.Text = ProductInCart.RetailPrice.ToString("N2");
-                txtUnitQuantity.Text = txtItemQuantity.Text;
 
-                txtTotalQtyAmount.Text = (ProductInCart.RetailPrice * Convert.ToInt32(txtUnitQuantity.Text)).ToString("N2");
-
-                if (gridCart.Rows.Count > 0)
+                if (ProductInCart == null)
                 {
-                    foreach (DataGridViewRow row in gridCart.Rows)
+                    SystemSounds.Hand.Play();
+                    Messages.DisplayMessage("The product is not found.", lblWarning, Color.Red);
+                    txtBarcode.Clear();
+                    txtBarcode.Focus();
+                }
+                else
+                {
+                    txtStockId.Text = ProductInCart.StockId.ToString();
+                    txtProductDescription.Text = ProductInCart.Name;
+                    txtUnitPrice.Text = ProductInCart.RetailPrice.ToString("N2");
+                    txtUnitQuantity.Text = txtItemQuantity.Text;
+                    txtTotalQtyAmount.Text = (ProductInCart.RetailPrice * Convert.ToInt32(txtUnitQuantity.Text)).ToString("N2");
+
+                    if (gridCart.Rows.Count > 0)
                     {
-                        if (Convert.ToInt32(row.Cells[0].Value) == ProductInCart.StockId)
+                        foreach (DataGridViewRow row in gridCart.Rows)
                         {
-                            int quantity = Convert.ToInt32(row.Cells[3].Value);
-                            quantity += Convert.ToInt32(txtUnitQuantity.Text);
-                            row.Cells[3].Value = quantity;
-                            row.Cells[6].Value = Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[4].Value);
-                            gridCart.Refresh();
-                            ProductAlreadyInList = true;
+                            if (Convert.ToInt32(row.Cells[0].Value) == ProductInCart.StockId)
+                            {
+                                int quantity = Convert.ToInt32(row.Cells[3].Value);
+                                quantity += Convert.ToInt32(txtUnitQuantity.Text);
+                                row.Cells[3].Value = quantity;
+                                row.Cells[6].Value = Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[4].Value);
+                                gridCart.Refresh();
+                                ProductAlreadyInList = true;
+                            }
                         }
+                        if (!ProductAlreadyInList)
+                        {
+                            if (ProductInCart.IsTaxable == true)
+                            {
+                                destination = new CartItemModel
+                                {
+                                    StockId = ProductInCart.StockId,
+                                    Barcode = ProductInCart.Barcode,
+                                    Name = ProductInCart.Name,
+                                    Quantity = Convert.ToInt32(txtUnitQuantity.Text),
+                                    RetailPrice = ProductInCart.RetailPrice,
+                                    Tax = (ProductInCart.RetailPrice * GetTaxRate)
+                                };
+                            }
+                            else
+                            {
+                                destination = new CartItemModel
+                                {
+                                    StockId = ProductInCart.StockId,
+                                    Barcode = ProductInCart.Barcode,
+                                    Name = ProductInCart.Name,
+                                    Quantity = Convert.ToInt32(txtUnitQuantity.Text),
+                                    RetailPrice = ProductInCart.RetailPrice,
+                                    Tax = 0
+                                };
+                            }
+                            CartToCheckOut.Add(destination);
+                            gridCart.DataSource = null;
+                            gridCart.DataSource = CartToCheckOut;
+                            gridCart.Refresh();
+                        }
+
                     }
-                    if (!ProductAlreadyInList)
+                    else
                     {
                         if (ProductInCart.IsTaxable == true)
                         {
@@ -160,45 +209,13 @@ namespace PointOfSaleUI.UI
                         gridCart.DataSource = CartToCheckOut;
                         gridCart.Refresh();
                     }
-
+                    this.CalculateTotal();
+                    SystemSounds.Asterisk.Play();
+                    Messages.DisplayMessage("The product is added in the cart.", lblWarning, Color.SeaGreen);
+                    txtBarcode.Clear();
+                    txtItemQuantity.Text = "1";
                 }
-                else
-                {
-                    if (ProductInCart.IsTaxable == true)
-                    {
-                        destination = new CartItemModel
-                        {
-                            StockId = ProductInCart.StockId,
-                            Barcode = ProductInCart.Barcode,
-                            Name = ProductInCart.Name,
-                            Quantity = Convert.ToInt32(txtUnitQuantity.Text),
-                            RetailPrice = ProductInCart.RetailPrice,
-                            Tax = (ProductInCart.RetailPrice * GetTaxRate)
-                        };
-                    }
-                    else
-                    {
-                        destination = new CartItemModel
-                        {
-                            StockId = ProductInCart.StockId,
-                            Barcode = ProductInCart.Barcode,
-                            Name = ProductInCart.Name,
-                            Quantity = Convert.ToInt32(txtUnitQuantity.Text),
-                            RetailPrice = ProductInCart.RetailPrice,
-                            Tax = 0
-                        };
-                    }
-                    CartToCheckOut.Add(destination);
-                    gridCart.DataSource = null;
-                    gridCart.DataSource = CartToCheckOut;
-                    gridCart.Refresh();
-                }
-                this.CalculateTotal();
-                SystemSounds.Asterisk.Play();
-                txtBarcode.Clear();
-                txtItemQuantity.Text = "1";
             }
-
             else
             {
                 btnClearCode.Enabled = false;
@@ -226,6 +243,7 @@ namespace PointOfSaleUI.UI
                 txtDelivery.ForeColor = Color.White;
                 txtDelivery.Text = DeliveryRate.ToString("N2");
                 GrandTotal += DeliveryRate;
+                ShippingRate = DeliveryRate;
                 txtTotal.Text = GrandTotal.ToString("N2");
             }
             else
@@ -234,6 +252,7 @@ namespace PointOfSaleUI.UI
                 lblDeliveryRupee.ForeColor = Color.Gray;
                 txtDelivery.ForeColor = Color.Gray;
                 txtDelivery.Text = "0.00";
+                ShippingRate = 0;
                 GrandTotal -= DeliveryRate;
                 txtTotal.Text = GrandTotal.ToString("N2");
             }
@@ -331,7 +350,8 @@ namespace PointOfSaleUI.UI
             txtTotalQtyAmount.Clear();
             CartToCheckOut.Clear();
             gridCart.DataSource = null;
-            txtInvoiceNumber.Text = Generate.InvoiceNumber;
+            CartInvoiceNumber = Generate.InvoiceNumber;
+            txtInvoiceNumber.Text = CartInvoiceNumber;
             this.CalculateTotal();
         }
 
@@ -350,6 +370,87 @@ namespace PointOfSaleUI.UI
             {
                 return;
             }
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            this.CheckOut();
+            this.VoidTransaction();
+        }
+
+        private void CheckOut()
+        {
+            if (IsCouponAdded == true)
+            {
+                CheckOutModel checkOut = new CheckOutModel
+                {
+                    CashierId = CashierId,
+                    InvoiceNumber = CartInvoiceNumber,
+                    SubTotal = CartSubTotal,
+                    CouponId = CouponId,
+                    SaleTaxRate = CartSaleTaxRate,
+                    ShippingRate = ShippingRate,
+                    GrandTotal = GrandTotal
+                };
+            }
+            else
+            {
+                CheckOutModel checkOut = new CheckOutModel
+                {
+                    CashierId = CashierId,
+                    InvoiceNumber = CartInvoiceNumber,
+                    SubTotal = CartSubTotal,
+                    CouponId = 0,
+                    SaleTaxRate = CartSaleTaxRate,
+                    ShippingRate = ShippingRate,
+                    GrandTotal = GrandTotal
+                };
+            }
+
+            //Save CheckOutModel
+            //Save Every sold products in CartItemModel to sale details database and remove quantities from stock
+
+        }
+
+        private void btnApplyCoupon_Click(object sender, EventArgs e)
+        {
+            string CouponCode = txtCouponCode.Text;
+            couponData = dataAccess.GetCoupon(CouponCode);
+
+            //Get Coupon Details
+            if (couponData == null)
+            {
+                Messages.DisplayMessage("Coupon does not exist..", lblCouponWarning, Color.Red);
+                txtCouponCode.Clear();
+                txtCouponCode.Focus();
+            }
+            else
+            {
+                CouponId = couponData.Id;
+
+                //TODO: Process coupon
+                //Is Flat or Is Percent based on couponData
+                //Add Discount to Grand Total
+
+                IsCouponAdded = true;
+                Messages.DisplayMessage("Coupon added to cart.", lblCouponWarning, Color.SeaGreen);
+                txtCouponCode.Text = "Applied";
+                txtCouponCode.Enabled = false;
+                btnApplyCoupon.Enabled = false;
+                btnRemoveCoupon.Enabled = true;
+            }
+        }
+
+        private void btnRemoveCoupon_Click(object sender, EventArgs e)
+        {
+            IsCouponAdded = false;
+
+            //Remove coupon discount from Grand Total
+            txtCouponCode.Enabled = true;
+            btnRemoveCoupon.Enabled = false;
+            btnApplyCoupon.Enabled = true;
+            txtCouponCode.Clear();
+            txtCouponCode.Focus();
         }
     }
 }

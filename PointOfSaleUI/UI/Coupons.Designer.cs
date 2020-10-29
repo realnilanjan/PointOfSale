@@ -37,39 +37,39 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.imagesList = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bulkExpiryDate = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bulkStartDate = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnBulkGenerate = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.rdoBulkPDiscount = new System.Windows.Forms.RadioButton();
-            this.txtBulkFlatDiscount = new System.Windows.Forms.TextBox();
-            this.rdoBulkDPercentage = new System.Windows.Forms.RadioButton();
-            this.txtBulkPercentDiscount = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numNoOfCoupons = new System.Windows.Forms.NumericUpDown();
             this.txtBulkDescription = new System.Windows.Forms.TextBox();
+            this.numNoOfCoupons = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBulkPercentDiscount = new System.Windows.Forms.TextBox();
+            this.rdoBulkDPercentage = new System.Windows.Forms.RadioButton();
+            this.txtBulkFlatDiscount = new System.Windows.Forms.TextBox();
+            this.rdoBulkPDiscount = new System.Windows.Forms.RadioButton();
+            this.btnBulkGenerate = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bulkStartDate = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.bulkExpiryDate = new Bunifu.Framework.UI.BunifuDatepicker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCouponCode = new System.Windows.Forms.TextBox();
-            this.singleStartDate = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.singleExpiryDate = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnSaveCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btbGenerateCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.rdoSinglePDiscount = new System.Windows.Forms.RadioButton();
-            this.rdoSingleDPercentage = new System.Windows.Forms.RadioButton();
-            this.txtSingleFlatDiscount = new System.Windows.Forms.TextBox();
-            this.txtSinglePercentDiscount = new System.Windows.Forms.TextBox();
             this.txtSingleDescription = new System.Windows.Forms.TextBox();
+            this.txtSinglePercentDiscount = new System.Windows.Forms.TextBox();
+            this.txtSingleFlatDiscount = new System.Windows.Forms.TextBox();
+            this.rdoSingleDPercentage = new System.Windows.Forms.RadioButton();
+            this.rdoSinglePDiscount = new System.Windows.Forms.RadioButton();
+            this.btnGenerateCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSaveCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.singleExpiryDate = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.singleStartDate = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.txtCouponCode = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblNoCoupons = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.btnDeleteCoupon = new System.Windows.Forms.Button();
             this.btnUpdateCoupon = new System.Windows.Forms.Button();
-            this.lblWarning = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.couponGridView)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNoOfCoupons)).BeginInit();
@@ -125,6 +125,7 @@
             this.couponGridView.TabIndex = 2;
             this.couponGridView.Visible = false;
             this.couponGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.couponGridView_CellClick);
+            this.couponGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.couponGridView_CellDoubleClick);
             // 
             // bunifuCustomLabel5
             // 
@@ -180,70 +181,87 @@
             this.panel2.Size = new System.Drawing.Size(447, 300);
             this.panel2.TabIndex = 1;
             // 
-            // bulkExpiryDate
+            // txtBulkDescription
             // 
-            this.bulkExpiryDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bulkExpiryDate.BackColor = System.Drawing.Color.Teal;
-            this.bulkExpiryDate.BorderRadius = 0;
-            this.bulkExpiryDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bulkExpiryDate.ForeColor = System.Drawing.Color.White;
-            this.bulkExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bulkExpiryDate.FormatCustom = null;
-            this.bulkExpiryDate.Location = new System.Drawing.Point(15, 254);
-            this.bulkExpiryDate.Name = "bulkExpiryDate";
-            this.bulkExpiryDate.Size = new System.Drawing.Size(296, 36);
-            this.bulkExpiryDate.TabIndex = 8;
-            this.bulkExpiryDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 22, 343);
-            this.bulkExpiryDate.onValueChanged += new System.EventHandler(this.bulkExpiryDate_onValueChanged);
+            this.txtBulkDescription.Location = new System.Drawing.Point(15, 66);
+            this.txtBulkDescription.Multiline = true;
+            this.txtBulkDescription.Name = "txtBulkDescription";
+            this.txtBulkDescription.Size = new System.Drawing.Size(218, 51);
+            this.txtBulkDescription.TabIndex = 10;
             // 
-            // bulkStartDate
+            // numNoOfCoupons
             // 
-            this.bulkStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bulkStartDate.BackColor = System.Drawing.Color.Teal;
-            this.bulkStartDate.BorderRadius = 0;
-            this.bulkStartDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bulkStartDate.ForeColor = System.Drawing.Color.White;
-            this.bulkStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bulkStartDate.FormatCustom = null;
-            this.bulkStartDate.Location = new System.Drawing.Point(15, 197);
-            this.bulkStartDate.Name = "bulkStartDate";
-            this.bulkStartDate.Size = new System.Drawing.Size(296, 36);
-            this.bulkStartDate.TabIndex = 6;
-            this.bulkStartDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 24, 754);
-            this.bulkStartDate.onValueChanged += new System.EventHandler(this.bulkStartDate_onValueChanged);
+            this.numNoOfCoupons.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numNoOfCoupons.Location = new System.Drawing.Point(146, 41);
+            this.numNoOfCoupons.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numNoOfCoupons.Name = "numNoOfCoupons";
+            this.numNoOfCoupons.Size = new System.Drawing.Size(87, 22);
+            this.numNoOfCoupons.TabIndex = 10;
+            this.numNoOfCoupons.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numNoOfCoupons.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // label4
+            // label6
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 182);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 14);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Issue Date";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 14);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "No. Of Coupons";
             // 
-            // label2
+            // txtBulkPercentDiscount
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Generate Bulk Coupons";
+            this.txtBulkPercentDiscount.Enabled = false;
+            this.txtBulkPercentDiscount.Location = new System.Drawing.Point(153, 152);
+            this.txtBulkPercentDiscount.Name = "txtBulkPercentDiscount";
+            this.txtBulkPercentDiscount.Size = new System.Drawing.Size(80, 22);
+            this.txtBulkPercentDiscount.TabIndex = 4;
+            this.txtBulkPercentDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label5
+            // rdoBulkDPercentage
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 239);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 14);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Expiry Date";
+            this.rdoBulkDPercentage.AutoSize = true;
+            this.rdoBulkDPercentage.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBulkDPercentage.ForeColor = System.Drawing.Color.White;
+            this.rdoBulkDPercentage.Location = new System.Drawing.Point(15, 154);
+            this.rdoBulkDPercentage.Name = "rdoBulkDPercentage";
+            this.rdoBulkDPercentage.Size = new System.Drawing.Size(136, 18);
+            this.rdoBulkDPercentage.TabIndex = 3;
+            this.rdoBulkDPercentage.Text = "Discount Percentage";
+            this.rdoBulkDPercentage.UseVisualStyleBackColor = true;
+            this.rdoBulkDPercentage.CheckedChanged += new System.EventHandler(this.rdoBulkDPercentage_CheckedChanged);
+            // 
+            // txtBulkFlatDiscount
+            // 
+            this.txtBulkFlatDiscount.Location = new System.Drawing.Point(153, 122);
+            this.txtBulkFlatDiscount.Name = "txtBulkFlatDiscount";
+            this.txtBulkFlatDiscount.Size = new System.Drawing.Size(80, 22);
+            this.txtBulkFlatDiscount.TabIndex = 2;
+            this.txtBulkFlatDiscount.Text = "20";
+            this.txtBulkFlatDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rdoBulkPDiscount
+            // 
+            this.rdoBulkPDiscount.AutoSize = true;
+            this.rdoBulkPDiscount.Checked = true;
+            this.rdoBulkPDiscount.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBulkPDiscount.ForeColor = System.Drawing.Color.White;
+            this.rdoBulkPDiscount.Location = new System.Drawing.Point(15, 124);
+            this.rdoBulkPDiscount.Name = "rdoBulkPDiscount";
+            this.rdoBulkPDiscount.Size = new System.Drawing.Size(126, 18);
+            this.rdoBulkPDiscount.TabIndex = 1;
+            this.rdoBulkPDiscount.TabStop = true;
+            this.rdoBulkPDiscount.Text = "Flat Price Discount";
+            this.rdoBulkPDiscount.UseVisualStyleBackColor = true;
+            this.rdoBulkPDiscount.CheckedChanged += new System.EventHandler(this.rdoBulkPDiscount_CheckedChanged);
             // 
             // btnBulkGenerate
             // 
@@ -282,87 +300,70 @@
             this.btnBulkGenerate.TextFont = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
             this.btnBulkGenerate.Click += new System.EventHandler(this.btnBulkGenerate_Click);
             // 
-            // rdoBulkPDiscount
+            // label5
             // 
-            this.rdoBulkPDiscount.AutoSize = true;
-            this.rdoBulkPDiscount.Checked = true;
-            this.rdoBulkPDiscount.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBulkPDiscount.ForeColor = System.Drawing.Color.White;
-            this.rdoBulkPDiscount.Location = new System.Drawing.Point(15, 124);
-            this.rdoBulkPDiscount.Name = "rdoBulkPDiscount";
-            this.rdoBulkPDiscount.Size = new System.Drawing.Size(126, 18);
-            this.rdoBulkPDiscount.TabIndex = 1;
-            this.rdoBulkPDiscount.TabStop = true;
-            this.rdoBulkPDiscount.Text = "Flat Price Discount";
-            this.rdoBulkPDiscount.UseVisualStyleBackColor = true;
-            this.rdoBulkPDiscount.CheckedChanged += new System.EventHandler(this.rdoBulkPDiscount_CheckedChanged);
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(12, 239);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 14);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Expiry Date";
             // 
-            // txtBulkFlatDiscount
+            // label2
             // 
-            this.txtBulkFlatDiscount.Location = new System.Drawing.Point(153, 122);
-            this.txtBulkFlatDiscount.Name = "txtBulkFlatDiscount";
-            this.txtBulkFlatDiscount.Size = new System.Drawing.Size(80, 22);
-            this.txtBulkFlatDiscount.TabIndex = 2;
-            this.txtBulkFlatDiscount.Text = "20";
-            this.txtBulkFlatDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(12, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Generate Bulk Coupons";
             // 
-            // rdoBulkDPercentage
+            // label4
             // 
-            this.rdoBulkDPercentage.AutoSize = true;
-            this.rdoBulkDPercentage.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBulkDPercentage.ForeColor = System.Drawing.Color.White;
-            this.rdoBulkDPercentage.Location = new System.Drawing.Point(15, 154);
-            this.rdoBulkDPercentage.Name = "rdoBulkDPercentage";
-            this.rdoBulkDPercentage.Size = new System.Drawing.Size(136, 18);
-            this.rdoBulkDPercentage.TabIndex = 3;
-            this.rdoBulkDPercentage.Text = "Discount Percentage";
-            this.rdoBulkDPercentage.UseVisualStyleBackColor = true;
-            this.rdoBulkDPercentage.CheckedChanged += new System.EventHandler(this.rdoBulkDPercentage_CheckedChanged);
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(12, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 14);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Issue Date";
             // 
-            // txtBulkPercentDiscount
+            // bulkStartDate
             // 
-            this.txtBulkPercentDiscount.Enabled = false;
-            this.txtBulkPercentDiscount.Location = new System.Drawing.Point(153, 152);
-            this.txtBulkPercentDiscount.Name = "txtBulkPercentDiscount";
-            this.txtBulkPercentDiscount.Size = new System.Drawing.Size(80, 22);
-            this.txtBulkPercentDiscount.TabIndex = 4;
-            this.txtBulkPercentDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bulkStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bulkStartDate.BackColor = System.Drawing.Color.Teal;
+            this.bulkStartDate.BorderRadius = 0;
+            this.bulkStartDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bulkStartDate.ForeColor = System.Drawing.Color.White;
+            this.bulkStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bulkStartDate.FormatCustom = null;
+            this.bulkStartDate.Location = new System.Drawing.Point(15, 197);
+            this.bulkStartDate.Name = "bulkStartDate";
+            this.bulkStartDate.Size = new System.Drawing.Size(296, 36);
+            this.bulkStartDate.TabIndex = 6;
+            this.bulkStartDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 24, 754);
+            this.bulkStartDate.onValueChanged += new System.EventHandler(this.bulkStartDate_onValueChanged);
             // 
-            // label6
+            // bulkExpiryDate
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 43);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 14);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "No. Of Coupons";
-            // 
-            // numNoOfCoupons
-            // 
-            this.numNoOfCoupons.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNoOfCoupons.Location = new System.Drawing.Point(146, 41);
-            this.numNoOfCoupons.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numNoOfCoupons.Name = "numNoOfCoupons";
-            this.numNoOfCoupons.Size = new System.Drawing.Size(87, 22);
-            this.numNoOfCoupons.TabIndex = 10;
-            this.numNoOfCoupons.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numNoOfCoupons.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // txtBulkDescription
-            // 
-            this.txtBulkDescription.Location = new System.Drawing.Point(15, 66);
-            this.txtBulkDescription.Multiline = true;
-            this.txtBulkDescription.Name = "txtBulkDescription";
-            this.txtBulkDescription.Size = new System.Drawing.Size(218, 51);
-            this.txtBulkDescription.TabIndex = 10;
+            this.bulkExpiryDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bulkExpiryDate.BackColor = System.Drawing.Color.Teal;
+            this.bulkExpiryDate.BorderRadius = 0;
+            this.bulkExpiryDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bulkExpiryDate.ForeColor = System.Drawing.Color.White;
+            this.bulkExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bulkExpiryDate.FormatCustom = null;
+            this.bulkExpiryDate.Location = new System.Drawing.Point(15, 254);
+            this.bulkExpiryDate.Name = "bulkExpiryDate";
+            this.bulkExpiryDate.Size = new System.Drawing.Size(296, 36);
+            this.bulkExpiryDate.TabIndex = 8;
+            this.bulkExpiryDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 22, 343);
+            this.bulkExpiryDate.onValueChanged += new System.EventHandler(this.bulkExpiryDate_onValueChanged);
             // 
             // panel1
             // 
@@ -372,7 +373,7 @@
             this.panel1.Controls.Add(this.txtSingleFlatDiscount);
             this.panel1.Controls.Add(this.rdoSingleDPercentage);
             this.panel1.Controls.Add(this.rdoSinglePDiscount);
-            this.panel1.Controls.Add(this.btbGenerateCoupon);
+            this.panel1.Controls.Add(this.btnGenerateCoupon);
             this.panel1.Controls.Add(this.btnSaveCoupon);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
@@ -387,80 +388,95 @@
             this.panel1.Size = new System.Drawing.Size(446, 300);
             this.panel1.TabIndex = 0;
             // 
-            // txtCouponCode
+            // txtSingleDescription
             // 
-            this.txtCouponCode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCouponCode.Location = new System.Drawing.Point(15, 36);
-            this.txtCouponCode.Name = "txtCouponCode";
-            this.txtCouponCode.ReadOnly = true;
-            this.txtCouponCode.Size = new System.Drawing.Size(218, 27);
-            this.txtCouponCode.TabIndex = 2;
-            this.txtCouponCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSingleDescription.Location = new System.Drawing.Point(15, 66);
+            this.txtSingleDescription.Multiline = true;
+            this.txtSingleDescription.Name = "txtSingleDescription";
+            this.txtSingleDescription.Size = new System.Drawing.Size(218, 51);
+            this.txtSingleDescription.TabIndex = 10;
             // 
-            // singleStartDate
+            // txtSinglePercentDiscount
             // 
-            this.singleStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.singleStartDate.BackColor = System.Drawing.Color.Teal;
-            this.singleStartDate.BorderRadius = 0;
-            this.singleStartDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.singleStartDate.ForeColor = System.Drawing.Color.White;
-            this.singleStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.singleStartDate.FormatCustom = null;
-            this.singleStartDate.Location = new System.Drawing.Point(15, 197);
-            this.singleStartDate.Name = "singleStartDate";
-            this.singleStartDate.Size = new System.Drawing.Size(296, 36);
-            this.singleStartDate.TabIndex = 6;
-            this.singleStartDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 21, 207);
-            this.singleStartDate.onValueChanged += new System.EventHandler(this.singleStartDate_onValueChanged);
+            this.txtSinglePercentDiscount.Enabled = false;
+            this.txtSinglePercentDiscount.Location = new System.Drawing.Point(153, 153);
+            this.txtSinglePercentDiscount.Name = "txtSinglePercentDiscount";
+            this.txtSinglePercentDiscount.Size = new System.Drawing.Size(80, 21);
+            this.txtSinglePercentDiscount.TabIndex = 4;
+            this.txtSinglePercentDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // singleExpiryDate
+            // txtSingleFlatDiscount
             // 
-            this.singleExpiryDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.singleExpiryDate.BackColor = System.Drawing.Color.Teal;
-            this.singleExpiryDate.BorderRadius = 0;
-            this.singleExpiryDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.singleExpiryDate.ForeColor = System.Drawing.Color.White;
-            this.singleExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.singleExpiryDate.FormatCustom = null;
-            this.singleExpiryDate.Location = new System.Drawing.Point(15, 254);
-            this.singleExpiryDate.Name = "singleExpiryDate";
-            this.singleExpiryDate.Size = new System.Drawing.Size(296, 36);
-            this.singleExpiryDate.TabIndex = 8;
-            this.singleExpiryDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 21, 207);
-            this.singleExpiryDate.onValueChanged += new System.EventHandler(this.singleExpiryDate_onValueChanged);
+            this.txtSingleFlatDiscount.Location = new System.Drawing.Point(153, 123);
+            this.txtSingleFlatDiscount.Name = "txtSingleFlatDiscount";
+            this.txtSingleFlatDiscount.Size = new System.Drawing.Size(80, 21);
+            this.txtSingleFlatDiscount.TabIndex = 2;
+            this.txtSingleFlatDiscount.Text = "20";
+            this.txtSingleFlatDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label41
+            // rdoSingleDPercentage
             // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(12, 12);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(151, 17);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "Generate Single Coupon";
+            this.rdoSingleDPercentage.AutoSize = true;
+            this.rdoSingleDPercentage.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoSingleDPercentage.ForeColor = System.Drawing.Color.White;
+            this.rdoSingleDPercentage.Location = new System.Drawing.Point(15, 154);
+            this.rdoSingleDPercentage.Name = "rdoSingleDPercentage";
+            this.rdoSingleDPercentage.Size = new System.Drawing.Size(136, 18);
+            this.rdoSingleDPercentage.TabIndex = 3;
+            this.rdoSingleDPercentage.Text = "Discount Percentage";
+            this.rdoSingleDPercentage.UseVisualStyleBackColor = true;
+            this.rdoSingleDPercentage.CheckedChanged += new System.EventHandler(this.rdoSingleDPercentage_CheckedChanged);
             // 
-            // label1
+            // rdoSinglePDiscount
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 182);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Issue Date";
+            this.rdoSinglePDiscount.AutoSize = true;
+            this.rdoSinglePDiscount.Checked = true;
+            this.rdoSinglePDiscount.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoSinglePDiscount.ForeColor = System.Drawing.Color.White;
+            this.rdoSinglePDiscount.Location = new System.Drawing.Point(15, 124);
+            this.rdoSinglePDiscount.Name = "rdoSinglePDiscount";
+            this.rdoSinglePDiscount.Size = new System.Drawing.Size(126, 18);
+            this.rdoSinglePDiscount.TabIndex = 1;
+            this.rdoSinglePDiscount.TabStop = true;
+            this.rdoSinglePDiscount.Text = "Flat Price Discount";
+            this.rdoSinglePDiscount.UseVisualStyleBackColor = true;
+            this.rdoSinglePDiscount.CheckedChanged += new System.EventHandler(this.rdoSinglePDiscount_CheckedChanged);
             // 
-            // label3
+            // btnGenerateCoupon
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 239);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Expiry Date";
+            this.btnGenerateCoupon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnGenerateCoupon.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnGenerateCoupon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnGenerateCoupon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGenerateCoupon.BorderRadius = 0;
+            this.btnGenerateCoupon.ButtonText = "";
+            this.btnGenerateCoupon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerateCoupon.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGenerateCoupon.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerateCoupon.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGenerateCoupon.Iconimage = global::PointOfSaleUI.Properties.Resources.reload;
+            this.btnGenerateCoupon.Iconimage_right = null;
+            this.btnGenerateCoupon.Iconimage_right_Selected = null;
+            this.btnGenerateCoupon.Iconimage_Selected = null;
+            this.btnGenerateCoupon.IconMarginLeft = 0;
+            this.btnGenerateCoupon.IconMarginRight = 0;
+            this.btnGenerateCoupon.IconRightVisible = true;
+            this.btnGenerateCoupon.IconRightZoom = 0D;
+            this.btnGenerateCoupon.IconVisible = true;
+            this.btnGenerateCoupon.IconZoom = 50D;
+            this.btnGenerateCoupon.IsTab = false;
+            this.btnGenerateCoupon.Location = new System.Drawing.Point(207, 36);
+            this.btnGenerateCoupon.Name = "btnGenerateCoupon";
+            this.btnGenerateCoupon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnGenerateCoupon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnGenerateCoupon.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnGenerateCoupon.selected = false;
+            this.btnGenerateCoupon.Size = new System.Drawing.Size(27, 27);
+            this.btnGenerateCoupon.TabIndex = 9;
+            this.btnGenerateCoupon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGenerateCoupon.Textcolor = System.Drawing.Color.White;
+            this.btnGenerateCoupon.TextFont = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.btnGenerateCoupon.Click += new System.EventHandler(this.btnGenerateCoupon_Click);
             // 
             // btnSaveCoupon
             // 
@@ -499,95 +515,80 @@
             this.btnSaveCoupon.TextFont = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
             this.btnSaveCoupon.Click += new System.EventHandler(this.btnSingleGenerate_Click);
             // 
-            // btbGenerateCoupon
+            // label3
             // 
-            this.btbGenerateCoupon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btbGenerateCoupon.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btbGenerateCoupon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btbGenerateCoupon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btbGenerateCoupon.BorderRadius = 0;
-            this.btbGenerateCoupon.ButtonText = "";
-            this.btbGenerateCoupon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btbGenerateCoupon.DisabledColor = System.Drawing.Color.Gray;
-            this.btbGenerateCoupon.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbGenerateCoupon.Iconcolor = System.Drawing.Color.Transparent;
-            this.btbGenerateCoupon.Iconimage = global::PointOfSaleUI.Properties.Resources.reload;
-            this.btbGenerateCoupon.Iconimage_right = null;
-            this.btbGenerateCoupon.Iconimage_right_Selected = null;
-            this.btbGenerateCoupon.Iconimage_Selected = null;
-            this.btbGenerateCoupon.IconMarginLeft = 0;
-            this.btbGenerateCoupon.IconMarginRight = 0;
-            this.btbGenerateCoupon.IconRightVisible = true;
-            this.btbGenerateCoupon.IconRightZoom = 0D;
-            this.btbGenerateCoupon.IconVisible = true;
-            this.btbGenerateCoupon.IconZoom = 50D;
-            this.btbGenerateCoupon.IsTab = false;
-            this.btbGenerateCoupon.Location = new System.Drawing.Point(207, 36);
-            this.btbGenerateCoupon.Name = "btbGenerateCoupon";
-            this.btbGenerateCoupon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btbGenerateCoupon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btbGenerateCoupon.OnHoverTextColor = System.Drawing.Color.White;
-            this.btbGenerateCoupon.selected = false;
-            this.btbGenerateCoupon.Size = new System.Drawing.Size(27, 27);
-            this.btbGenerateCoupon.TabIndex = 9;
-            this.btbGenerateCoupon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btbGenerateCoupon.Textcolor = System.Drawing.Color.White;
-            this.btbGenerateCoupon.TextFont = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.btbGenerateCoupon.Click += new System.EventHandler(this.btbGenerateCoupon_Click);
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 239);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Expiry Date";
             // 
-            // rdoSinglePDiscount
+            // label1
             // 
-            this.rdoSinglePDiscount.AutoSize = true;
-            this.rdoSinglePDiscount.Checked = true;
-            this.rdoSinglePDiscount.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoSinglePDiscount.ForeColor = System.Drawing.Color.White;
-            this.rdoSinglePDiscount.Location = new System.Drawing.Point(15, 124);
-            this.rdoSinglePDiscount.Name = "rdoSinglePDiscount";
-            this.rdoSinglePDiscount.Size = new System.Drawing.Size(126, 18);
-            this.rdoSinglePDiscount.TabIndex = 1;
-            this.rdoSinglePDiscount.TabStop = true;
-            this.rdoSinglePDiscount.Text = "Flat Price Discount";
-            this.rdoSinglePDiscount.UseVisualStyleBackColor = true;
-            this.rdoSinglePDiscount.CheckedChanged += new System.EventHandler(this.rdoSinglePDiscount_CheckedChanged);
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 182);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Issue Date";
             // 
-            // rdoSingleDPercentage
+            // label41
             // 
-            this.rdoSingleDPercentage.AutoSize = true;
-            this.rdoSingleDPercentage.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoSingleDPercentage.ForeColor = System.Drawing.Color.White;
-            this.rdoSingleDPercentage.Location = new System.Drawing.Point(15, 154);
-            this.rdoSingleDPercentage.Name = "rdoSingleDPercentage";
-            this.rdoSingleDPercentage.Size = new System.Drawing.Size(136, 18);
-            this.rdoSingleDPercentage.TabIndex = 3;
-            this.rdoSingleDPercentage.Text = "Discount Percentage";
-            this.rdoSingleDPercentage.UseVisualStyleBackColor = true;
-            this.rdoSingleDPercentage.CheckedChanged += new System.EventHandler(this.rdoSingleDPercentage_CheckedChanged);
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(12, 12);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(151, 17);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Generate Single Coupon";
             // 
-            // txtSingleFlatDiscount
+            // singleExpiryDate
             // 
-            this.txtSingleFlatDiscount.Location = new System.Drawing.Point(153, 123);
-            this.txtSingleFlatDiscount.Name = "txtSingleFlatDiscount";
-            this.txtSingleFlatDiscount.Size = new System.Drawing.Size(80, 21);
-            this.txtSingleFlatDiscount.TabIndex = 2;
-            this.txtSingleFlatDiscount.Text = "20";
-            this.txtSingleFlatDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.singleExpiryDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.singleExpiryDate.BackColor = System.Drawing.Color.Teal;
+            this.singleExpiryDate.BorderRadius = 0;
+            this.singleExpiryDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.singleExpiryDate.ForeColor = System.Drawing.Color.White;
+            this.singleExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.singleExpiryDate.FormatCustom = null;
+            this.singleExpiryDate.Location = new System.Drawing.Point(15, 254);
+            this.singleExpiryDate.Name = "singleExpiryDate";
+            this.singleExpiryDate.Size = new System.Drawing.Size(296, 36);
+            this.singleExpiryDate.TabIndex = 8;
+            this.singleExpiryDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 21, 207);
+            this.singleExpiryDate.onValueChanged += new System.EventHandler(this.singleExpiryDate_onValueChanged);
             // 
-            // txtSinglePercentDiscount
+            // singleStartDate
             // 
-            this.txtSinglePercentDiscount.Enabled = false;
-            this.txtSinglePercentDiscount.Location = new System.Drawing.Point(153, 153);
-            this.txtSinglePercentDiscount.Name = "txtSinglePercentDiscount";
-            this.txtSinglePercentDiscount.Size = new System.Drawing.Size(80, 21);
-            this.txtSinglePercentDiscount.TabIndex = 4;
-            this.txtSinglePercentDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.singleStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.singleStartDate.BackColor = System.Drawing.Color.Teal;
+            this.singleStartDate.BorderRadius = 0;
+            this.singleStartDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.singleStartDate.ForeColor = System.Drawing.Color.White;
+            this.singleStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.singleStartDate.FormatCustom = null;
+            this.singleStartDate.Location = new System.Drawing.Point(15, 197);
+            this.singleStartDate.Name = "singleStartDate";
+            this.singleStartDate.Size = new System.Drawing.Size(296, 36);
+            this.singleStartDate.TabIndex = 6;
+            this.singleStartDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 21, 207);
+            this.singleStartDate.onValueChanged += new System.EventHandler(this.singleStartDate_onValueChanged);
             // 
-            // txtSingleDescription
+            // txtCouponCode
             // 
-            this.txtSingleDescription.Location = new System.Drawing.Point(15, 66);
-            this.txtSingleDescription.Multiline = true;
-            this.txtSingleDescription.Name = "txtSingleDescription";
-            this.txtSingleDescription.Size = new System.Drawing.Size(218, 51);
-            this.txtSingleDescription.TabIndex = 10;
+            this.txtCouponCode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCouponCode.Location = new System.Drawing.Point(15, 36);
+            this.txtCouponCode.Name = "txtCouponCode";
+            this.txtCouponCode.ReadOnly = true;
+            this.txtCouponCode.Size = new System.Drawing.Size(218, 27);
+            this.txtCouponCode.TabIndex = 2;
+            this.txtCouponCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel1
             // 
@@ -635,6 +636,19 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(905, 44);
             this.tableLayoutPanel2.TabIndex = 35;
             // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.Location = new System.Drawing.Point(148, 12);
+            this.lblWarning.Margin = new System.Windows.Forms.Padding(3, 12, 3, 0);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(609, 21);
+            this.lblWarning.TabIndex = 37;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
+            // 
             // btnDeleteCoupon
             // 
             this.btnDeleteCoupon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -669,19 +683,6 @@
             this.btnUpdateCoupon.Text = "Update Coupon";
             this.btnUpdateCoupon.UseVisualStyleBackColor = false;
             this.btnUpdateCoupon.Visible = false;
-            // 
-            // lblWarning
-            // 
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.Location = new System.Drawing.Point(148, 12);
-            this.lblWarning.Margin = new System.Windows.Forms.Padding(3, 12, 3, 0);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(609, 21);
-            this.lblWarning.TabIndex = 37;
-            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWarning.Visible = false;
             // 
             // Coupons
             // 
@@ -740,7 +741,7 @@
         private System.Windows.Forms.TextBox txtSingleFlatDiscount;
         private System.Windows.Forms.RadioButton rdoSingleDPercentage;
         private System.Windows.Forms.RadioButton rdoSinglePDiscount;
-        private Bunifu.Framework.UI.BunifuFlatButton btbGenerateCoupon;
+        private Bunifu.Framework.UI.BunifuFlatButton btnGenerateCoupon;
         private Bunifu.Framework.UI.BunifuFlatButton btnSaveCoupon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;

@@ -105,7 +105,7 @@ namespace PointOfSaleUI.UI
             txtBarcode.Focus();
             gridPurchaseOrders.DataSource = null;
             gridPurchaseOrders.Visible = false;
-            Messages.DisplayMessage("Stocks purchased are received.", lblWarning, Color.LimeGreen);
+            Messages.DisplayMessage("Stocks purchased are received.", lblWarning, Color.SeaGreen);
             this.LoadAllPurchasedStocks();
         }
 

@@ -109,7 +109,7 @@ namespace PointOfSaleUI.UI
                 Remarks = "Ordered"
             };
             dataAccess.SaveData("dbo.InsertStockPurchaseOrder", purchaseOrder, "POS");
-            Messages.DisplayMessage("Purchase order for the product is placed.", lblWarning, Color.LimeGreen);
+            Messages.DisplayMessage("Purchase order for the product is placed.", lblWarning, Color.SeaGreen);
             this.LoadPurchaseOrders();
             this.ClearAll();
             btnAdd.Enabled = true;
