@@ -103,6 +103,16 @@ namespace PointOfSaleUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coupon {
+            get {
+                object obj = ResourceManager.GetObject("coupon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashboard {
             get {
                 object obj = ResourceManager.GetObject("dashboard", resourceCulture);
@@ -131,7 +141,7 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please fill in all the details to proceed..
+        ///   Looks up a localized string similar to Please fill in all the details to proceed.
         /// </summary>
         internal static string FILL_ALL_DETAILS {
             get {
@@ -149,7 +159,7 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid login credentials provided..
+        ///   Looks up a localized string similar to Invalid login credentials provided.
         /// </summary>
         internal static string INVALID_CREDENTIALS {
             get {
@@ -234,7 +244,17 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The provided passwords do not match..
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open {
+            get {
+                object obj = ResourceManager.GetObject("open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The provided passwords do not match.
         /// </summary>
         internal static string PASS_DONT_MATCH {
             get {
@@ -243,7 +263,7 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter new passwords..
+        ///   Looks up a localized string similar to Please enter new passwords.
         /// </summary>
         internal static string PUT_PASSWORDS {
             get {
@@ -254,9 +274,29 @@ namespace PointOfSaleUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reload {
+            get {
+                object obj = ResourceManager.GetObject("reload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap report {
             get {
                 object obj = ResourceManager.GetObject("report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save {
+            get {
+                object obj = ResourceManager.GetObject("save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -420,7 +460,7 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sorry! The user is blocked by the administrator..
+        ///   Looks up a localized string similar to Sorry! The user is blocked by the administrator.
         /// </summary>
         internal static string USER_BLOCKED {
             get {
