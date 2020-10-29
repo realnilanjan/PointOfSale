@@ -116,5 +116,11 @@ namespace PointOfSale.Lib.DataAccess
             var rows = LoadData<CouponDataModel, dynamic>("dbo.GetAllCoupons", new { }, "POS");
             return rows;
         }
+
+        public CouponDataModel GetCoupon(string CouponCode)
+        {
+            var rows = LoadData<CouponDataModel, dynamic>("dbo.GetAppliedCoupon", new { CouponCode }, "POS");
+            return rows.FirstOrDefault();
+        }
     }
 }
