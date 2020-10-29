@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\SQLDataAccess.cs" />
+    <Compile Include="DataModel\CouponDataModel.cs" />
     <Compile Include="DataModel\ProductDataModel.cs" />
     <Compile Include="DataModel\ProductToStockDataModel.cs" />
     <Compile Include="DataModel\QuantityDescriptionModel.cs" />
@@ -57,11 +58,13 @@
     <Compile Include="DataModel\SupplierDataModel.cs" />
     <Compile Include="Encryptions\EncryptTo.cs" />
     <Compile Include="Helpers\Functions.cs" />
+    <Compile Include="Helpers\Generate.cs" />
     <Compile Include="Helpers\Messages.cs" />
     <Compile Include="Models\BusinessInformation.cs" />
     <Compile Include="Models\BusinessModel.cs" />
     <Compile Include="DataModel\CategoryDataModel.cs" />
     <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\DeleteReceivedStock.cs" />
     <Compile Include="Models\LoggedInUserModel.cs" />
     <Compile Include="Models\OrderedStockPurchasesModel.cs" />
@@ -75,6 +78,8 @@
     <Compile Include="Models\WithoutPasswordModel.cs" />
     <Compile Include="Models\WithPasswordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TerminalModels\CartItemModel.cs" />
+    <Compile Include="TerminalModels\ProductForCartModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

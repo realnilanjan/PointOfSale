@@ -1,11 +1,13 @@
 ﻿using Dapper;
 using PointOfSale.Lib.DataModel;
 using PointOfSale.Lib.Models;
+using PointOfSale.Lib.TerminalModels;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace PointOfSale.Lib.DataAccess
 {
@@ -100,6 +102,18 @@ namespace PointOfSale.Lib.DataAccess
         public List<PurchasedStockDataModel> LoadAllStockPurchased()
         {
             var rows = LoadData<PurchasedStockDataModel, dynamic>("dbo.GetAllPurchasedStock", new { }, "POS");
+            return rows;
+        }
+
+        public ProductForCartModel GetProductForCart(string Barcode)
+        {
+            var rows = LoadData<ProductForCartModel, dynamic>("dbo.GetProductForCart", new { Barcode }, "POS");
+            return rows.FirstOrDefault();
+        }
+
+        public List<CouponDataModel> GetAllCoupons()
+        {
+            var rows = LoadData<CouponDataModel, dynamic>("dbo.GetAllCoupons", new { }, "POS");
             return rows;
         }
     }
