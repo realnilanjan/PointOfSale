@@ -2,12 +2,9 @@
 {
     public class CheckOutDetailsModel
     {
-        public int CashierId { get; set; }
-        public string InvoiceNumber { get; set; }
-        public decimal SubTotal { get; set; }
-        public int CouponId { get; set; }
-        public decimal SaleTaxRate { get; set; }
-        public decimal ShippingRate { get; set; }
-        public decimal GrandTotal { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
+        public decimal PurchasePrice { get; set; }
+        public int Tax { get; set; }
     }
 }
