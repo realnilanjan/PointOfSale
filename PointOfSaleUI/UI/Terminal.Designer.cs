@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Terminal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.Panel();
             this.txtBusinessName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbl1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -104,6 +104,8 @@
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblCouponWarning = new System.Windows.Forms.Label();
+            this.btnRemoveCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnApplyCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtCouponCode = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel26 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -112,8 +114,6 @@
             this.btnOpenDrafts = new Bunifu.Framework.UI.BunifuFlatButton();
             this.controlTimer = new System.Windows.Forms.Timer(this.components);
             this.lblWarning = new System.Windows.Forms.Label();
-            this.btnRemoveCoupon = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.lblCouponWarning = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -1129,6 +1129,56 @@
             this.panel7.Size = new System.Drawing.Size(396, 100);
             this.panel7.TabIndex = 31;
             // 
+            // lblCouponWarning
+            // 
+            this.lblCouponWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblCouponWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblCouponWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCouponWarning.ForeColor = System.Drawing.Color.White;
+            this.lblCouponWarning.Location = new System.Drawing.Point(0, 80);
+            this.lblCouponWarning.Name = "lblCouponWarning";
+            this.lblCouponWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblCouponWarning.Size = new System.Drawing.Size(396, 20);
+            this.lblCouponWarning.TabIndex = 38;
+            this.lblCouponWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCouponWarning.Visible = false;
+            // 
+            // btnRemoveCoupon
+            // 
+            this.btnRemoveCoupon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRemoveCoupon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRemoveCoupon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRemoveCoupon.BorderRadius = 0;
+            this.btnRemoveCoupon.ButtonText = "Remove";
+            this.btnRemoveCoupon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveCoupon.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRemoveCoupon.Enabled = false;
+            this.btnRemoveCoupon.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRemoveCoupon.Iconimage = null;
+            this.btnRemoveCoupon.Iconimage_right = null;
+            this.btnRemoveCoupon.Iconimage_right_Selected = null;
+            this.btnRemoveCoupon.Iconimage_Selected = null;
+            this.btnRemoveCoupon.IconMarginLeft = 0;
+            this.btnRemoveCoupon.IconMarginRight = 0;
+            this.btnRemoveCoupon.IconRightVisible = true;
+            this.btnRemoveCoupon.IconRightZoom = 0D;
+            this.btnRemoveCoupon.IconVisible = true;
+            this.btnRemoveCoupon.IconZoom = 90D;
+            this.btnRemoveCoupon.IsTab = false;
+            this.btnRemoveCoupon.Location = new System.Drawing.Point(288, 31);
+            this.btnRemoveCoupon.Name = "btnRemoveCoupon";
+            this.btnRemoveCoupon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRemoveCoupon.OnHovercolor = System.Drawing.Color.Red;
+            this.btnRemoveCoupon.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRemoveCoupon.selected = false;
+            this.btnRemoveCoupon.Size = new System.Drawing.Size(65, 40);
+            this.btnRemoveCoupon.TabIndex = 14;
+            this.btnRemoveCoupon.Text = "Remove";
+            this.btnRemoveCoupon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRemoveCoupon.Textcolor = System.Drawing.Color.White;
+            this.btnRemoveCoupon.TextFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveCoupon.Click += new System.EventHandler(this.btnRemoveCoupon_Click);
+            // 
             // btnApplyCoupon
             // 
             this.btnApplyCoupon.Activecolor = System.Drawing.Color.Teal;
@@ -1153,8 +1203,8 @@
             this.btnApplyCoupon.IsTab = false;
             this.btnApplyCoupon.Location = new System.Drawing.Point(217, 31);
             this.btnApplyCoupon.Name = "btnApplyCoupon";
-            this.btnApplyCoupon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnApplyCoupon.OnHovercolor = System.Drawing.Color.Teal;
+            this.btnApplyCoupon.Normalcolor = System.Drawing.Color.Teal;
+            this.btnApplyCoupon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnApplyCoupon.OnHoverTextColor = System.Drawing.Color.White;
             this.btnApplyCoupon.selected = false;
             this.btnApplyCoupon.Size = new System.Drawing.Size(65, 40);
@@ -1195,8 +1245,8 @@
             // 
             this.gridCart.AllowUserToAddRows = false;
             this.gridCart.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
+            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridCart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1204,14 +1254,14 @@
             this.gridCart.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gridCart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCart.DoubleBuffered = true;
             this.gridCart.EnableHeadersVisualStyles = false;
@@ -1223,14 +1273,14 @@
             this.gridCart.Name = "gridCart";
             this.gridCart.ReadOnly = true;
             this.gridCart.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gridCart.RowHeadersVisible = false;
             this.gridCart.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridCart.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -1274,6 +1324,7 @@
             this.btnSaveDraft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSaveDraft.Textcolor = System.Drawing.Color.White;
             this.btnSaveDraft.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveDraft.Click += new System.EventHandler(this.btnSaveDraft_Click);
             // 
             // btnOpenDrafts
             // 
@@ -1329,56 +1380,6 @@
             this.lblWarning.TabIndex = 37;
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblWarning.Visible = false;
-            // 
-            // btnRemoveCoupon
-            // 
-            this.btnRemoveCoupon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemoveCoupon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemoveCoupon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemoveCoupon.BorderRadius = 0;
-            this.btnRemoveCoupon.ButtonText = "Remove";
-            this.btnRemoveCoupon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemoveCoupon.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRemoveCoupon.Enabled = false;
-            this.btnRemoveCoupon.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRemoveCoupon.Iconimage = null;
-            this.btnRemoveCoupon.Iconimage_right = null;
-            this.btnRemoveCoupon.Iconimage_right_Selected = null;
-            this.btnRemoveCoupon.Iconimage_Selected = null;
-            this.btnRemoveCoupon.IconMarginLeft = 0;
-            this.btnRemoveCoupon.IconMarginRight = 0;
-            this.btnRemoveCoupon.IconRightVisible = true;
-            this.btnRemoveCoupon.IconRightZoom = 0D;
-            this.btnRemoveCoupon.IconVisible = true;
-            this.btnRemoveCoupon.IconZoom = 90D;
-            this.btnRemoveCoupon.IsTab = false;
-            this.btnRemoveCoupon.Location = new System.Drawing.Point(288, 31);
-            this.btnRemoveCoupon.Name = "btnRemoveCoupon";
-            this.btnRemoveCoupon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemoveCoupon.OnHovercolor = System.Drawing.Color.Red;
-            this.btnRemoveCoupon.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRemoveCoupon.selected = false;
-            this.btnRemoveCoupon.Size = new System.Drawing.Size(65, 40);
-            this.btnRemoveCoupon.TabIndex = 14;
-            this.btnRemoveCoupon.Text = "Remove";
-            this.btnRemoveCoupon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemoveCoupon.Textcolor = System.Drawing.Color.White;
-            this.btnRemoveCoupon.TextFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveCoupon.Click += new System.EventHandler(this.btnRemoveCoupon_Click);
-            // 
-            // lblCouponWarning
-            // 
-            this.lblCouponWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblCouponWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblCouponWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCouponWarning.ForeColor = System.Drawing.Color.White;
-            this.lblCouponWarning.Location = new System.Drawing.Point(0, 77);
-            this.lblCouponWarning.Name = "lblCouponWarning";
-            this.lblCouponWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblCouponWarning.Size = new System.Drawing.Size(396, 23);
-            this.lblCouponWarning.TabIndex = 38;
-            this.lblCouponWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCouponWarning.Visible = false;
             // 
             // Terminal
             // 

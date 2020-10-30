@@ -23,6 +23,8 @@ namespace PointOfSaleUI.UI
         private decimal TaxRate = Properties.Settings.Default.TaxRate;
         CouponDataModel couponData = new CouponDataModel();
         private bool IsCouponAdded = false;
+        private bool WillBeDelivered = false;
+        private decimal DiscountApplied = 0;
 
         private string CartInvoiceNumber { get; set; }
         private int CashierId { get; set; }
@@ -72,23 +74,53 @@ namespace PointOfSaleUI.UI
             decimal TotalTax = 0;
             decimal Total = 0;
 
-            foreach (DataGridViewRow row in gridCart.Rows)
-            {
-                Quantity += Convert.ToInt32(row.Cells["Quantity"].Value);
-                SubTotal += Convert.ToDecimal(row.Cells["RetailPrice"].Value) * Convert.ToInt32(row.Cells["Quantity"].Value);
-                TotalTax += Convert.ToDecimal(row.Cells["Tax"].Value);
-                Total = SubTotal + TotalTax;
-            }
+            var stockInfo = from s in CartToCheckOut group s by s.StockId into g 
+                            select new 
+                            { 
+                                Key = g.Key,
+                                Quantity = g.Sum(x => x.Quantity),
+                                SubTotal = g.Sum(x => x.RetailPrice * x.Quantity),
+                                TotalTax = g.Sum(x => x.Tax)
+                            };
+
+            var total = from s in stockInfo
+                        group s by s.Key into g
+                        select new
+                        {
+                            Quantity = g.Sum(x => x.Quantity),
+                            SubTotal = g.Sum(x => x.SubTotal),
+                            TotalTax = g.Sum(x => x.TotalTax),
+                            Total = g.Sum(x => x.SubTotal + x.TotalTax)
+                        };
+
+            Quantity = total.Sum(x => x.Quantity);
+            SubTotal = total.Sum(x => x.SubTotal);
+            TotalTax = total.Sum(x => x.TotalTax);
+            Total = total.Sum(x => x.Total);
+
             txtTotalItems.Text = Quantity.ToString();
             txtSubTotal.Text = SubTotal.ToString("N2");
             txtTax.Text = TotalTax.ToString("N2");
-            txtTotal.Text = Total.ToString("N2");
             GrandTotal = Total;
-            txtBarcode.Focus();
+            txtTotal.Text = GrandTotal.ToString("N2");
 
+            //Coupons
+            if (IsCouponAdded == true)
+            {
+                GrandTotal -= DiscountApplied;
+                txtTotal.Text = GrandTotal.ToString("N2");
+            }
+
+            ////Delivery
+            if (WillBeDelivered == true)
+            {
+                GrandTotal += ShippingRate;
+                txtTotal.Text = GrandTotal.ToString("N2");
+            }
+
+            txtBarcode.Focus();
             CartSubTotal = SubTotal;
             CartSaleTaxRate = TotalTax;
-
         }
 
         private void dateTimeTimer_Tick(object sender, EventArgs e)
@@ -143,6 +175,9 @@ namespace PointOfSaleUI.UI
                                 row.Cells[6].Value = Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[4].Value);
                                 gridCart.Refresh();
                                 ProductAlreadyInList = true;
+
+                                var newQuantity = CartToCheckOut.FirstOrDefault(d => d.StockId == ProductInCart.StockId);
+                                if (newQuantity != null) { newQuantity.Quantity = quantity; }
                             }
                         }
                         if (!ProductAlreadyInList)
@@ -238,23 +273,27 @@ namespace PointOfSaleUI.UI
         {
             if (chkDelivery.Checked == true)
             {
+                WillBeDelivered = true;
+                ShippingRate = DeliveryRate;
                 lblDelivery.ForeColor = Color.White;
                 lblDeliveryRupee.ForeColor = Color.White;
                 txtDelivery.ForeColor = Color.White;
-                txtDelivery.Text = DeliveryRate.ToString("N2");
-                GrandTotal += DeliveryRate;
-                ShippingRate = DeliveryRate;
+                GrandTotal += ShippingRate;
+                txtDelivery.Text = ShippingRate.ToString("N2");
                 txtTotal.Text = GrandTotal.ToString("N2");
+                this.CalculateTotal();
             }
             else
             {
+                ShippingRate = 0;
+                WillBeDelivered = false;
                 lblDelivery.ForeColor = Color.Gray;
                 lblDeliveryRupee.ForeColor = Color.Gray;
                 txtDelivery.ForeColor = Color.Gray;
-                txtDelivery.Text = "0.00";
-                ShippingRate = 0;
-                GrandTotal -= DeliveryRate;
+                GrandTotal -= ShippingRate;
+                txtDelivery.Text = ShippingRate.ToString("N2");
                 txtTotal.Text = GrandTotal.ToString("N2");
+                this.CalculateTotal();
             }
         }
 
@@ -348,10 +387,18 @@ namespace PointOfSaleUI.UI
             txtUnitPrice.Clear();
             txtUnitQuantity.Clear();
             txtTotalQtyAmount.Clear();
+            DiscountApplied = 0;
+            txtDiscount.Text = DiscountApplied.ToString("N2");
+            txtCouponCode.Clear();
+            btnRemoveCoupon.Enabled = false;
+            txtDelivery.Text = ShippingRate.ToString("N2");
             CartToCheckOut.Clear();
             gridCart.DataSource = null;
             CartInvoiceNumber = Generate.InvoiceNumber;
             txtInvoiceNumber.Text = CartInvoiceNumber;
+            chkDelivery.Checked = false;
+            ShippingRate = 0;
+            GrandTotal = 0;
             this.CalculateTotal();
         }
 
@@ -414,10 +461,9 @@ namespace PointOfSaleUI.UI
 
         private void btnApplyCoupon_Click(object sender, EventArgs e)
         {
+            IsCouponAdded = true;
             string CouponCode = txtCouponCode.Text;
             couponData = dataAccess.GetCoupon(CouponCode);
-
-            //Get Coupon Details
             if (couponData == null)
             {
                 Messages.DisplayMessage("Coupon does not exist..", lblCouponWarning, Color.Red);
@@ -428,13 +474,27 @@ namespace PointOfSaleUI.UI
             {
                 CouponId = couponData.Id;
 
-                //TODO: Process coupon
-                //Is Flat or Is Percent based on couponData
-                //Add Discount to Grand Total
+                if (couponData.IsFlatRate == true)
+                {
+                    GrandTotal -= couponData.CouponAmount;
+                    DiscountApplied = couponData.CouponAmount;
+                    txtDiscount.Text = "-" + DiscountApplied.ToString("N2");
+                    txtTotal.Text = GrandTotal.ToString("N2");
+                }
+                else if (couponData.IsFlatRate == false)
+                {
+                    var discounted = GrandTotal * (DiscountApplied / 100);
+                    var calculateDiscount = GrandTotal - (GrandTotal * (DiscountApplied / 100));
+                    DiscountApplied = calculateDiscount;
+                    GrandTotal = calculateDiscount;
+                    txtDiscount.Text = "-" + discounted.ToString("N2");
+                    txtTotal.Text = GrandTotal.ToString("N2");
+                }
 
-                IsCouponAdded = true;
+                this.CalculateTotal();
+
                 Messages.DisplayMessage("Coupon added to cart.", lblCouponWarning, Color.SeaGreen);
-                txtCouponCode.Text = "Applied";
+                txtCouponCode.Text = "APPLIED";
                 txtCouponCode.Enabled = false;
                 btnApplyCoupon.Enabled = false;
                 btnRemoveCoupon.Enabled = true;
@@ -444,13 +504,33 @@ namespace PointOfSaleUI.UI
         private void btnRemoveCoupon_Click(object sender, EventArgs e)
         {
             IsCouponAdded = false;
+            txtDiscount.Text = "0.00";
+            GrandTotal += DiscountApplied;
+            txtTotal.Text = GrandTotal.ToString("N2");
 
             //Remove coupon discount from Grand Total
+            this.CalculateTotal();
             txtCouponCode.Enabled = true;
             btnRemoveCoupon.Enabled = false;
             btnApplyCoupon.Enabled = true;
             txtCouponCode.Clear();
             txtCouponCode.Focus();
+        }
+
+        private void btnSaveDraft_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("This will make this transaction void. Do you want to save and continue?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                string FileName = CartInvoiceNumber + "_" + DateTime.Now.ToString("d");
+                Functions.SaveDrafts(gridCart, FileName);
+                Messages.DisplayMessage("This transaction is saved. Please serve the next customer.", lblWarning, Color.OrangeRed);
+                this.VoidTransaction();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
