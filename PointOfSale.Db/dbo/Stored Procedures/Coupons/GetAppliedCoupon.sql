@@ -3,5 +3,5 @@
 AS
 	SELECT [Id], [CouponCode], [CouponDescription], [IssueDate], [ExpiryDate], [IsFlatRate], [IsPercentDiscount], [CouponAmount], [IsUsed]
 	FROM [dbo].[Coupons]
-	WHERE CouponCode=@CouponCode;
+	WHERE CouponCode=@CouponCode AND IsUsed = 0;
 RETURN 0

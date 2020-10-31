@@ -72,6 +72,7 @@
     <Folder Include="dbo\Stored Procedures\Quantity" />
     <Folder Include="dbo\Stored Procedures\Cart" />
     <Folder Include="dbo\Stored Procedures\Coupons" />
+    <Folder Include="dbo\Stored Procedures\Sale" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\PointOfSale.Db.publish.xml" />
@@ -127,6 +128,10 @@
     <Build Include="dbo\Stored Procedures\Coupons\DeleteCoupon.sql" />
     <Build Include="dbo\Stored Procedures\Coupons\GetAllCoupons.sql" />
     <Build Include="dbo\Stored Procedures\Coupons\GetAppliedCoupon.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\SaveSale.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\SaveSaleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\UpdateSoldProduct.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\SetCouponApplied.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
