@@ -148,8 +148,6 @@ namespace PointOfSaleUI.UI
                 string Barcode = txtBarcode.Text;
                 ProductInCart = dataAccess.GetProductForCart(Barcode);
 
-                //Delete Product from stock and re-add on transaction void
-
                 if (ProductInCart == null)
                 {
                     SystemSounds.Hand.Play();
