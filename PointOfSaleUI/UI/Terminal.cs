@@ -17,28 +17,26 @@ namespace PointOfSaleUI.UI
     public partial class Terminal : Form
     {
         SQLDataAccess dataAccess = new SQLDataAccess();
-        private LoggedInUserModel _loggedInUser;
-        List<CartItemModel> Cart = new List<CartItemModel>();
-        public ProductForCartModel ProductInCart { get; set; }
-        private decimal TaxRate = Properties.Settings.Default.TaxRate;
-        CouponDataModel couponData = new CouponDataModel();
-        private bool IsCouponAdded = false;
-        private bool WillBeDelivered = false;
-        private decimal DiscountApplied = 0;
-
-        private string CartInvoiceNumber { get; set; }
-        private int CashierId { get; set; }
-        private decimal CartSubTotal { get; set; }
-        private decimal CartSaleTaxRate { get; set; }
-        private int CouponId { get; set; }
-        private decimal ShippingRate { get; set; }
-        private decimal GrandTotal { get; set; }
 
         private decimal DeliveryRate { get { return Properties.Settings.Default.DeliveryRate; } }
-        private decimal GetTaxRate
-        {
-            get { return TaxRate / 100; }
-        }
+        private decimal GetTaxRate { get { return TaxRate / 100; } }
+        List<CartItemModel> Cart = new List<CartItemModel>();
+        ProductForCartModel ProductInCart { get; set; }
+        CouponDataModel couponData { get; set; }
+
+        private decimal TaxRate = Properties.Settings.Default.TaxRate;
+        private LoggedInUserModel _loggedInUser;
+        private bool WillBeDelivered = false;
+        private decimal DiscountApplied = 0;
+        private bool IsCouponAdded = false;
+
+        private string CartInvoiceNumber { get; set; }
+        private decimal CartSaleTaxRate { get; set; }
+        private decimal CartSubTotal { get; set; }
+        private decimal ShippingRate { get; set; }
+        private decimal GrandTotal { get; set; }
+        private int CashierId { get; set; }
+        private int CouponId { get; set; }
 
         public Terminal(LoggedInUserModel loggedInUser)
         {
@@ -104,14 +102,12 @@ namespace PointOfSaleUI.UI
             GrandTotal = Total;
             txtTotal.Text = GrandTotal.ToString("N2");
 
-            //Coupons
             if (IsCouponAdded == true)
             {
                 GrandTotal -= DiscountApplied;
                 txtTotal.Text = GrandTotal.ToString("N2");
             }
 
-            ////Delivery
             if (WillBeDelivered == true)
             {
                 GrandTotal += ShippingRate;
@@ -136,7 +132,12 @@ namespace PointOfSaleUI.UI
 
         private void txtBarcode_TextChanged(object sender, EventArgs e)
         {
-            var config = new MapperConfiguration(cfg => { cfg.CreateMap<ProductForCartModel, CartItemModel>(); });
+            var config = new MapperConfiguration
+                (cfg => 
+                { 
+                    cfg.CreateMap<ProductForCartModel, CartItemModel>(); 
+                });
+
             IMapper iMapper = config.CreateMapper();
             var source = new ProductForCartModel();
             var destination = iMapper.Map<ProductForCartModel, CartItemModel>(source);
