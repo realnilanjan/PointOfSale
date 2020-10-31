@@ -122,5 +122,15 @@ namespace PointOfSale.Lib.DataAccess
             var rows = LoadData<CouponDataModel, dynamic>("dbo.GetAppliedCoupon", new { CouponCode }, "POS");
             return rows.FirstOrDefault();
         }
+
+        public int SaveSale(string storedProcedure, SaleModel parameters, string connectionStringName)
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var Id = connection.Query<int>(storedProcedure, parameters, commandType: CommandType.StoredProcedure).Single();
+                return Id;
+            }
+        }
     }
 }

@@ -18,7 +18,7 @@ namespace PointOfSaleUI.UI
     {
         SQLDataAccess dataAccess = new SQLDataAccess();
         private LoggedInUserModel _loggedInUser;
-        List<CartItemModel> CartToCheckOut = new List<CartItemModel>();
+        List<CartItemModel> Cart = new List<CartItemModel>();
         public ProductForCartModel ProductInCart { get; set; }
         private decimal TaxRate = Properties.Settings.Default.TaxRate;
         CouponDataModel couponData = new CouponDataModel();
@@ -74,7 +74,7 @@ namespace PointOfSaleUI.UI
             decimal TotalTax = 0;
             decimal Total = 0;
 
-            var stockInfo = from s in CartToCheckOut group s by s.StockId into g 
+            var stockInfo = from s in Cart group s by s.StockId into g 
                             select new 
                             { 
                                 Key = g.Key,
@@ -148,6 +148,8 @@ namespace PointOfSaleUI.UI
                 string Barcode = txtBarcode.Text;
                 ProductInCart = dataAccess.GetProductForCart(Barcode);
 
+                //Delete Product from stock and re-add on transaction void
+
                 if (ProductInCart == null)
                 {
                     SystemSounds.Hand.Play();
@@ -176,7 +178,7 @@ namespace PointOfSaleUI.UI
                                 gridCart.Refresh();
                                 ProductAlreadyInList = true;
 
-                                var newQuantity = CartToCheckOut.FirstOrDefault(d => d.StockId == ProductInCart.StockId);
+                                var newQuantity = Cart.FirstOrDefault(d => d.StockId == ProductInCart.StockId);
                                 if (newQuantity != null) { newQuantity.Quantity = quantity; }
                             }
                         }
@@ -206,9 +208,9 @@ namespace PointOfSaleUI.UI
                                     Tax = 0
                                 };
                             }
-                            CartToCheckOut.Add(destination);
+                            Cart.Add(destination);
                             gridCart.DataSource = null;
-                            gridCart.DataSource = CartToCheckOut;
+                            gridCart.DataSource = Cart;
                             gridCart.Refresh();
                         }
 
@@ -239,9 +241,9 @@ namespace PointOfSaleUI.UI
                                 Tax = 0
                             };
                         }
-                        CartToCheckOut.Add(destination);
+                        Cart.Add(destination);
                         gridCart.DataSource = null;
-                        gridCart.DataSource = CartToCheckOut;
+                        gridCart.DataSource = Cart;
                         gridCart.Refresh();
                     }
                     this.CalculateTotal();
@@ -322,13 +324,13 @@ namespace PointOfSaleUI.UI
                         if (row.Selected == true)
                         {
                             int Id = Convert.ToInt32(row.Cells[0].Value);
-                            CartToCheckOut.Remove(CartToCheckOut.Single(x => x.StockId == Id));
+                            Cart.Remove(Cart.Single(x => x.StockId == Id));
                         }
                     }
-                    if (CartToCheckOut.Count > 0)
+                    if (Cart.Count > 0)
                     {
                         gridCart.DataSource = null;
-                        gridCart.DataSource = CartToCheckOut;
+                        gridCart.DataSource = Cart;
                         this.CalculateTotal();
                     }
                     else
@@ -346,7 +348,7 @@ namespace PointOfSaleUI.UI
 
         private void controlTimer_Tick(object sender, EventArgs e)
         {
-            if (CartToCheckOut.Count > 0)
+            if (Cart.Count > 0)
             {
                 btnClear.Enabled = true;
             }
@@ -392,7 +394,7 @@ namespace PointOfSaleUI.UI
             txtCouponCode.Clear();
             btnRemoveCoupon.Enabled = false;
             txtDelivery.Text = ShippingRate.ToString("N2");
-            CartToCheckOut.Clear();
+            Cart.Clear();
             gridCart.DataSource = null;
             CartInvoiceNumber = Generate.InvoiceNumber;
             txtInvoiceNumber.Text = CartInvoiceNumber;
@@ -427,9 +429,12 @@ namespace PointOfSaleUI.UI
 
         private void CheckOut()
         {
+            List<SaleDetailModel> detail = new List<SaleDetailModel>();
+            int SaleId;
+
             if (IsCouponAdded == true)
             {
-                CheckOutModel checkOut = new CheckOutModel
+                SaleModel checkOut = new SaleModel
                 {
                     CashierId = CashierId,
                     InvoiceNumber = CartInvoiceNumber,
@@ -439,10 +444,13 @@ namespace PointOfSaleUI.UI
                     ShippingRate = ShippingRate,
                     GrandTotal = GrandTotal
                 };
+
+                SaleId = dataAccess.SaveSale("dbo.SaveSale", checkOut, "POS");
+                dataAccess.SaveData("dbo.SetCouponApplied", new { Id = checkOut.CouponId }, "POS");
             }
             else
             {
-                CheckOutModel checkOut = new CheckOutModel
+                SaleModel checkOut = new SaleModel
                 {
                     CashierId = CashierId,
                     InvoiceNumber = CartInvoiceNumber,
@@ -452,11 +460,26 @@ namespace PointOfSaleUI.UI
                     ShippingRate = ShippingRate,
                     GrandTotal = GrandTotal
                 };
+                SaleId = dataAccess.SaveSale("dbo.SaveSale", checkOut, "POS");
             }
 
-            //Save CheckOutModel
-            //Save Every sold products in CartItemModel to sale details database and remove quantities from stock
+            foreach (var item in Cart)
+            {
+                detail.Add(new SaleDetailModel
+                {
+                    SaleId = SaleId,
+                    ProductId = item.StockId,
+                    PurchasePrice = item.RetailPrice,
+                    Quantity = item.Quantity,
+                    Tax = item.Tax
+                });
+            }
 
+            foreach (var item in detail)
+            {
+                dataAccess.SaveData("dbo.SaveSaleDetails", item, "POS");
+                dataAccess.SaveData("dbo.UpdateSoldProduct", new { ProductId = item.ProductId, Quantity = item.Quantity }, "POS");
+            }
         }
 
         private void btnApplyCoupon_Click(object sender, EventArgs e)
@@ -507,8 +530,6 @@ namespace PointOfSaleUI.UI
             txtDiscount.Text = "0.00";
             GrandTotal += DiscountApplied;
             txtTotal.Text = GrandTotal.ToString("N2");
-
-            //Remove coupon discount from Grand Total
             this.CalculateTotal();
             txtCouponCode.Enabled = true;
             btnRemoveCoupon.Enabled = false;

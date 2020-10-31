@@ -313,7 +313,6 @@ namespace PointOfSaleUI.UI
         {
             if ((txtNewPassword.Text != "") && (txtNewVerifyPassword.Text != ""))
             {
-                //TODO: Update with password
                 if (txtNewPassword.Text == txtNewVerifyPassword.Text)
                 {
                     WithPasswordModel user = new WithPasswordModel
@@ -327,8 +326,6 @@ namespace PointOfSaleUI.UI
                         EmailAddress = txtEmailAddress.Text,
                         Status = IsBlocked
                     };
-
-
                     dataAccess.SaveData("dbo.UpdateUserWithPassword", user, "POS");
                     this.RefreshStaffGrid();
                 }

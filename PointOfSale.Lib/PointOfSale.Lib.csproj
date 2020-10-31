@@ -64,8 +64,8 @@
     <Compile Include="Models\BusinessModel.cs" />
     <Compile Include="DataModel\CategoryDataModel.cs" />
     <Compile Include="Models\CategoryModel.cs" />
-    <Compile Include="Models\CheckOutDetailsModel.cs" />
-    <Compile Include="Models\CheckOutModel.cs" />
+    <Compile Include="Models\SaleDetailModel.cs" />
+    <Compile Include="Models\SaleModel.cs" />
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\DeleteReceivedStock.cs" />
     <Compile Include="Models\LoggedInUserModel.cs" />
