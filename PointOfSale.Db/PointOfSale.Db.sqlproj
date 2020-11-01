@@ -132,6 +132,8 @@
     <Build Include="dbo\Stored Procedures\Sale\SaveSaleDetails.sql" />
     <Build Include="dbo\Stored Procedures\Sale\UpdateSoldProduct.sql" />
     <Build Include="dbo\Stored Procedures\Coupons\SetCouponApplied.sql" />
+    <Build Include="dbo\Tables\Transaction.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\SaveTransaction.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
