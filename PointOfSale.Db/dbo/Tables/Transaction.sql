@@ -4,7 +4,7 @@
     [SaleId] INT NULL, 
     [CashierId] NCHAR(10) NULL, 
     [TotalAmount] MONEY NULL, 
-    [CardDigits] INT NULL DEFAULT 0, 
+    [CardDigits] NVARCHAR(10) NULL DEFAULT 0, 
     [CardType] NVARCHAR(10) NULL, 
     [DateCreated] DATETIME2 NULL
 )
