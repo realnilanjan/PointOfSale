@@ -52,54 +52,67 @@ namespace PointOfSaleUI.UI
 
         private void rdoUpi_CheckedChanged(object sender, EventArgs e)
         {
-            txtTenderedAmount.Enabled = false;
-            txtLastDigits.Enabled = false;
-            txtBalance.Text = "0.00";
+            if (rdoUpi.Checked == true)
+            {
+                txtTenderedAmount.Enabled = false;
+                txtLastDigits.Enabled = false;
+                txtBalance.Text = "0.00";
+                if (Properties.Settings.Default.QRCodePath.Contains("\r\n"))
+                {
+                    MessageBox.Show("No QR Code is set. Please go to Settings to add one.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    ShowQR showQR = new ShowQR();
+                    showQR.ShowDialog();
+                }
+            }
         }
 
         private void btnTransact_Click(object sender, EventArgs e)
         {
-            if ((rdoCash.Checked == true) && !(txtTenderedAmount.Text.Length > 0))
+            if (rdoCash.Checked == true)
             {
-                Messages.DisplayMessage("Please enter a tendered amount.", lblWarning, Color.Red);
-                txtTenderedAmount.Focus();
-                this.DialogResult = DialogResult.None;
-            }
-            else if ((txtTenderedAmount.Text.Length > 0) && !(tendered >= _totalAmount))
-            {
-                Messages.DisplayMessage("Please enter correct tendered amount.", lblWarning, Color.Red);
-                txtTenderedAmount.SelectAll();
-                this.DialogResult = DialogResult.None;
-            }
-            else
-            {
-                CheckOutDataModel checkOutModel = new CheckOutDataModel
+                if (!(txtTenderedAmount.Text.Length > 0))
                 {
-                    SaleId = _saleId,
-                    CashierId = _cashierId,
-                    TotalAmount = _totalAmount,
-                    CardDigits = 0,
-                    CardType = rdoCard.Text
-                };
-                dataAccess.SaveData("dbo.SaveTransaction", checkOutModel, "POS");
-            }
-            if ((rdoCard.Checked == true) && !(txtLastDigits.Text.Length == 6))
-            {
-                Messages.DisplayMessage("Please enter a six digit number.", lblWarning, Color.Red);
-                txtLastDigits.Focus();
-                this.DialogResult = DialogResult.None;
-            }
-            else
-            {
-                CheckOutDataModel checkOutModel = new CheckOutDataModel
+                    Messages.DisplayMessage("Please enter a tendered amount.", lblWarning, Color.Red);
+                    txtTenderedAmount.Focus();
+                    this.DialogResult = DialogResult.None;
+                    return;
+                }
+                else if (!(tendered >= _totalAmount))
                 {
-                    SaleId = _saleId,
-                    CashierId = _cashierId,
-                    TotalAmount = _totalAmount,
-                    CardDigits = Convert.ToInt32(txtLastDigits.Text),
-                    CardType = rdoCard.Text
-                };
-                dataAccess.SaveData("dbo.SaveTransaction", checkOutModel, "POS");
+                    Messages.DisplayMessage("Please enter correct tendered amount.", lblWarning, Color.Red);
+                    txtTenderedAmount.SelectAll();
+                    this.DialogResult = DialogResult.None;
+                    return;
+                }
+                else
+                {
+                    CheckOutDataModel.CashierId = _cashierId;
+                    CheckOutDataModel.TotalAmount = _totalAmount;
+                    CheckOutDataModel.CardDigits = "000000";
+                    CheckOutDataModel.CardType = rdoCash.Text;
+                }
+            }
+
+            if (rdoCard.Checked == true)
+            {
+                if (!(txtLastDigits.Text.Length == 6))
+                {
+                    Messages.DisplayMessage("Please enter a six digit number.", lblWarning, Color.Red);
+                    txtLastDigits.Focus();
+                    this.DialogResult = DialogResult.None;
+                    return;
+                }
+                else
+                {
+                    CheckOutDataModel.CashierId = _cashierId;
+                    CheckOutDataModel.TotalAmount = _totalAmount;
+                    CheckOutDataModel.CardDigits = txtLastDigits.Text;
+                    CheckOutDataModel.CardType = rdoCard.Text;
+                }
             }
         }
 

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -105,6 +106,17 @@ namespace PointOfSaleUI.UI
 
             cmbTaxRate.SelectedIndex = Properties.Settings.Default.TaxRateSelected;
 
+            if (Properties.Settings.Default.QRCodePath.Contains("\r\n"))
+            {
+                lblQRWarning.BackColor = Color.Red;
+                lblQRWarning.Text = "No QR Code Set";
+            }
+            else
+            {
+                lblQRWarning.BackColor = Color.SeaGreen;
+                lblQRWarning.Text = "QR Code is Saved";
+            }
+
             //TODO: Load Settings Here
         }
 
@@ -133,13 +145,10 @@ namespace PointOfSaleUI.UI
 
         private void ClearStockValues()
         {
-
             List<QuantityDescriptionModel> quantityDescriptions = new List<QuantityDescriptionModel>();
-
             productCategories = dataAccess.LoadAllCategories();
             productSuppliers = dataAccess.LoadAllSuppliers();
             quantityDescriptions = dataAccess.LoadAllQuantityDescriptions();
-
             txtStockId.Text = "";
             txtBarcode.Text = "";
             Functions.FillCombo(quantityDescriptions, cmbQtyDescId);
@@ -494,8 +503,6 @@ namespace PointOfSaleUI.UI
                 CategoryName = txtCategoryName.Text,
                 CategoryDescription = txtCategoryDescription.Text
             };
-
-
             dataAccess.SaveData("dbo.UpdateCategory", category, "POS");
             this.RefreshCategoryGrid();
         }
@@ -595,8 +602,6 @@ namespace PointOfSaleUI.UI
                 IsTaxable = chkIsTaxable.Checked
 
             };
-
-
             dataAccess.SaveData("dbo.UpdateProduct", product, "POS");
             this.RefreshStockGrid();
         }
@@ -934,6 +939,36 @@ namespace PointOfSaleUI.UI
                 this.Hide();
                 terminal.ShowDialog();
                 this.Close();
+            }
+        }
+
+        private void btnSaveQr_Click(object sender, EventArgs e)
+        {
+            string fileName = "QRCode.png";
+            string fileDirectory = Environment.CurrentDirectory + @"\UPIQRCode\";
+            string oldFilePath;
+
+            DialogResult result = saveQRDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                oldFilePath = saveQRDialog.FileName;
+
+                if (Directory.Exists(fileDirectory))
+                {
+                    File.Copy(oldFilePath, fileDirectory + fileName, true);
+                    Properties.Settings.Default.QRCodePath = fileDirectory + fileName;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    Directory.CreateDirectory(fileDirectory);
+                    File.Copy(oldFilePath, fileDirectory + fileName, true);
+                    Properties.Settings.Default.QRCodePath = fileDirectory + fileName;
+                    Properties.Settings.Default.Save();
+                }
+
+                lblQRWarning.BackColor = Color.SeaGreen;
+                lblQRWarning.Text = "QR Code is Saved";
             }
         }
     }

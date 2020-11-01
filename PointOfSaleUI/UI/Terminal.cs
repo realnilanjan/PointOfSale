@@ -39,6 +39,17 @@ namespace PointOfSaleUI.UI
         private int CashierId { get; set; }
         private int CouponId { get; set; }
 
+        private const int CP_NOCLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
+
         public Terminal(LoggedInUserModel loggedInUser)
         {
             InitializeComponent();
@@ -299,11 +310,6 @@ namespace PointOfSaleUI.UI
             }
         }
 
-        private void txtItemQuantity_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard(_loggedInUser);
@@ -339,23 +345,13 @@ namespace PointOfSaleUI.UI
                         this.CalculateTotal();
                     }
                 }
-                else
-                {
-                    return;
-                }
+                else { return; }
             }
         }
 
         private void controlTimer_Tick(object sender, EventArgs e)
         {
-            if (Cart.Count > 0)
-            {
-                btnClear.Enabled = true;
-            }
-            else
-            {
-                btnClear.Enabled = false;
-            }
+            if (Cart.Count > 0) { btnClear.Enabled = true; btnCheckout.Enabled = true;  } else { btnClear.Enabled = false; btnCheckout.Enabled = false; }
         }
 
         private void btnCalculator_Click(object sender, EventArgs e)
@@ -374,10 +370,7 @@ namespace PointOfSaleUI.UI
             {
                 this.VoidTransaction();
             }
-            else
-            {
-                return;
-            }
+            else { return; }
         }
 
         private void VoidTransaction()
@@ -428,6 +421,17 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.OK)
             {
                 this.CheckOut();
+                CheckOutModel checkOut = new CheckOutModel
+                {
+                    SaleId = CheckOutDataModel.SaleId,
+                    CashierId = CashierId,
+                    TotalAmount = GrandTotal,
+                    CardDigits = CheckOutDataModel.CardDigits,
+                    CardType = CheckOutDataModel.CardType,
+                    DateCreated = DateTime.UtcNow.AddHours(5.5)
+                };
+
+                dataAccess.SaveData("dbo.SaveTransaction", checkOut, "POS");
                 this.VoidTransaction(); 
             }
         }
@@ -482,6 +486,7 @@ namespace PointOfSaleUI.UI
                 dataAccess.SaveData("dbo.SaveSaleDetails", item, "POS");
                 dataAccess.SaveData("dbo.UpdateSoldProduct", new { ProductId = item.ProductId, Quantity = item.Quantity }, "POS");
             }
+            CheckOutDataModel.SaleId = SaleId;
         }
 
         private void btnApplyCoupon_Click(object sender, EventArgs e)

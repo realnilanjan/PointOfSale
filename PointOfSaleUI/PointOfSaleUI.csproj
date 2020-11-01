@@ -115,6 +115,12 @@
     <Compile Include="UI\PurchaseOrders.Designer.cs">
       <DependentUpon>PurchaseOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ShowQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ShowQR.Designer.cs">
+      <DependentUpon>ShowQR.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Terminal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PurchaseOrders.resx">
       <DependentUpon>PurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ShowQR.resx">
+      <DependentUpon>ShowQR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Terminal.resx">
       <DependentUpon>Terminal.cs</DependentUpon>
@@ -282,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qrcode.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
