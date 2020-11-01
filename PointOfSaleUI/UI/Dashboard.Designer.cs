@@ -2158,12 +2158,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.settingsPanel);
             this.panel2.Controls.Add(this.stockPanel);
             this.panel2.Controls.Add(this.dashPanel);
             this.panel2.Controls.Add(this.supplierPanel);
             this.panel2.Controls.Add(this.staffPanel);
             this.panel2.Controls.Add(this.categoryPanel);
-            this.panel2.Controls.Add(this.settingsPanel);
             this.panelAnimator2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
@@ -2241,7 +2241,7 @@
             this.btnGenerateCoupons.Size = new System.Drawing.Size(194, 59);
             this.btnGenerateCoupons.TabIndex = 26;
             this.btnGenerateCoupons.Text = "        View Coupons";
-            this.btnGenerateCoupons.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerateCoupons.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnGenerateCoupons.Textcolor = System.Drawing.Color.White;
             this.btnGenerateCoupons.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateCoupons.Click += new System.EventHandler(this.btnGenerateCoupons_Click);
@@ -3729,6 +3729,7 @@
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Dashboard_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.biglogo)).EndInit();
             this.dashPanel.ResumeLayout(false);
             this.metroPanel5.ResumeLayout(false);

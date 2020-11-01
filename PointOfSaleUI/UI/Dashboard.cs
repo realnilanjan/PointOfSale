@@ -921,5 +921,20 @@ namespace PointOfSaleUI.UI
                 return;
             }
         }
+
+        private void Dashboard_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Control && e.KeyCode == Keys.D)
+            {
+                LoadDashboard();
+            }
+            if (e.KeyCode == Keys.Control && e.KeyCode == Keys.T)
+            {
+                Terminal terminal = new Terminal(_loggedInUser);
+                this.Hide();
+                terminal.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

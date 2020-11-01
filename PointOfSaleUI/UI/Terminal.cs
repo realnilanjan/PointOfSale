@@ -29,7 +29,8 @@ namespace PointOfSaleUI.UI
         private bool WillBeDelivered = false;
         private decimal DiscountApplied = 0;
         private bool IsCouponAdded = false;
-
+        private int SaleId;
+        
         private string CartInvoiceNumber { get; set; }
         private decimal CartSaleTaxRate { get; set; }
         private decimal CartSubTotal { get; set; }
@@ -422,15 +423,18 @@ namespace PointOfSaleUI.UI
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            this.CheckOut();
-            this.VoidTransaction();
+            ProcessCheckout checkout = new ProcessCheckout(SaleId, CashierId, GrandTotal);
+            DialogResult result = checkout.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.CheckOut();
+                this.VoidTransaction(); 
+            }
         }
 
         private void CheckOut()
         {
             List<SaleDetailModel> detail = new List<SaleDetailModel>();
-            int SaleId;
-
             if (IsCouponAdded == true)
             {
                 SaleModel checkOut = new SaleModel
@@ -443,7 +447,6 @@ namespace PointOfSaleUI.UI
                     ShippingRate = ShippingRate,
                     GrandTotal = GrandTotal
                 };
-
                 SaleId = dataAccess.SaveSale("dbo.SaveSale", checkOut, "POS");
                 dataAccess.SaveData("dbo.SetCouponApplied", new { Id = checkOut.CouponId }, "POS");
             }
