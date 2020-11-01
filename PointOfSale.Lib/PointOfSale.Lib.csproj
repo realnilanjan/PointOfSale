@@ -81,6 +81,7 @@
     <Compile Include="Models\WithPasswordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TerminalModels\CartItemModel.cs" />
+    <Compile Include="TerminalModels\CheckOutDataModel.cs" />
     <Compile Include="TerminalModels\ProductForCartModel.cs" />
   </ItemGroup>
   <ItemGroup>

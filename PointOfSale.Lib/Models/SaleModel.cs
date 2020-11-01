@@ -8,7 +8,7 @@ namespace PointOfSale.Lib.Models
         //public List<SaleDetailModel> saleDetails { get; set; } = new List<SaleDetailModel>();
         public int CashierId { get; set; }
         public string InvoiceNumber { get; set; }
-        public DateTime SaleDate { get; set; } = DateTime.UtcNow;
+        public DateTime SaleDate { get; set; } = DateTime.UtcNow.AddHours(5.5);
         public decimal SubTotal { get; set; }
         public int CouponId { get; set; }
         public decimal SaleTaxRate { get; set; }
