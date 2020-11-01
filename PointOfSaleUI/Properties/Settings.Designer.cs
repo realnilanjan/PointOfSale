@@ -214,5 +214,17 @@ namespace PointOfSaleUI.Properties {
                 this["TaxRate"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string QRCodePath {
+            get {
+                return ((string)(this["QRCodePath"]));
+            }
+            set {
+                this["QRCodePath"] = value;
+            }
+        }
     }
 }
