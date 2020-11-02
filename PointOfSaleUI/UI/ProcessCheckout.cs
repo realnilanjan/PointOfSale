@@ -90,8 +90,6 @@ namespace PointOfSaleUI.UI
                 }
                 else
                 {
-                    CheckOutDataModel.CashierId = _cashierId;
-                    CheckOutDataModel.TotalAmount = _totalAmount;
                     CheckOutDataModel.CardDigits = "000000";
                     CheckOutDataModel.CardType = rdoCash.Text;
                 }
@@ -108,8 +106,6 @@ namespace PointOfSaleUI.UI
                 }
                 else
                 {
-                    CheckOutDataModel.CashierId = _cashierId;
-                    CheckOutDataModel.TotalAmount = _totalAmount;
                     CheckOutDataModel.CardDigits = txtLastDigits.Text;
                     CheckOutDataModel.CardType = rdoCard.Text;
                 }

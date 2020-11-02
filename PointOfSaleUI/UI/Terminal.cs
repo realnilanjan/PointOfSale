@@ -551,13 +551,27 @@ namespace PointOfSaleUI.UI
             if (result == DialogResult.Yes)
             {
                 string FileName = CartInvoiceNumber + "_" + DateTime.Now.ToString("d");
-                Functions.SaveDrafts(gridCart, FileName);
+                
+                //Save Shipping and coupon transactions
+                Functions.SaveDrafts(Cart, FileName);
                 Messages.DisplayMessage("This transaction is saved. Please serve the next customer.", lblWarning, Color.OrangeRed);
                 this.VoidTransaction();
             }
             else
             {
                 return;
+            }
+        }
+
+        private void btnOpenDrafts_Click(object sender, EventArgs e)
+        {
+            SavedTransactionDrafts savedTransactionDrafts = new SavedTransactionDrafts();
+            DialogResult result = savedTransactionDrafts.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Cart = Functions.ReadDrafts(savedTransactionDrafts.TransactionFile);
+                gridCart.DataSource = Cart;
+                this.CalculateTotal();
             }
         }
     }
