@@ -1,4 +1,5 @@
 ﻿using PointOfSale.Lib.DataModel;
+using PointOfSale.Lib.TerminalModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,11 +7,14 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Serialization;
 
 namespace PointOfSale.Lib.Helpers
 {
     public static class Functions
     {
+        
+
         public static void FillCombo(List<CategoryDataModel> categoriesSource, ComboBox control)
         {
             control.DataSource = categoriesSource;
@@ -45,48 +49,25 @@ namespace PointOfSale.Lib.Helpers
             form.Location = original;
         }
 
-        public static void ReadDrafts(DataGridView dataGridView, string fileName)
+        public static List<CartItemModel> ReadDrafts(string fileName)
         {
-            string path = fileName;
-            DataSet ds = new DataSet();
-            ds.ReadXml(path);
-            dataGridView.DataSource = ds;
-            dataGridView.DataMember = "student";
+            using (var reader = new StreamReader(fileName))
+            {
+                XmlSerializer deserializer = new XmlSerializer(typeof(List<CartItemModel>),
+                    new XmlRootAttribute("CartItemModel"));
+                var shoppingCart = (List<CartItemModel>)deserializer.Deserialize(reader);
+                return shoppingCart;
+            }
         }
 
-        public static void SaveDrafts(DataGridView dataGridView, string fileName)
+        public static void SaveDrafts(List<CartItemModel> cartItems, string fileName)
         {
-            string DirPath = Environment.CurrentDirectory + @"\Saved Transactions\";
-            DataTable dt = new DataTable();
+            string DraftsDirPath = Environment.CurrentDirectory + @"\Saved Transactions\";
+            XmlSerializer serializer = new XmlSerializer(typeof(List<CartItemModel>), new XmlRootAttribute("CartItemModel"));
 
-            dt.TableName = "CartItem";
-            for (int i = 0; i < dataGridView.Columns.Count; i++)
+            using (var writer = XmlWriter.Create(DraftsDirPath + fileName + ".xml"))
             {
-                dt.Columns.Add(dataGridView.Columns[i].HeaderText);
-            }
-
-            foreach (DataGridViewRow currentRow in dataGridView.Rows)
-            {
-                dt.Rows.Add();
-                int runningCount = 0;
-                foreach (DataGridViewCell item in currentRow.Cells)
-                {
-                    dt.Rows[dt.Rows.Count - 1][runningCount] = item.FormattedValue;
-                    runningCount++;
-                }
-            }
-
-            if (dt != null)
-            {
-                if (Directory.Exists(DirPath))
-                {
-                    dt.WriteXml(DirPath + fileName + ".xml");
-                }
-                else
-                {
-                    Directory.CreateDirectory(DirPath);
-                    dt.WriteXml(DirPath + fileName + ".xml");
-                }
+                serializer.Serialize(writer, cartItems);
             }
         }
     }
