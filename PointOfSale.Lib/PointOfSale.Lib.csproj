@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\SQLDataAccess.cs" />
     <Compile Include="DataModel\CouponDataModel.cs" />
+    <Compile Include="DataModel\CustomerDataModel.cs" />
     <Compile Include="DataModel\ProductDataModel.cs" />
     <Compile Include="DataModel\ProductToStockDataModel.cs" />
     <Compile Include="DataModel\QuantityDescriptionModel.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Models\BusinessModel.cs" />
     <Compile Include="DataModel\CategoryDataModel.cs" />
     <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
     <Compile Include="Models\SaleDetailModel.cs" />
     <Compile Include="Models\SaleModel.cs" />
     <Compile Include="Models\CouponModel.cs" />
