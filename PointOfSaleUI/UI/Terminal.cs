@@ -23,6 +23,8 @@ namespace PointOfSaleUI.UI
         List<CartItemModel> Cart = new List<CartItemModel>();
         ProductForCartModel ProductInCart { get; set; }
         CouponDataModel couponData { get; set; }
+        CustomerDataModel CustomerData = new CustomerDataModel();
+        private int CustomerId { get; set; } = 0;
 
         private decimal TaxRate = Properties.Settings.Default.TaxRate;
         private LoggedInUserModel _loggedInUser;
@@ -444,6 +446,7 @@ namespace PointOfSaleUI.UI
                 SaleModel checkOut = new SaleModel
                 {
                     CashierId = CashierId,
+                    CustomerId = CustomerId,
                     InvoiceNumber = CartInvoiceNumber,
                     SubTotal = CartSubTotal,
                     CouponId = CouponId,
@@ -459,6 +462,7 @@ namespace PointOfSaleUI.UI
                 SaleModel checkOut = new SaleModel
                 {
                     CashierId = CashierId,
+                    CustomerId = CustomerId,
                     InvoiceNumber = CartInvoiceNumber,
                     SubTotal = CartSubTotal,
                     CouponId = 0,
@@ -581,7 +585,9 @@ namespace PointOfSaleUI.UI
             DialogResult result = customer.ShowDialog();
             if (result == DialogResult.OK)
             {
-                //Select Customer
+                CustomerId = CheckOutDataModel.CustomerId;
+                CustomerData = dataAccess.GetCustomerById(CustomerId);
+                lnkSelectCustomer.Text = CustomerData.CustomerName;
             }
         }
     }

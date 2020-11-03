@@ -3,6 +3,7 @@
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [CashierId] INT NOT NULL, 
     [InvoiceNumber] NVARCHAR(50) NOT NULL, 
+    [CustomerId] INT NOT NULL DEFAULT 0, 
     [SaleDate] DATETIME2 NOT NULL , 
     [SubTotal] MONEY NOT NULL, 
     [CouponId] INT NOT NULL, 

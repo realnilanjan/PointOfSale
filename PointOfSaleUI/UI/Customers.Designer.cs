@@ -34,6 +34,8 @@
             this.customersGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label21 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbSearchCustomerBy = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCustomerSearch = new System.Windows.Forms.TextBox();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
@@ -55,8 +57,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblWarning = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbSearchCustomerBy = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.customersGridView)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -107,6 +107,7 @@
             this.customersGridView.Size = new System.Drawing.Size(649, 264);
             this.customersGridView.TabIndex = 17;
             this.customersGridView.Visible = false;
+            this.customersGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersGridView_CellDoubleClick);
             // 
             // label21
             // 
@@ -134,6 +135,32 @@
             this.panel3.Size = new System.Drawing.Size(649, 60);
             this.panel3.TabIndex = 16;
             this.panel3.Text = "Search Category";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(355, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Search By:";
+            // 
+            // cmbSearchCustomerBy
+            // 
+            this.cmbSearchCustomerBy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbSearchCustomerBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSearchCustomerBy.FormattingEnabled = true;
+            this.cmbSearchCustomerBy.Items.AddRange(new object[] {
+            "- Select -",
+            "Name",
+            "Email",
+            "Contact"});
+            this.cmbSearchCustomerBy.Location = new System.Drawing.Point(422, 20);
+            this.cmbSearchCustomerBy.Name = "cmbSearchCustomerBy";
+            this.cmbSearchCustomerBy.Size = new System.Drawing.Size(216, 21);
+            this.cmbSearchCustomerBy.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -357,32 +384,6 @@
             this.lblWarning.TabIndex = 36;
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblWarning.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(355, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Search By:";
-            // 
-            // cmbSearchCustomerBy
-            // 
-            this.cmbSearchCustomerBy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbSearchCustomerBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSearchCustomerBy.FormattingEnabled = true;
-            this.cmbSearchCustomerBy.Items.AddRange(new object[] {
-            "- Select -",
-            "Name",
-            "Email",
-            "Contact"});
-            this.cmbSearchCustomerBy.Location = new System.Drawing.Point(422, 20);
-            this.cmbSearchCustomerBy.Name = "cmbSearchCustomerBy";
-            this.cmbSearchCustomerBy.Size = new System.Drawing.Size(216, 21);
-            this.cmbSearchCustomerBy.TabIndex = 4;
             // 
             // Customers
             // 

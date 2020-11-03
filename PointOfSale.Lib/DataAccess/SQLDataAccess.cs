@@ -138,5 +138,11 @@ namespace PointOfSale.Lib.DataAccess
             var rows = LoadData<CustomerDataModel, dynamic>("dbo.GetAllCustomers", new { }, "POS");
             return rows;
         }
+
+        public CustomerDataModel GetCustomerById(int Id)
+        {
+            var rows = LoadData<CustomerDataModel, dynamic>("dbo.GetCustomerDetails", new { Id }, "POS");
+            return rows.FirstOrDefault();
+        }
     }
 }

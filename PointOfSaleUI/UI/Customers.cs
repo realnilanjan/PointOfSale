@@ -1,5 +1,6 @@
 ﻿using PointOfSale.Lib.DataAccess;
 using PointOfSale.Lib.DataModel;
+using PointOfSale.Lib.TerminalModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,6 +55,13 @@ namespace PointOfSaleUI.UI
                     customersGridView.DataSource = ContactResult;
                     break;
             }
+        }
+
+        private void customersGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int Id = Convert.ToInt32(customersGridView.CurrentRow.Cells[0].Value);
+            CheckOutDataModel.CustomerId = Id;
+            this.DialogResult = DialogResult.OK;
         }
     }
 }
