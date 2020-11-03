@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Forms.VisualStyles;
-
-namespace PointOfSale.Lib.TerminalModels
+﻿namespace PointOfSale.Lib.TerminalModels
 {
     public static class CheckOutDataModel
     {
