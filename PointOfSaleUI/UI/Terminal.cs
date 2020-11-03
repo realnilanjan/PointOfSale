@@ -574,5 +574,15 @@ namespace PointOfSaleUI.UI
                 this.CalculateTotal();
             }
         }
+
+        private void lnkSelectCustomer_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Customers customer = new Customers();
+            DialogResult result = customer.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                //Select Customer
+            }
+        }
     }
 }

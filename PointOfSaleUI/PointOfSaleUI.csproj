@@ -67,6 +67,12 @@
     <Compile Include="UI\Coupons.Designer.cs">
       <DependentUpon>Coupons.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Coupons.resx">
       <DependentUpon>Coupons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
