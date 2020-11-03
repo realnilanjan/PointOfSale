@@ -353,7 +353,17 @@ namespace PointOfSaleUI.UI
 
         private void controlTimer_Tick(object sender, EventArgs e)
         {
-            if (Cart.Count > 0) { btnClear.Enabled = true; btnCheckout.Enabled = true;  } else { btnClear.Enabled = false; btnCheckout.Enabled = false; }
+            if (Cart.Count > 0) 
+            { 
+                btnClear.Enabled = true; 
+                btnCheckout.Enabled = true;
+                btnSaveDraft.Enabled = true;
+            } 
+            else 
+            { btnClear.Enabled = false; 
+                btnCheckout.Enabled = false;
+                btnSaveDraft.Enabled = false;
+            }
         }
 
         private void btnCalculator_Click(object sender, EventArgs e)
@@ -434,6 +444,8 @@ namespace PointOfSaleUI.UI
                 };
 
                 dataAccess.SaveData("dbo.SaveTransaction", checkOut, "POS");
+                CustomerId = 0;
+                lnkSelectCustomer.Text = "Select Customer";
                 this.VoidTransaction(); 
             }
         }

@@ -25,6 +25,17 @@ namespace PointOfSaleUI.UI
             this.GetAllCustomers();
         }
 
+        private void ClearAll()
+        {
+            txtCustomerId.Clear();
+            txtName.Clear();
+            txtEmail.Clear();
+            txtContact.Clear();
+            txtAddressOne.Clear();
+            txtAddressTwo.Clear();
+            txtPin.Clear();
+        }
+
         private void GetAllCustomers()
         {
             Customer = dataAccess.GetAllCustomers();
@@ -62,6 +73,51 @@ namespace PointOfSaleUI.UI
             int Id = Convert.ToInt32(customersGridView.CurrentRow.Cells[0].Value);
             CheckOutDataModel.CustomerId = Id;
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void customersGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdateCustomer.Enabled = true;
+            btnDeleteCustomer.Enabled = true;
+
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow grid = customersGridView.Rows[e.RowIndex];
+                txtCustomerId.Text = grid.Cells[0].Value.ToString();
+                txtName.Text = grid.Cells[1].Value.ToString();
+                txtEmail.Text = grid.Cells[2].Value.ToString();
+                txtContact.Text = grid.Cells[3].Value.ToString();
+                txtAddressOne.Text = grid.Cells[4].Value.ToString();
+                if (grid.Cells[5].Value == null)
+                {
+                    txtAddressTwo.Text = "None";
+                }
+                else
+                {
+                    txtAddressTwo.Text = grid.Cells[5].Value.ToString();
+                }
+                txtPin.Text = grid.Cells[6].Value.ToString();
+            }
+        }
+
+        private void btnUpdateCustomer_Click(object sender, EventArgs e)
+        {
+            //Process Update
+            this.ClearAll();
+            btnUpdateCustomer.Enabled = false;
+            btnDeleteCustomer.Enabled = false;
+            this.GetAllCustomers();
+        }
+
+       
+
+        private void btnDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            //Process Delete
+            this.ClearAll();
+            btnUpdateCustomer.Enabled = false;
+            btnDeleteCustomer.Enabled = false;
+            this.GetAllCustomers();
         }
     }
 }

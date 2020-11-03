@@ -36,12 +36,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
@@ -145,6 +145,39 @@
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.smalllogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.settingsPanel = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lblQRWarning = new System.Windows.Forms.Label();
+            this.btnSaveQr = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnGenerateCoupons = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.cmbTaxRate = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblTaxRate = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.row34 = new System.Windows.Forms.Panel();
+            this.row33 = new System.Windows.Forms.Panel();
+            this.row32 = new System.Windows.Forms.Panel();
+            this.row31 = new System.Windows.Forms.Panel();
+            this.row24 = new System.Windows.Forms.Panel();
+            this.row23 = new System.Windows.Forms.Panel();
+            this.row22 = new System.Windows.Forms.Panel();
+            this.row21 = new System.Windows.Forms.Panel();
+            this.row14 = new System.Windows.Forms.Panel();
+            this.row13 = new System.Windows.Forms.Panel();
+            this.row12 = new System.Windows.Forms.Panel();
+            this.row11 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.stockPanel = new System.Windows.Forms.Panel();
             this.btnViewPurchaseOrder = new System.Windows.Forms.Button();
             this.btnPurchaseOrder = new System.Windows.Forms.Button();
@@ -203,39 +236,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.txtSearchSupplier = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.settingsPanel = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lblQRWarning = new System.Windows.Forms.Label();
-            this.btnSaveQr = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnGenerateCoupons = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cmbTaxRate = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblTaxRate = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.row34 = new System.Windows.Forms.Panel();
-            this.row33 = new System.Windows.Forms.Panel();
-            this.row32 = new System.Windows.Forms.Panel();
-            this.row31 = new System.Windows.Forms.Panel();
-            this.row24 = new System.Windows.Forms.Panel();
-            this.row23 = new System.Windows.Forms.Panel();
-            this.row22 = new System.Windows.Forms.Panel();
-            this.row21 = new System.Windows.Forms.Panel();
-            this.row14 = new System.Windows.Forms.Panel();
-            this.row13 = new System.Windows.Forms.Panel();
-            this.row12 = new System.Windows.Forms.Panel();
-            this.row11 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panelAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
@@ -272,6 +272,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smalllogo)).BeginInit();
             this.panel2.SuspendLayout();
+            this.settingsPanel.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.stockPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -282,11 +287,6 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.settingsPanel.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // imagesList
@@ -2165,12 +2165,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dashPanel);
+            this.panel2.Controls.Add(this.supplierPanel);
             this.panel2.Controls.Add(this.staffPanel);
             this.panel2.Controls.Add(this.categoryPanel);
             this.panel2.Controls.Add(this.settingsPanel);
             this.panel2.Controls.Add(this.stockPanel);
-            this.panel2.Controls.Add(this.dashPanel);
-            this.panel2.Controls.Add(this.supplierPanel);
             this.panelAnimator2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
@@ -2180,976 +2180,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1118, 838);
             this.panel2.TabIndex = 5;
-            // 
-            // stockPanel
-            // 
-            this.stockPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.stockPanel.Controls.Add(this.btnViewPurchaseOrder);
-            this.stockPanel.Controls.Add(this.btnPurchaseOrder);
-            this.stockPanel.Controls.Add(this.stockGridView);
-            this.stockPanel.Controls.Add(this.btnAddNewStock);
-            this.stockPanel.Controls.Add(this.txtTotalProducts);
-            this.stockPanel.Controls.Add(this.panel1);
-            this.stockPanel.Controls.Add(this.panel3);
-            this.stockPanel.Controls.Add(this.bunifuCustomLabel5);
-            this.panelAnimator2.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
-            this.stockPanel.Location = new System.Drawing.Point(9, 13);
-            this.stockPanel.Name = "stockPanel";
-            this.stockPanel.Size = new System.Drawing.Size(1100, 813);
-            this.stockPanel.TabIndex = 4;
-            this.stockPanel.Visible = false;
-            // 
-            // btnViewPurchaseOrder
-            // 
-            this.btnViewPurchaseOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewPurchaseOrder.BackColor = System.Drawing.Color.Green;
-            this.btnViewPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.btnViewPurchaseOrder.FlatAppearance.BorderSize = 0;
-            this.btnViewPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPurchaseOrder.ForeColor = System.Drawing.Color.White;
-            this.btnViewPurchaseOrder.Location = new System.Drawing.Point(749, 627);
-            this.btnViewPurchaseOrder.Name = "btnViewPurchaseOrder";
-            this.btnViewPurchaseOrder.Size = new System.Drawing.Size(139, 41);
-            this.btnViewPurchaseOrder.TabIndex = 34;
-            this.btnViewPurchaseOrder.Text = "View Purchase Orders";
-            this.btnViewPurchaseOrder.UseVisualStyleBackColor = false;
-            this.btnViewPurchaseOrder.Click += new System.EventHandler(this.btnViewPurchaseOrder_Click);
-            // 
-            // btnPurchaseOrder
-            // 
-            this.btnPurchaseOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPurchaseOrder.BackColor = System.Drawing.Color.Green;
-            this.btnPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
-            this.btnPurchaseOrder.FlatAppearance.BorderSize = 0;
-            this.btnPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchaseOrder.ForeColor = System.Drawing.Color.White;
-            this.btnPurchaseOrder.Location = new System.Drawing.Point(925, 627);
-            this.btnPurchaseOrder.Name = "btnPurchaseOrder";
-            this.btnPurchaseOrder.Size = new System.Drawing.Size(139, 41);
-            this.btnPurchaseOrder.TabIndex = 35;
-            this.btnPurchaseOrder.Text = "Purchase Order";
-            this.btnPurchaseOrder.UseVisualStyleBackColor = false;
-            this.btnPurchaseOrder.Click += new System.EventHandler(this.btnPurchaseOrder_Click);
-            // 
-            // stockGridView
-            // 
-            this.stockGridView.AllowUserToAddRows = false;
-            this.stockGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.stockGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.stockGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.stockGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.stockGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.stockGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.stockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.panelAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
-            this.stockGridView.DoubleBuffered = true;
-            this.stockGridView.EnableHeadersVisualStyles = false;
-            this.stockGridView.GridColor = System.Drawing.Color.White;
-            this.stockGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.stockGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.stockGridView.Location = new System.Drawing.Point(19, 159);
-            this.stockGridView.MultiSelect = false;
-            this.stockGridView.Name = "stockGridView";
-            this.stockGridView.ReadOnly = true;
-            this.stockGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.stockGridView.RowHeadersVisible = false;
-            this.stockGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.stockGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.stockGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stockGridView.Size = new System.Drawing.Size(706, 619);
-            this.stockGridView.TabIndex = 27;
-            this.stockGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellClick);
-            this.stockGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellDoubleClick);
-            // 
-            // btnAddNewStock
-            // 
-            this.btnAddNewStock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddNewStock.BackColor = System.Drawing.Color.Green;
-            this.btnAddNewStock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
-            this.btnAddNewStock.FlatAppearance.BorderSize = 0;
-            this.btnAddNewStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewStock.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewStock.Location = new System.Drawing.Point(941, 39);
-            this.btnAddNewStock.Name = "btnAddNewStock";
-            this.btnAddNewStock.Size = new System.Drawing.Size(139, 41);
-            this.btnAddNewStock.TabIndex = 26;
-            this.btnAddNewStock.Text = "Add New Stock";
-            this.btnAddNewStock.UseVisualStyleBackColor = false;
-            this.btnAddNewStock.Click += new System.EventHandler(this.btnAddNewStock_Click);
-            // 
-            // txtTotalProducts
-            // 
-            this.txtTotalProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtTotalProducts.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
-            this.txtTotalProducts.ForeColor = System.Drawing.Color.White;
-            this.txtTotalProducts.Location = new System.Drawing.Point(17, 787);
-            this.txtTotalProducts.Name = "txtTotalProducts";
-            this.txtTotalProducts.Size = new System.Drawing.Size(163, 14);
-            this.txtTotalProducts.TabIndex = 25;
-            this.txtTotalProducts.Text = "Total number of products: {0}";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel1.Controls.Add(this.chkIsTaxable);
-            this.panel1.Controls.Add(this.cmbSupplier);
-            this.panel1.Controls.Add(this.cmbCategory);
-            this.panel1.Controls.Add(this.cmbQtyDescId);
-            this.panel1.Controls.Add(this.btnDeleteStock);
-            this.panel1.Controls.Add(this.btnUpdateStock);
-            this.panel1.Controls.Add(this.txtStockInHand);
-            this.panel1.Controls.Add(this.txtRetailPrice);
-            this.panel1.Controls.Add(this.txtUnitPrice);
-            this.panel1.Controls.Add(this.txtProductName);
-            this.panel1.Controls.Add(this.txtBrandName);
-            this.panel1.Controls.Add(this.txtBarcode);
-            this.panel1.Controls.Add(this.txtQtyDesc);
-            this.panel1.Controls.Add(this.txtStockId);
-            this.panel1.Controls.Add(this.label32);
-            this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label31);
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.label25);
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.label22);
-            this.panelAnimator2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Enabled = false;
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(730, 159);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 462);
-            this.panel1.TabIndex = 24;
-            this.panel1.Text = "Category Information";
-            // 
-            // chkIsTaxable
-            // 
-            this.chkIsTaxable.AutoSize = true;
-            this.textAnimator.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
-            this.chkIsTaxable.Location = new System.Drawing.Point(96, 349);
-            this.chkIsTaxable.Name = "chkIsTaxable";
-            this.chkIsTaxable.Size = new System.Drawing.Size(81, 18);
-            this.chkIsTaxable.TabIndex = 15;
-            this.chkIsTaxable.Text = "Is Taxable";
-            this.chkIsTaxable.UseVisualStyleBackColor = true;
-            // 
-            // cmbSupplier
-            // 
-            this.textAnimator.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.cmbSupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSupplier.FormattingEnabled = true;
-            this.cmbSupplier.Location = new System.Drawing.Point(96, 316);
-            this.cmbSupplier.Name = "cmbSupplier";
-            this.cmbSupplier.Size = new System.Drawing.Size(229, 22);
-            this.cmbSupplier.TabIndex = 14;
-            // 
-            // cmbCategory
-            // 
-            this.textAnimator.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
-            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(96, 283);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(229, 22);
-            this.cmbCategory.TabIndex = 14;
-            // 
-            // cmbQtyDescId
-            // 
-            this.textAnimator.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
-            this.cmbQtyDescId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbQtyDescId.FormattingEnabled = true;
-            this.cmbQtyDescId.Location = new System.Drawing.Point(96, 112);
-            this.cmbQtyDescId.Name = "cmbQtyDescId";
-            this.cmbQtyDescId.Size = new System.Drawing.Size(119, 22);
-            this.cmbQtyDescId.TabIndex = 14;
-            // 
-            // btnDeleteStock
-            // 
-            this.btnDeleteStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDeleteStock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
-            this.btnDeleteStock.Enabled = false;
-            this.btnDeleteStock.FlatAppearance.BorderSize = 0;
-            this.btnDeleteStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteStock.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteStock.Location = new System.Drawing.Point(195, 405);
-            this.btnDeleteStock.Name = "btnDeleteStock";
-            this.btnDeleteStock.Size = new System.Drawing.Size(139, 41);
-            this.btnDeleteStock.TabIndex = 13;
-            this.btnDeleteStock.Text = "Delete";
-            this.btnDeleteStock.UseVisualStyleBackColor = false;
-            this.btnDeleteStock.Click += new System.EventHandler(this.btnDeleteStock_Click);
-            // 
-            // btnUpdateStock
-            // 
-            this.btnUpdateStock.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnUpdateStock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
-            this.btnUpdateStock.Enabled = false;
-            this.btnUpdateStock.FlatAppearance.BorderSize = 0;
-            this.btnUpdateStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateStock.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateStock.Location = new System.Drawing.Point(19, 405);
-            this.btnUpdateStock.Name = "btnUpdateStock";
-            this.btnUpdateStock.Size = new System.Drawing.Size(139, 41);
-            this.btnUpdateStock.TabIndex = 13;
-            this.btnUpdateStock.Text = "Update";
-            this.btnUpdateStock.UseVisualStyleBackColor = false;
-            this.btnUpdateStock.Click += new System.EventHandler(this.btnUpdateStock_Click);
-            // 
-            // txtStockInHand
-            // 
-            this.panelAnimator2.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
-            this.txtStockInHand.Location = new System.Drawing.Point(96, 250);
-            this.txtStockInHand.Name = "txtStockInHand";
-            this.txtStockInHand.Size = new System.Drawing.Size(69, 22);
-            this.txtStockInHand.TabIndex = 8;
-            // 
-            // txtRetailPrice
-            // 
-            this.panelAnimator2.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
-            this.txtRetailPrice.Location = new System.Drawing.Point(256, 218);
-            this.txtRetailPrice.Name = "txtRetailPrice";
-            this.txtRetailPrice.Size = new System.Drawing.Size(69, 22);
-            this.txtRetailPrice.TabIndex = 8;
-            // 
-            // txtUnitPrice
-            // 
-            this.panelAnimator2.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
-            this.txtUnitPrice.Location = new System.Drawing.Point(96, 218);
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(69, 22);
-            this.txtUnitPrice.TabIndex = 8;
-            // 
-            // txtProductName
-            // 
-            this.panelAnimator2.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
-            this.txtProductName.Location = new System.Drawing.Point(96, 184);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(229, 22);
-            this.txtProductName.TabIndex = 8;
-            // 
-            // txtBrandName
-            // 
-            this.panelAnimator2.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
-            this.txtBrandName.Location = new System.Drawing.Point(96, 148);
-            this.txtBrandName.Name = "txtBrandName";
-            this.txtBrandName.Size = new System.Drawing.Size(229, 22);
-            this.txtBrandName.TabIndex = 8;
-            // 
-            // txtBarcode
-            // 
-            this.panelAnimator2.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
-            this.txtBarcode.Location = new System.Drawing.Point(96, 76);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(229, 22);
-            this.txtBarcode.TabIndex = 8;
-            // 
-            // txtQtyDesc
-            // 
-            this.panelAnimator2.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
-            this.txtQtyDesc.Location = new System.Drawing.Point(221, 112);
-            this.txtQtyDesc.Name = "txtQtyDesc";
-            this.txtQtyDesc.Size = new System.Drawing.Size(104, 22);
-            this.txtQtyDesc.TabIndex = 7;
-            // 
-            // txtStockId
-            // 
-            this.panelAnimator2.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
-            this.txtStockId.Location = new System.Drawing.Point(96, 40);
-            this.txtStockId.Name = "txtStockId";
-            this.txtStockId.ReadOnly = true;
-            this.txtStockId.Size = new System.Drawing.Size(119, 22);
-            this.txtStockId.TabIndex = 7;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.label32.Location = new System.Drawing.Point(33, 320);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(53, 14);
-            this.label32.TabIndex = 2;
-            this.label32.Text = "Supplier";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
-            this.label30.Location = new System.Drawing.Point(11, 254);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(81, 14);
-            this.label30.TabIndex = 2;
-            this.label30.Text = "Stock in Hand";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
-            this.label33.Location = new System.Drawing.Point(181, 222);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(69, 14);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "Retail Price";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
-            this.label31.Location = new System.Drawing.Point(33, 287);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(53, 14);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "Category";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.label26.Location = new System.Drawing.Point(27, 222);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(59, 14);
-            this.label26.TabIndex = 2;
-            this.label26.Text = "Unit Price";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.label25.Location = new System.Drawing.Point(47, 188);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(39, 14);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Name";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.label24.Location = new System.Drawing.Point(47, 152);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(39, 14);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Brand";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.label20.Location = new System.Drawing.Point(33, 116);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 14);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Qty Desc";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.label21.Location = new System.Drawing.Point(35, 80);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 14);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Barcode";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.label22.Location = new System.Drawing.Point(37, 44);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 14);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Stock Id";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel3.Controls.Add(this.label23);
-            this.panel3.Controls.Add(this.cmbSearchStockBy);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.txtProductSearch);
-            this.panelAnimator2.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(19, 86);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1063, 60);
-            this.panel3.TabIndex = 23;
-            this.panel3.Text = "Search Category";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(766, 23);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(61, 14);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "Search By:";
-            // 
-            // cmbSearchStockBy
-            // 
-            this.cmbSearchStockBy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textAnimator.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
-            this.cmbSearchStockBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSearchStockBy.FormattingEnabled = true;
-            this.cmbSearchStockBy.Items.AddRange(new object[] {
-            "- Select -",
-            "Stock ID",
-            "Barcode",
-            "Brand",
-            "Name"});
-            this.cmbSearchStockBy.Location = new System.Drawing.Point(833, 19);
-            this.cmbSearchStockBy.Name = "cmbSearchStockBy";
-            this.cmbSearchStockBy.Size = new System.Drawing.Size(216, 22);
-            this.cmbSearchStockBy.TabIndex = 4;
-            this.cmbSearchStockBy.SelectedIndexChanged += new System.EventHandler(this.cmbSearchStockBy_SelectedIndexChanged);
-            // 
-            // pictureBox1
-            // 
-            this.panelAnimator2.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = global::PointOfSaleUI.Properties.Resources.search2;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txtProductSearch
-            // 
-            this.txtProductSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelAnimator2.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
-            this.txtProductSearch.Enabled = false;
-            this.txtProductSearch.Location = new System.Drawing.Point(41, 19);
-            this.txtProductSearch.Name = "txtProductSearch";
-            this.txtProductSearch.Size = new System.Drawing.Size(719, 22);
-            this.txtProductSearch.TabIndex = 0;
-            this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomLabel5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuCustomLabel5.ImageKey = "stock.png";
-            this.bunifuCustomLabel5.ImageList = this.imagesList;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(14, 13);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(100, 30);
-            this.bunifuCustomLabel5.TabIndex = 22;
-            this.bunifuCustomLabel5.Text = "Stock";
-            this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // supplierPanel
-            // 
-            this.supplierPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supplierPanel.Controls.Add(this.supplierGridView);
-            this.supplierPanel.Controls.Add(this.btnAddNewSupplier);
-            this.supplierPanel.Controls.Add(this.txtTotalSuppliers);
-            this.supplierPanel.Controls.Add(this.panel4);
-            this.supplierPanel.Controls.Add(this.panel5);
-            this.supplierPanel.Controls.Add(this.bunifuCustomLabel4);
-            this.panelAnimator2.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.supplierPanel.Location = new System.Drawing.Point(9, 13);
-            this.supplierPanel.Name = "supplierPanel";
-            this.supplierPanel.Size = new System.Drawing.Size(1100, 813);
-            this.supplierPanel.TabIndex = 4;
-            this.supplierPanel.Visible = false;
-            // 
-            // supplierGridView
-            // 
-            this.supplierGridView.AllowUserToAddRows = false;
-            this.supplierGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
-            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.supplierGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supplierGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.supplierGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.supplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.supplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.supplierGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.panelAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.supplierGridView.DoubleBuffered = true;
-            this.supplierGridView.EnableHeadersVisualStyles = false;
-            this.supplierGridView.GridColor = System.Drawing.Color.White;
-            this.supplierGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.supplierGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.supplierGridView.Location = new System.Drawing.Point(19, 159);
-            this.supplierGridView.MultiSelect = false;
-            this.supplierGridView.Name = "supplierGridView";
-            this.supplierGridView.ReadOnly = true;
-            this.supplierGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.supplierGridView.RowHeadersVisible = false;
-            this.supplierGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.supplierGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.supplierGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.supplierGridView.Size = new System.Drawing.Size(706, 619);
-            this.supplierGridView.TabIndex = 32;
-            this.supplierGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierGridView_CellClick);
-            // 
-            // btnAddNewSupplier
-            // 
-            this.btnAddNewSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddNewSupplier.BackColor = System.Drawing.Color.Green;
-            this.btnAddNewSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.btnAddNewSupplier.FlatAppearance.BorderSize = 0;
-            this.btnAddNewSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewSupplier.Location = new System.Drawing.Point(942, 39);
-            this.btnAddNewSupplier.Name = "btnAddNewSupplier";
-            this.btnAddNewSupplier.Size = new System.Drawing.Size(139, 41);
-            this.btnAddNewSupplier.TabIndex = 31;
-            this.btnAddNewSupplier.Text = "Add New Supplier";
-            this.btnAddNewSupplier.UseVisualStyleBackColor = false;
-            this.btnAddNewSupplier.Click += new System.EventHandler(this.btnAddNewSupplier_Click);
-            // 
-            // txtTotalSuppliers
-            // 
-            this.txtTotalSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtTotalSuppliers.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.txtTotalSuppliers.ForeColor = System.Drawing.Color.White;
-            this.txtTotalSuppliers.Location = new System.Drawing.Point(17, 787);
-            this.txtTotalSuppliers.Name = "txtTotalSuppliers";
-            this.txtTotalSuppliers.Size = new System.Drawing.Size(168, 14);
-            this.txtTotalSuppliers.TabIndex = 30;
-            this.txtTotalSuppliers.Text = "Total number of suppliers: {0}";
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel4.Controls.Add(this.label36);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label34);
-            this.panel4.Controls.Add(this.label35);
-            this.panel4.Controls.Add(this.txtSupplierEmail);
-            this.panel4.Controls.Add(this.txtSupplierContact);
-            this.panel4.Controls.Add(this.txtSupplierAddress);
-            this.panel4.Controls.Add(this.txtSupplierId);
-            this.panel4.Controls.Add(this.txtSupplierName);
-            this.panel4.Controls.Add(this.btnDeleteSupplier);
-            this.panel4.Controls.Add(this.btnUpdateSupplier);
-            this.panelAnimator2.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(730, 159);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(352, 377);
-            this.panel4.TabIndex = 29;
-            this.panel4.Text = "Category Information";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.label36.Location = new System.Drawing.Point(25, 67);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(67, 14);
-            this.label36.TabIndex = 14;
-            this.label36.Text = "Supplier Id";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Location = new System.Drawing.Point(53, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 14);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Name";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.label11.Location = new System.Drawing.Point(41, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 14);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "Address";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.label34.Location = new System.Drawing.Point(54, 249);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(38, 14);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "Email";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.label35.Location = new System.Drawing.Point(45, 222);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(47, 14);
-            this.label35.TabIndex = 16;
-            this.label35.Text = "Contact";
-            // 
-            // txtSupplierEmail
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierEmail.Location = new System.Drawing.Point(98, 245);
-            this.txtSupplierEmail.Name = "txtSupplierEmail";
-            this.txtSupplierEmail.Size = new System.Drawing.Size(229, 22);
-            this.txtSupplierEmail.TabIndex = 21;
-            // 
-            // txtSupplierContact
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierContact.Location = new System.Drawing.Point(98, 218);
-            this.txtSupplierContact.Name = "txtSupplierContact";
-            this.txtSupplierContact.Size = new System.Drawing.Size(229, 22);
-            this.txtSupplierContact.TabIndex = 20;
-            // 
-            // txtSupplierAddress
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierAddress.Location = new System.Drawing.Point(98, 119);
-            this.txtSupplierAddress.Multiline = true;
-            this.txtSupplierAddress.Name = "txtSupplierAddress";
-            this.txtSupplierAddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtSupplierAddress.Size = new System.Drawing.Size(229, 93);
-            this.txtSupplierAddress.TabIndex = 19;
-            // 
-            // txtSupplierId
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierId.Location = new System.Drawing.Point(98, 64);
-            this.txtSupplierId.Name = "txtSupplierId";
-            this.txtSupplierId.ReadOnly = true;
-            this.txtSupplierId.Size = new System.Drawing.Size(79, 22);
-            this.txtSupplierId.TabIndex = 18;
-            // 
-            // txtSupplierName
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierName.Location = new System.Drawing.Point(98, 92);
-            this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.Size = new System.Drawing.Size(229, 22);
-            this.txtSupplierName.TabIndex = 18;
-            // 
-            // btnDeleteSupplier
-            // 
-            this.btnDeleteSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDeleteSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDeleteSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.btnDeleteSupplier.Enabled = false;
-            this.btnDeleteSupplier.FlatAppearance.BorderSize = 0;
-            this.btnDeleteSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteSupplier.Location = new System.Drawing.Point(195, 320);
-            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
-            this.btnDeleteSupplier.Size = new System.Drawing.Size(139, 41);
-            this.btnDeleteSupplier.TabIndex = 13;
-            this.btnDeleteSupplier.Text = "Delete";
-            this.btnDeleteSupplier.UseVisualStyleBackColor = false;
-            this.btnDeleteSupplier.Click += new System.EventHandler(this.btnDeleteSupplier_Click);
-            // 
-            // btnUpdateSupplier
-            // 
-            this.btnUpdateSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnUpdateSupplier.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnUpdateSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.btnUpdateSupplier.Enabled = false;
-            this.btnUpdateSupplier.FlatAppearance.BorderSize = 0;
-            this.btnUpdateSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateSupplier.Location = new System.Drawing.Point(19, 320);
-            this.btnUpdateSupplier.Name = "btnUpdateSupplier";
-            this.btnUpdateSupplier.Size = new System.Drawing.Size(139, 41);
-            this.btnUpdateSupplier.TabIndex = 13;
-            this.btnUpdateSupplier.Text = "Update";
-            this.btnUpdateSupplier.UseVisualStyleBackColor = false;
-            this.btnUpdateSupplier.Click += new System.EventHandler(this.btnUpdateSupplier_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel5.Controls.Add(this.pictureBox9);
-            this.panel5.Controls.Add(this.txtSearchSupplier);
-            this.panelAnimator2.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(19, 86);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1063, 60);
-            this.panel5.TabIndex = 28;
-            this.panel5.Text = "Search Category";
-            // 
-            // pictureBox9
-            // 
-            this.panelAnimator2.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox9.Image = global::PointOfSaleUI.Properties.Resources.search2;
-            this.pictureBox9.Location = new System.Drawing.Point(13, 19);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // txtSearchSupplier
-            // 
-            this.txtSearchSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelAnimator2.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.txtSearchSupplier.Location = new System.Drawing.Point(41, 19);
-            this.txtSearchSupplier.Name = "txtSearchSupplier";
-            this.txtSearchSupplier.Size = new System.Drawing.Size(1008, 22);
-            this.txtSearchSupplier.TabIndex = 0;
-            this.txtSearchSupplier.TextChanged += new System.EventHandler(this.txtSearchSupplier_TextChanged);
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuCustomLabel4.ImageIndex = 4;
-            this.bunifuCustomLabel4.ImageList = this.imagesList;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(14, 13);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(136, 30);
-            this.bunifuCustomLabel4.TabIndex = 22;
-            this.bunifuCustomLabel4.Text = "Supplier";
-            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // settingsPanel
             // 
@@ -3719,6 +2749,976 @@
             this.bunifuCustomLabel6.Text = "Settings";
             this.bunifuCustomLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // stockPanel
+            // 
+            this.stockPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stockPanel.Controls.Add(this.btnViewPurchaseOrder);
+            this.stockPanel.Controls.Add(this.btnPurchaseOrder);
+            this.stockPanel.Controls.Add(this.stockGridView);
+            this.stockPanel.Controls.Add(this.btnAddNewStock);
+            this.stockPanel.Controls.Add(this.txtTotalProducts);
+            this.stockPanel.Controls.Add(this.panel1);
+            this.stockPanel.Controls.Add(this.panel3);
+            this.stockPanel.Controls.Add(this.bunifuCustomLabel5);
+            this.panelAnimator2.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
+            this.stockPanel.Location = new System.Drawing.Point(9, 13);
+            this.stockPanel.Name = "stockPanel";
+            this.stockPanel.Size = new System.Drawing.Size(1100, 813);
+            this.stockPanel.TabIndex = 4;
+            this.stockPanel.Visible = false;
+            // 
+            // btnViewPurchaseOrder
+            // 
+            this.btnViewPurchaseOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewPurchaseOrder.BackColor = System.Drawing.Color.Green;
+            this.btnViewPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnViewPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.btnViewPurchaseOrder.FlatAppearance.BorderSize = 0;
+            this.btnViewPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewPurchaseOrder.ForeColor = System.Drawing.Color.White;
+            this.btnViewPurchaseOrder.Location = new System.Drawing.Point(749, 627);
+            this.btnViewPurchaseOrder.Name = "btnViewPurchaseOrder";
+            this.btnViewPurchaseOrder.Size = new System.Drawing.Size(139, 41);
+            this.btnViewPurchaseOrder.TabIndex = 34;
+            this.btnViewPurchaseOrder.Text = "View Purchase Orders";
+            this.btnViewPurchaseOrder.UseVisualStyleBackColor = false;
+            this.btnViewPurchaseOrder.Click += new System.EventHandler(this.btnViewPurchaseOrder_Click);
+            // 
+            // btnPurchaseOrder
+            // 
+            this.btnPurchaseOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPurchaseOrder.BackColor = System.Drawing.Color.Green;
+            this.btnPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnPurchaseOrder, BunifuAnimatorNS.DecorationType.None);
+            this.btnPurchaseOrder.FlatAppearance.BorderSize = 0;
+            this.btnPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseOrder.ForeColor = System.Drawing.Color.White;
+            this.btnPurchaseOrder.Location = new System.Drawing.Point(925, 627);
+            this.btnPurchaseOrder.Name = "btnPurchaseOrder";
+            this.btnPurchaseOrder.Size = new System.Drawing.Size(139, 41);
+            this.btnPurchaseOrder.TabIndex = 35;
+            this.btnPurchaseOrder.Text = "Purchase Order";
+            this.btnPurchaseOrder.UseVisualStyleBackColor = false;
+            this.btnPurchaseOrder.Click += new System.EventHandler(this.btnPurchaseOrder_Click);
+            // 
+            // stockGridView
+            // 
+            this.stockGridView.AllowUserToAddRows = false;
+            this.stockGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
+            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.stockGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stockGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.stockGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.stockGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.stockGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.stockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.panelAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
+            this.stockGridView.DoubleBuffered = true;
+            this.stockGridView.EnableHeadersVisualStyles = false;
+            this.stockGridView.GridColor = System.Drawing.Color.White;
+            this.stockGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.stockGridView.HeaderForeColor = System.Drawing.Color.White;
+            this.stockGridView.Location = new System.Drawing.Point(19, 159);
+            this.stockGridView.MultiSelect = false;
+            this.stockGridView.Name = "stockGridView";
+            this.stockGridView.ReadOnly = true;
+            this.stockGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.stockGridView.RowHeadersVisible = false;
+            this.stockGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.stockGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.stockGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.stockGridView.Size = new System.Drawing.Size(706, 619);
+            this.stockGridView.TabIndex = 27;
+            this.stockGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellClick);
+            this.stockGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellDoubleClick);
+            // 
+            // btnAddNewStock
+            // 
+            this.btnAddNewStock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddNewStock.BackColor = System.Drawing.Color.Green;
+            this.btnAddNewStock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnAddNewStock, BunifuAnimatorNS.DecorationType.None);
+            this.btnAddNewStock.FlatAppearance.BorderSize = 0;
+            this.btnAddNewStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewStock.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewStock.Location = new System.Drawing.Point(941, 39);
+            this.btnAddNewStock.Name = "btnAddNewStock";
+            this.btnAddNewStock.Size = new System.Drawing.Size(139, 41);
+            this.btnAddNewStock.TabIndex = 26;
+            this.btnAddNewStock.Text = "Add New Stock";
+            this.btnAddNewStock.UseVisualStyleBackColor = false;
+            this.btnAddNewStock.Click += new System.EventHandler(this.btnAddNewStock_Click);
+            // 
+            // txtTotalProducts
+            // 
+            this.txtTotalProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtTotalProducts.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtTotalProducts, BunifuAnimatorNS.DecorationType.None);
+            this.txtTotalProducts.ForeColor = System.Drawing.Color.White;
+            this.txtTotalProducts.Location = new System.Drawing.Point(17, 787);
+            this.txtTotalProducts.Name = "txtTotalProducts";
+            this.txtTotalProducts.Size = new System.Drawing.Size(163, 14);
+            this.txtTotalProducts.TabIndex = 25;
+            this.txtTotalProducts.Text = "Total number of products: {0}";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel1.Controls.Add(this.chkIsTaxable);
+            this.panel1.Controls.Add(this.cmbSupplier);
+            this.panel1.Controls.Add(this.cmbCategory);
+            this.panel1.Controls.Add(this.cmbQtyDescId);
+            this.panel1.Controls.Add(this.btnDeleteStock);
+            this.panel1.Controls.Add(this.btnUpdateStock);
+            this.panel1.Controls.Add(this.txtStockInHand);
+            this.panel1.Controls.Add(this.txtRetailPrice);
+            this.panel1.Controls.Add(this.txtUnitPrice);
+            this.panel1.Controls.Add(this.txtProductName);
+            this.panel1.Controls.Add(this.txtBrandName);
+            this.panel1.Controls.Add(this.txtBarcode);
+            this.panel1.Controls.Add(this.txtQtyDesc);
+            this.panel1.Controls.Add(this.txtStockId);
+            this.panel1.Controls.Add(this.label32);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.label22);
+            this.panelAnimator2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Enabled = false;
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(730, 159);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(352, 462);
+            this.panel1.TabIndex = 24;
+            this.panel1.Text = "Category Information";
+            // 
+            // chkIsTaxable
+            // 
+            this.chkIsTaxable.AutoSize = true;
+            this.textAnimator.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.chkIsTaxable, BunifuAnimatorNS.DecorationType.None);
+            this.chkIsTaxable.Location = new System.Drawing.Point(96, 349);
+            this.chkIsTaxable.Name = "chkIsTaxable";
+            this.chkIsTaxable.Size = new System.Drawing.Size(81, 18);
+            this.chkIsTaxable.TabIndex = 15;
+            this.chkIsTaxable.Text = "Is Taxable";
+            this.chkIsTaxable.UseVisualStyleBackColor = true;
+            // 
+            // cmbSupplier
+            // 
+            this.textAnimator.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.cmbSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.cmbSupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSupplier.FormattingEnabled = true;
+            this.cmbSupplier.Location = new System.Drawing.Point(96, 316);
+            this.cmbSupplier.Name = "cmbSupplier";
+            this.cmbSupplier.Size = new System.Drawing.Size(229, 22);
+            this.cmbSupplier.TabIndex = 14;
+            // 
+            // cmbCategory
+            // 
+            this.textAnimator.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.cmbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Location = new System.Drawing.Point(96, 283);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(229, 22);
+            this.cmbCategory.TabIndex = 14;
+            // 
+            // cmbQtyDescId
+            // 
+            this.textAnimator.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.cmbQtyDescId, BunifuAnimatorNS.DecorationType.None);
+            this.cmbQtyDescId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbQtyDescId.FormattingEnabled = true;
+            this.cmbQtyDescId.Location = new System.Drawing.Point(96, 112);
+            this.cmbQtyDescId.Name = "cmbQtyDescId";
+            this.cmbQtyDescId.Size = new System.Drawing.Size(119, 22);
+            this.cmbQtyDescId.TabIndex = 14;
+            // 
+            // btnDeleteStock
+            // 
+            this.btnDeleteStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDeleteStock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnDeleteStock, BunifuAnimatorNS.DecorationType.None);
+            this.btnDeleteStock.Enabled = false;
+            this.btnDeleteStock.FlatAppearance.BorderSize = 0;
+            this.btnDeleteStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteStock.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteStock.Location = new System.Drawing.Point(195, 405);
+            this.btnDeleteStock.Name = "btnDeleteStock";
+            this.btnDeleteStock.Size = new System.Drawing.Size(139, 41);
+            this.btnDeleteStock.TabIndex = 13;
+            this.btnDeleteStock.Text = "Delete";
+            this.btnDeleteStock.UseVisualStyleBackColor = false;
+            this.btnDeleteStock.Click += new System.EventHandler(this.btnDeleteStock_Click);
+            // 
+            // btnUpdateStock
+            // 
+            this.btnUpdateStock.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnUpdateStock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnUpdateStock, BunifuAnimatorNS.DecorationType.None);
+            this.btnUpdateStock.Enabled = false;
+            this.btnUpdateStock.FlatAppearance.BorderSize = 0;
+            this.btnUpdateStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateStock.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateStock.Location = new System.Drawing.Point(19, 405);
+            this.btnUpdateStock.Name = "btnUpdateStock";
+            this.btnUpdateStock.Size = new System.Drawing.Size(139, 41);
+            this.btnUpdateStock.TabIndex = 13;
+            this.btnUpdateStock.Text = "Update";
+            this.btnUpdateStock.UseVisualStyleBackColor = false;
+            this.btnUpdateStock.Click += new System.EventHandler(this.btnUpdateStock_Click);
+            // 
+            // txtStockInHand
+            // 
+            this.panelAnimator2.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtStockInHand, BunifuAnimatorNS.DecorationType.None);
+            this.txtStockInHand.Location = new System.Drawing.Point(96, 250);
+            this.txtStockInHand.Name = "txtStockInHand";
+            this.txtStockInHand.Size = new System.Drawing.Size(69, 22);
+            this.txtStockInHand.TabIndex = 8;
+            // 
+            // txtRetailPrice
+            // 
+            this.panelAnimator2.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtRetailPrice, BunifuAnimatorNS.DecorationType.None);
+            this.txtRetailPrice.Location = new System.Drawing.Point(256, 218);
+            this.txtRetailPrice.Name = "txtRetailPrice";
+            this.txtRetailPrice.Size = new System.Drawing.Size(69, 22);
+            this.txtRetailPrice.TabIndex = 8;
+            // 
+            // txtUnitPrice
+            // 
+            this.panelAnimator2.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtUnitPrice, BunifuAnimatorNS.DecorationType.None);
+            this.txtUnitPrice.Location = new System.Drawing.Point(96, 218);
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(69, 22);
+            this.txtUnitPrice.TabIndex = 8;
+            // 
+            // txtProductName
+            // 
+            this.panelAnimator2.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtProductName, BunifuAnimatorNS.DecorationType.None);
+            this.txtProductName.Location = new System.Drawing.Point(96, 184);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(229, 22);
+            this.txtProductName.TabIndex = 8;
+            // 
+            // txtBrandName
+            // 
+            this.panelAnimator2.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtBrandName, BunifuAnimatorNS.DecorationType.None);
+            this.txtBrandName.Location = new System.Drawing.Point(96, 148);
+            this.txtBrandName.Name = "txtBrandName";
+            this.txtBrandName.Size = new System.Drawing.Size(229, 22);
+            this.txtBrandName.TabIndex = 8;
+            // 
+            // txtBarcode
+            // 
+            this.panelAnimator2.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtBarcode, BunifuAnimatorNS.DecorationType.None);
+            this.txtBarcode.Location = new System.Drawing.Point(96, 76);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(229, 22);
+            this.txtBarcode.TabIndex = 8;
+            // 
+            // txtQtyDesc
+            // 
+            this.panelAnimator2.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtQtyDesc, BunifuAnimatorNS.DecorationType.None);
+            this.txtQtyDesc.Location = new System.Drawing.Point(221, 112);
+            this.txtQtyDesc.Name = "txtQtyDesc";
+            this.txtQtyDesc.Size = new System.Drawing.Size(104, 22);
+            this.txtQtyDesc.TabIndex = 7;
+            // 
+            // txtStockId
+            // 
+            this.panelAnimator2.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtStockId, BunifuAnimatorNS.DecorationType.None);
+            this.txtStockId.Location = new System.Drawing.Point(96, 40);
+            this.txtStockId.Name = "txtStockId";
+            this.txtStockId.ReadOnly = true;
+            this.txtStockId.Size = new System.Drawing.Size(119, 22);
+            this.txtStockId.TabIndex = 7;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.label32.Location = new System.Drawing.Point(33, 320);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(53, 14);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Supplier";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
+            this.label30.Location = new System.Drawing.Point(11, 254);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(81, 14);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "Stock in Hand";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.label33.Location = new System.Drawing.Point(181, 222);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(69, 14);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "Retail Price";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
+            this.label31.Location = new System.Drawing.Point(33, 287);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(53, 14);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Category";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.label26.Location = new System.Drawing.Point(27, 222);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(59, 14);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "Unit Price";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.label25.Location = new System.Drawing.Point(47, 188);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(39, 14);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Name";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.label24.Location = new System.Drawing.Point(47, 152);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(39, 14);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Brand";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.label20.Location = new System.Drawing.Point(33, 116);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 14);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Qty Desc";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.label21.Location = new System.Drawing.Point(35, 80);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(51, 14);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Barcode";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.label22.Location = new System.Drawing.Point(37, 44);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(49, 14);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Stock Id";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.cmbSearchStockBy);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.txtProductSearch);
+            this.panelAnimator2.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(19, 86);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1063, 60);
+            this.panel3.TabIndex = 23;
+            this.panel3.Text = "Search Category";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(766, 23);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(61, 14);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Search By:";
+            // 
+            // cmbSearchStockBy
+            // 
+            this.cmbSearchStockBy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textAnimator.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.cmbSearchStockBy, BunifuAnimatorNS.DecorationType.None);
+            this.cmbSearchStockBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSearchStockBy.FormattingEnabled = true;
+            this.cmbSearchStockBy.Items.AddRange(new object[] {
+            "- Select -",
+            "Stock ID",
+            "Barcode",
+            "Brand",
+            "Name"});
+            this.cmbSearchStockBy.Location = new System.Drawing.Point(833, 19);
+            this.cmbSearchStockBy.Name = "cmbSearchStockBy";
+            this.cmbSearchStockBy.Size = new System.Drawing.Size(216, 22);
+            this.cmbSearchStockBy.TabIndex = 4;
+            this.cmbSearchStockBy.SelectedIndexChanged += new System.EventHandler(this.cmbSearchStockBy_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.panelAnimator2.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = global::PointOfSaleUI.Properties.Resources.search2;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtProductSearch
+            // 
+            this.txtProductSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelAnimator2.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtProductSearch, BunifuAnimatorNS.DecorationType.None);
+            this.txtProductSearch.Enabled = false;
+            this.txtProductSearch.Location = new System.Drawing.Point(41, 19);
+            this.txtProductSearch.Name = "txtProductSearch";
+            this.txtProductSearch.Size = new System.Drawing.Size(719, 22);
+            this.txtProductSearch.TabIndex = 0;
+            this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel5.ImageKey = "stock.png";
+            this.bunifuCustomLabel5.ImageList = this.imagesList;
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(14, 13);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(100, 30);
+            this.bunifuCustomLabel5.TabIndex = 22;
+            this.bunifuCustomLabel5.Text = "Stock";
+            this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // supplierPanel
+            // 
+            this.supplierPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.supplierPanel.Controls.Add(this.supplierGridView);
+            this.supplierPanel.Controls.Add(this.btnAddNewSupplier);
+            this.supplierPanel.Controls.Add(this.txtTotalSuppliers);
+            this.supplierPanel.Controls.Add(this.panel4);
+            this.supplierPanel.Controls.Add(this.panel5);
+            this.supplierPanel.Controls.Add(this.bunifuCustomLabel4);
+            this.panelAnimator2.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.supplierPanel.Location = new System.Drawing.Point(9, 13);
+            this.supplierPanel.Name = "supplierPanel";
+            this.supplierPanel.Size = new System.Drawing.Size(1100, 813);
+            this.supplierPanel.TabIndex = 4;
+            this.supplierPanel.Visible = false;
+            // 
+            // supplierGridView
+            // 
+            this.supplierGridView.AllowUserToAddRows = false;
+            this.supplierGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.supplierGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.supplierGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.supplierGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.supplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.supplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.supplierGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.panelAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.supplierGridView.DoubleBuffered = true;
+            this.supplierGridView.EnableHeadersVisualStyles = false;
+            this.supplierGridView.GridColor = System.Drawing.Color.White;
+            this.supplierGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.supplierGridView.HeaderForeColor = System.Drawing.Color.White;
+            this.supplierGridView.Location = new System.Drawing.Point(19, 159);
+            this.supplierGridView.MultiSelect = false;
+            this.supplierGridView.Name = "supplierGridView";
+            this.supplierGridView.ReadOnly = true;
+            this.supplierGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.supplierGridView.RowHeadersVisible = false;
+            this.supplierGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.supplierGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.supplierGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.supplierGridView.Size = new System.Drawing.Size(706, 619);
+            this.supplierGridView.TabIndex = 32;
+            this.supplierGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierGridView_CellClick);
+            // 
+            // btnAddNewSupplier
+            // 
+            this.btnAddNewSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddNewSupplier.BackColor = System.Drawing.Color.Green;
+            this.btnAddNewSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.btnAddNewSupplier.FlatAppearance.BorderSize = 0;
+            this.btnAddNewSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewSupplier.Location = new System.Drawing.Point(942, 39);
+            this.btnAddNewSupplier.Name = "btnAddNewSupplier";
+            this.btnAddNewSupplier.Size = new System.Drawing.Size(139, 41);
+            this.btnAddNewSupplier.TabIndex = 31;
+            this.btnAddNewSupplier.Text = "Add New Supplier";
+            this.btnAddNewSupplier.UseVisualStyleBackColor = false;
+            this.btnAddNewSupplier.Click += new System.EventHandler(this.btnAddNewSupplier_Click);
+            // 
+            // txtTotalSuppliers
+            // 
+            this.txtTotalSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtTotalSuppliers.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.txtTotalSuppliers.ForeColor = System.Drawing.Color.White;
+            this.txtTotalSuppliers.Location = new System.Drawing.Point(17, 787);
+            this.txtTotalSuppliers.Name = "txtTotalSuppliers";
+            this.txtTotalSuppliers.Size = new System.Drawing.Size(168, 14);
+            this.txtTotalSuppliers.TabIndex = 30;
+            this.txtTotalSuppliers.Text = "Total number of suppliers: {0}";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel4.Controls.Add(this.label36);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.label34);
+            this.panel4.Controls.Add(this.label35);
+            this.panel4.Controls.Add(this.txtSupplierEmail);
+            this.panel4.Controls.Add(this.txtSupplierContact);
+            this.panel4.Controls.Add(this.txtSupplierAddress);
+            this.panel4.Controls.Add(this.txtSupplierId);
+            this.panel4.Controls.Add(this.txtSupplierName);
+            this.panel4.Controls.Add(this.btnDeleteSupplier);
+            this.panel4.Controls.Add(this.btnUpdateSupplier);
+            this.panelAnimator2.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panel4.ForeColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(730, 159);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(352, 377);
+            this.panel4.TabIndex = 29;
+            this.panel4.Text = "Category Information";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.label36.Location = new System.Drawing.Point(25, 67);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(67, 14);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "Supplier Id";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Location = new System.Drawing.Point(53, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 14);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Name";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.label11.Location = new System.Drawing.Point(41, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 14);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Address";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.label34.Location = new System.Drawing.Point(54, 249);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(38, 14);
+            this.label34.TabIndex = 17;
+            this.label34.Text = "Email";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.label35.Location = new System.Drawing.Point(45, 222);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(47, 14);
+            this.label35.TabIndex = 16;
+            this.label35.Text = "Contact";
+            // 
+            // txtSupplierEmail
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierEmail.Location = new System.Drawing.Point(98, 245);
+            this.txtSupplierEmail.Name = "txtSupplierEmail";
+            this.txtSupplierEmail.Size = new System.Drawing.Size(229, 22);
+            this.txtSupplierEmail.TabIndex = 21;
+            // 
+            // txtSupplierContact
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierContact.Location = new System.Drawing.Point(98, 218);
+            this.txtSupplierContact.Name = "txtSupplierContact";
+            this.txtSupplierContact.Size = new System.Drawing.Size(229, 22);
+            this.txtSupplierContact.TabIndex = 20;
+            // 
+            // txtSupplierAddress
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierAddress.Location = new System.Drawing.Point(98, 119);
+            this.txtSupplierAddress.Multiline = true;
+            this.txtSupplierAddress.Name = "txtSupplierAddress";
+            this.txtSupplierAddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtSupplierAddress.Size = new System.Drawing.Size(229, 93);
+            this.txtSupplierAddress.TabIndex = 19;
+            // 
+            // txtSupplierId
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierId.Location = new System.Drawing.Point(98, 64);
+            this.txtSupplierId.Name = "txtSupplierId";
+            this.txtSupplierId.ReadOnly = true;
+            this.txtSupplierId.Size = new System.Drawing.Size(79, 22);
+            this.txtSupplierId.TabIndex = 18;
+            // 
+            // txtSupplierName
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierName.Location = new System.Drawing.Point(98, 92);
+            this.txtSupplierName.Name = "txtSupplierName";
+            this.txtSupplierName.Size = new System.Drawing.Size(229, 22);
+            this.txtSupplierName.TabIndex = 18;
+            // 
+            // btnDeleteSupplier
+            // 
+            this.btnDeleteSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDeleteSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDeleteSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.btnDeleteSupplier.Enabled = false;
+            this.btnDeleteSupplier.FlatAppearance.BorderSize = 0;
+            this.btnDeleteSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteSupplier.Location = new System.Drawing.Point(195, 320);
+            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
+            this.btnDeleteSupplier.Size = new System.Drawing.Size(139, 41);
+            this.btnDeleteSupplier.TabIndex = 13;
+            this.btnDeleteSupplier.Text = "Delete";
+            this.btnDeleteSupplier.UseVisualStyleBackColor = false;
+            this.btnDeleteSupplier.Click += new System.EventHandler(this.btnDeleteSupplier_Click);
+            // 
+            // btnUpdateSupplier
+            // 
+            this.btnUpdateSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnUpdateSupplier.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnUpdateSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.btnUpdateSupplier.Enabled = false;
+            this.btnUpdateSupplier.FlatAppearance.BorderSize = 0;
+            this.btnUpdateSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateSupplier.Location = new System.Drawing.Point(19, 320);
+            this.btnUpdateSupplier.Name = "btnUpdateSupplier";
+            this.btnUpdateSupplier.Size = new System.Drawing.Size(139, 41);
+            this.btnUpdateSupplier.TabIndex = 13;
+            this.btnUpdateSupplier.Text = "Update";
+            this.btnUpdateSupplier.UseVisualStyleBackColor = false;
+            this.btnUpdateSupplier.Click += new System.EventHandler(this.btnUpdateSupplier_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel5.Controls.Add(this.pictureBox9);
+            this.panel5.Controls.Add(this.txtSearchSupplier);
+            this.panelAnimator2.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(19, 86);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1063, 60);
+            this.panel5.TabIndex = 28;
+            this.panel5.Text = "Search Category";
+            // 
+            // pictureBox9
+            // 
+            this.panelAnimator2.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox9.Image = global::PointOfSaleUI.Properties.Resources.search2;
+            this.pictureBox9.Location = new System.Drawing.Point(13, 19);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // txtSearchSupplier
+            // 
+            this.txtSearchSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelAnimator2.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.txtSearchSupplier.Location = new System.Drawing.Point(41, 19);
+            this.txtSearchSupplier.Name = "txtSearchSupplier";
+            this.txtSearchSupplier.Size = new System.Drawing.Size(1008, 22);
+            this.txtSearchSupplier.TabIndex = 0;
+            this.txtSearchSupplier.TextChanged += new System.EventHandler(this.txtSearchSupplier_TextChanged);
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel4.ImageIndex = 4;
+            this.bunifuCustomLabel4.ImageList = this.imagesList;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(14, 13);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(136, 30);
+            this.bunifuCustomLabel4.TabIndex = 22;
+            this.bunifuCustomLabel4.Text = "Supplier";
+            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // logoAnimator
             // 
             this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
@@ -3869,6 +3869,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smalllogo)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.settingsPanel.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.stockPanel.ResumeLayout(false);
             this.stockPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockGridView)).EndInit();
@@ -3885,13 +3892,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.settingsPanel.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

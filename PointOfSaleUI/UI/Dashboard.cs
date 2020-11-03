@@ -39,6 +39,11 @@ namespace PointOfSaleUI.UI
         #region Functions
         private void RefreshDashboard()
         {
+            //Today's Sales
+
+
+
+            //Products
             products = dataAccess.LoadAllProducts();
             txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, products.Count.ToString());
             var stockInfo = from sl in products
@@ -48,6 +53,17 @@ namespace PointOfSaleUI.UI
                                 Total = g.Sum(x => x.StockInHand)
                             };
             txtTotalStock.Text = String.Format(Properties.Resources.TOTAL_STOCK, stockInfo.Sum(x => x.Total));
+
+            //Total Sales
+
+
+
+            //Sold Stock
+
+
+
+            //Number of Transactions
+
         }
 
         private void RefreshStaffGrid()
