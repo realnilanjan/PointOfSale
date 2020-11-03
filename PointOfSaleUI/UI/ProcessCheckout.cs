@@ -91,7 +91,7 @@ namespace PointOfSaleUI.UI
                 else
                 {
                     CheckOutDataModel.CardDigits = "000000";
-                    CheckOutDataModel.CardType = rdoCash.Text;
+                    CheckOutDataModel.TransactionType = rdoCash.Text;
                 }
             }
 
@@ -107,7 +107,7 @@ namespace PointOfSaleUI.UI
                 else
                 {
                     CheckOutDataModel.CardDigits = txtLastDigits.Text;
-                    CheckOutDataModel.CardType = rdoCard.Text;
+                    CheckOutDataModel.TransactionType = rdoCard.Text;
                 }
             }
         }

@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace PointOfSale.Lib.Models
 {
     public class SaleModel
     {
-        //public List<SaleDetailModel> saleDetails { get; set; } = new List<SaleDetailModel>();
         public int CashierId { get; set; }
         public string InvoiceNumber { get; set; }
         public int CustomerId { get; set; }

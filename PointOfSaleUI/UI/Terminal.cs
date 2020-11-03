@@ -429,7 +429,7 @@ namespace PointOfSaleUI.UI
                     CashierId = CashierId,
                     TotalAmount = GrandTotal,
                     CardDigits = CheckOutDataModel.CardDigits,
-                    CardType = CheckOutDataModel.CardType,
+                    CardType = CheckOutDataModel.TransactionType,
                     DateCreated = DateTime.UtcNow.AddHours(5.5)
                 };
 
