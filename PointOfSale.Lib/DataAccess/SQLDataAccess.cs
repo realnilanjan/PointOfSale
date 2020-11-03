@@ -1,7 +1,9 @@
 ﻿using Dapper;
 using PointOfSale.Lib.DataModel;
 using PointOfSale.Lib.Models;
+using PointOfSale.Lib.Models.ReportModels;
 using PointOfSale.Lib.TerminalModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -143,6 +145,22 @@ namespace PointOfSale.Lib.DataAccess
         {
             var rows = LoadData<CustomerDataModel, dynamic>("dbo.GetCustomerDetails", new { Id }, "POS");
             return rows.FirstOrDefault();
+        }
+
+        public TodaysSales LoadTodaySalesTotal(string SaleDate)
+        {
+            var rows = LoadData<TodaysSales, dynamic>("dbo.GetSalesForToday", new { SaleDate }, "POS").FirstOrDefault();
+            return rows;
+        }
+
+        public decimal GetAllSaleTotal(string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<decimal>("dbo.GetTotalSales", commandType: CommandType.StoredProcedure).Single();
+                return result;
+            }
         }
     }
 }

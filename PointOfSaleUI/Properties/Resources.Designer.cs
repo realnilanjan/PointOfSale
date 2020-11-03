@@ -302,6 +302,15 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ₹ {0}.
+        /// </summary>
+        internal static string RUPEE_SYMBOL {
+            get {
+                return ResourceManager.GetString("RUPEE_SYMBOL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap save {

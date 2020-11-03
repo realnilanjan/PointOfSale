@@ -74,6 +74,7 @@
     <Folder Include="dbo\Stored Procedures\Coupons" />
     <Folder Include="dbo\Stored Procedures\Sale" />
     <Folder Include="dbo\Stored Procedures\Customers" />
+    <Folder Include="dbo\Stored Procedures\Report" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\PointOfSale.Db.publish.xml" />
@@ -138,6 +139,8 @@
     <Build Include="dbo\Tables\Customer.sql" />
     <Build Include="dbo\Stored Procedures\Customers\GetAllCustomers.sql" />
     <Build Include="dbo\Stored Procedures\Customers\GetCustomerDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetSalesForToday.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetTotalSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />
