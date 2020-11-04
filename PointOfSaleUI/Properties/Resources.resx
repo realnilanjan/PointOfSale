@@ -121,17 +121,23 @@
   <data name="supplier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\supplier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NO_OF_STAFFS" xml:space="preserve">
+    <value>Total number of staff: {0}</value>
   </data>
   <data name="PASS_DONT_MATCH" xml:space="preserve">
     <value>The provided passwords do not match</value>
   </data>
   <data name="setupwizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setupwizard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\history.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +154,11 @@
   <data name="FILL_ALL_DETAILS" xml:space="preserve">
     <value>Please fill in all the details to proceed</value>
   </data>
-  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RUPEE_SYMBOL" xml:space="preserve">
+    <value>₹ {0}</value>
   </data>
   <data name="INVALID_CREDENTIALS" xml:space="preserve">
     <value>Invalid login credentials provided</value>
-  </data>
-  <data name="stock_sold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stock_sold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,11 +172,17 @@
   <data name="NO_OF_SUPPLIERS" xml:space="preserve">
     <value>Total number of suppliers: {0}</value>
   </data>
+  <data name="TOTAL_STOCK_SOLD" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="qrcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qrcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NO_OF_CATEGORIES" xml:space="preserve">
     <value>Total number of categories: {0}</value>
-  </data>
-  <data name="default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="transactions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transactions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +190,26 @@
   <data name="categories" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\categories.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="drawer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drawer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="todays_sale1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\todays_sale1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PUT_PASSWORDS" xml:space="preserve">
     <value>Please enter new passwords</value>
   </data>
+  <data name="TOTAL_STOCK" xml:space="preserve">
+    <value>Total Stock: {0}</value>
+  </data>
   <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stock_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stock_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,11 +223,17 @@
   <data name="USER_BLOCKED" xml:space="preserve">
     <value>Sorry! The user is blocked by the administrator</value>
   </data>
+  <data name="checkout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="coupon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coupon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="void" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\void.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FILL_ALL_DETAILS_LOGIN" xml:space="preserve">
     <value>Please fill in all the details to login</value>
@@ -217,6 +244,9 @@
   <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TOTAL_TRANSACTIONS" xml:space="preserve">
+    <value>{0}</value>
+  </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,11 +256,11 @@
   <data name="TOTAL_PRODUCTS" xml:space="preserve">
     <value>Products: {0}</value>
   </data>
-  <data name="NO_OF_STAFFS" xml:space="preserve">
-    <value>Total number of staff: {0}</value>
+  <data name="stock_sold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stock_sold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="female" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,19 +271,10 @@
   <data name="totalsales" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\totalsales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TOTAL_STOCK" xml:space="preserve">
-    <value>Total Stock: {0}</value>
+  <data name="default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qrcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qrcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RUPEE_SYMBOL" xml:space="preserve">
-    <value>₹ {0}</value>
-  </data>
-  <data name="TOTAL_STOCK_SOLD" xml:space="preserve">
-    <value>{0}</value>
-  </data>
-  <data name="TOTAL_TRANSACTIONS" xml:space="preserve">
-    <value>{0}</value>
+  <data name="payout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
