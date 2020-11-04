@@ -1,16 +1,15 @@
-﻿using PointOfSale.Lib.DataAccess;
-using PointOfSale.Lib.DataModel;
-using PointOfSale.Lib.Encryptions;
-using PointOfSale.Lib.Helpers;
-using PointOfSale.Lib.Models;
-using PointOfSale.Lib.Models.ReportModels;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Drawing;
+﻿using System;
 using System.IO;
+using System.Data;
 using System.Linq;
+using System.Drawing;
 using System.Windows.Forms;
+using PointOfSale.Lib.Models;
+using PointOfSale.Lib.Helpers;
+using PointOfSale.Lib.DataModel;
+using System.Collections.Generic;
+using PointOfSale.Lib.DataAccess;
+using PointOfSale.Lib.Encryptions;
 
 namespace PointOfSaleUI.UI
 {
@@ -105,6 +104,11 @@ namespace PointOfSaleUI.UI
             this.ClearSupplierValues();
         }
 
+        private void RefreshReports()
+        {
+            //TODO: Refresh Reports
+        }
+
         private void RefreshSettings()
         {
             row11.BackColor = Properties.Settings.Default.ZeroToFiveBackColor;
@@ -150,6 +154,7 @@ namespace PointOfSaleUI.UI
             txtNewVerifyPassword.Text = "";
             btnUpdate.Enabled = false;
             btnDelete.Enabled = false;
+            groupBox2.Enabled = false;
         }
 
         private void ClearCategoryValues()
@@ -159,6 +164,7 @@ namespace PointOfSaleUI.UI
             txtCategoryDescription.Text = "";
             btnUpdateCategory.Enabled = false;
             btnDeleteCategory.Enabled = false;
+            groupBox4.Enabled = false;
         }
 
         private void ClearStockValues()
@@ -185,23 +191,25 @@ namespace PointOfSaleUI.UI
 
         private void ClearSupplierValues()
         {
-            //TODO: Clear Supplier Values
+            txtSupplierId.Clear();
+            txtSupplierName.Clear();
+            txtSupplierAddress.Clear();
+            txtSupplierContact.Clear();
+            txtSupplierEmail.Clear();
+            btnUpdateSupplier.Enabled = false;
+            btnDeleteSupplier.Enabled = false;
+            panel4.Enabled = false;
         }
 
         private void LoadDashboard()
         {
             dashPanel.Visible = true;
-
-            //TODO: Make all other panels invisible
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
             stockPanel.Visible = false;
             supplierPanel.Visible = false;
             settingsPanel.Visible = false;
-
-
-
-            //Refresh Data
+            reportPanel.Visible = false;
             this.RefreshDashboard();
         }
 
@@ -210,88 +218,74 @@ namespace PointOfSaleUI.UI
             staffPanel.Visible = true;
             cmbSearchUserBy.SelectedIndex = 0;
             cmbUserRole.SelectedIndex = 0;
-
-            //TODO: Make all other panels invisible
             dashPanel.Visible = false;
             categoryPanel.Visible = false;
             supplierPanel.Visible = false;
             stockPanel.Visible = false;
             settingsPanel.Visible = false;
-
-
-
-            //Refresh Data
+            reportPanel.Visible = false;
             this.RefreshStaffGrid();
         }
 
         private void LoadCategoryPanel()
         {
             categoryPanel.Visible = true;
-
-
-            //Make all other panel invisible
             dashPanel.Visible = false;
             staffPanel.Visible = false;
             supplierPanel.Visible = false;
             stockPanel.Visible = false;
             settingsPanel.Visible = false;
-
-
-
-            //Refresh Data
+            reportPanel.Visible = false;
             this.RefreshCategoryGrid();
         }
 
         private void LoadStockPanel()
         {
-
             stockPanel.Visible = true;
             cmbSearchStockBy.SelectedIndex = 0;
-
-            //Make all other panel invisible
             dashPanel.Visible = false;
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
             supplierPanel.Visible = false;
             settingsPanel.Visible = false;
-
-
-            //Refresh Data
+            reportPanel.Visible = false;
             this.RefreshStockGrid();
         }
 
         private void LoadSupplierPanel()
         {
             supplierPanel.Visible = true;
-
-
-            //Make all other panel invisible
             dashPanel.Visible = false;
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
             stockPanel.Visible = false;
             settingsPanel.Visible = false;
-
-
-            //Refresh Data
+            reportPanel.Visible = false;
             this.RefreshSupplierGrid();
         }
 
         private void LoadSettingsPanel()
         {
             settingsPanel.Visible = true;
-
-
-            //Make all other panel invisible
             dashPanel.Visible = false;
             staffPanel.Visible = false;
             categoryPanel.Visible = false;
             stockPanel.Visible = false;
             supplierPanel.Visible = false;
-
-
-            //Refresh Data
+            reportPanel.Visible = false;
             this.RefreshSettings();
+        }
+
+        private void LoadReports()
+        {
+            reportPanel.Visible = true;
+            dashPanel.Visible = false;
+            staffPanel.Visible = false;
+            categoryPanel.Visible = false;
+            stockPanel.Visible = false;
+            supplierPanel.Visible = false;
+            settingsPanel.Visible = false;
+            this.RefreshReports();
         }
 
         #endregion
@@ -480,6 +474,7 @@ namespace PointOfSaleUI.UI
 
         private void userGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            groupBox2.Enabled = true;
             btnUpdate.Enabled = true;
             btnDelete.Enabled = true;
 
@@ -527,6 +522,7 @@ namespace PointOfSaleUI.UI
 
         private void categoryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            groupBox4.Enabled = true;
             btnUpdateCategory.Enabled = true;
             btnDeleteCategory.Enabled = true;
 
@@ -649,6 +645,7 @@ namespace PointOfSaleUI.UI
 
         private void supplierGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            panel4.Enabled = true;
             btnUpdateSupplier.Enabled = true;
             btnDeleteSupplier.Enabled = true;
 
@@ -988,6 +985,11 @@ namespace PointOfSaleUI.UI
                 lblQRWarning.BackColor = Color.SeaGreen;
                 lblQRWarning.Text = "QR Code is Saved";
             }
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            this.LoadReports();
         }
     }
 }
