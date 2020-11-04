@@ -1,9 +1,9 @@
-﻿CREATE PROCEDURE [dbo].[GetSalesForToday]
-	@SaleDate NVARCHAR(20)
-AS
-BEGIN
+﻿CREATE PROCEDURE [dbo].[GetSalesForToday] AS BEGIN
  SET NOCOUNT ON;
-	SELECT SUM([SubTotal]) AS 'TotalSubtotal', SUM([SaleTaxRate]) AS 'TotalTax', SUM([GrandTotal]) AS 'GrandTotal'
+	SELECT 
+		SUM([SubTotal]) AS 'Total Subtotal', 
+		SUM([SaleTaxRate]) AS 'Total Tax', 
+		SUM([GrandTotal]) AS 'Grand Total'
 	FROM [Sale]
-	WHERE [SaleDate] >= DATEADD(MS,-1,CAST(DATEADD(DD,1,@SaleDate) AS DATETIME2));
+	WHERE [SaleDate] >= CONVERT(DateTime, DATEDIFF(DAY, 0, GETDATE()));
 END

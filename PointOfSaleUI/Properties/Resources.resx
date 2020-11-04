@@ -250,4 +250,10 @@
   <data name="RUPEE_SYMBOL" xml:space="preserve">
     <value>₹ {0}</value>
   </data>
+  <data name="TOTAL_STOCK_SOLD" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="TOTAL_TRANSACTIONS" xml:space="preserve">
+    <value>{0}</value>
+  </data>
 </root>

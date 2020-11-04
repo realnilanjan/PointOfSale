@@ -459,6 +459,24 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0}.
+        /// </summary>
+        internal static string TOTAL_STOCK_SOLD {
+            get {
+                return ResourceManager.GetString("TOTAL_STOCK_SOLD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}.
+        /// </summary>
+        internal static string TOTAL_TRANSACTIONS {
+            get {
+                return ResourceManager.GetString("TOTAL_TRANSACTIONS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap totalsales {

@@ -77,6 +77,8 @@ namespace PointOfSale.Lib.DataAccess
             return rows;
         }
 
+       
+
         public List<ProductDataModel> LoadAllProducts()
         {
             var rows = LoadData<ProductDataModel, dynamic>("dbo.LoadAllProducts", new { }, "POS");
@@ -147,10 +149,14 @@ namespace PointOfSale.Lib.DataAccess
             return rows.FirstOrDefault();
         }
 
-        public TodaysSales LoadTodaySalesTotal(string SaleDate)
+        public decimal LoadTodaySalesTotal(string connectionStringName = "POS")
         {
-            var rows = LoadData<TodaysSales, dynamic>("dbo.GetSalesForToday", new { SaleDate }, "POS").FirstOrDefault();
-            return rows;
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<decimal>("dbo.GetSalesForToday", commandType: CommandType.StoredProcedure).Single();
+                return result;
+            }
         }
 
         public decimal GetAllSaleTotal(string connectionStringName = "POS")
@@ -159,6 +165,26 @@ namespace PointOfSale.Lib.DataAccess
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
                 var result = connection.Query<decimal>("dbo.GetTotalSales", commandType: CommandType.StoredProcedure).Single();
+                return result;
+            }
+        }
+
+        public int GetStocksSold(string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<int>("dbo.GetStocksSold", commandType: CommandType.StoredProcedure).Single();
+                return result;
+            }
+        }
+
+        public int GetTotalTransaction(string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<int>("dbo.GetTotalTransaction", commandType: CommandType.StoredProcedure).Single();
                 return result;
             }
         }

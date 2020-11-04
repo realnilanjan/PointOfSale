@@ -141,6 +141,8 @@
     <Build Include="dbo\Stored Procedures\Customers\GetCustomerDetails.sql" />
     <Build Include="dbo\Stored Procedures\Report\GetSalesForToday.sql" />
     <Build Include="dbo\Stored Procedures\Report\GetTotalSales.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetStocksSold.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetTotalTransaction.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />

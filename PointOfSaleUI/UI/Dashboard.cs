@@ -24,7 +24,6 @@ namespace PointOfSaleUI.UI
         List<ProductDataModel> products = new List<ProductDataModel>();
         List<CategoryDataModel> productCategories = new List<CategoryDataModel>();
         List<SupplierDataModel> productSuppliers = new List<SupplierDataModel>();
-        TodaysSales todaysSales = new TodaysSales();
 
         string IsBlocked = "1";  //1 Is not blocked || 0 is blocked
 
@@ -42,15 +41,7 @@ namespace PointOfSaleUI.UI
         private void RefreshDashboard()
         {
             //Today's Sales
-            string DateToday = DateTime.Now.ToString("dd-MM-yyyy") + " 00:00:00";
-            todaysSales = dataAccess.LoadTodaySalesTotal(DateToday);
-            //var todaysales = from sl in todaysSales
-            //                 group sl by sl.GrandTotal into g
-            //                 select new
-            //                 {
-            //                     TodaysSale = g.Sum(x => x.GrandTotal)
-            //                 };
-            string TotalSalesToday = todaysSales.GrandTotal.ToString("N2");
+            string TotalSalesToday = dataAccess.LoadTodaySalesTotal().ToString("N2");
             txtTodaysSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSalesToday);
 
             //Products
@@ -68,13 +59,13 @@ namespace PointOfSaleUI.UI
             string TotalSales = dataAccess.GetAllSaleTotal().ToString("N2");
             txtTotalSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSales);
 
-
             //Sold Stock
-
-
+            string TotalStockSold = dataAccess.GetStocksSold().ToString();
+            txtStockSold.Text = TotalStockSold;
 
             //Number of Transactions
-
+            string TotalTransactions = dataAccess.GetTotalTransaction().ToString();
+            txtTotalTransations.Text = String.Format(Properties.Resources.TOTAL_TRANSACTIONS, TotalTransactions);
         }
 
         private void RefreshStaffGrid()

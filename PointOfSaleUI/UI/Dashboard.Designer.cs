@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation10 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
             this.imagesList = new System.Windows.Forms.ImageList(this.components);
             this.txtTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -454,9 +454,9 @@
             this.textAnimator.SetDecoration(this.metroPanel5, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.metroPanel5, BunifuAnimatorNS.DecorationType.None);
             this.panelAnimator.SetDecoration(this.metroPanel5, BunifuAnimatorNS.DecorationType.None);
-            this.metroPanel5.Location = new System.Drawing.Point(801, 71);
+            this.metroPanel5.Location = new System.Drawing.Point(1148, 69);
             this.metroPanel5.Name = "metroPanel5";
-            this.metroPanel5.Size = new System.Drawing.Size(190, 60);
+            this.metroPanel5.Size = new System.Drawing.Size(275, 100);
             this.metroPanel5.TabIndex = 3;
             // 
             // txtTotalTransations
@@ -468,13 +468,13 @@
             this.logoAnimator.SetDecoration(this.txtTotalTransations, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.txtTotalTransations, BunifuAnimatorNS.DecorationType.None);
             this.txtTotalTransations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTotalTransations.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalTransations.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.txtTotalTransations.ForeColor = System.Drawing.Color.White;
-            this.txtTotalTransations.Location = new System.Drawing.Point(60, 0);
+            this.txtTotalTransations.Location = new System.Drawing.Point(100, 0);
             this.txtTotalTransations.Name = "txtTotalTransations";
-            this.txtTotalTransations.Size = new System.Drawing.Size(128, 41);
+            this.txtTotalTransations.Size = new System.Drawing.Size(173, 57);
             this.txtTotalTransations.TabIndex = 4;
-            this.txtTotalTransations.Text = "15";
+            this.txtTotalTransations.Text = "{0}";
             this.txtTotalTransations.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -486,11 +486,11 @@
             this.logoAnimator.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
             this.label15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(60, 41);
+            this.label15.Location = new System.Drawing.Point(100, 65);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 17);
+            this.label15.Size = new System.Drawing.Size(173, 33);
             this.label15.TabIndex = 3;
             this.label15.Text = "Transactions";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -506,7 +506,7 @@
             this.pictureBox6.Image = global::PointOfSaleUI.Properties.Resources.transactions;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox6.Size = new System.Drawing.Size(100, 98);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
@@ -522,9 +522,9 @@
             this.textAnimator.SetDecoration(this.metroPanel4, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.metroPanel4, BunifuAnimatorNS.DecorationType.None);
             this.panelAnimator.SetDecoration(this.metroPanel4, BunifuAnimatorNS.DecorationType.None);
-            this.metroPanel4.Location = new System.Drawing.Point(606, 71);
+            this.metroPanel4.Location = new System.Drawing.Point(584, 69);
             this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Size = new System.Drawing.Size(190, 60);
+            this.metroPanel4.Size = new System.Drawing.Size(275, 100);
             this.metroPanel4.TabIndex = 3;
             // 
             // txtStockSold
@@ -536,13 +536,13 @@
             this.logoAnimator.SetDecoration(this.txtStockSold, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.txtStockSold, BunifuAnimatorNS.DecorationType.None);
             this.txtStockSold.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtStockSold.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStockSold.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.txtStockSold.ForeColor = System.Drawing.Color.White;
-            this.txtStockSold.Location = new System.Drawing.Point(60, 0);
+            this.txtStockSold.Location = new System.Drawing.Point(100, 0);
             this.txtStockSold.Name = "txtStockSold";
-            this.txtStockSold.Size = new System.Drawing.Size(128, 41);
+            this.txtStockSold.Size = new System.Drawing.Size(173, 61);
             this.txtStockSold.TabIndex = 4;
-            this.txtStockSold.Text = "100";
+            this.txtStockSold.Text = "{0}";
             this.txtStockSold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -554,11 +554,11 @@
             this.logoAnimator.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
             this.label13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(60, 41);
+            this.label13.Location = new System.Drawing.Point(100, 66);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(128, 17);
+            this.label13.Size = new System.Drawing.Size(173, 32);
             this.label13.TabIndex = 3;
             this.label13.Text = "Stocks Sold";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -574,7 +574,7 @@
             this.pictureBox5.Image = global::PointOfSaleUI.Properties.Resources.stock_sold;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox5.Size = new System.Drawing.Size(100, 98);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
@@ -590,9 +590,9 @@
             this.textAnimator.SetDecoration(this.metroPanel3, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.metroPanel3, BunifuAnimatorNS.DecorationType.None);
             this.panelAnimator.SetDecoration(this.metroPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.metroPanel3.Location = new System.Drawing.Point(215, 71);
+            this.metroPanel3.Location = new System.Drawing.Point(866, 69);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(190, 60);
+            this.metroPanel3.Size = new System.Drawing.Size(275, 100);
             this.metroPanel3.TabIndex = 3;
             // 
             // txtTotalStock
@@ -604,13 +604,13 @@
             this.logoAnimator.SetDecoration(this.txtTotalStock, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.txtTotalStock, BunifuAnimatorNS.DecorationType.None);
             this.txtTotalStock.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtTotalStock.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalStock.ForeColor = System.Drawing.Color.Black;
-            this.txtTotalStock.Location = new System.Drawing.Point(60, 29);
+            this.txtTotalStock.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalStock.ForeColor = System.Drawing.Color.White;
+            this.txtTotalStock.Location = new System.Drawing.Point(100, 51);
             this.txtTotalStock.Name = "txtTotalStock";
-            this.txtTotalStock.Size = new System.Drawing.Size(128, 29);
+            this.txtTotalStock.Size = new System.Drawing.Size(173, 47);
             this.txtTotalStock.TabIndex = 4;
-            this.txtTotalStock.Text = "Total Stock: [0]";
+            this.txtTotalStock.Text = "Total Stock: {0}";
             this.txtTotalStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtTotalProduct
@@ -622,11 +622,11 @@
             this.logoAnimator.SetDecoration(this.txtTotalProduct, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.txtTotalProduct, BunifuAnimatorNS.DecorationType.None);
             this.txtTotalProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTotalProduct.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalProduct.ForeColor = System.Drawing.Color.Black;
-            this.txtTotalProduct.Location = new System.Drawing.Point(60, 0);
+            this.txtTotalProduct.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalProduct.ForeColor = System.Drawing.Color.White;
+            this.txtTotalProduct.Location = new System.Drawing.Point(100, 0);
             this.txtTotalProduct.Name = "txtTotalProduct";
-            this.txtTotalProduct.Size = new System.Drawing.Size(128, 29);
+            this.txtTotalProduct.Size = new System.Drawing.Size(173, 49);
             this.txtTotalProduct.TabIndex = 4;
             this.txtTotalProduct.Text = "Products: {0}";
             this.txtTotalProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -642,7 +642,7 @@
             this.pictureBox4.Image = global::PointOfSaleUI.Properties.Resources.stock_button;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox4.Size = new System.Drawing.Size(100, 98);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
@@ -658,9 +658,9 @@
             this.textAnimator.SetDecoration(this.metroPanel2, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.metroPanel2, BunifuAnimatorNS.DecorationType.None);
             this.panelAnimator.SetDecoration(this.metroPanel2, BunifuAnimatorNS.DecorationType.None);
-            this.metroPanel2.Location = new System.Drawing.Point(410, 71);
+            this.metroPanel2.Location = new System.Drawing.Point(302, 69);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(190, 60);
+            this.metroPanel2.Size = new System.Drawing.Size(275, 100);
             this.metroPanel2.TabIndex = 3;
             // 
             // txtTotalSales
@@ -672,11 +672,11 @@
             this.logoAnimator.SetDecoration(this.txtTotalSales, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.txtTotalSales, BunifuAnimatorNS.DecorationType.None);
             this.txtTotalSales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTotalSales.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalSales.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.txtTotalSales.ForeColor = System.Drawing.Color.White;
-            this.txtTotalSales.Location = new System.Drawing.Point(60, 0);
+            this.txtTotalSales.Location = new System.Drawing.Point(100, 0);
             this.txtTotalSales.Name = "txtTotalSales";
-            this.txtTotalSales.Size = new System.Drawing.Size(128, 41);
+            this.txtTotalSales.Size = new System.Drawing.Size(173, 57);
             this.txtTotalSales.TabIndex = 4;
             this.txtTotalSales.Text = "{0}";
             this.txtTotalSales.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -690,11 +690,11 @@
             this.logoAnimator.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
             this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(60, 41);
+            this.label9.Location = new System.Drawing.Point(100, 65);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 17);
+            this.label9.Size = new System.Drawing.Size(173, 33);
             this.label9.TabIndex = 3;
             this.label9.Text = "Total Sales";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -710,7 +710,7 @@
             this.pictureBox3.Image = global::PointOfSaleUI.Properties.Resources.totalsales;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox3.Size = new System.Drawing.Size(100, 98);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -726,9 +726,9 @@
             this.textAnimator.SetDecoration(this.metroPanel1, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.metroPanel1, BunifuAnimatorNS.DecorationType.None);
             this.panelAnimator.SetDecoration(this.metroPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.metroPanel1.Location = new System.Drawing.Point(20, 71);
+            this.metroPanel1.Location = new System.Drawing.Point(20, 69);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(190, 60);
+            this.metroPanel1.Size = new System.Drawing.Size(275, 100);
             this.metroPanel1.TabIndex = 3;
             // 
             // txtTodaysSales
@@ -739,11 +739,11 @@
             this.logoAnimator.SetDecoration(this.txtTodaysSales, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.txtTodaysSales, BunifuAnimatorNS.DecorationType.None);
             this.txtTodaysSales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTodaysSales.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTodaysSales.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.txtTodaysSales.ForeColor = System.Drawing.Color.White;
-            this.txtTodaysSales.Location = new System.Drawing.Point(60, 0);
+            this.txtTodaysSales.Location = new System.Drawing.Point(100, 0);
             this.txtTodaysSales.Name = "txtTodaysSales";
-            this.txtTodaysSales.Size = new System.Drawing.Size(128, 41);
+            this.txtTodaysSales.Size = new System.Drawing.Size(173, 57);
             this.txtTodaysSales.TabIndex = 4;
             this.txtTodaysSales.Text = "{0}";
             this.txtTodaysSales.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -756,11 +756,11 @@
             this.logoAnimator.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
             this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(60, 41);
+            this.label6.Location = new System.Drawing.Point(100, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 17);
+            this.label6.Size = new System.Drawing.Size(173, 33);
             this.label6.TabIndex = 3;
             this.label6.Text = "Today\'s Sales";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -776,7 +776,7 @@
             this.pictureBox2.Image = global::PointOfSaleUI.Properties.Resources.todays_sale1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 58);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -807,8 +807,8 @@
             // 
             this.userGridView.AllowUserToAddRows = false;
             this.userGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
-            this.userGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.Gainsboro;
+            this.userGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.userGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -816,14 +816,14 @@
             this.userGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.userGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.userGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.userGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.userGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.userGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.userGridView, BunifuAnimatorNS.DecorationType.None);
@@ -839,14 +839,14 @@
             this.userGridView.Name = "userGridView";
             this.userGridView.ReadOnly = true;
             this.userGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.userGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.userGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.userGridView.RowHeadersVisible = false;
             this.userGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.userGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -1351,8 +1351,8 @@
             // 
             this.categoryGridView.AllowUserToAddRows = false;
             this.categoryGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
-            this.categoryGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.Gainsboro;
+            this.categoryGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
             this.categoryGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1360,14 +1360,14 @@
             this.categoryGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.categoryGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.categoryGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.categoryGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.categoryGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.categoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.categoryGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.categoryGridView, BunifuAnimatorNS.DecorationType.None);
@@ -1383,14 +1383,14 @@
             this.categoryGridView.Name = "categoryGridView";
             this.categoryGridView.ReadOnly = true;
             this.categoryGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.categoryGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.categoryGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.categoryGridView.RowHeadersVisible = false;
             this.categoryGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.categoryGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -2206,8 +2206,8 @@
             // 
             this.supplierGridView.AllowUserToAddRows = false;
             this.supplierGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.Gainsboro;
+            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.supplierGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2215,14 +2215,14 @@
             this.supplierGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.supplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.supplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.supplierGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
@@ -2238,14 +2238,14 @@
             this.supplierGridView.Name = "supplierGridView";
             this.supplierGridView.ReadOnly = true;
             this.supplierGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.supplierGridView.RowHeadersVisible = false;
             this.supplierGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.supplierGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -3180,8 +3180,8 @@
             // 
             this.stockGridView.AllowUserToAddRows = false;
             this.stockGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
-            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.Gainsboro;
+            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
             this.stockGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -3189,14 +3189,14 @@
             this.stockGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.stockGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stockGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.stockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
@@ -3212,14 +3212,14 @@
             this.stockGridView.Name = "stockGridView";
             this.stockGridView.ReadOnly = true;
             this.stockGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.stockGridView.RowHeadersVisible = false;
             this.stockGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.stockGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -3723,85 +3723,85 @@
             // 
             this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
             this.logoAnimator.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(30);
-            animation3.RotateCoeff = 0.5F;
-            animation3.RotateLimit = 0.2F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.logoAnimator.DefaultAnimation = animation3;
+            animation11.AnimateOnlyDifferences = true;
+            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
+            animation11.LeafCoeff = 0F;
+            animation11.MaxTime = 1F;
+            animation11.MinTime = 0F;
+            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
+            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
+            animation11.MosaicSize = 0;
+            animation11.Padding = new System.Windows.Forms.Padding(30);
+            animation11.RotateCoeff = 0.5F;
+            animation11.RotateLimit = 0.2F;
+            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
+            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
+            animation11.TimeCoeff = 0F;
+            animation11.TransparencyCoeff = 0F;
+            this.logoAnimator.DefaultAnimation = animation11;
             // 
             // panelAnimator
             // 
             this.panelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.panelAnimator.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.panelAnimator.DefaultAnimation = animation2;
+            animation10.AnimateOnlyDifferences = true;
+            animation10.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.BlindCoeff")));
+            animation10.LeafCoeff = 0F;
+            animation10.MaxTime = 1F;
+            animation10.MinTime = 0F;
+            animation10.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicCoeff")));
+            animation10.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicShift")));
+            animation10.MosaicSize = 1;
+            animation10.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation10.RotateCoeff = 0F;
+            animation10.RotateLimit = 0F;
+            animation10.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.ScaleCoeff")));
+            animation10.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.SlideCoeff")));
+            animation10.TimeCoeff = 2F;
+            animation10.TransparencyCoeff = 0F;
+            this.panelAnimator.DefaultAnimation = animation10;
             // 
             // panelAnimator2
             // 
             this.panelAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.panelAnimator2.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.panelAnimator2.DefaultAnimation = animation1;
+            animation9.AnimateOnlyDifferences = true;
+            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
+            animation9.LeafCoeff = 0F;
+            animation9.MaxTime = 1F;
+            animation9.MinTime = 0F;
+            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
+            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
+            animation9.MosaicSize = 0;
+            animation9.Padding = new System.Windows.Forms.Padding(0);
+            animation9.RotateCoeff = 0F;
+            animation9.RotateLimit = 0F;
+            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
+            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
+            animation9.TimeCoeff = 0F;
+            animation9.TransparencyCoeff = 0F;
+            this.panelAnimator2.DefaultAnimation = animation9;
             // 
             // textAnimator
             // 
             this.textAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.textAnimator.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.textAnimator.DefaultAnimation = animation4;
+            animation12.AnimateOnlyDifferences = true;
+            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
+            animation12.LeafCoeff = 0F;
+            animation12.MaxTime = 1F;
+            animation12.MinTime = 0F;
+            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
+            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
+            animation12.MosaicSize = 0;
+            animation12.Padding = new System.Windows.Forms.Padding(0);
+            animation12.RotateCoeff = 0F;
+            animation12.RotateLimit = 0F;
+            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
+            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
+            animation12.TimeCoeff = 0F;
+            animation12.TransparencyCoeff = 0F;
+            this.textAnimator.DefaultAnimation = animation12;
             this.textAnimator.MaxAnimationTime = 1000;
             // 
             // dashToolTip
