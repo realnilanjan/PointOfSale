@@ -188,5 +188,25 @@ namespace PointOfSale.Lib.DataAccess
                 return result.FirstOrDefault();
             }
         }
+
+        public List<AllSalesByCustomer> GetAllSalesByDateAndCustomer(string query, string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<AllSalesByCustomer>(query, commandType: CommandType.Text);
+                return result.ToList();
+            }
+        }
+
+        public List<AllSales> GetAllSalesByDate(string query, string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<AllSales>(query, commandType: CommandType.Text);
+                return result.ToList();
+            }
+        }
     }
 }
