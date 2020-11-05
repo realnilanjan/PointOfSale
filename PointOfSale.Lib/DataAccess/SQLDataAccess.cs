@@ -149,43 +149,43 @@ namespace PointOfSale.Lib.DataAccess
             return rows.FirstOrDefault();
         }
 
-        public decimal LoadTodaySalesTotal(string connectionStringName = "POS")
+        public decimal? LoadTodaySalesTotal(string connectionStringName = "POS")
         {
             string connectionString = GetConnectionString(connectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
-                var result = connection.Query<decimal>("dbo.GetSalesForToday", commandType: CommandType.StoredProcedure).Single();
-                return result;
+                var result = connection.Query<decimal?>("dbo.GetSalesForToday", commandType: CommandType.StoredProcedure);
+                return result.FirstOrDefault();
             }
         }
 
-        public decimal GetAllSaleTotal(string connectionStringName = "POS")
+        public decimal? GetAllSaleTotal(string connectionStringName = "POS")
         {
             string connectionString = GetConnectionString(connectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
-                var result = connection.Query<decimal>("dbo.GetTotalSales", commandType: CommandType.StoredProcedure).Single();
-                return result;
+                var result = connection.Query<decimal?>("dbo.GetTotalSales", commandType: CommandType.StoredProcedure);
+                return result.FirstOrDefault();
             }
         }
 
-        public int GetStocksSold(string connectionStringName = "POS")
+        public int? GetStocksSold(string connectionStringName = "POS")
         {
             string connectionString = GetConnectionString(connectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
-                var result = connection.Query<int>("dbo.GetStocksSold", commandType: CommandType.StoredProcedure).Single();
-                return result;
+                var result = connection.Query<int?>("dbo.GetStocksSold", commandType: CommandType.StoredProcedure);
+                return result.FirstOrDefault();
             }
         }
 
-        public int GetTotalTransaction(string connectionStringName = "POS")
+        public int? GetTotalTransaction(string connectionStringName = "POS")
         {
             string connectionString = GetConnectionString(connectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
-                var result = connection.Query<int>("dbo.GetTotalTransaction", commandType: CommandType.StoredProcedure).Single();
-                return result;
+                var result = connection.Query<int?>("dbo.GetTotalTransaction", commandType: CommandType.StoredProcedure);
+                return result.FirstOrDefault();
             }
         }
     }
