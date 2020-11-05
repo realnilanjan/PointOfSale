@@ -1060,7 +1060,13 @@ namespace PointOfSaleUI.UI
 
         private void btnViewAllTransactions_Click(object sender, EventArgs e)
         {
-            ViewAllTransaction allTransactions = new ViewAllTransaction();
+            ViewAllTransaction allTransactions = new ViewAllTransaction(true);
+            allTransactions.ShowDialog();
+        }
+
+        private void btnViewAll_Click(object sender, EventArgs e)
+        {
+            ViewAllTransaction allTransactions = new ViewAllTransaction(false);
             allTransactions.ShowDialog();
         }
     }

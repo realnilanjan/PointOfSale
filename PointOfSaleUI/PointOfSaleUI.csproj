@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\Functions.cs" />
+    <Compile Include="Helpers\ReportsQueries\Queries.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Category.cs">
@@ -343,8 +344,6 @@
   <ItemGroup>
     <None Include="Resources\payout.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Helpers\ReportsQueries\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
