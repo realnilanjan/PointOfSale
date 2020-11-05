@@ -143,6 +143,7 @@
     <Build Include="dbo\Stored Procedures\Report\GetTotalSales.sql" />
     <Build Include="dbo\Stored Procedures\Report\GetStocksSold.sql" />
     <Build Include="dbo\Stored Procedures\Report\GetTotalTransaction.sql" />
+    <Build Include="dbo\Views\ViewAllBills.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />

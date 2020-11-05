@@ -10,6 +10,7 @@ using PointOfSale.Lib.DataModel;
 using System.Collections.Generic;
 using PointOfSale.Lib.DataAccess;
 using PointOfSale.Lib.Encryptions;
+using PointOfSaleUI.UI.Reports;
 
 namespace PointOfSaleUI.UI
 {
@@ -37,34 +38,99 @@ namespace PointOfSaleUI.UI
         }
 
         #region Functions
+        private void GetTotalSalesTodayCount()
+        {
+            decimal? TotalSalesToday = dataAccess.LoadTodaySalesTotal();
+            if (TotalSalesToday == null)
+            {
+                txtTodaysSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, "0.00");
+            }
+            else
+            {
+                txtTodaysSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSalesToday);
+            }
+        }
+
+        private void GetTotalSales()
+        {
+            decimal? TotalSales = dataAccess.GetAllSaleTotal();
+            if (TotalSales == null)
+            {
+                txtTotalSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, "0.00");
+            }
+            else
+            {
+                txtTotalSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSales);
+            }
+            
+        }
+
+        private void GetTotalProcuctsAndStock()
+        {
+            products = dataAccess.LoadAllProducts();
+            if (products.Count > 0)
+            {
+                txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, products.Count.ToString());
+                var stockInfo = from sl in products
+                                group sl by sl.StockInHand into g
+                                select new
+                                {
+                                    Total = g.Sum(x => x.StockInHand)
+                                };
+                txtTotalStock.Text = String.Format(Properties.Resources.TOTAL_STOCK, stockInfo.Sum(x => x.Total));
+            }
+            else
+            {
+                txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, "0");
+                txtTotalStock.Text = String.Format(Properties.Resources.TOTAL_STOCK, "0");
+            }
+            
+        }
+
+        private void GetTotalStocksSold()
+        {
+            int? TotalStockSold = dataAccess.GetStocksSold();
+            if (TotalStockSold == null)
+            {
+                txtStockSold.Text = "0";
+            }
+            else
+            {
+                txtStockSold.Text = TotalStockSold.ToString();
+            }
+            
+        }
+
+        private void GetTotalTransactions()
+        {
+            int? TotalTransactions = dataAccess.GetTotalTransaction();
+            if (TotalTransactions == null)
+            {
+                txtTotalTransations.Text = String.Format(Properties.Resources.TOTAL_TRANSACTIONS, "0");
+            }
+            else
+            {
+                txtTotalTransations.Text = String.Format(Properties.Resources.TOTAL_TRANSACTIONS, TotalTransactions);
+            }
+        }
+
         private void RefreshDashboard()
         {
+            //TODO: Catch Exception
             //Today's Sales
-            string TotalSalesToday = dataAccess.LoadTodaySalesTotal().ToString("N2");
-            txtTodaysSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSalesToday);
+            GetTotalSalesTodayCount();
 
             //Products
-            products = dataAccess.LoadAllProducts();
-            txtTotalProduct.Text = String.Format(Properties.Resources.TOTAL_PRODUCTS, products.Count.ToString());
-            var stockInfo = from sl in products
-                            group sl by sl.StockInHand into g
-                            select new
-                            {
-                                Total = g.Sum(x => x.StockInHand)
-                            };
-            txtTotalStock.Text = String.Format(Properties.Resources.TOTAL_STOCK, stockInfo.Sum(x => x.Total));
+            GetTotalProcuctsAndStock();
 
             //Total Sales
-            string TotalSales = dataAccess.GetAllSaleTotal().ToString("N2");
-            txtTotalSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSales);
+            GetTotalSales();
 
             //Sold Stock
-            string TotalStockSold = dataAccess.GetStocksSold().ToString();
-            txtStockSold.Text = TotalStockSold;
+            GetTotalStocksSold();
 
             //Number of Transactions
-            string TotalTransactions = dataAccess.GetTotalTransaction().ToString();
-            txtTotalTransations.Text = String.Format(Properties.Resources.TOTAL_TRANSACTIONS, TotalTransactions);
+            GetTotalTransactions();
         }
 
         private void RefreshStaffGrid()
@@ -990,6 +1056,12 @@ namespace PointOfSaleUI.UI
         private void btnReports_Click(object sender, EventArgs e)
         {
             this.LoadReports();
+        }
+
+        private void btnViewAllTransactions_Click(object sender, EventArgs e)
+        {
+            ViewAllTransaction allTransactions = new ViewAllTransaction();
+            allTransactions.ShowDialog();
         }
     }
 }

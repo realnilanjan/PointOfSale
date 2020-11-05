@@ -21,6 +21,7 @@ namespace PointOfSaleUI.UI
             InitializeComponent();
             this.loggedInUser = loggedInUser;
             this.LoadAllPurchasedStocks();
+            txtBarcode.Focus();
         }
 
         private void LoadAllPurchasedStocks()

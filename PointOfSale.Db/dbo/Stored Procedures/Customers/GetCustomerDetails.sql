@@ -3,7 +3,7 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT [Id], [CustomerName], [CustomerEmail], [CustomerPhone], [CustomerAddressLine1], [CustomerAddressLine2], [CustomerAddressPin], [RegistrationDate]
+	SELECT [CustomerId], [CustomerName], [CustomerEmail], [CustomerPhone], [CustomerAddressLine1], [CustomerAddressLine2], [CustomerAddressPin], [RegistrationDate]
 	FROM [dbo].[Customer]
-	WHERE Id = @Id;
+	WHERE CustomerId = @Id;
 END

@@ -121,6 +121,12 @@
     <Compile Include="UI\PurchaseOrders.Designer.cs">
       <DependentUpon>PurchaseOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reports\ViewAllTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reports\ViewAllTransaction.Designer.cs">
+      <DependentUpon>ViewAllTransaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SavedTransactionDrafts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PurchaseOrders.resx">
       <DependentUpon>PurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reports\ViewAllTransaction.resx">
+      <DependentUpon>ViewAllTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SavedTransactionDrafts.resx">
       <DependentUpon>SavedTransactionDrafts.cs</DependentUpon>
@@ -333,6 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\payout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\ReportsQueries\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

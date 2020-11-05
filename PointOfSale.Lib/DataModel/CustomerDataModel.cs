@@ -8,7 +8,7 @@ namespace PointOfSale.Lib.DataModel
 {
     public class CustomerDataModel
     {
-        public int Id { get; set; }
+        public int CustomerId { get; set; }
         public string CustomerName { get; set; }
         public string CustomerEmail { get; set; }
         public string CustomerPhone { get; set; }

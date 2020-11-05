@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Sale]
 (
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[SaleId] INT NOT NULL PRIMARY KEY IDENTITY, 
     [CashierId] INT NOT NULL, 
     [InvoiceNumber] NVARCHAR(50) NOT NULL, 
     [CustomerId] INT NOT NULL DEFAULT 0, 
