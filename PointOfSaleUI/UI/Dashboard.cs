@@ -27,6 +27,17 @@ namespace PointOfSaleUI.UI
 
         string IsBlocked = "1";  //1 Is not blocked || 0 is blocked
 
+        private const int CP_NOCLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
+
         public Dashboard(LoggedInUserModel loggedInUser)
         {
             InitializeComponent();

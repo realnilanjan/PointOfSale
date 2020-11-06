@@ -79,5 +79,13 @@ namespace PointOfSaleUI.UI.Reports
         {
             toDate.Value = toDate.Value.Date;
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            AllSalesByCustomer obj = allSalesByCustomerBindingSource.Current as AllSalesByCustomer;
+
+
+
+        }
     }
 }

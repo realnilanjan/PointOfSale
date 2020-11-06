@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.allTransactionsGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,31 +39,55 @@
             this.lblError = new System.Windows.Forms.Label();
             this.fromDate = new Bunifu.Framework.UI.BunifuDatepicker();
             this.toDate = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.allSalesByCustomerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.saleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.invoiceNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerAddressLine1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerAddressLine2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerAddressPinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.allTransactionsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allSalesByCustomerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // allTransactionsGridView
             // 
             this.allTransactionsGridView.AllowUserToAddRows = false;
             this.allTransactionsGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
-            this.allTransactionsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.allTransactionsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.allTransactionsGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.allTransactionsGridView.AutoGenerateColumns = false;
             this.allTransactionsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.allTransactionsGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.allTransactionsGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.allTransactionsGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.allTransactionsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.allTransactionsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.allTransactionsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.allTransactionsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.saleIdDataGridViewTextBoxColumn,
+            this.invoiceNumberDataGridViewTextBoxColumn,
+            this.saleDateDataGridViewTextBoxColumn,
+            this.customerIdDataGridViewTextBoxColumn,
+            this.customerNameDataGridViewTextBoxColumn,
+            this.customerAddressLine1DataGridViewTextBoxColumn,
+            this.customerAddressLine2DataGridViewTextBoxColumn,
+            this.customerAddressPinDataGridViewTextBoxColumn,
+            this.customerPhoneDataGridViewTextBoxColumn});
+            this.allTransactionsGridView.DataSource = this.allSalesByCustomerBindingSource;
             this.allTransactionsGridView.DoubleBuffered = true;
             this.allTransactionsGridView.EnableHeadersVisualStyles = false;
             this.allTransactionsGridView.GridColor = System.Drawing.Color.White;
@@ -73,19 +98,19 @@
             this.allTransactionsGridView.Name = "allTransactionsGridView";
             this.allTransactionsGridView.ReadOnly = true;
             this.allTransactionsGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.allTransactionsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.allTransactionsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.allTransactionsGridView.RowHeadersVisible = false;
             this.allTransactionsGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.allTransactionsGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.allTransactionsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.allTransactionsGridView.Size = new System.Drawing.Size(1116, 641);
+            this.allTransactionsGridView.Size = new System.Drawing.Size(1116, 595);
             this.allTransactionsGridView.TabIndex = 33;
             this.allTransactionsGridView.Visible = false;
             // 
@@ -169,6 +194,89 @@
             this.toDate.Value = new System.DateTime(2020, 10, 29, 0, 28, 21, 207);
             this.toDate.onValueChanged += new System.EventHandler(this.toDate_onValueChanged);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.Green;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(989, 676);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(139, 36);
+            this.btnPrint.TabIndex = 38;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // allSalesByCustomerBindingSource
+            // 
+            this.allSalesByCustomerBindingSource.DataSource = typeof(PointOfSale.Lib.Models.ReportModels.AllSalesByCustomer);
+            // 
+            // saleIdDataGridViewTextBoxColumn
+            // 
+            this.saleIdDataGridViewTextBoxColumn.DataPropertyName = "SaleId";
+            this.saleIdDataGridViewTextBoxColumn.HeaderText = "SaleId";
+            this.saleIdDataGridViewTextBoxColumn.Name = "saleIdDataGridViewTextBoxColumn";
+            this.saleIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // invoiceNumberDataGridViewTextBoxColumn
+            // 
+            this.invoiceNumberDataGridViewTextBoxColumn.DataPropertyName = "InvoiceNumber";
+            this.invoiceNumberDataGridViewTextBoxColumn.HeaderText = "InvoiceNumber";
+            this.invoiceNumberDataGridViewTextBoxColumn.Name = "invoiceNumberDataGridViewTextBoxColumn";
+            this.invoiceNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // saleDateDataGridViewTextBoxColumn
+            // 
+            this.saleDateDataGridViewTextBoxColumn.DataPropertyName = "SaleDate";
+            this.saleDateDataGridViewTextBoxColumn.HeaderText = "SaleDate";
+            this.saleDateDataGridViewTextBoxColumn.Name = "saleDateDataGridViewTextBoxColumn";
+            this.saleDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerIdDataGridViewTextBoxColumn
+            // 
+            this.customerIdDataGridViewTextBoxColumn.DataPropertyName = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.HeaderText = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
+            this.customerIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerNameDataGridViewTextBoxColumn
+            // 
+            this.customerNameDataGridViewTextBoxColumn.DataPropertyName = "CustomerName";
+            this.customerNameDataGridViewTextBoxColumn.HeaderText = "CustomerName";
+            this.customerNameDataGridViewTextBoxColumn.Name = "customerNameDataGridViewTextBoxColumn";
+            this.customerNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerAddressLine1DataGridViewTextBoxColumn
+            // 
+            this.customerAddressLine1DataGridViewTextBoxColumn.DataPropertyName = "CustomerAddressLine1";
+            this.customerAddressLine1DataGridViewTextBoxColumn.HeaderText = "CustomerAddressLine1";
+            this.customerAddressLine1DataGridViewTextBoxColumn.Name = "customerAddressLine1DataGridViewTextBoxColumn";
+            this.customerAddressLine1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerAddressLine2DataGridViewTextBoxColumn
+            // 
+            this.customerAddressLine2DataGridViewTextBoxColumn.DataPropertyName = "CustomerAddressLine2";
+            this.customerAddressLine2DataGridViewTextBoxColumn.HeaderText = "CustomerAddressLine2";
+            this.customerAddressLine2DataGridViewTextBoxColumn.Name = "customerAddressLine2DataGridViewTextBoxColumn";
+            this.customerAddressLine2DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerAddressPinDataGridViewTextBoxColumn
+            // 
+            this.customerAddressPinDataGridViewTextBoxColumn.DataPropertyName = "CustomerAddressPin";
+            this.customerAddressPinDataGridViewTextBoxColumn.HeaderText = "CustomerAddressPin";
+            this.customerAddressPinDataGridViewTextBoxColumn.Name = "customerAddressPinDataGridViewTextBoxColumn";
+            this.customerAddressPinDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerPhoneDataGridViewTextBoxColumn
+            // 
+            this.customerPhoneDataGridViewTextBoxColumn.DataPropertyName = "CustomerPhone";
+            this.customerPhoneDataGridViewTextBoxColumn.HeaderText = "CustomerPhone";
+            this.customerPhoneDataGridViewTextBoxColumn.Name = "customerPhoneDataGridViewTextBoxColumn";
+            this.customerPhoneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // ViewAllTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -177,6 +285,7 @@
             this.ClientSize = new System.Drawing.Size(1140, 724);
             this.Controls.Add(this.toDate);
             this.Controls.Add(this.fromDate);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnLoadTransactions);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -192,6 +301,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "View All Transactions";
             ((System.ComponentModel.ISupportInitialize)(this.allTransactionsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allSalesByCustomerBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +316,16 @@
         private System.Windows.Forms.Label lblError;
         private Bunifu.Framework.UI.BunifuDatepicker fromDate;
         private Bunifu.Framework.UI.BunifuDatepicker toDate;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.DataGridViewTextBoxColumn saleIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn invoiceNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn saleDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressLine1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressLine2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressPinDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource allSalesByCustomerBindingSource;
     }
 }

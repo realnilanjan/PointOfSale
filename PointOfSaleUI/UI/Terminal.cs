@@ -25,6 +25,8 @@ namespace PointOfSaleUI.UI
         CouponDataModel couponData { get; set; }
         CustomerDataModel CustomerData = new CustomerDataModel();
         private int CustomerId { get; set; } = 0;
+        private bool IsCustomerSelected { get; set; } = false;
+
 
         private decimal TaxRate = Properties.Settings.Default.TaxRate;
         private LoggedInUserModel _loggedInUser;
@@ -428,25 +430,33 @@ namespace PointOfSaleUI.UI
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            ProcessCheckout checkout = new ProcessCheckout(SaleId, CashierId, GrandTotal);
-            DialogResult result = checkout.ShowDialog();
-            if (result == DialogResult.OK)
+            if (IsCustomerSelected == true)
             {
-                this.CheckOut();
-                CheckOutModel checkOut = new CheckOutModel
+                ProcessCheckout checkout = new ProcessCheckout(SaleId, CashierId, GrandTotal);
+                DialogResult result = checkout.ShowDialog();
+                if (result == DialogResult.OK)
                 {
-                    SaleId = CheckOutDataModel.SaleId,
-                    CashierId = CashierId,
-                    TotalAmount = GrandTotal,
-                    CardDigits = CheckOutDataModel.CardDigits,
-                    CardType = CheckOutDataModel.TransactionType,
-                    DateCreated = DateTime.UtcNow.AddHours(5.5)
-                };
+                    this.CheckOut();
+                    CheckOutModel checkOut = new CheckOutModel
+                    {
+                        SaleId = CheckOutDataModel.SaleId,
+                        CashierId = CashierId,
+                        TotalAmount = GrandTotal,
+                        CardDigits = CheckOutDataModel.CardDigits,
+                        CardType = CheckOutDataModel.TransactionType,
+                        DateCreated = DateTime.UtcNow.AddHours(5.5)
+                    };
 
-                dataAccess.SaveData("dbo.SaveTransaction", checkOut, "POS");
-                CustomerId = 0;
-                lnkSelectCustomer.Text = "Select Customer";
-                this.VoidTransaction(); 
+                    dataAccess.SaveData("dbo.SaveTransaction", checkOut, "POS");
+                    CustomerId = 0;
+                    lnkSelectCustomer.Text = "Select Customer";
+                    this.VoidTransaction();  
+                }
+            }
+            else
+            {
+                Messages.DisplayMessage("Please select/add new customer first.", lblWarning, Color.Red);
+                return;
             }
         }
 
@@ -462,6 +472,7 @@ namespace PointOfSaleUI.UI
                     InvoiceNumber = CartInvoiceNumber,
                     SubTotal = CartSubTotal,
                     CouponId = CouponId,
+                    DiscountApplied = DiscountApplied,
                     SaleTaxRate = CartSaleTaxRate,
                     ShippingRate = ShippingRate,
                     GrandTotal = GrandTotal
@@ -478,6 +489,7 @@ namespace PointOfSaleUI.UI
                     InvoiceNumber = CartInvoiceNumber,
                     SubTotal = CartSubTotal,
                     CouponId = 0,
+                    DiscountApplied = DiscountApplied,
                     SaleTaxRate = CartSaleTaxRate,
                     ShippingRate = ShippingRate,
                     GrandTotal = GrandTotal
@@ -512,7 +524,7 @@ namespace PointOfSaleUI.UI
             couponData = dataAccess.GetCoupon(CouponCode);
             if (couponData == null)
             {
-                Messages.DisplayMessage("Coupon does not exist..", lblCouponWarning, Color.Red);
+                Messages.DisplayMessage("Coupon does not exist", lblCouponWarning, Color.Red);
                 txtCouponCode.Clear();
                 txtCouponCode.Focus();
             }
@@ -529,9 +541,9 @@ namespace PointOfSaleUI.UI
                 }
                 else if (couponData.IsFlatRate == false)
                 {
-                    var discounted = GrandTotal * (DiscountApplied / 100);
-                    var calculateDiscount = GrandTotal - (GrandTotal * (DiscountApplied / 100));
-                    DiscountApplied = calculateDiscount;
+                    var discounted = GrandTotal * (couponData.CouponAmount / 100);
+                    var calculateDiscount = GrandTotal - (GrandTotal * (couponData.CouponAmount / 100));
+                    DiscountApplied = discounted;
                     GrandTotal = calculateDiscount;
                     txtDiscount.Text = "-" + discounted.ToString("N2");
                     txtTotal.Text = GrandTotal.ToString("N2");
@@ -593,13 +605,14 @@ namespace PointOfSaleUI.UI
 
         private void lnkSelectCustomer_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Customers customer = new Customers();
+            Customers customer = new Customers(_loggedInUser);
             DialogResult result = customer.ShowDialog();
             if (result == DialogResult.OK)
             {
                 CustomerId = CheckOutDataModel.CustomerId;
                 CustomerData = dataAccess.GetCustomerById(CustomerId);
                 lnkSelectCustomer.Text = CustomerData.CustomerName;
+                IsCustomerSelected = true;
             }
         }
     }

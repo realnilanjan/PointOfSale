@@ -1,5 +1,7 @@
 ﻿using PointOfSale.Lib.DataAccess;
 using PointOfSale.Lib.DataModel;
+using PointOfSale.Lib.Helpers;
+using PointOfSale.Lib.Models;
 using PointOfSale.Lib.TerminalModels;
 using System;
 using System.Collections.Generic;
@@ -17,12 +19,20 @@ namespace PointOfSaleUI.UI
     {
         SQLDataAccess dataAccess = new SQLDataAccess();
         List<CustomerDataModel> Customer = new List<CustomerDataModel>();
+        private readonly LoggedInUserModel _loggedInUser;
 
-        public Customers()
+        public Customers(LoggedInUserModel loggedInUser)
         {
             InitializeComponent();
             cmbSearchCustomerBy.SelectedIndex = 0;
             this.GetAllCustomers();
+            this._loggedInUser = loggedInUser;
+            switch (_loggedInUser.UserRole)
+            {
+                case "Cashier":
+                    btnDeleteCustomer.Enabled = false;
+                    break;
+            }
         }
 
         private void ClearAll()
@@ -77,26 +87,33 @@ namespace PointOfSaleUI.UI
 
         private void customersGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnUpdateCustomer.Enabled = true;
-            btnDeleteCustomer.Enabled = true;
-
-            if (e.RowIndex != -1)
+            if (_loggedInUser.UserRole != "Cashier")
             {
-                DataGridViewRow grid = customersGridView.Rows[e.RowIndex];
-                txtCustomerId.Text = grid.Cells[0].Value.ToString();
-                txtName.Text = grid.Cells[1].Value.ToString();
-                txtEmail.Text = grid.Cells[2].Value.ToString();
-                txtContact.Text = grid.Cells[3].Value.ToString();
-                txtAddressOne.Text = grid.Cells[4].Value.ToString();
-                if (grid.Cells[5].Value == null)
+                btnUpdateCustomer.Enabled = true;
+                btnDeleteCustomer.Enabled = true;
+                btnAddCustomer.Enabled = false;
+                if (e.RowIndex != -1)
                 {
-                    txtAddressTwo.Text = "None";
+                    DataGridViewRow grid = customersGridView.Rows[e.RowIndex];
+                    txtCustomerId.Text = grid.Cells[0].Value.ToString();
+                    txtName.Text = grid.Cells[1].Value.ToString();
+                    txtEmail.Text = grid.Cells[2].Value.ToString();
+                    txtContact.Text = grid.Cells[3].Value.ToString();
+                    txtAddressOne.Text = grid.Cells[4].Value.ToString();
+                    if (grid.Cells[5].Value == null)
+                    {
+                        txtAddressTwo.Text = "None";
+                    }
+                    else
+                    {
+                        txtAddressTwo.Text = grid.Cells[5].Value.ToString();
+                    }
+                    txtPin.Text = grid.Cells[6].Value.ToString(); 
                 }
                 else
                 {
-                    txtAddressTwo.Text = grid.Cells[5].Value.ToString();
+                    Messages.DisplayMessage("Not authorized to edit or delete", lblWarning, Color.Red);
                 }
-                txtPin.Text = grid.Cells[6].Value.ToString();
             }
         }
 

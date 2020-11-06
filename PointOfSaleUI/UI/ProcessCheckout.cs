@@ -76,7 +76,7 @@ namespace PointOfSaleUI.UI
             {
                 if (!(txtTenderedAmount.Text.Length > 0))
                 {
-                    Messages.DisplayMessage("Please enter a tendered amount.", lblWarning, Color.Red);
+                    Messages.DisplayMessage("Please enter tendered amount.", lblWarning, Color.Red);
                     txtTenderedAmount.Focus();
                     this.DialogResult = DialogResult.None;
                     return;
