@@ -6,7 +6,8 @@
     [CustomerId] INT NOT NULL DEFAULT 0, 
     [SaleDate] DATETIME2 NOT NULL , 
     [SubTotal] MONEY NOT NULL, 
-    [CouponId] INT NOT NULL, 
+    [CouponId] INt NOT NULL, 
+    [DiscountApplied] MONEY NOT NULL, 
     [SaleTaxRate] MONEY NOT NULL, 
     [ShippingRate] MONEY NOT NULL DEFAULT 0, 
     [GrandTotal] MONEY NOT NULL 
