@@ -17,5 +17,10 @@ namespace PointOfSaleUI.Helpers.ReportsQueries
                    " FROM Sale" +
                    $" WHERE SaleDate BETWEEN '{ fromDate.ToString("yyyy-MM-dd hh:mm:ss") }' AND '{ toDate.ToString("yyyy-MM-dd hh:mm:ss") }'";
         }
+
+        public static string PrintQuery(DateTime fromDate, DateTime toDate)
+        {
+            return "";
+        }
     }
 }

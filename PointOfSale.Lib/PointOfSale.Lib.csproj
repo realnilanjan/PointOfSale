@@ -68,6 +68,7 @@
     <Compile Include="Models\CustomerModel.cs" />
     <Compile Include="Models\ReportModels\AllSales.cs" />
     <Compile Include="Models\ReportModels\AllSalesByCustomer.cs" />
+    <Compile Include="Models\ReportModels\OrderDetail.cs" />
     <Compile Include="Models\SaleDetailModel.cs" />
     <Compile Include="Models\SaleModel.cs" />
     <Compile Include="Models\CouponModel.cs" />
