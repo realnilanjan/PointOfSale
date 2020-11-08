@@ -5,12 +5,9 @@ using PointOfSale.Lib.Models;
 using PointOfSale.Lib.TerminalModels;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
@@ -125,8 +122,6 @@ namespace PointOfSaleUI.UI
             btnDeleteCustomer.Enabled = false;
             this.GetAllCustomers();
         }
-
-       
 
         private void btnDeleteCustomer_Click(object sender, EventArgs e)
         {

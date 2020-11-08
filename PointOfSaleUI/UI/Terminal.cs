@@ -3,7 +3,9 @@ using PointOfSale.Lib.DataAccess;
 using PointOfSale.Lib.DataModel;
 using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
+using PointOfSale.Lib.Models.ReportModels;
 using PointOfSale.Lib.TerminalModels;
+using PointOfSaleUI.UI.Reports;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -21,9 +23,11 @@ namespace PointOfSaleUI.UI
         private decimal DeliveryRate { get { return Properties.Settings.Default.DeliveryRate; } }
         private decimal GetTaxRate { get { return TaxRate / 100; } }
         List<CartItemModel> Cart = new List<CartItemModel>();
+        List<OrderPrintDetail> printDetails = new List<OrderPrintDetail>();
         ProductForCartModel ProductInCart { get; set; }
         CouponDataModel couponData { get; set; }
         CustomerDataModel CustomerData = new CustomerDataModel();
+        OrderDetailModel soldOrder = new OrderDetailModel();
         private int CustomerId { get; set; } = 0;
         private bool IsCustomerSelected { get; set; } = false;
 
@@ -448,6 +452,16 @@ namespace PointOfSaleUI.UI
                     };
 
                     dataAccess.SaveData("dbo.SaveTransaction", checkOut, "POS");
+                    soldOrder = dataAccess.GetLastSale(CheckOutDataModel.SaleId);
+                    printDetails = dataAccess.PrintLastSale(CheckOutDataModel.SaleId);
+
+                    AfterSaleReportForm orderPrint = new AfterSaleReportForm(soldOrder, printDetails);
+                    DialogResult printResult = orderPrint.ShowDialog();
+                    if (printResult == DialogResult.OK)
+                    {
+                        //TODO: Do something
+                    }
+
                     CustomerId = 0;
                     lnkSelectCustomer.Text = "Select Customer";
                     this.VoidTransaction();  

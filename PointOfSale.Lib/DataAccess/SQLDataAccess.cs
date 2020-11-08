@@ -189,24 +189,36 @@ namespace PointOfSale.Lib.DataAccess
             }
         }
 
-        public List<AllSalesByCustomer> GetAllSalesByDateAndCustomer(string query, string connectionStringName = "POS")
+        //public List<OrderDetail> GetAllSalesByDateAndCustomer(string query, string connectionStringName = "POS")
+        //{
+        //    string connectionString = GetConnectionString(connectionStringName);
+        //    using (IDbConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        var result = connection.Query<OrderDetail>(query, commandType: CommandType.Text);
+        //        return result.ToList();
+        //    }
+        //}
+
+        //public List<AllSales> GetAllSalesByDate(string query, string connectionStringName = "POS")
+        //{
+        //    string connectionString = GetConnectionString(connectionStringName);
+        //    using (IDbConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        var result = connection.Query<AllSales>(query, commandType: CommandType.Text);
+        //        return result.ToList();
+        //    }
+        //}
+
+        public OrderDetailModel GetLastSale(int SaleId)
         {
-            string connectionString = GetConnectionString(connectionStringName);
-            using (IDbConnection connection = new SqlConnection(connectionString))
-            {
-                var result = connection.Query<AllSalesByCustomer>(query, commandType: CommandType.Text);
-                return result.ToList();
-            }
+            var rows = LoadData<OrderDetailModel, dynamic>("dbo.PrintAfterSale", new { SaleId }, "POS");
+            return rows.FirstOrDefault();
         }
 
-        public List<AllSales> GetAllSalesByDate(string query, string connectionStringName = "POS")
+        public List<OrderPrintDetail> PrintLastSale(int SaleId)
         {
-            string connectionString = GetConnectionString(connectionStringName);
-            using (IDbConnection connection = new SqlConnection(connectionString))
-            {
-                var result = connection.Query<AllSales>(query, commandType: CommandType.Text);
-                return result.ToList();
-            }
+            var rows = LoadData<OrderPrintDetail, dynamic>("dbo.PrintDetailsAfterSale", new { SaleId }, "POS");
+            return rows.ToList();
         }
     }
 }

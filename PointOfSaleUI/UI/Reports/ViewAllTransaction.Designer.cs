@@ -212,7 +212,7 @@
             // 
             // allSalesByCustomerBindingSource
             // 
-            this.allSalesByCustomerBindingSource.DataSource = typeof(PointOfSale.Lib.Models.ReportModels.AllSalesByCustomer);
+            this.allSalesByCustomerBindingSource.DataSource = typeof(PointOfSale.Lib.Models.ReportModels.OrderDetailModel);
             // 
             // saleIdDataGridViewTextBoxColumn
             // 

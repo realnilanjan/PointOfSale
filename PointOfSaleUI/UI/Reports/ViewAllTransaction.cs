@@ -17,8 +17,8 @@ namespace PointOfSaleUI.UI.Reports
     {
         private readonly bool _isCustomerTransaction;
         SQLDataAccess dataAccess = new SQLDataAccess();
-        List<AllSalesByCustomer> allSalesByCustomer = new List<AllSalesByCustomer>();
-        List<AllSales> allSales = new List<AllSales>();
+        List<OrderDetailModel> allSalesByCustomer = new List<OrderDetailModel>();
+        //List<AllSales> allSales = new List<AllSales>();
 
         public ViewAllTransaction(bool isCustomerTransaction)
         {
@@ -38,36 +38,36 @@ namespace PointOfSaleUI.UI.Reports
 
         private void btnLoadTransactions_Click(object sender, EventArgs e)
         {
-            if (_isCustomerTransaction == true)
-            {
-                allTransactionsGridView.Visible = true;
-                allSalesByCustomer = dataAccess.GetAllSalesByDateAndCustomer(Queries.GetAllSalesByDateAndCustomer(fromDate.Value, toDate.Value));
-                if (allSalesByCustomer.Count > 0)
-                {
-                    allTransactionsGridView.DataSource = allSalesByCustomer;
-                    allTransactionsGridView.ClearSelection();
-                }
-                else
-                {
-                    allTransactionsGridView.Visible = false;
-                    lblError.Text = "No data found for the given range";
-                } 
-            }
-            else
-            {
-                allTransactionsGridView.Visible = true;
-                allSales = dataAccess.GetAllSalesByDate(Queries.GetAllSalesByDate(fromDate.Value, toDate.Value));
-                if (allSales.Count > 0)
-                {
-                    allTransactionsGridView.DataSource = allSales;
-                    allTransactionsGridView.ClearSelection();
-                }
-                else
-                {
-                    allTransactionsGridView.Visible = false;
-                    lblError.Text = "No data found for the given range";
-                }
-            }
+            //if (_isCustomerTransaction == true)
+            //{
+            //    allTransactionsGridView.Visible = true;
+            //    allSalesByCustomer = dataAccess.GetAllSalesByDateAndCustomer(Queries.GetAllSalesByDateAndCustomer(fromDate.Value, toDate.Value));
+            //    if (allSalesByCustomer.Count > 0)
+            //    {
+            //        allTransactionsGridView.DataSource = allSalesByCustomer;
+            //        allTransactionsGridView.ClearSelection();
+            //    }
+            //    else
+            //    {
+            //        allTransactionsGridView.Visible = false;
+            //        lblError.Text = "No data found for the given range";
+            //    } 
+            //}
+            //else
+            //{
+                //allTransactionsGridView.Visible = true;
+                //allSales = dataAccess.GetAllSalesByDate(Queries.GetAllSalesByDate(fromDate.Value, toDate.Value));
+                //if (allSales.Count > 0)
+                //{
+                //    allTransactionsGridView.DataSource = allSales;
+                //    allTransactionsGridView.ClearSelection();
+                //}
+                //else
+                //{
+                //    allTransactionsGridView.Visible = false;
+                //    lblError.Text = "No data found for the given range";
+                //}
+            //}
         }
 
         private void fromDate_onValueChanged(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace PointOfSaleUI.UI.Reports
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            AllSalesByCustomer obj = allSalesByCustomerBindingSource.Current as AllSalesByCustomer;
+            OrderDetailModel obj = allSalesByCustomerBindingSource.Current as OrderDetailModel;
 
 
 
