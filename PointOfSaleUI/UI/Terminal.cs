@@ -411,6 +411,7 @@ namespace PointOfSaleUI.UI
             txtInvoiceNumber.Text = CartInvoiceNumber;
             chkDelivery.Checked = false;
             ShippingRate = 0;
+            txtDelivery.Text = ShippingRate.ToString("N2");
             GrandTotal = 0;
             this.CalculateTotal();
         }
@@ -455,7 +456,7 @@ namespace PointOfSaleUI.UI
                     soldOrder = dataAccess.GetLastSale(CheckOutDataModel.SaleId);
                     printDetails = dataAccess.PrintLastSale(CheckOutDataModel.SaleId);
 
-                    AfterSaleReportForm orderPrint = new AfterSaleReportForm(soldOrder, printDetails);
+                    AfterSaleReportForm orderPrint = new AfterSaleReportForm(BusinessInformation.BusinessInfo, soldOrder, printDetails);
                     DialogResult printResult = orderPrint.ShowDialog();
                     if (printResult == DialogResult.OK)
                     {

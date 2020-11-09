@@ -1,13 +1,7 @@
 ﻿using Microsoft.Reporting.WinForms;
+using PointOfSale.Lib.Models;
 using PointOfSale.Lib.Models.ReportModels;
-using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI.Reports
@@ -17,7 +11,7 @@ namespace PointOfSaleUI.UI.Reports
         private readonly OrderDetailModel _orderDetail;
         private readonly List<OrderPrintDetail> _orderPrintDetail;
 
-        public AfterSaleReportForm(OrderDetailModel orderDetail, List<OrderPrintDetail> orderPrintDetail)
+        public AfterSaleReportForm(List<BusinessInformation> businessInformation, OrderDetailModel orderDetail, List<OrderPrintDetail> orderPrintDetail)
         {
             InitializeComponent();
             this._orderDetail = orderDetail;
@@ -35,6 +29,12 @@ namespace PointOfSaleUI.UI.Reports
                 new ReportParameter("pDiscountApplied", orderDetail.DiscountApplied.ToString("N2")),
                 new ReportParameter("pSaleDate", orderDetail.SaleDate.ToString("F")),
                 new ReportParameter("pDeliveryRate", orderDetail.ShippingRate.ToString("N2")),
+
+                new ReportParameter("pBusinessName", businessInformation[0].BusinessName),
+                new ReportParameter("pBusinessGSTIN", businessInformation[0].GSTNumber),
+                new ReportParameter("pBusinessAddress", businessInformation[0].BusinsessAddress),
+                new ReportParameter("pBusinessEmail", businessInformation[0].BusinessEmail),
+                new ReportParameter("pBusinessContact", businessInformation[0].BusinessContact),
             };
             this.reportViewer.LocalReport.SetParameters(parameter);
             this.reportViewer.RefreshReport();
