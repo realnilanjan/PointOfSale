@@ -11,7 +11,7 @@ using System.Xml.Serialization;
 
 namespace PointOfSale.Lib.Helpers
 {
-    public static class Functions
+    public static class LibraryFunctions
     {
         
 
@@ -63,11 +63,22 @@ namespace PointOfSale.Lib.Helpers
         public static void SaveDrafts(List<CartItemModel> cartItems, string fileName)
         {
             string DraftsDirPath = Environment.CurrentDirectory + @"\Saved Transactions\";
-            XmlSerializer serializer = new XmlSerializer(typeof(List<CartItemModel>), new XmlRootAttribute("CartItemModel"));
-
-            using (var writer = XmlWriter.Create(DraftsDirPath + fileName + ".xml"))
+            if (!(Directory.Exists(DraftsDirPath)))
             {
-                serializer.Serialize(writer, cartItems);
+                Directory.CreateDirectory(DraftsDirPath);
+                XmlSerializer serializer = new XmlSerializer(typeof(List<CartItemModel>), new XmlRootAttribute("CartItemModel"));
+                using (var writer = XmlWriter.Create(DraftsDirPath + fileName))
+                {
+                    serializer.Serialize(writer, cartItems);
+                }
+            }
+            else
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<CartItemModel>), new XmlRootAttribute("CartItemModel"));
+                using (var writer = XmlWriter.Create(DraftsDirPath + fileName))
+                {
+                    serializer.Serialize(writer, cartItems);
+                }
             }
         }
     }
