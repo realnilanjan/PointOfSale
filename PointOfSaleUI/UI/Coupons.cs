@@ -4,12 +4,6 @@ using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
@@ -111,7 +105,7 @@ namespace PointOfSaleUI.UI
                 };
                 dataAccess.SaveData("dbo.InsertCoupon", singleCoupon, "POS");
             }
-            else if(rdoSingleDPercentage.Checked == true)
+            else if (rdoSingleDPercentage.Checked == true)
             {
                 CouponModel singleCoupon = new CouponModel
                 {

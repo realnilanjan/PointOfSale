@@ -23,7 +23,7 @@ namespace PointOfSaleUI.UI
             InitializeComponent();
             categories = dataAccess.LoadAllCategories();
             suppliers = dataAccess.LoadAllSuppliers();
-            Functions.FillCombo(suppliers, cmbSupplier);
+            LibraryFunctions.FillCombo(suppliers, cmbSupplier);
             this.LoadPurchaseOrders();
         }
 

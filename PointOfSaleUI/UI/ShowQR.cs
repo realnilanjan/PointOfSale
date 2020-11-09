@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.IO;
+using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
 {
@@ -12,7 +13,14 @@ namespace PointOfSaleUI.UI
 
         private void ShowQRCode()
         {
-            picUPIQR.ImageLocation = Properties.Settings.Default.QRCodePath;
+            if (File.Exists(Properties.Settings.Default.QRCodePath))
+            {
+                picUPIQR.ImageLocation = Properties.Settings.Default.QRCodePath;
+            }
+            else
+            {
+                picUPIQR.Visible = false;
+            }
         }
     }
 }

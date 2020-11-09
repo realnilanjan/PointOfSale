@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblUPIProvider = new System.Windows.Forms.Label();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.picUPIQR = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picUPIQR)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblUPIProvider
+            // lblWarning
             // 
-            this.lblUPIProvider.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblUPIProvider.Font = new System.Drawing.Font("Calibri", 18F);
-            this.lblUPIProvider.Location = new System.Drawing.Point(0, 525);
-            this.lblUPIProvider.Name = "lblUPIProvider";
-            this.lblUPIProvider.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblUPIProvider.Size = new System.Drawing.Size(584, 36);
-            this.lblUPIProvider.TabIndex = 0;
-            this.lblUPIProvider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.Gray;
+            this.lblWarning.Location = new System.Drawing.Point(12, 248);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(560, 65);
+            this.lblWarning.TabIndex = 0;
+            this.lblWarning.Text = "No QR Code file found.\r\nPlease go to Admin > Settings to add one.";
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picUPIQR
             // 
@@ -52,7 +54,7 @@
             this.picUPIQR.BackColor = System.Drawing.Color.Black;
             this.picUPIQR.Location = new System.Drawing.Point(12, 12);
             this.picUPIQR.Name = "picUPIQR";
-            this.picUPIQR.Size = new System.Drawing.Size(560, 510);
+            this.picUPIQR.Size = new System.Drawing.Size(560, 537);
             this.picUPIQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUPIQR.TabIndex = 1;
             this.picUPIQR.TabStop = false;
@@ -64,7 +66,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.picUPIQR);
-            this.Controls.Add(this.lblUPIProvider);
+            this.Controls.Add(this.lblWarning);
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -81,7 +83,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblUPIProvider;
+        private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.PictureBox picUPIQR;
     }
 }

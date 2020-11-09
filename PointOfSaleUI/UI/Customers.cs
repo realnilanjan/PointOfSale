@@ -105,7 +105,7 @@ namespace PointOfSaleUI.UI
                     {
                         txtAddressTwo.Text = grid.Cells[5].Value.ToString();
                     }
-                    txtPin.Text = grid.Cells[6].Value.ToString(); 
+                    txtPin.Text = grid.Cells[6].Value.ToString();
                 }
                 else
                 {
@@ -116,7 +116,8 @@ namespace PointOfSaleUI.UI
 
         private void btnUpdateCustomer_Click(object sender, EventArgs e)
         {
-            //Process Update
+            //TODO: Update Customer
+
             this.ClearAll();
             btnUpdateCustomer.Enabled = false;
             btnDeleteCustomer.Enabled = false;
@@ -125,11 +126,17 @@ namespace PointOfSaleUI.UI
 
         private void btnDeleteCustomer_Click(object sender, EventArgs e)
         {
-            //Process Delete
+            //TODO: Update Customer
+
             this.ClearAll();
             btnUpdateCustomer.Enabled = false;
             btnDeleteCustomer.Enabled = false;
             this.GetAllCustomers();
+        }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            //TODO: Add New Customer
         }
     }
 }

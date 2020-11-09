@@ -232,6 +232,7 @@
             this.btnAddCustomer.TabIndex = 13;
             this.btnAddCustomer.Text = "Add New Customer";
             this.btnAddCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // txtEmail
             // 

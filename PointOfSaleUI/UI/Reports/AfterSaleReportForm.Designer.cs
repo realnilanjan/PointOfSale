@@ -53,7 +53,7 @@
             this.reportViewer.Location = new System.Drawing.Point(3, 3);
             this.reportViewer.Name = "reportViewer";
             this.reportViewer.ServerReport.BearerToken = null;
-            this.reportViewer.Size = new System.Drawing.Size(666, 424);
+            this.reportViewer.Size = new System.Drawing.Size(668, 424);
             this.reportViewer.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -68,7 +68,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.32321F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.676789F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(672, 471);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(674, 471);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // btnPrint
@@ -80,7 +80,7 @@
             this.btnPrint.FlatAppearance.BorderSize = 0;
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Location = new System.Drawing.Point(530, 433);
+            this.btnPrint.Location = new System.Drawing.Point(532, 433);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(139, 35);
             this.btnPrint.TabIndex = 31;
@@ -93,7 +93,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(672, 471);
+            this.ClientSize = new System.Drawing.Size(674, 471);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

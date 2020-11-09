@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PointOfSaleUI.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,14 +28,21 @@ namespace PointOfSaleUI.UI
             try
             {
                 var fileList = new DirectoryInfo(DraftsDirPath).GetFiles();
-                var file = from s in fileList
-                           select new
-                           {
-                               FileName = s.Name,
-                               Directory = s.DirectoryName,
-                               Date = s.CreationTime
-                           };
-                savedDraftsGrid.DataSource = file.ToList();
+                if (fileList.Count() <= 0)
+                {
+                    savedDraftsGrid.Visible = false;
+                }
+                else
+                {
+                    var file = from s in fileList
+                               select new
+                               {
+                                   FileName = s.Name,
+                                   Directory = s.DirectoryName,
+                                   Date = s.CreationTime
+                               };
+                    savedDraftsGrid.DataSource = file.ToList();
+                }
             }
             catch (Exception)
             {
@@ -49,6 +57,7 @@ namespace PointOfSaleUI.UI
             string filePath = savedDraftsGrid.CurrentRow.Cells[1].Value.ToString();
 
             TransactionFile = filePath + @"\" + fileName;
+            RuntimeValues.DraftFileName = TransactionFile;
             this.DialogResult = DialogResult.OK;
         }
     }

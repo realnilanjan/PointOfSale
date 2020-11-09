@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Terminal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.Panel();
             this.txtBusinessName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbl1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -100,7 +100,7 @@
             this.btnSalesHistory = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnOpenDrawer = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnCalculator = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnPrintInvoice = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnRePrintInvoice = new Bunifu.Framework.UI.BunifuTileButton();
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -939,6 +939,7 @@
             this.btnItemLookup.color = System.Drawing.Color.SeaGreen;
             this.btnItemLookup.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnItemLookup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnItemLookup.Enabled = false;
             this.btnItemLookup.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnItemLookup.ForeColor = System.Drawing.Color.White;
             this.btnItemLookup.Image = global::PointOfSaleUI.Properties.Resources.search2;
@@ -1036,6 +1037,7 @@
             this.btnSalesHistory.Name = "btnSalesHistory";
             this.btnSalesHistory.Size = new System.Drawing.Size(128, 128);
             this.btnSalesHistory.TabIndex = 7;
+            this.btnSalesHistory.Click += new System.EventHandler(this.btnSalesHistory_Click);
             // 
             // btnOpenDrawer
             // 
@@ -1079,25 +1081,26 @@
             this.btnCalculator.TabIndex = 9;
             this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
-            // btnPrintInvoice
+            // btnRePrintInvoice
             // 
-            this.btnPrintInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrintInvoice.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnPrintInvoice.color = System.Drawing.Color.SeaGreen;
-            this.btnPrintInvoice.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnPrintInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrintInvoice.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrintInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnPrintInvoice.Image = global::PointOfSaleUI.Properties.Resources.print;
-            this.btnPrintInvoice.ImagePosition = 20;
-            this.btnPrintInvoice.ImageZoom = 40;
-            this.btnPrintInvoice.LabelPosition = 45;
-            this.btnPrintInvoice.LabelText = "Re-Print Invoice [F7]";
-            this.btnPrintInvoice.Location = new System.Drawing.Point(1277, 653);
-            this.btnPrintInvoice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPrintInvoice.Name = "btnPrintInvoice";
-            this.btnPrintInvoice.Size = new System.Drawing.Size(128, 128);
-            this.btnPrintInvoice.TabIndex = 6;
+            this.btnRePrintInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRePrintInvoice.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnRePrintInvoice.color = System.Drawing.Color.SeaGreen;
+            this.btnRePrintInvoice.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnRePrintInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRePrintInvoice.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRePrintInvoice.ForeColor = System.Drawing.Color.White;
+            this.btnRePrintInvoice.Image = global::PointOfSaleUI.Properties.Resources.print;
+            this.btnRePrintInvoice.ImagePosition = 20;
+            this.btnRePrintInvoice.ImageZoom = 40;
+            this.btnRePrintInvoice.LabelPosition = 45;
+            this.btnRePrintInvoice.LabelText = "Re-Print Invoice [F7]";
+            this.btnRePrintInvoice.Location = new System.Drawing.Point(1277, 653);
+            this.btnRePrintInvoice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRePrintInvoice.Name = "btnRePrintInvoice";
+            this.btnRePrintInvoice.Size = new System.Drawing.Size(128, 128);
+            this.btnRePrintInvoice.TabIndex = 6;
+            this.btnRePrintInvoice.Click += new System.EventHandler(this.btnRePrintInvoice_Click);
             // 
             // dateTimeTimer
             // 
@@ -1291,8 +1294,8 @@
             // 
             this.gridCart.AllowUserToAddRows = false;
             this.gridCart.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
-            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
+            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridCart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1300,14 +1303,14 @@
             this.gridCart.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gridCart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCart.DoubleBuffered = true;
             this.gridCart.EnableHeadersVisualStyles = false;
@@ -1319,14 +1322,14 @@
             this.gridCart.Name = "gridCart";
             this.gridCart.ReadOnly = true;
             this.gridCart.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gridCart.RowHeadersVisible = false;
             this.gridCart.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridCart.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -1345,6 +1348,7 @@
             this.btnSaveDraft.ButtonText = "Save Transaction";
             this.btnSaveDraft.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveDraft.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSaveDraft.Enabled = false;
             this.btnSaveDraft.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveDraft.Iconcolor = System.Drawing.Color.Transparent;
             this.btnSaveDraft.Iconimage = global::PointOfSaleUI.Properties.Resources.save;
@@ -1442,7 +1446,7 @@
             this.Controls.Add(this.gridCart);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.btnPrintInvoice);
+            this.Controls.Add(this.btnRePrintInvoice);
             this.Controls.Add(this.btnSalesHistory);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnCalculator);
@@ -1463,7 +1467,7 @@
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Terminal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "POS Sales Terminal";
+            this.Text = "POS Terminal";
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -1540,7 +1544,7 @@
         private Bunifu.Framework.UI.BunifuTileButton btnSalesHistory;
         private Bunifu.Framework.UI.BunifuTileButton btnOpenDrawer;
         private Bunifu.Framework.UI.BunifuTileButton btnCalculator;
-        private Bunifu.Framework.UI.BunifuTileButton btnPrintInvoice;
+        private Bunifu.Framework.UI.BunifuTileButton btnRePrintInvoice;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel21;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Timer dateTimeTimer;

@@ -210,6 +210,11 @@ namespace PointOfSaleUI.UI
                 lblQRWarning.BackColor = Color.Red;
                 lblQRWarning.Text = "No QR Code Set";
             }
+            else if (!(File.Exists(Properties.Settings.Default.QRCodePath)))
+            {
+                lblQRWarning.BackColor = Color.Red;
+                lblQRWarning.Text = "QR File does not exist";
+            }
             else
             {
                 lblQRWarning.BackColor = Color.SeaGreen;
@@ -252,15 +257,15 @@ namespace PointOfSaleUI.UI
             quantityDescriptions = dataAccess.LoadAllQuantityDescriptions();
             txtStockId.Text = "";
             txtBarcode.Text = "";
-            Functions.FillCombo(quantityDescriptions, cmbQtyDescId);
+            LibraryFunctions.FillCombo(quantityDescriptions, cmbQtyDescId);
             txtQtyDesc.Text = "";
             txtBrandName.Text = "";
             txtProductName.Text = "";
             txtUnitPrice.Text = "";
             txtRetailPrice.Text = "";
             txtStockInHand.Text = "";
-            Functions.FillCombo(productCategories, cmbCategory);
-            Functions.FillCombo(productSuppliers, cmbSupplier);
+            LibraryFunctions.FillCombo(productCategories, cmbCategory);
+            LibraryFunctions.FillCombo(productSuppliers, cmbSupplier);
             btnUpdateStock.Enabled = false;
             btnDeleteStock.Enabled = false;
             panel1.Enabled = false;

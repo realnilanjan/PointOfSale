@@ -5,11 +5,13 @@ using PointOfSale.Lib.Helpers;
 using PointOfSale.Lib.Models;
 using PointOfSale.Lib.Models.ReportModels;
 using PointOfSale.Lib.TerminalModels;
+using PointOfSaleUI.Helpers;
 using PointOfSaleUI.UI.Reports;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Windows.Forms;
@@ -30,7 +32,7 @@ namespace PointOfSaleUI.UI
         OrderDetailModel soldOrder = new OrderDetailModel();
         private int CustomerId { get; set; } = 0;
         private bool IsCustomerSelected { get; set; } = false;
-
+        private bool IsLoadedFromDrafts = false;
 
         private decimal TaxRate = Properties.Settings.Default.TaxRate;
         private LoggedInUserModel _loggedInUser;
@@ -62,6 +64,7 @@ namespace PointOfSaleUI.UI
         {
             InitializeComponent();
             this._loggedInUser = loggedInUser;
+            this.Text = "POS Terminal " + BusinessInformation.BusinessInfo[0].BusinessName;
             txtBusinessName.Text = BusinessInformation.BusinessInfo[0].BusinessName;
             txtBusinessAddress.Text = BusinessInformation.BusinessInfo[0].BusinsessAddress;
             txtBusinessContact.Text = BusinessInformation.BusinessInfo[0].BusinessContact;
@@ -364,10 +367,12 @@ namespace PointOfSaleUI.UI
                 btnClear.Enabled = true; 
                 btnCheckout.Enabled = true;
                 btnSaveDraft.Enabled = true;
+                btnSaveDraft.Enabled = true;
             } 
             else 
             { btnClear.Enabled = false; 
                 btnCheckout.Enabled = false;
+                btnSaveDraft.Enabled = false;
                 btnSaveDraft.Enabled = false;
             }
         }
@@ -414,6 +419,10 @@ namespace PointOfSaleUI.UI
             txtDelivery.Text = ShippingRate.ToString("N2");
             GrandTotal = 0;
             this.CalculateTotal();
+            if (IsLoadedFromDrafts == true)
+            {
+                File.Delete(RuntimeValues.DraftFileName);
+            }
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -593,10 +602,10 @@ namespace PointOfSaleUI.UI
             DialogResult result = MessageBox.Show("This will make this transaction void. Do you want to save and continue?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                string FileName = CartInvoiceNumber + "_" + DateTime.Now.ToString("d");
+                string FileName = CartInvoiceNumber + "_" + DateTime.Now.ToString("dd-MM-yyyy HH mm ss") + ".xml";
                 
-                //Save Shipping and coupon transactions
-                Functions.SaveDrafts(Cart, FileName);
+                //TODO: Save Shipping and coupon transactions
+                LibraryFunctions.SaveDrafts(Cart, FileName);
                 Messages.DisplayMessage("This transaction is saved. Please serve the next customer.", lblWarning, Color.OrangeRed);
                 this.VoidTransaction();
             }
@@ -612,7 +621,9 @@ namespace PointOfSaleUI.UI
             DialogResult result = savedTransactionDrafts.ShowDialog();
             if (result == DialogResult.OK)
             {
-                Cart = Functions.ReadDrafts(savedTransactionDrafts.TransactionFile);
+                Cart.Clear();
+                IsLoadedFromDrafts = true;
+                Cart = LibraryFunctions.ReadDrafts(savedTransactionDrafts.TransactionFile);
                 gridCart.DataSource = Cart;
                 this.CalculateTotal();
             }
@@ -629,6 +640,16 @@ namespace PointOfSaleUI.UI
                 lnkSelectCustomer.Text = CustomerData.CustomerName;
                 IsCustomerSelected = true;
             }
+        }
+
+        private void btnRePrintInvoice_Click(object sender, EventArgs e)
+        {
+            //TODO: get Last Sale ID and reprint Invoice
+        }
+
+        private void btnSalesHistory_Click(object sender, EventArgs e)
+        {
+            //TODO: Get all sales history
         }
     }
 }

@@ -787,8 +787,6 @@
                               <Style>Solid</Style>
                             </Border>
                             <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
@@ -1528,15 +1526,13 @@
               <Top>0.12319cm</Top>
               <Left>14.65851cm</Left>
               <Height>0.6cm</Height>
-              <Width>1.85827cm</Width>
+              <Width>2.04877cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
                 <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
@@ -1566,15 +1562,13 @@
               <Top>1.4643cm</Top>
               <Left>14.24081cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.27597cm</Width>
+              <Width>2.46647cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
                 <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
@@ -1604,15 +1598,13 @@
               <Top>2.13486cm</Top>
               <Left>14.24081cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.27597cm</Width>
+              <Width>2.46647cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
                 <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
@@ -1678,15 +1670,13 @@
               <Top>0.79375cm</Top>
               <Left>14.24081cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.27597cm</Width>
+              <Width>2.46647cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
                 <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
