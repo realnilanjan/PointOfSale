@@ -70,7 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\ConvertTo.cs" />
+    <Compile Include="Helpers\RuntimeValues.cs" />
     <Compile Include="Helpers\Functions.cs" />
     <Compile Include="Helpers\ReportsQueries\Queries.cs" />
     <Compile Include="Program.cs" />
@@ -148,6 +148,12 @@
     <Compile Include="UI\Reports\AfterSaleReportForm.Designer.cs">
       <DependentUpon>AfterSaleReportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reports\TerminalTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reports\TerminalTransactions.Designer.cs">
+      <DependentUpon>TerminalTransactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Reports\ViewAllTransaction.cs" />
     <Compile Include="UI\Reports\ViewAllTransaction.Designer.cs">
       <DependentUpon>ViewAllTransaction.cs</DependentUpon>
@@ -186,7 +192,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\AfterSaleReport.rdlc" />
     <EmbeddedResource Include="UI\Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +228,9 @@
     <EmbeddedResource Include="UI\Reports\AfterSaleReport.rdlc" />
     <EmbeddedResource Include="UI\Reports\AfterSaleReportForm.resx">
       <DependentUpon>AfterSaleReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reports\TerminalTransactions.resx">
+      <DependentUpon>TerminalTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Reports\ViewAllTransaction.resx">
       <DependentUpon>ViewAllTransaction.cs</DependentUpon>

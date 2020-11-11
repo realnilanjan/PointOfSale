@@ -189,25 +189,25 @@ namespace PointOfSale.Lib.DataAccess
             }
         }
 
-        //public List<OrderDetail> GetAllSalesByDateAndCustomer(string query, string connectionStringName = "POS")
-        //{
-        //    string connectionString = GetConnectionString(connectionStringName);
-        //    using (IDbConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        var result = connection.Query<OrderDetail>(query, commandType: CommandType.Text);
-        //        return result.ToList();
-        //    }
-        //}
+        public List<OrderDetailModel> GetAllSales(string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<OrderDetailModel>("dbo.GetAllSales", commandType: CommandType.StoredProcedure);
+                return result.ToList();
+            }
+        }
 
-        //public List<AllSales> GetAllSalesByDate(string query, string connectionStringName = "POS")
-        //{
-        //    string connectionString = GetConnectionString(connectionStringName);
-        //    using (IDbConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        var result = connection.Query<AllSales>(query, commandType: CommandType.Text);
-        //        return result.ToList();
-        //    }
-        //}
+        public List<OrderDetailModel> GetAllSalesByDate(DateTime fromDate, DateTime toDate, string connectionStringName = "POS")
+        {
+            string connectionString = GetConnectionString(connectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var result = connection.Query<OrderDetailModel>("dbo.GetSalesByDate", new { fromDate, toDate },commandType: CommandType.StoredProcedure);
+                return result.ToList();
+            }
+        }
 
         public OrderDetailModel GetLastSale(int SaleId)
         {

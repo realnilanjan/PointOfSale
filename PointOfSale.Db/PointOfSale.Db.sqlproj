@@ -146,6 +146,8 @@
     <Build Include="dbo\Views\ViewAllBills.sql" />
     <Build Include="dbo\Stored Procedures\Report\PrintAfterSale.sql" />
     <Build Include="dbo\Stored Procedures\Report\PrintDetailsAfterSale.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetAllSales.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetSalesByDate.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />

@@ -2,14 +2,7 @@
 using PointOfSale.Lib.Models.ReportModels;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using PointOfSaleUI.Helpers.ReportsQueries;
 
 namespace PointOfSaleUI.UI.Reports
 {
@@ -55,18 +48,18 @@ namespace PointOfSaleUI.UI.Reports
             //}
             //else
             //{
-                //allTransactionsGridView.Visible = true;
-                //allSales = dataAccess.GetAllSalesByDate(Queries.GetAllSalesByDate(fromDate.Value, toDate.Value));
-                //if (allSales.Count > 0)
-                //{
-                //    allTransactionsGridView.DataSource = allSales;
-                //    allTransactionsGridView.ClearSelection();
-                //}
-                //else
-                //{
-                //    allTransactionsGridView.Visible = false;
-                //    lblError.Text = "No data found for the given range";
-                //}
+            //allTransactionsGridView.Visible = true;
+            //allSales = dataAccess.GetAllSalesByDate(Queries.GetAllSalesByDate(fromDate.Value, toDate.Value));
+            //if (allSales.Count > 0)
+            //{
+            //    allTransactionsGridView.DataSource = allSales;
+            //    allTransactionsGridView.ClearSelection();
+            //}
+            //else
+            //{
+            //    allTransactionsGridView.Visible = false;
+            //    lblError.Text = "No data found for the given range";
+            //}
             //}
         }
 

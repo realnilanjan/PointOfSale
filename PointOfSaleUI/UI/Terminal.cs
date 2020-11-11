@@ -31,6 +31,7 @@ namespace PointOfSaleUI.UI
         CustomerDataModel CustomerData = new CustomerDataModel();
         OrderDetailModel soldOrder = new OrderDetailModel();
         private int CustomerId { get; set; } = 0;
+        private int LastSaleId { get; set; }
         private bool IsCustomerSelected { get; set; } = false;
         private bool IsLoadedFromDrafts = false;
 
@@ -370,10 +371,20 @@ namespace PointOfSaleUI.UI
                 btnSaveDraft.Enabled = true;
             } 
             else 
-            { btnClear.Enabled = false; 
+            { 
+                btnClear.Enabled = false; 
                 btnCheckout.Enabled = false;
                 btnSaveDraft.Enabled = false;
                 btnSaveDraft.Enabled = false;
+            }
+
+            if (LastSaleId == 0)
+            {
+                btnRePrintInvoice.Enabled = false;
+            }
+            else
+            {
+                btnRePrintInvoice.Enabled = true;
             }
         }
 
@@ -502,6 +513,7 @@ namespace PointOfSaleUI.UI
                     GrandTotal = GrandTotal
                 };
                 SaleId = dataAccess.SaveSale("dbo.SaveSale", checkOut, "POS");
+                LastSaleId = SaleId;
                 dataAccess.SaveData("dbo.SetCouponApplied", new { Id = checkOut.CouponId }, "POS");
             }
             else
@@ -519,6 +531,7 @@ namespace PointOfSaleUI.UI
                     GrandTotal = GrandTotal
                 };
                 SaleId = dataAccess.SaveSale("dbo.SaveSale", checkOut, "POS");
+                LastSaleId = SaleId;
             }
 
             foreach (var item in Cart)
@@ -645,6 +658,15 @@ namespace PointOfSaleUI.UI
         private void btnRePrintInvoice_Click(object sender, EventArgs e)
         {
             //TODO: get Last Sale ID and reprint Invoice
+            soldOrder = dataAccess.GetLastSale(CheckOutDataModel.SaleId);
+            printDetails = dataAccess.PrintLastSale(CheckOutDataModel.SaleId);
+
+            AfterSaleReportForm orderPrint = new AfterSaleReportForm(BusinessInformation.BusinessInfo, soldOrder, printDetails);
+            DialogResult printResult = orderPrint.ShowDialog();
+            if (printResult == DialogResult.OK)
+            {
+                //TODO: Do something
+            }
         }
 
         private void btnSalesHistory_Click(object sender, EventArgs e)

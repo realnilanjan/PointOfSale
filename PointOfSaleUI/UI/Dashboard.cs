@@ -58,7 +58,7 @@ namespace PointOfSaleUI.UI
             }
             else
             {
-                txtTodaysSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSalesToday);
+                txtTodaysSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSalesToday?.ToString("N2"));
             }
         }
 
@@ -71,7 +71,7 @@ namespace PointOfSaleUI.UI
             }
             else
             {
-                txtTotalSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSales);
+                txtTotalSales.Text = String.Format(Properties.Resources.RUPEE_SYMBOL, TotalSales?.ToString("N2"));
             }
             
         }
@@ -449,8 +449,6 @@ namespace PointOfSaleUI.UI
                     EmailAddress = txtEmailAddress.Text,
                     Status = IsBlocked
                 };
-
-
                 dataAccess.SaveData("dbo.UpdateUserWithoutPassword", user, "POS");
                 this.RefreshStaffGrid();
             }
@@ -607,7 +605,6 @@ namespace PointOfSaleUI.UI
             groupBox4.Enabled = true;
             btnUpdateCategory.Enabled = true;
             btnDeleteCategory.Enabled = true;
-
             if (e.RowIndex != -1)
             {
                 DataGridViewRow grid = categoryGridView.Rows[e.RowIndex];
