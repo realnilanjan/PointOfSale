@@ -672,6 +672,8 @@ namespace PointOfSaleUI.UI
         private void btnSalesHistory_Click(object sender, EventArgs e)
         {
             //TODO: Get all sales history
+            TerminalTransactions terminalTransactions = new TerminalTransactions();
+            terminalTransactions.ShowDialog();
         }
     }
 }

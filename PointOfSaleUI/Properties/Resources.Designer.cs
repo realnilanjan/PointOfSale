@@ -267,6 +267,15 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of details: {0}.
+        /// </summary>
+        internal static string NO_OF_ITEMS {
+            get {
+                return ResourceManager.GetString("NO_OF_ITEMS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total number of products: {0}.
         /// </summary>
         internal static string NO_OF_PRODUCTS {

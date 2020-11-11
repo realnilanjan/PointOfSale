@@ -199,12 +199,12 @@ namespace PointOfSale.Lib.DataAccess
             }
         }
 
-        public List<OrderDetailModel> GetAllSalesByDate(DateTime fromDate, DateTime toDate, string connectionStringName = "POS")
+        public List<AllSalesModel> GetAllSalesByDate(DateTime fromDate, DateTime toDate, string connectionStringName = "POS")
         {
             string connectionString = GetConnectionString(connectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
-                var result = connection.Query<OrderDetailModel>("dbo.GetSalesByDate", new { fromDate, toDate },commandType: CommandType.StoredProcedure);
+                var result = connection.Query<AllSalesModel>("dbo.GetSalesByDate", new { fromDate, toDate },commandType: CommandType.StoredProcedure);
                 return result.ToList();
             }
         }

@@ -15,5 +15,6 @@ BEGIN
 			[ShippingRate], 
 			[GrandTotal]
       FROM Sale
-      WHERE SaleDate BETWEEN @fromDate AND @toDate;
+      WHERE SaleDate BETWEEN @fromDate AND @toDate
+	  ORDER BY Sale.SaleDate;
 END

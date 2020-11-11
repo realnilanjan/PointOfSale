@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.allTransactionsGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.allSalesByCustomerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -48,18 +48,21 @@
             this.cmbSearchTransactionBy = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtTransactionSearch = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDetailsCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.allTransactionsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allSalesByCustomerBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // allTransactionsGridView
             // 
             this.allTransactionsGridView.AllowUserToAddRows = false;
             this.allTransactionsGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            this.allTransactionsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.allTransactionsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.allTransactionsGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -67,14 +70,14 @@
             this.allTransactionsGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.allTransactionsGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.allTransactionsGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.allTransactionsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.allTransactionsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.allTransactionsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.allTransactionsGridView.DoubleBuffered = true;
             this.allTransactionsGridView.EnableHeadersVisualStyles = false;
@@ -86,21 +89,21 @@
             this.allTransactionsGridView.Name = "allTransactionsGridView";
             this.allTransactionsGridView.ReadOnly = true;
             this.allTransactionsGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.allTransactionsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.allTransactionsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.allTransactionsGridView.RowHeadersVisible = false;
             this.allTransactionsGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.allTransactionsGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.allTransactionsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.allTransactionsGridView.Size = new System.Drawing.Size(1116, 524);
             this.allTransactionsGridView.TabIndex = 33;
-            this.allTransactionsGridView.Visible = false;
+            this.allTransactionsGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.allTransactionsGridView_CellDoubleClick);
             // 
             // allSalesByCustomerBindingSource
             // 
@@ -109,9 +112,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Enabled = false;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(192, 35);
+            this.label1.Location = new System.Drawing.Point(9, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 14);
             this.label1.TabIndex = 36;
@@ -120,9 +122,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Enabled = false;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(570, 35);
+            this.label2.Location = new System.Drawing.Point(387, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 14);
             this.label2.TabIndex = 37;
@@ -130,18 +131,18 @@
             // 
             // btnLoadTransactions
             // 
-            this.btnLoadTransactions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLoadTransactions.BackColor = System.Drawing.Color.Green;
             this.btnLoadTransactions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoadTransactions.FlatAppearance.BorderSize = 0;
             this.btnLoadTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadTransactions.ForeColor = System.Drawing.Color.White;
-            this.btnLoadTransactions.Location = new System.Drawing.Point(926, 24);
+            this.btnLoadTransactions.Location = new System.Drawing.Point(743, 9);
             this.btnLoadTransactions.Name = "btnLoadTransactions";
             this.btnLoadTransactions.Size = new System.Drawing.Size(139, 36);
             this.btnLoadTransactions.TabIndex = 38;
             this.btnLoadTransactions.Text = "Load Transactions";
             this.btnLoadTransactions.UseVisualStyleBackColor = false;
+            this.btnLoadTransactions.Click += new System.EventHandler(this.btnLoadTransactions_Click);
             // 
             // lblError
             // 
@@ -157,15 +158,13 @@
             // 
             // fromDate
             // 
-            this.fromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.fromDate.BackColor = System.Drawing.Color.Teal;
             this.fromDate.BorderRadius = 0;
-            this.fromDate.Enabled = false;
             this.fromDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromDate.ForeColor = System.Drawing.Color.White;
             this.fromDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fromDate.FormatCustom = "yyyy-MM-dd hh:mm:ss";
-            this.fromDate.Location = new System.Drawing.Point(261, 24);
+            this.fromDate.Location = new System.Drawing.Point(78, 9);
             this.fromDate.Name = "fromDate";
             this.fromDate.Size = new System.Drawing.Size(296, 36);
             this.fromDate.TabIndex = 40;
@@ -173,15 +172,13 @@
             // 
             // toDate
             // 
-            this.toDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.toDate.BackColor = System.Drawing.Color.Teal;
             this.toDate.BorderRadius = 0;
-            this.toDate.Enabled = false;
             this.toDate.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toDate.ForeColor = System.Drawing.Color.White;
             this.toDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.toDate.FormatCustom = "yyyy-MM-dd hh:mm:ss";
-            this.toDate.Location = new System.Drawing.Point(624, 24);
+            this.toDate.Location = new System.Drawing.Point(441, 9);
             this.toDate.Name = "toDate";
             this.toDate.Size = new System.Drawing.Size(296, 36);
             this.toDate.TabIndex = 40;
@@ -207,7 +204,7 @@
             this.rdoAllSales.AutoSize = true;
             this.rdoAllSales.Checked = true;
             this.rdoAllSales.ForeColor = System.Drawing.Color.White;
-            this.rdoAllSales.Location = new System.Drawing.Point(25, 33);
+            this.rdoAllSales.Location = new System.Drawing.Point(50, 27);
             this.rdoAllSales.Name = "rdoAllSales";
             this.rdoAllSales.Size = new System.Drawing.Size(40, 18);
             this.rdoAllSales.TabIndex = 41;
@@ -220,7 +217,7 @@
             // 
             this.rdoAllSalesDated.AutoSize = true;
             this.rdoAllSalesDated.ForeColor = System.Drawing.Color.White;
-            this.rdoAllSalesDated.Location = new System.Drawing.Point(71, 33);
+            this.rdoAllSalesDated.Location = new System.Drawing.Point(96, 27);
             this.rdoAllSalesDated.Name = "rdoAllSalesDated";
             this.rdoAllSalesDated.Size = new System.Drawing.Size(107, 18);
             this.rdoAllSalesDated.TabIndex = 42;
@@ -291,21 +288,45 @@
             this.txtTransactionSearch.TabIndex = 0;
             this.txtTransactionSearch.TextChanged += new System.EventHandler(this.txtTransactionSearch_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnLoadTransactions);
+            this.panel1.Controls.Add(this.fromDate);
+            this.panel1.Controls.Add(this.toDate);
+            this.panel1.Enabled = false;
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(234, 9);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(894, 54);
+            this.panel1.TabIndex = 44;
+            this.panel1.Text = "Search Category";
+            // 
+            // lblDetailsCount
+            // 
+            this.lblDetailsCount.AutoSize = true;
+            this.lblDetailsCount.ForeColor = System.Drawing.Color.White;
+            this.lblDetailsCount.Location = new System.Drawing.Point(12, 676);
+            this.lblDetailsCount.Name = "lblDetailsCount";
+            this.lblDetailsCount.Size = new System.Drawing.Size(0, 14);
+            this.lblDetailsCount.TabIndex = 45;
+            // 
             // TerminalTransactions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1140, 724);
+            this.Controls.Add(this.lblDetailsCount);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.rdoAllSalesDated);
             this.Controls.Add(this.rdoAllSales);
-            this.Controls.Add(this.toDate);
-            this.Controls.Add(this.fromDate);
             this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.btnLoadTransactions);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.allTransactionsGridView);
             this.Controls.Add(this.lblError);
             this.DoubleBuffered = true;
@@ -322,6 +343,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,5 +370,7 @@
         private System.Windows.Forms.ComboBox cmbSearchTransactionBy;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtTransactionSearch;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblDetailsCount;
     }
 }
