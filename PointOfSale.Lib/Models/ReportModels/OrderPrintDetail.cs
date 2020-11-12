@@ -12,12 +12,13 @@ namespace PointOfSale.Lib.Models.ReportModels
         public int Quantity { get; set; }
         public decimal PurchasePrice { get; set; }
         public decimal Tax { get; set; }
-        public decimal Total
-        {
-            get
-            {
-                return (PurchasePrice * Quantity) + Tax;
-            }
-        }
     }
 }
+
+//public decimal Total
+//{
+//    get
+//    {
+//        return (PurchasePrice * Quantity) + Tax;
+//    }
+//}

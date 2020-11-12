@@ -419,6 +419,7 @@ namespace PointOfSaleUI.UI
             DiscountApplied = 0;
             txtDiscount.Text = DiscountApplied.ToString("N2");
             txtCouponCode.Clear();
+            txtCouponCode.Enabled = true;
             btnRemoveCoupon.Enabled = false;
             txtDelivery.Text = ShippingRate.ToString("N2");
             Cart.Clear();

@@ -189,12 +189,12 @@ namespace PointOfSale.Lib.DataAccess
             }
         }
 
-        public List<OrderDetailModel> GetAllSales(string connectionStringName = "POS")
+        public List<AllSalesInternalModel> GetAllSales(string connectionStringName = "POS")
         {
             string connectionString = GetConnectionString(connectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
-                var result = connection.Query<OrderDetailModel>("dbo.GetAllSales", commandType: CommandType.StoredProcedure);
+                var result = connection.Query<AllSalesInternalModel>("dbo.GetAllSales", commandType: CommandType.StoredProcedure);
                 return result.ToList();
             }
         }

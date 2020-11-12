@@ -6,6 +6,8 @@ namespace PointOfSale.Lib.Models.ReportModels
     {
         public string InvoiceNumber { get; set; }
         public string CustomerName { get; set; }
+        public string CouponCode{ get; set; }
+        public string Fullname { get; set; }
         public string CustomerAddressLine1 { get; set; }
         public string CustomerAddressLine2 { get; set; }
         public string CustomerAddressPin { get; set; }
@@ -14,5 +16,6 @@ namespace PointOfSale.Lib.Models.ReportModels
         public decimal DiscountApplied { get; set; }
         public decimal ShippingRate { get; set; }
         public DateTime SaleDate { get; set; }
+        public decimal GrandTotal { get; set; }
     }
 }

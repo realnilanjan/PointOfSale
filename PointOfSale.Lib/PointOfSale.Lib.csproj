@@ -66,6 +66,7 @@
     <Compile Include="DataModel\CategoryDataModel.cs" />
     <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\ReportModels\AllSalesInternalModel.cs" />
     <Compile Include="Models\ReportModels\AllSalesModel.cs" />
     <Compile Include="Models\ReportModels\OrderDetailModel.cs" />
     <Compile Include="Models\ReportModels\OrderPrintDetail.cs" />

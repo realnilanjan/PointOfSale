@@ -2,19 +2,19 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT 
-		Sale.SaleId, 
-		Sale.InvoiceNumber, 
-		Customer.CustomerId, 
-		Customer.CustomerName, 
-		Customer.CustomerAddressLine1, 
-		Customer.CustomerAddressLine2, 
-		Customer.CustomerAddressPin, 
-		Customer.CustomerEmail, 
-		Customer.CustomerPhone,
-		Sale.SaleDate
-	FROM Sale
-	INNER JOIN 
-		Customer ON 
-		Sale.CustomerId = Customer.CustomerId
+	SELECT	[SaleId], 
+			[User].Fullname AS 'CashierName', 
+			[InvoiceNumber], 
+			[CustomerId], 
+			[SaleDate], 
+			[SubTotal], 
+			[CouponId], 
+			[SaleTaxRate], 
+			[ShippingRate], 
+			[GrandTotal]
+      FROM Sale
+	  LEFT OUTER JOIN
+	  [User] ON
+	  Sale.CashierId = [User].UserId
+	  ORDER BY Sale.SaleDate;
 END

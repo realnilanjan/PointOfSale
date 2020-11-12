@@ -12,7 +12,7 @@ namespace PointOfSaleUI.UI.Reports
     public partial class TerminalTransactions : Form
     {
         SQLDataAccess dataAccess = new SQLDataAccess();
-        List<OrderDetailModel> AllSales = new List<OrderDetailModel>();
+        List<AllSalesInternalModel> AllSales = new List<AllSalesInternalModel>();
         List<AllSalesModel> AllSalesByDate = new List<AllSalesModel>();
         List<OrderPrintDetail> printDetails = new List<OrderPrintDetail>();
         OrderDetailModel soldOrder = new OrderDetailModel();
@@ -20,6 +20,7 @@ namespace PointOfSaleUI.UI.Reports
         public TerminalTransactions()
         {
             InitializeComponent();
+            cmbSearchTransactionBy.SelectedIndex = 0;
             fromDate.Value = DateTime.Today;
             toDate.Value = DateTime.Now.AddDays(1);
             //allTransactionsGridView.Visible = true;
@@ -57,14 +58,14 @@ namespace PointOfSaleUI.UI.Reports
                     var InvResult = AllSales.Where(x => x.InvoiceNumber.ToString().Contains(txtTransactionSearch.Text)).ToList();
                     allTransactionsGridView.DataSource = InvResult;
                     break;
-                case "Customer Name":
-                    var NameResult = AllSales.Where(x => x.CustomerName.Contains(txtTransactionSearch.Text)).ToList();
-                    allTransactionsGridView.DataSource = NameResult;
-                    break;
-                case "Customer Contact":
-                    var ContactResult = AllSales.Where(x => x.CustomerPhone.Contains(txtTransactionSearch.Text)).ToList();
-                    allTransactionsGridView.DataSource = ContactResult;
-                    break;
+                //case "Customer Name":
+                //    var NameResult = AllSales.Where(x => x.CustomerName.Contains(txtTransactionSearch.Text)).ToList();
+                //    allTransactionsGridView.DataSource = NameResult;
+                //    break;
+                //case "Customer Contact":
+                //    var ContactResult = AllSales.Where(x => x.CustomerPhone.Contains(txtTransactionSearch.Text)).ToList();
+                //    allTransactionsGridView.DataSource = ContactResult;
+                //    break;
             }
         }
 
