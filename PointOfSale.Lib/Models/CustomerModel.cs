@@ -10,6 +10,6 @@ namespace PointOfSale.Lib.Models
         public string CustomerAddressLine1 { get; set; }
         public string CustomerAddressLine2 { get; set; }
         public string CustomerAddressPin { get; set; }
-        public DateTime RegistrationDate { get; set; }
+        public DateTime RegistrationDate { get; set; } = DateTime.Now.AddHours(5.5);
     }
 }

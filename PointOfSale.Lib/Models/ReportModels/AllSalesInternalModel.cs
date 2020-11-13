@@ -13,5 +13,6 @@ namespace PointOfSale.Lib.Models.ReportModels
         public decimal SaleTaxRate { get; set; }
         public decimal ShippingRate { get; set; }
         public decimal GrandTotal { get; set; }
+
     }
 }

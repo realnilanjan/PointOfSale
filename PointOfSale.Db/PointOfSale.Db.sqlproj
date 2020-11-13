@@ -148,6 +148,9 @@
     <Build Include="dbo\Stored Procedures\Report\PrintDetailsAfterSale.sql" />
     <Build Include="dbo\Stored Procedures\Report\GetAllSales.sql" />
     <Build Include="dbo\Stored Procedures\Report\GetSalesByDate.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\SaveCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\UpdateCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\DeleteCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PointOfSale.Db.refactorlog" />

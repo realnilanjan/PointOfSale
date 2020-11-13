@@ -117,7 +117,18 @@ namespace PointOfSaleUI.UI
         private void btnUpdateCustomer_Click(object sender, EventArgs e)
         {
             //TODO: Update Customer
+            CustomerDataModel customerData = new CustomerDataModel
+            {
+                CustomerId = Convert.ToInt32(txtCustomerId.Text),
+                CustomerName = txtName.Text,
+                CustomerAddressLine1 = txtAddressOne.Text,
+                CustomerAddressLine2 = txtAddressTwo.Text,
+                CustomerAddressPin = txtPin.Text,
+                CustomerEmail = txtEmail.Text,
+                CustomerPhone = txtContact.Text
+            };
 
+            dataAccess.SaveData("dbo.UpdateCustomer", customerData, "POS");
             this.ClearAll();
             btnUpdateCustomer.Enabled = false;
             btnDeleteCustomer.Enabled = false;
@@ -127,7 +138,8 @@ namespace PointOfSaleUI.UI
         private void btnDeleteCustomer_Click(object sender, EventArgs e)
         {
             //TODO: Update Customer
-
+            int CustomerID = Convert.ToInt32(txtCustomerId.Text);
+            dataAccess.SaveData("dbo.DeleteCustomer", new { CustomerID }, "POS");
             this.ClearAll();
             btnUpdateCustomer.Enabled = false;
             btnDeleteCustomer.Enabled = false;
@@ -137,6 +149,20 @@ namespace PointOfSaleUI.UI
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             //TODO: Add New Customer
+            CustomerModel customer = new CustomerModel
+            {
+                CustomerName = txtName.Text,
+                CustomerAddressLine1 = txtAddressOne.Text,
+                CustomerAddressLine2 = txtAddressTwo.Text,
+                CustomerAddressPin = txtPin.Text,
+                CustomerEmail = txtEmail.Text,
+                CustomerPhone = txtContact.Text
+            };
+
+            dataAccess.SaveData("dbo.SaveCustomer", customer, "POS");
+            btnUpdateCustomer.Enabled = false;
+            btnDeleteCustomer.Enabled = false;
+            this.GetAllCustomers();
         }
     }
 }
