@@ -221,6 +221,7 @@ namespace PointOfSaleUI.UI
                 lblQRWarning.Text = "QR Code is Saved";
             }
 
+            numMaxLoginAttempts.Value = Properties.Settings.Default.NumberofRetries;
             //TODO: Load Settings Here
         }
 
@@ -1081,6 +1082,12 @@ namespace PointOfSaleUI.UI
         {
             ViewAllTransaction allTransactions = new ViewAllTransaction(false);
             allTransactions.ShowDialog();
+        }
+
+        private void numMaxLoginAttempts_ValueChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.NumberofRetries = Convert.ToInt32(numMaxLoginAttempts.Value);
+            Properties.Settings.Default.Save();
         }
     }
 }
