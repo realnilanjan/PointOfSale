@@ -11,7 +11,5 @@ namespace PointOfSale.Lib.Models
         public string Contact { get; set; }
         public string EmailAddress { get; set; }
         public string Status { get; set; }
-        public DateTime LastLogin { get; set; }
-        public DateTime LastLogout { get; set; }
     }
 }
