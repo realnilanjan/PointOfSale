@@ -16,6 +16,7 @@ BEGIN
 		Customer.CustomerPhone,
 		Sale.SaleDate,
 		[User].Fullname,
+		[Transaction].CardType AS 'Mode',
 		Sale.GrandTotal
 	FROM
 		[Sale]
@@ -28,6 +29,9 @@ BEGIN
 		LEFT OUTER JOIN
 		[User] ON
 		Sale.CashierId = [User].UserId
+		LEFT OUTER JOIN
+		[Transaction] ON
+		Sale.SaleId = [Transaction].SaleId
 	WHERE 
 		Sale.SaleId = @SaleId
 END

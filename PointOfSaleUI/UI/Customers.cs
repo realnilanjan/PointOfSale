@@ -162,6 +162,7 @@ namespace PointOfSaleUI.UI
             dataAccess.SaveData("dbo.SaveCustomer", customer, "POS");
             btnUpdateCustomer.Enabled = false;
             btnDeleteCustomer.Enabled = false;
+            this.ClearAll();
             this.GetAllCustomers();
         }
     }

@@ -1,7 +1,6 @@
 ﻿using Microsoft.Reporting.WinForms;
 using PointOfSale.Lib.Models;
 using PointOfSale.Lib.Models.ReportModels;
-using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -35,7 +34,7 @@ namespace PointOfSaleUI.UI.Reports
                     new ReportParameter("pDeliveryRate", "₹" + orderDetail.ShippingRate.ToString("N2")),
                     new ReportParameter("pCashierName", orderDetail.Fullname),
                     new ReportParameter("pGrandTotal", "₹" + orderDetail.GrandTotal.ToString("N2")),
-
+                    new ReportParameter("pTransactionMode", orderDetail.Mode),
                     new ReportParameter("pBusinessName", businessInformation[0].BusinessName),
                     new ReportParameter("pBusinessGSTIN", businessInformation[0].GSTNumber),
                     new ReportParameter("pBusinessAddress", businessInformation[0].BusinsessAddress),
@@ -62,7 +61,7 @@ namespace PointOfSaleUI.UI.Reports
                     new ReportParameter("pCashierName", orderDetail.Fullname),
                     new ReportParameter("pDeliveryRate", "₹" + orderDetail.ShippingRate.ToString("N2")),
                     new ReportParameter("pGrandTotal", "₹" + orderDetail.GrandTotal.ToString("N2")),
-
+                    new ReportParameter("pTransactionMode", orderDetail.Mode),
                     new ReportParameter("pBusinessName", businessInformation[0].BusinessName),
                     new ReportParameter("pBusinessGSTIN", businessInformation[0].GSTNumber),
                     new ReportParameter("pBusinessAddress", businessInformation[0].BusinsessAddress),

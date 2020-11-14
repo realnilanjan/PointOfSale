@@ -15,6 +15,7 @@ namespace PointOfSale.Lib.Models.ReportModels
         public string CustomerPhone { get; set; }
         public decimal DiscountApplied { get; set; }
         public decimal ShippingRate { get; set; }
+        public string Mode { get; set; }
         public DateTime SaleDate { get; set; }
         public decimal GrandTotal { get; set; }
     }
