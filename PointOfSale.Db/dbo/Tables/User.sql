@@ -8,5 +8,7 @@
     [Contact] NVARCHAR (10) NULL,
     [EmailAddress] NVARCHAR (100)  NULL,
     [Status] NVARCHAR (50)  NULL,
+    [LastLogin] DATETIME2 NULL, 
+    [LastLogout] DATETIME2 NULL, 
     CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([UserId] ASC)
 )

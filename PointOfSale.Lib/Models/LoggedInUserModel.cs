@@ -1,4 +1,6 @@
-﻿namespace PointOfSale.Lib.Models
+﻿using System;
+
+namespace PointOfSale.Lib.Models
 {
     public class LoggedInUserModel
     {
@@ -9,5 +11,7 @@
         public string Contact { get; set; }
         public string EmailAddress { get; set; }
         public string Status { get; set; }
+        public DateTime LastLogin { get; set; }
+        public DateTime LastLogout { get; set; }
     }
 }

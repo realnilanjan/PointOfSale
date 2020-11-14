@@ -248,6 +248,15 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You have exceeded maximum retries. Please restart the application.
+        /// </summary>
+        internal static string MAX_RETRIES {
+            get {
+                return ResourceManager.GetString("MAX_RETRIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap menu {

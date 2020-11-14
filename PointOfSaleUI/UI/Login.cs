@@ -10,6 +10,10 @@ namespace PointOfSaleUI.UI
 {
     public partial class Login : Form
     {
+        LoggedInUserModel user = new LoggedInUserModel();
+        int NumberofRetries = Properties.Settings.Default.NumberofRetries;
+        int TimesTried = 0;
+
         public Login()
         {
             InitializeComponent();
@@ -42,18 +46,18 @@ namespace PointOfSaleUI.UI
             if ((txtUserName.Text != "") && (txtPassword.Text != ""))
             {
                 SQLDataAccess dataAccess = new SQLDataAccess();
-                var userlist = dataAccess.VerifyUser(txtUserName.Text, encryptedpassword);
-                if (userlist.Count > 0)
+                user = dataAccess.VerifyUser(txtUserName.Text, encryptedpassword);
+                if (user != null)
                 {
                     LoggedInUserModel loggedInUser = new LoggedInUserModel
                     {
-                        UserId = userlist[0].UserId,
-                        Fullname = userlist[0].Fullname,
-                        Username = userlist[0].Username,
-                        UserRole = userlist[0].UserRole,
-                        Contact = userlist[0].Contact,
-                        EmailAddress = userlist[0].EmailAddress,
-                        Status = userlist[0].Status
+                        UserId = user.UserId,
+                        Fullname = user.Fullname,
+                        Username = user.Username,
+                        UserRole = user.UserRole,
+                        Contact = user.Contact,
+                        EmailAddress = user.EmailAddress,
+                        Status = user.Status
                     };
                     if ((loggedInUser.UserRole == "Administrator") && (loggedInUser.Status == "1"))
                     {
@@ -76,9 +80,16 @@ namespace PointOfSaleUI.UI
                         this.ClearAll();
                     }
                 }
+                else if ((user == null) && (TimesTried == NumberofRetries))
+                {
+                    Messages.DisplayMessage(Properties.Resources.MAX_RETRIES, lblWarning, Color.Red);
+                    LibraryFunctions.DoErrorShake(this);
+                    this.ClearAll();
+                }
                 else
                 {
                     Messages.DisplayMessage(Properties.Resources.INVALID_CREDENTIALS, lblWarning, Color.Red);
+                    TimesTried ++;
                     LibraryFunctions.DoErrorShake(this);
                     this.ClearAll();
                 }

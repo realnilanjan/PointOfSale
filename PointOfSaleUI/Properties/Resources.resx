@@ -280,4 +280,7 @@
   <data name="NO_OF_ITEMS" xml:space="preserve">
     <value>Number of details: {0}</value>
   </data>
+  <data name="MAX_RETRIES" xml:space="preserve">
+    <value>You have exceeded maximum retries. Please restart the application</value>
+  </data>
 </root>

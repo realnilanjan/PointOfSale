@@ -41,10 +41,10 @@ namespace PointOfSale.Lib.DataAccess
             }
         }
 
-        public List<LoggedInUserModel> VerifyUser(string username, string password)
+        public LoggedInUserModel VerifyUser(string username, string password)
         {
-            var rows = LoadData<LoggedInUserModel, dynamic>("dbo.UserLogin", new { username, password }, "POS");
-            return rows;
+            var result = LoadData<LoggedInUserModel, dynamic>("dbo.UserLogin", new { username, password }, "POS").FirstOrDefault();
+            return result;
         }
 
         public List<BusinessInformation> GetBusinessInformation()
