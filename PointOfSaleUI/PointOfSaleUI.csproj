@@ -156,7 +156,9 @@
     <Compile Include="UI\Reports\TerminalTransactions.Designer.cs">
       <DependentUpon>TerminalTransactions.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Reports\ViewAllTransaction.cs" />
+    <Compile Include="UI\Reports\ViewAllTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI\Reports\ViewAllTransaction.Designer.cs">
       <DependentUpon>ViewAllTransaction.cs</DependentUpon>
     </Compile>
@@ -385,6 +387,7 @@
     <None Include="Resources\payout.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\transaction.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

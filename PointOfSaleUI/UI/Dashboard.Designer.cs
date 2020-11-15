@@ -146,6 +146,80 @@
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.smalllogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.reportPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.txtReportAnnualSales = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtReportMonthlySales = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtReportDailyAverageSales = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtReportTodaysSales = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel45 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel46 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel40 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel41 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel42 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel43 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel44 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.cmbReportStaffNames = new System.Windows.Forms.ComboBox();
+            this.txtReportStaffAnnualSales = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtReportStaffMonthlySales = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel26 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtReportNoOfStaff = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel28 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel29 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel31 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel32 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel33 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel34 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel35 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel19 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel20 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel30 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel37 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel38 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel39 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel36 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel21 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel23 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel25 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.supplierPanel = new System.Windows.Forms.Panel();
+            this.supplierGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnAddNewSupplier = new System.Windows.Forms.Button();
+            this.txtTotalSuppliers = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtSupplierEmail = new System.Windows.Forms.TextBox();
+            this.txtSupplierContact = new System.Windows.Forms.TextBox();
+            this.txtSupplierAddress = new System.Windows.Forms.TextBox();
+            this.txtSupplierId = new System.Windows.Forms.TextBox();
+            this.txtSupplierName = new System.Windows.Forms.TextBox();
+            this.btnDeleteSupplier = new System.Windows.Forms.Button();
+            this.btnUpdateSupplier = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.txtSearchSupplier = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.numMaxLoginAttempts = new System.Windows.Forms.NumericUpDown();
             this.label44 = new System.Windows.Forms.Label();
@@ -218,34 +292,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtProductSearch = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.reportPanel = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.btnViewAll = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnViewAllTransactions = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.supplierPanel = new System.Windows.Forms.Panel();
-            this.supplierGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnAddNewSupplier = new System.Windows.Forms.Button();
-            this.txtTotalSuppliers = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.txtSupplierEmail = new System.Windows.Forms.TextBox();
-            this.txtSupplierContact = new System.Windows.Forms.TextBox();
-            this.txtSupplierAddress = new System.Windows.Forms.TextBox();
-            this.txtSupplierId = new System.Windows.Forms.TextBox();
-            this.txtSupplierName = new System.Windows.Forms.TextBox();
-            this.btnDeleteSupplier = new System.Windows.Forms.Button();
-            this.btnUpdateSupplier = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.txtSearchSupplier = new System.Windows.Forms.TextBox();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panelAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
@@ -253,6 +299,15 @@
             this.dashToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.stockColorDialog = new System.Windows.Forms.ColorDialog();
             this.saveQRDialog = new System.Windows.Forms.OpenFileDialog();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton4 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton6 = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.biglogo)).BeginInit();
             this.dashPanel.SuspendLayout();
             this.metroPanel5.SuspendLayout();
@@ -282,6 +337,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smalllogo)).BeginInit();
             this.panel2.SuspendLayout();
+            this.reportPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.supplierPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.settingsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxLoginAttempts)).BeginInit();
             this.panel9.SuspendLayout();
@@ -293,13 +361,9 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.reportPanel.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.supplierPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // imagesList
@@ -436,7 +500,7 @@
             this.panelAnimator.SetDecoration(this.dashPanel, BunifuAnimatorNS.DecorationType.None);
             this.dashPanel.Location = new System.Drawing.Point(9, 13);
             this.dashPanel.Name = "dashPanel";
-            this.dashPanel.Size = new System.Drawing.Size(1100, 813);
+            this.dashPanel.Size = new System.Drawing.Size(1101, 813);
             this.dashPanel.TabIndex = 1;
             // 
             // lblWarning
@@ -452,7 +516,7 @@
             this.lblWarning.Location = new System.Drawing.Point(0, 789);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblWarning.Size = new System.Drawing.Size(1100, 24);
+            this.lblWarning.Size = new System.Drawing.Size(1101, 24);
             this.lblWarning.TabIndex = 38;
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblWarning.Visible = false;
@@ -831,7 +895,7 @@
             this.panelAnimator.SetDecoration(this.staffPanel, BunifuAnimatorNS.DecorationType.None);
             this.staffPanel.Location = new System.Drawing.Point(9, 13);
             this.staffPanel.Name = "staffPanel";
-            this.staffPanel.Size = new System.Drawing.Size(1100, 813);
+            this.staffPanel.Size = new System.Drawing.Size(1101, 813);
             this.staffPanel.TabIndex = 2;
             this.staffPanel.Visible = false;
             // 
@@ -883,7 +947,7 @@
             this.userGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.userGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.userGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.userGridView.Size = new System.Drawing.Size(706, 619);
+            this.userGridView.Size = new System.Drawing.Size(707, 619);
             this.userGridView.TabIndex = 15;
             this.userGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userGridView_CellClick);
             // 
@@ -932,7 +996,7 @@
             this.btnAddNewUser.FlatAppearance.BorderSize = 0;
             this.btnAddNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewUser.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewUser.Location = new System.Drawing.Point(942, 39);
+            this.btnAddNewUser.Location = new System.Drawing.Point(943, 39);
             this.btnAddNewUser.Name = "btnAddNewUser";
             this.btnAddNewUser.Size = new System.Drawing.Size(139, 41);
             this.btnAddNewUser.TabIndex = 13;
@@ -966,7 +1030,7 @@
             this.panelAnimator.SetDecoration(this.groupBox2, BunifuAnimatorNS.DecorationType.None);
             this.groupBox2.Enabled = false;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(730, 159);
+            this.groupBox2.Location = new System.Drawing.Point(731, 159);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(352, 462);
             this.groupBox2.TabIndex = 3;
@@ -1287,7 +1351,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(19, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1062, 60);
+            this.groupBox1.Size = new System.Drawing.Size(1063, 60);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.Text = "Search Staff Members";
             // 
@@ -1314,7 +1378,7 @@
             this.logoAnimator.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(766, 23);
+            this.label7.Location = new System.Drawing.Point(767, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 14);
             this.label7.TabIndex = 2;
@@ -1337,7 +1401,7 @@
             "User Role",
             "Contact Number",
             "Email Address"});
-            this.cmbSearchUserBy.Location = new System.Drawing.Point(833, 19);
+            this.cmbSearchUserBy.Location = new System.Drawing.Point(834, 19);
             this.cmbSearchUserBy.Name = "cmbSearchUserBy";
             this.cmbSearchUserBy.Size = new System.Drawing.Size(216, 22);
             this.cmbSearchUserBy.TabIndex = 1;
@@ -1354,7 +1418,7 @@
             this.txtStaffSearch.Enabled = false;
             this.txtStaffSearch.Location = new System.Drawing.Point(41, 19);
             this.txtStaffSearch.Name = "txtStaffSearch";
-            this.txtStaffSearch.Size = new System.Drawing.Size(719, 22);
+            this.txtStaffSearch.Size = new System.Drawing.Size(720, 22);
             this.txtStaffSearch.TabIndex = 0;
             this.txtStaffSearch.TextChanged += new System.EventHandler(this.txtStaffSearch_TextChanged);
             // 
@@ -1376,7 +1440,7 @@
             this.panelAnimator.SetDecoration(this.categoryPanel, BunifuAnimatorNS.DecorationType.None);
             this.categoryPanel.Location = new System.Drawing.Point(9, 13);
             this.categoryPanel.Name = "categoryPanel";
-            this.categoryPanel.Size = new System.Drawing.Size(1100, 813);
+            this.categoryPanel.Size = new System.Drawing.Size(1101, 813);
             this.categoryPanel.TabIndex = 3;
             this.categoryPanel.Visible = false;
             // 
@@ -1428,7 +1492,7 @@
             this.categoryGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.categoryGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.categoryGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.categoryGridView.Size = new System.Drawing.Size(706, 619);
+            this.categoryGridView.Size = new System.Drawing.Size(707, 619);
             this.categoryGridView.TabIndex = 22;
             this.categoryGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.categoryGridView_CellClick);
             // 
@@ -1462,7 +1526,7 @@
             this.btnAddNewcategory.FlatAppearance.BorderSize = 0;
             this.btnAddNewcategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewcategory.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewcategory.Location = new System.Drawing.Point(941, 39);
+            this.btnAddNewcategory.Location = new System.Drawing.Point(942, 39);
             this.btnAddNewcategory.Name = "btnAddNewcategory";
             this.btnAddNewcategory.Size = new System.Drawing.Size(139, 41);
             this.btnAddNewcategory.TabIndex = 20;
@@ -1497,7 +1561,7 @@
             this.btnNewCategory.FlatAppearance.BorderSize = 0;
             this.btnNewCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewCategory.ForeColor = System.Drawing.Color.White;
-            this.btnNewCategory.Location = new System.Drawing.Point(1211, 39);
+            this.btnNewCategory.Location = new System.Drawing.Point(1212, 39);
             this.btnNewCategory.Name = "btnNewCategory";
             this.btnNewCategory.Size = new System.Drawing.Size(139, 41);
             this.btnNewCategory.TabIndex = 19;
@@ -1522,7 +1586,7 @@
             this.panelAnimator.SetDecoration(this.groupBox4, BunifuAnimatorNS.DecorationType.None);
             this.groupBox4.Enabled = false;
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(730, 159);
+            this.groupBox4.Location = new System.Drawing.Point(731, 159);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(352, 349);
             this.groupBox4.TabIndex = 17;
@@ -1659,7 +1723,7 @@
             this.groupBox6.ForeColor = System.Drawing.Color.White;
             this.groupBox6.Location = new System.Drawing.Point(19, 86);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1063, 60);
+            this.groupBox6.Size = new System.Drawing.Size(1064, 60);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.Text = "Search Category";
             // 
@@ -1687,7 +1751,7 @@
             this.textAnimator.SetDecoration(this.txtSearchCategory, BunifuAnimatorNS.DecorationType.None);
             this.txtSearchCategory.Location = new System.Drawing.Point(41, 19);
             this.txtSearchCategory.Name = "txtSearchCategory";
-            this.txtSearchCategory.Size = new System.Drawing.Size(1008, 22);
+            this.txtSearchCategory.Size = new System.Drawing.Size(1009, 22);
             this.txtSearchCategory.TabIndex = 0;
             this.txtSearchCategory.TextChanged += new System.EventHandler(this.txtSearchCategory_TextChanged);
             // 
@@ -1716,7 +1780,7 @@
             this.sideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideMenu.Location = new System.Drawing.Point(0, 0);
             this.sideMenu.Name = "sideMenu";
-            this.sideMenu.Size = new System.Drawing.Size(300, 838);
+            this.sideMenu.Size = new System.Drawing.Size(300, 836);
             this.sideMenu.TabIndex = 4;
             // 
             // dateInfo
@@ -1732,7 +1796,7 @@
             this.textAnimator.SetDecoration(this.dateInfo, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.dateInfo, BunifuAnimatorNS.DecorationType.None);
             this.panelAnimator.SetDecoration(this.dateInfo, BunifuAnimatorNS.DecorationType.None);
-            this.dateInfo.Location = new System.Drawing.Point(1, 755);
+            this.dateInfo.Location = new System.Drawing.Point(1, 753);
             this.dateInfo.Name = "dateInfo";
             this.dateInfo.Size = new System.Drawing.Size(300, 77);
             this.dateInfo.TabIndex = 6;
@@ -1839,7 +1903,7 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(1, 691);
+            this.btnLogout.Location = new System.Drawing.Point(1, 689);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Red;
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -2202,13 +2266,13 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.reportPanel);
+            this.panel2.Controls.Add(this.dashPanel);
+            this.panel2.Controls.Add(this.supplierPanel);
             this.panel2.Controls.Add(this.staffPanel);
             this.panel2.Controls.Add(this.categoryPanel);
             this.panel2.Controls.Add(this.settingsPanel);
             this.panel2.Controls.Add(this.stockPanel);
-            this.panel2.Controls.Add(this.reportPanel);
-            this.panel2.Controls.Add(this.dashPanel);
-            this.panel2.Controls.Add(this.supplierPanel);
             this.panelAnimator2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
@@ -2216,8 +2280,1309 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(300, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1118, 838);
+            this.panel2.Size = new System.Drawing.Size(1119, 836);
             this.panel2.TabIndex = 5;
+            // 
+            // reportPanel
+            // 
+            this.reportPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportPanel.Controls.Add(this.tableLayoutPanel1);
+            this.reportPanel.Controls.Add(this.bunifuCustomLabel11);
+            this.panelAnimator2.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
+            this.reportPanel.Location = new System.Drawing.Point(9, 13);
+            this.reportPanel.Name = "reportPanel";
+            this.reportPanel.Size = new System.Drawing.Size(1101, 813);
+            this.reportPanel.TabIndex = 7;
+            this.reportPanel.Visible = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel10, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel15, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel11, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel13, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel14, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel12, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 56);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1065, 565);
+            this.tableLayoutPanel1.TabIndex = 27;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel10.Controls.Add(this.txtReportAnnualSales);
+            this.panel10.Controls.Add(this.bunifuCustomLabel16);
+            this.panel10.Controls.Add(this.txtReportMonthlySales);
+            this.panel10.Controls.Add(this.bunifuCustomLabel15);
+            this.panel10.Controls.Add(this.txtReportDailyAverageSales);
+            this.panel10.Controls.Add(this.bunifuCustomLabel14);
+            this.panel10.Controls.Add(this.txtReportTodaysSales);
+            this.panel10.Controls.Add(this.bunifuCustomLabel13);
+            this.panel10.Controls.Add(this.bunifuCustomLabel12);
+            this.panelAnimator2.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.ForeColor = System.Drawing.Color.White;
+            this.panel10.Location = new System.Drawing.Point(3, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(348, 194);
+            this.panel10.TabIndex = 24;
+            // 
+            // txtReportAnnualSales
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportAnnualSales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportAnnualSales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportAnnualSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportAnnualSales.ImageKey = "qrcode.png";
+            this.txtReportAnnualSales.Location = new System.Drawing.Point(133, 156);
+            this.txtReportAnnualSales.Name = "txtReportAnnualSales";
+            this.txtReportAnnualSales.Size = new System.Drawing.Size(119, 30);
+            this.txtReportAnnualSales.TabIndex = 23;
+            this.txtReportAnnualSales.Text = "{0}";
+            this.txtReportAnnualSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel16
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel16, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel16, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel16, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel16, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel16.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel16.Location = new System.Drawing.Point(12, 156);
+            this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
+            this.bunifuCustomLabel16.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel16.TabIndex = 23;
+            this.bunifuCustomLabel16.Text = "Annual Sales";
+            this.bunifuCustomLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtReportMonthlySales
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportMonthlySales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportMonthlySales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportMonthlySales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportMonthlySales.ImageKey = "qrcode.png";
+            this.txtReportMonthlySales.Location = new System.Drawing.Point(133, 121);
+            this.txtReportMonthlySales.Name = "txtReportMonthlySales";
+            this.txtReportMonthlySales.Size = new System.Drawing.Size(119, 30);
+            this.txtReportMonthlySales.TabIndex = 23;
+            this.txtReportMonthlySales.Text = "{0}";
+            this.txtReportMonthlySales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel15
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel15.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(12, 121);
+            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel15.TabIndex = 23;
+            this.bunifuCustomLabel15.Text = "Monthly Sales";
+            this.bunifuCustomLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtReportDailyAverageSales
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportDailyAverageSales, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportDailyAverageSales, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportDailyAverageSales, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportDailyAverageSales, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportDailyAverageSales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportDailyAverageSales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportDailyAverageSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportDailyAverageSales.ImageKey = "qrcode.png";
+            this.txtReportDailyAverageSales.Location = new System.Drawing.Point(133, 86);
+            this.txtReportDailyAverageSales.Name = "txtReportDailyAverageSales";
+            this.txtReportDailyAverageSales.Size = new System.Drawing.Size(119, 30);
+            this.txtReportDailyAverageSales.TabIndex = 23;
+            this.txtReportDailyAverageSales.Text = "{0}";
+            this.txtReportDailyAverageSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel14
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel14.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(12, 86);
+            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel14.TabIndex = 23;
+            this.bunifuCustomLabel14.Text = "Daily Average Sales";
+            this.bunifuCustomLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtReportTodaysSales
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportTodaysSales, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportTodaysSales, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportTodaysSales, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportTodaysSales, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportTodaysSales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportTodaysSales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportTodaysSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportTodaysSales.ImageKey = "qrcode.png";
+            this.txtReportTodaysSales.Location = new System.Drawing.Point(133, 51);
+            this.txtReportTodaysSales.Name = "txtReportTodaysSales";
+            this.txtReportTodaysSales.Size = new System.Drawing.Size(119, 30);
+            this.txtReportTodaysSales.TabIndex = 23;
+            this.txtReportTodaysSales.Text = "{0}";
+            this.txtReportTodaysSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel13
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel13.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(12, 51);
+            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel13.TabIndex = 23;
+            this.bunifuCustomLabel13.Text = "Today\'s Sales";
+            this.bunifuCustomLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel12
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel12.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(9, 8);
+            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(273, 30);
+            this.bunifuCustomLabel12.TabIndex = 23;
+            this.bunifuCustomLabel12.Text = "Sales Report Summary";
+            this.bunifuCustomLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel15.Controls.Add(this.bunifuCustomLabel45);
+            this.panel15.Controls.Add(this.bunifuCustomLabel46);
+            this.panel15.Controls.Add(this.bunifuCustomLabel40);
+            this.panel15.Controls.Add(this.bunifuCustomLabel41);
+            this.panel15.Controls.Add(this.bunifuCustomLabel42);
+            this.panel15.Controls.Add(this.bunifuCustomLabel43);
+            this.panel15.Controls.Add(this.bunifuCustomLabel44);
+            this.panelAnimator2.SetDecoration(this.panel15, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel15, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel15, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel15, BunifuAnimatorNS.DecorationType.None);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel15.ForeColor = System.Drawing.Color.White;
+            this.panel15.Location = new System.Drawing.Point(712, 203);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(350, 194);
+            this.panel15.TabIndex = 26;
+            // 
+            // bunifuCustomLabel45
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel45, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel45, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel45, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel45, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel45.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel45.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel45.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel45.Location = new System.Drawing.Point(12, 112);
+            this.bunifuCustomLabel45.Name = "bunifuCustomLabel45";
+            this.bunifuCustomLabel45.Size = new System.Drawing.Size(163, 30);
+            this.bunifuCustomLabel45.TabIndex = 24;
+            this.bunifuCustomLabel45.Text = "Avg. Sales/Transaction";
+            this.bunifuCustomLabel45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel46
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel46, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel46, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel46, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel46, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel46.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel46.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel46.Location = new System.Drawing.Point(180, 112);
+            this.bunifuCustomLabel46.Name = "bunifuCustomLabel46";
+            this.bunifuCustomLabel46.Size = new System.Drawing.Size(98, 30);
+            this.bunifuCustomLabel46.TabIndex = 23;
+            this.bunifuCustomLabel46.Text = "{0}";
+            this.bunifuCustomLabel46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel40
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel40, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel40, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel40, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel40, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel40.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel40.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel40.Location = new System.Drawing.Point(181, 80);
+            this.bunifuCustomLabel40.Name = "bunifuCustomLabel40";
+            this.bunifuCustomLabel40.Size = new System.Drawing.Size(98, 30);
+            this.bunifuCustomLabel40.TabIndex = 23;
+            this.bunifuCustomLabel40.Text = "{0}";
+            this.bunifuCustomLabel40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel41
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel41, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel41, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel41, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel41, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel41.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel41.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel41.Location = new System.Drawing.Point(12, 80);
+            this.bunifuCustomLabel41.Name = "bunifuCustomLabel41";
+            this.bunifuCustomLabel41.Size = new System.Drawing.Size(163, 30);
+            this.bunifuCustomLabel41.TabIndex = 23;
+            this.bunifuCustomLabel41.Text = "Avg. Stocks Sold/Transaction";
+            this.bunifuCustomLabel41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel42
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel42, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel42, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel42, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel42, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel42.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel42.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel42.Location = new System.Drawing.Point(181, 51);
+            this.bunifuCustomLabel42.Name = "bunifuCustomLabel42";
+            this.bunifuCustomLabel42.Size = new System.Drawing.Size(98, 30);
+            this.bunifuCustomLabel42.TabIndex = 23;
+            this.bunifuCustomLabel42.Text = "{0}";
+            this.bunifuCustomLabel42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel43
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel43, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel43, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel43, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel43, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel43.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel43.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel43.Location = new System.Drawing.Point(12, 51);
+            this.bunifuCustomLabel43.Name = "bunifuCustomLabel43";
+            this.bunifuCustomLabel43.Size = new System.Drawing.Size(163, 30);
+            this.bunifuCustomLabel43.TabIndex = 23;
+            this.bunifuCustomLabel43.Text = "No. of Total Transactions";
+            this.bunifuCustomLabel43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel44
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel44, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel44, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel44, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel44, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel44.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel44.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel44.Location = new System.Drawing.Point(9, 8);
+            this.bunifuCustomLabel44.Name = "bunifuCustomLabel44";
+            this.bunifuCustomLabel44.Size = new System.Drawing.Size(273, 30);
+            this.bunifuCustomLabel44.TabIndex = 23;
+            this.bunifuCustomLabel44.Text = "Transaction\'s Report Summary";
+            this.bunifuCustomLabel44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel11.Controls.Add(this.cmbReportStaffNames);
+            this.panel11.Controls.Add(this.txtReportStaffAnnualSales);
+            this.panel11.Controls.Add(this.bunifuCustomLabel22);
+            this.panel11.Controls.Add(this.txtReportStaffMonthlySales);
+            this.panel11.Controls.Add(this.bunifuCustomLabel24);
+            this.panel11.Controls.Add(this.bunifuCustomLabel26);
+            this.panel11.Controls.Add(this.txtReportNoOfStaff);
+            this.panel11.Controls.Add(this.bunifuCustomLabel28);
+            this.panel11.Controls.Add(this.bunifuCustomLabel29);
+            this.panelAnimator2.SetDecoration(this.panel11, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel11, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel11, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel11, BunifuAnimatorNS.DecorationType.None);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel11.ForeColor = System.Drawing.Color.White;
+            this.panel11.Location = new System.Drawing.Point(357, 3);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(349, 194);
+            this.panel11.TabIndex = 25;
+            // 
+            // cmbReportStaffNames
+            // 
+            this.textAnimator.SetDecoration(this.cmbReportStaffNames, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.cmbReportStaffNames, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.cmbReportStaffNames, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.cmbReportStaffNames, BunifuAnimatorNS.DecorationType.None);
+            this.cmbReportStaffNames.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbReportStaffNames.FormattingEnabled = true;
+            this.cmbReportStaffNames.Location = new System.Drawing.Point(136, 92);
+            this.cmbReportStaffNames.Name = "cmbReportStaffNames";
+            this.cmbReportStaffNames.Size = new System.Drawing.Size(175, 23);
+            this.cmbReportStaffNames.TabIndex = 24;
+            // 
+            // txtReportStaffAnnualSales
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportStaffAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportStaffAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportStaffAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportStaffAnnualSales, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportStaffAnnualSales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportStaffAnnualSales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportStaffAnnualSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportStaffAnnualSales.ImageKey = "qrcode.png";
+            this.txtReportStaffAnnualSales.Location = new System.Drawing.Point(133, 156);
+            this.txtReportStaffAnnualSales.Name = "txtReportStaffAnnualSales";
+            this.txtReportStaffAnnualSales.Size = new System.Drawing.Size(119, 30);
+            this.txtReportStaffAnnualSales.TabIndex = 23;
+            this.txtReportStaffAnnualSales.Text = "{0}";
+            this.txtReportStaffAnnualSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel22
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel22.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel22.Location = new System.Drawing.Point(12, 156);
+            this.bunifuCustomLabel22.Name = "bunifuCustomLabel22";
+            this.bunifuCustomLabel22.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel22.TabIndex = 23;
+            this.bunifuCustomLabel22.Text = "Annual Sales";
+            this.bunifuCustomLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtReportStaffMonthlySales
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportStaffMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportStaffMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportStaffMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportStaffMonthlySales, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportStaffMonthlySales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportStaffMonthlySales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportStaffMonthlySales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportStaffMonthlySales.ImageKey = "qrcode.png";
+            this.txtReportStaffMonthlySales.Location = new System.Drawing.Point(133, 121);
+            this.txtReportStaffMonthlySales.Name = "txtReportStaffMonthlySales";
+            this.txtReportStaffMonthlySales.Size = new System.Drawing.Size(119, 30);
+            this.txtReportStaffMonthlySales.TabIndex = 23;
+            this.txtReportStaffMonthlySales.Text = "{0}";
+            this.txtReportStaffMonthlySales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel24
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel24.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel24.Location = new System.Drawing.Point(12, 121);
+            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
+            this.bunifuCustomLabel24.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel24.TabIndex = 23;
+            this.bunifuCustomLabel24.Text = "Monthly Sales";
+            this.bunifuCustomLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel26
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel26.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel26.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel26.Location = new System.Drawing.Point(12, 86);
+            this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
+            this.bunifuCustomLabel26.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel26.TabIndex = 23;
+            this.bunifuCustomLabel26.Text = "Sales By Staff Name";
+            this.bunifuCustomLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtReportNoOfStaff
+            // 
+            this.panelAnimator2.SetDecoration(this.txtReportNoOfStaff, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtReportNoOfStaff, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtReportNoOfStaff, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtReportNoOfStaff, BunifuAnimatorNS.DecorationType.None);
+            this.txtReportNoOfStaff.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReportNoOfStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtReportNoOfStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtReportNoOfStaff.ImageKey = "qrcode.png";
+            this.txtReportNoOfStaff.Location = new System.Drawing.Point(133, 51);
+            this.txtReportNoOfStaff.Name = "txtReportNoOfStaff";
+            this.txtReportNoOfStaff.Size = new System.Drawing.Size(119, 30);
+            this.txtReportNoOfStaff.TabIndex = 23;
+            this.txtReportNoOfStaff.Text = "{0}";
+            this.txtReportNoOfStaff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel28
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel28, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel28, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel28, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel28, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel28.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel28.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel28.Location = new System.Drawing.Point(12, 51);
+            this.bunifuCustomLabel28.Name = "bunifuCustomLabel28";
+            this.bunifuCustomLabel28.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel28.TabIndex = 23;
+            this.bunifuCustomLabel28.Text = "Number of Staff";
+            this.bunifuCustomLabel28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel29
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel29, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel29, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel29, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel29, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel29.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel29.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel29.Location = new System.Drawing.Point(9, 8);
+            this.bunifuCustomLabel29.Name = "bunifuCustomLabel29";
+            this.bunifuCustomLabel29.Size = new System.Drawing.Size(273, 30);
+            this.bunifuCustomLabel29.TabIndex = 23;
+            this.bunifuCustomLabel29.Text = "Staff Report Summary";
+            this.bunifuCustomLabel29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel13.Controls.Add(this.bunifuCustomLabel31);
+            this.panel13.Controls.Add(this.bunifuCustomLabel32);
+            this.panel13.Controls.Add(this.bunifuCustomLabel33);
+            this.panel13.Controls.Add(this.bunifuCustomLabel34);
+            this.panel13.Controls.Add(this.bunifuCustomLabel35);
+            this.panelAnimator2.SetDecoration(this.panel13, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel13, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel13, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel13, BunifuAnimatorNS.DecorationType.None);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel13.ForeColor = System.Drawing.Color.White;
+            this.panel13.Location = new System.Drawing.Point(357, 203);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(349, 194);
+            this.panel13.TabIndex = 25;
+            // 
+            // bunifuCustomLabel31
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel31.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel31.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel31.Location = new System.Drawing.Point(181, 80);
+            this.bunifuCustomLabel31.Name = "bunifuCustomLabel31";
+            this.bunifuCustomLabel31.Size = new System.Drawing.Size(98, 30);
+            this.bunifuCustomLabel31.TabIndex = 23;
+            this.bunifuCustomLabel31.Text = "{0}";
+            this.bunifuCustomLabel31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel32
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel32, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel32, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel32, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel32, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel32.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel32.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel32.Location = new System.Drawing.Point(12, 80);
+            this.bunifuCustomLabel32.Name = "bunifuCustomLabel32";
+            this.bunifuCustomLabel32.Size = new System.Drawing.Size(163, 30);
+            this.bunifuCustomLabel32.TabIndex = 23;
+            this.bunifuCustomLabel32.Text = "No. of Stocks/Supplier";
+            this.bunifuCustomLabel32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel33
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel33.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel33.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel33.Location = new System.Drawing.Point(181, 51);
+            this.bunifuCustomLabel33.Name = "bunifuCustomLabel33";
+            this.bunifuCustomLabel33.Size = new System.Drawing.Size(98, 30);
+            this.bunifuCustomLabel33.TabIndex = 23;
+            this.bunifuCustomLabel33.Text = "{0}";
+            this.bunifuCustomLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel34
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel34.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel34.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel34.Location = new System.Drawing.Point(12, 51);
+            this.bunifuCustomLabel34.Name = "bunifuCustomLabel34";
+            this.bunifuCustomLabel34.Size = new System.Drawing.Size(163, 30);
+            this.bunifuCustomLabel34.TabIndex = 23;
+            this.bunifuCustomLabel34.Text = "No. of Registered Suppliers";
+            this.bunifuCustomLabel34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel35
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel35, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel35, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel35, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel35, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel35.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel35.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel35.Location = new System.Drawing.Point(9, 8);
+            this.bunifuCustomLabel35.Name = "bunifuCustomLabel35";
+            this.bunifuCustomLabel35.Size = new System.Drawing.Size(273, 30);
+            this.bunifuCustomLabel35.TabIndex = 23;
+            this.bunifuCustomLabel35.Text = "Supplier\'s Report Summary";
+            this.bunifuCustomLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel14.Controls.Add(this.comboBox1);
+            this.panel14.Controls.Add(this.bunifuCustomLabel18);
+            this.panel14.Controls.Add(this.bunifuCustomLabel19);
+            this.panel14.Controls.Add(this.bunifuCustomLabel20);
+            this.panel14.Controls.Add(this.bunifuCustomLabel30);
+            this.panel14.Controls.Add(this.bunifuCustomLabel37);
+            this.panel14.Controls.Add(this.bunifuCustomLabel38);
+            this.panel14.Controls.Add(this.bunifuCustomLabel39);
+            this.panel14.Controls.Add(this.bunifuCustomLabel36);
+            this.panelAnimator2.SetDecoration(this.panel14, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel14, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel14, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel14, BunifuAnimatorNS.DecorationType.None);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel14.ForeColor = System.Drawing.Color.White;
+            this.panel14.Location = new System.Drawing.Point(3, 203);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(348, 194);
+            this.panel14.TabIndex = 26;
+            // 
+            // comboBox1
+            // 
+            this.textAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(136, 92);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(175, 23);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // bunifuCustomLabel18
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel18, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel18, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel18, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel18, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel18.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel18.Location = new System.Drawing.Point(133, 156);
+            this.bunifuCustomLabel18.Name = "bunifuCustomLabel18";
+            this.bunifuCustomLabel18.Size = new System.Drawing.Size(109, 30);
+            this.bunifuCustomLabel18.TabIndex = 25;
+            this.bunifuCustomLabel18.Text = "{0}";
+            this.bunifuCustomLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel19
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel19.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel19.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel19.Location = new System.Drawing.Point(14, 156);
+            this.bunifuCustomLabel19.Name = "bunifuCustomLabel19";
+            this.bunifuCustomLabel19.Size = new System.Drawing.Size(128, 30);
+            this.bunifuCustomLabel19.TabIndex = 26;
+            this.bunifuCustomLabel19.Text = "Annual Sales";
+            this.bunifuCustomLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel20
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel20.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel20.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel20.Location = new System.Drawing.Point(133, 121);
+            this.bunifuCustomLabel20.Name = "bunifuCustomLabel20";
+            this.bunifuCustomLabel20.Size = new System.Drawing.Size(109, 30);
+            this.bunifuCustomLabel20.TabIndex = 27;
+            this.bunifuCustomLabel20.Text = "{0}";
+            this.bunifuCustomLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel30
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel30, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel30, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel30, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel30, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel30.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel30.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel30.Location = new System.Drawing.Point(14, 121);
+            this.bunifuCustomLabel30.Name = "bunifuCustomLabel30";
+            this.bunifuCustomLabel30.Size = new System.Drawing.Size(128, 30);
+            this.bunifuCustomLabel30.TabIndex = 28;
+            this.bunifuCustomLabel30.Text = "Monthly Sales";
+            this.bunifuCustomLabel30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel37
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel37, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel37, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel37, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel37, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel37.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel37.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel37.Location = new System.Drawing.Point(14, 86);
+            this.bunifuCustomLabel37.Name = "bunifuCustomLabel37";
+            this.bunifuCustomLabel37.Size = new System.Drawing.Size(128, 30);
+            this.bunifuCustomLabel37.TabIndex = 29;
+            this.bunifuCustomLabel37.Text = "Sales By Category";
+            this.bunifuCustomLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel38
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel38, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel38, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel38, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel38, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel38.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel38.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel38.Location = new System.Drawing.Point(133, 51);
+            this.bunifuCustomLabel38.Name = "bunifuCustomLabel38";
+            this.bunifuCustomLabel38.Size = new System.Drawing.Size(109, 30);
+            this.bunifuCustomLabel38.TabIndex = 30;
+            this.bunifuCustomLabel38.Text = "{0}";
+            this.bunifuCustomLabel38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel39
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel39, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel39, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel39, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel39, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel39.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel39.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel39.Location = new System.Drawing.Point(14, 51);
+            this.bunifuCustomLabel39.Name = "bunifuCustomLabel39";
+            this.bunifuCustomLabel39.Size = new System.Drawing.Size(128, 30);
+            this.bunifuCustomLabel39.TabIndex = 31;
+            this.bunifuCustomLabel39.Text = "No. of Categories";
+            this.bunifuCustomLabel39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel36
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel36, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel36, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel36, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel36, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel36.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel36.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel36.Location = new System.Drawing.Point(9, 8);
+            this.bunifuCustomLabel36.Name = "bunifuCustomLabel36";
+            this.bunifuCustomLabel36.Size = new System.Drawing.Size(273, 30);
+            this.bunifuCustomLabel36.TabIndex = 23;
+            this.bunifuCustomLabel36.Text = "Category Report Summary";
+            this.bunifuCustomLabel36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel12.Controls.Add(this.bunifuCustomLabel17);
+            this.panel12.Controls.Add(this.bunifuCustomLabel21);
+            this.panel12.Controls.Add(this.bunifuCustomLabel23);
+            this.panel12.Controls.Add(this.bunifuCustomLabel25);
+            this.panel12.Controls.Add(this.bunifuCustomLabel27);
+            this.panelAnimator2.SetDecoration(this.panel12, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel12, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel12, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel12, BunifuAnimatorNS.DecorationType.None);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel12.ForeColor = System.Drawing.Color.White;
+            this.panel12.Location = new System.Drawing.Point(712, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(350, 194);
+            this.panel12.TabIndex = 26;
+            // 
+            // bunifuCustomLabel17
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel17, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel17, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel17, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel17, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel17.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel17.Location = new System.Drawing.Point(133, 86);
+            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
+            this.bunifuCustomLabel17.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel17.TabIndex = 24;
+            this.bunifuCustomLabel17.Text = "{0}";
+            this.bunifuCustomLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel21
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel21.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel21.Location = new System.Drawing.Point(12, 86);
+            this.bunifuCustomLabel21.Name = "bunifuCustomLabel21";
+            this.bunifuCustomLabel21.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel21.TabIndex = 23;
+            this.bunifuCustomLabel21.Text = "No. of Stocks Sold";
+            this.bunifuCustomLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel23
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel23.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel23.Location = new System.Drawing.Point(133, 51);
+            this.bunifuCustomLabel23.Name = "bunifuCustomLabel23";
+            this.bunifuCustomLabel23.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel23.TabIndex = 23;
+            this.bunifuCustomLabel23.Text = "{0}";
+            this.bunifuCustomLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel25
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel25.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel25.Location = new System.Drawing.Point(12, 51);
+            this.bunifuCustomLabel25.Name = "bunifuCustomLabel25";
+            this.bunifuCustomLabel25.Size = new System.Drawing.Size(119, 30);
+            this.bunifuCustomLabel25.TabIndex = 23;
+            this.bunifuCustomLabel25.Text = "Number of Stocks";
+            this.bunifuCustomLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel27
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel27, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel27, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel27, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel27, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel27.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel27.ImageKey = "qrcode.png";
+            this.bunifuCustomLabel27.Location = new System.Drawing.Point(9, 8);
+            this.bunifuCustomLabel27.Name = "bunifuCustomLabel27";
+            this.bunifuCustomLabel27.Size = new System.Drawing.Size(273, 30);
+            this.bunifuCustomLabel27.TabIndex = 23;
+            this.bunifuCustomLabel27.Text = "Stocks Report Summary";
+            this.bunifuCustomLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel11.ImageIndex = 0;
+            this.bunifuCustomLabel11.ImageList = this.imagesList;
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(15, 13);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(121, 30);
+            this.bunifuCustomLabel11.TabIndex = 5;
+            this.bunifuCustomLabel11.Text = "Reports";
+            this.bunifuCustomLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // supplierPanel
+            // 
+            this.supplierPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.supplierPanel.Controls.Add(this.supplierGridView);
+            this.supplierPanel.Controls.Add(this.btnAddNewSupplier);
+            this.supplierPanel.Controls.Add(this.txtTotalSuppliers);
+            this.supplierPanel.Controls.Add(this.panel4);
+            this.supplierPanel.Controls.Add(this.panel5);
+            this.supplierPanel.Controls.Add(this.bunifuCustomLabel4);
+            this.panelAnimator2.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
+            this.supplierPanel.Location = new System.Drawing.Point(9, 13);
+            this.supplierPanel.Name = "supplierPanel";
+            this.supplierPanel.Size = new System.Drawing.Size(1101, 813);
+            this.supplierPanel.TabIndex = 4;
+            this.supplierPanel.Visible = false;
+            // 
+            // supplierGridView
+            // 
+            this.supplierGridView.AllowUserToAddRows = false;
+            this.supplierGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.supplierGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.supplierGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.supplierGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.supplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.supplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.supplierGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.panelAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
+            this.supplierGridView.DoubleBuffered = true;
+            this.supplierGridView.EnableHeadersVisualStyles = false;
+            this.supplierGridView.GridColor = System.Drawing.Color.White;
+            this.supplierGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.supplierGridView.HeaderForeColor = System.Drawing.Color.White;
+            this.supplierGridView.Location = new System.Drawing.Point(19, 159);
+            this.supplierGridView.MultiSelect = false;
+            this.supplierGridView.Name = "supplierGridView";
+            this.supplierGridView.ReadOnly = true;
+            this.supplierGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.supplierGridView.RowHeadersVisible = false;
+            this.supplierGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.supplierGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.supplierGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.supplierGridView.Size = new System.Drawing.Size(707, 619);
+            this.supplierGridView.TabIndex = 32;
+            this.supplierGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierGridView_CellClick);
+            // 
+            // btnAddNewSupplier
+            // 
+            this.btnAddNewSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddNewSupplier.BackColor = System.Drawing.Color.Green;
+            this.btnAddNewSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.btnAddNewSupplier.FlatAppearance.BorderSize = 0;
+            this.btnAddNewSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewSupplier.Location = new System.Drawing.Point(943, 39);
+            this.btnAddNewSupplier.Name = "btnAddNewSupplier";
+            this.btnAddNewSupplier.Size = new System.Drawing.Size(139, 41);
+            this.btnAddNewSupplier.TabIndex = 31;
+            this.btnAddNewSupplier.Text = "Add New Supplier";
+            this.btnAddNewSupplier.UseVisualStyleBackColor = false;
+            this.btnAddNewSupplier.Click += new System.EventHandler(this.btnAddNewSupplier_Click);
+            // 
+            // txtTotalSuppliers
+            // 
+            this.txtTotalSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtTotalSuppliers.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
+            this.txtTotalSuppliers.ForeColor = System.Drawing.Color.White;
+            this.txtTotalSuppliers.Location = new System.Drawing.Point(17, 787);
+            this.txtTotalSuppliers.Name = "txtTotalSuppliers";
+            this.txtTotalSuppliers.Size = new System.Drawing.Size(168, 14);
+            this.txtTotalSuppliers.TabIndex = 30;
+            this.txtTotalSuppliers.Text = "Total number of suppliers: {0}";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel4.Controls.Add(this.label36);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.label34);
+            this.panel4.Controls.Add(this.label35);
+            this.panel4.Controls.Add(this.txtSupplierEmail);
+            this.panel4.Controls.Add(this.txtSupplierContact);
+            this.panel4.Controls.Add(this.txtSupplierAddress);
+            this.panel4.Controls.Add(this.txtSupplierId);
+            this.panel4.Controls.Add(this.txtSupplierName);
+            this.panel4.Controls.Add(this.btnDeleteSupplier);
+            this.panel4.Controls.Add(this.btnUpdateSupplier);
+            this.panelAnimator2.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panel4.Enabled = false;
+            this.panel4.ForeColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(731, 159);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(352, 377);
+            this.panel4.TabIndex = 29;
+            this.panel4.Text = "Category Information";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.label36.Location = new System.Drawing.Point(25, 67);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(67, 14);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "Supplier Id";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Location = new System.Drawing.Point(53, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 14);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Name";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.label11.Location = new System.Drawing.Point(41, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 14);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Address";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.label34.Location = new System.Drawing.Point(54, 249);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(38, 14);
+            this.label34.TabIndex = 17;
+            this.label34.Text = "Email";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.panelAnimator2.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.label35.Location = new System.Drawing.Point(45, 222);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(47, 14);
+            this.label35.TabIndex = 16;
+            this.label35.Text = "Contact";
+            // 
+            // txtSupplierEmail
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierEmail.Location = new System.Drawing.Point(98, 245);
+            this.txtSupplierEmail.Name = "txtSupplierEmail";
+            this.txtSupplierEmail.Size = new System.Drawing.Size(229, 22);
+            this.txtSupplierEmail.TabIndex = 21;
+            // 
+            // txtSupplierContact
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierContact.Location = new System.Drawing.Point(98, 218);
+            this.txtSupplierContact.Name = "txtSupplierContact";
+            this.txtSupplierContact.Size = new System.Drawing.Size(229, 22);
+            this.txtSupplierContact.TabIndex = 20;
+            // 
+            // txtSupplierAddress
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierAddress.Location = new System.Drawing.Point(98, 119);
+            this.txtSupplierAddress.Multiline = true;
+            this.txtSupplierAddress.Name = "txtSupplierAddress";
+            this.txtSupplierAddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtSupplierAddress.Size = new System.Drawing.Size(229, 93);
+            this.txtSupplierAddress.TabIndex = 19;
+            // 
+            // txtSupplierId
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierId.Location = new System.Drawing.Point(98, 64);
+            this.txtSupplierId.Name = "txtSupplierId";
+            this.txtSupplierId.ReadOnly = true;
+            this.txtSupplierId.Size = new System.Drawing.Size(79, 22);
+            this.txtSupplierId.TabIndex = 18;
+            // 
+            // txtSupplierName
+            // 
+            this.panelAnimator2.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
+            this.txtSupplierName.Location = new System.Drawing.Point(98, 92);
+            this.txtSupplierName.Name = "txtSupplierName";
+            this.txtSupplierName.Size = new System.Drawing.Size(229, 22);
+            this.txtSupplierName.TabIndex = 18;
+            // 
+            // btnDeleteSupplier
+            // 
+            this.btnDeleteSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDeleteSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDeleteSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.btnDeleteSupplier.Enabled = false;
+            this.btnDeleteSupplier.FlatAppearance.BorderSize = 0;
+            this.btnDeleteSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteSupplier.Location = new System.Drawing.Point(195, 320);
+            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
+            this.btnDeleteSupplier.Size = new System.Drawing.Size(139, 41);
+            this.btnDeleteSupplier.TabIndex = 13;
+            this.btnDeleteSupplier.Text = "Delete";
+            this.btnDeleteSupplier.UseVisualStyleBackColor = false;
+            this.btnDeleteSupplier.Click += new System.EventHandler(this.btnDeleteSupplier_Click);
+            // 
+            // btnUpdateSupplier
+            // 
+            this.btnUpdateSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnUpdateSupplier.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnUpdateSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator2.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.btnUpdateSupplier.Enabled = false;
+            this.btnUpdateSupplier.FlatAppearance.BorderSize = 0;
+            this.btnUpdateSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateSupplier.Location = new System.Drawing.Point(19, 320);
+            this.btnUpdateSupplier.Name = "btnUpdateSupplier";
+            this.btnUpdateSupplier.Size = new System.Drawing.Size(139, 41);
+            this.btnUpdateSupplier.TabIndex = 13;
+            this.btnUpdateSupplier.Text = "Update";
+            this.btnUpdateSupplier.UseVisualStyleBackColor = false;
+            this.btnUpdateSupplier.Click += new System.EventHandler(this.btnUpdateSupplier_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.panel5.Controls.Add(this.pictureBox9);
+            this.panel5.Controls.Add(this.txtSearchSupplier);
+            this.panelAnimator2.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(19, 86);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1064, 60);
+            this.panel5.TabIndex = 28;
+            this.panel5.Text = "Search Category";
+            // 
+            // pictureBox9
+            // 
+            this.panelAnimator2.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox9.Image = global::PointOfSaleUI.Properties.Resources.search2;
+            this.pictureBox9.Location = new System.Drawing.Point(13, 19);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // txtSearchSupplier
+            // 
+            this.txtSearchSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelAnimator2.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
+            this.txtSearchSupplier.Location = new System.Drawing.Point(41, 19);
+            this.txtSearchSupplier.Name = "txtSearchSupplier";
+            this.txtSearchSupplier.Size = new System.Drawing.Size(1009, 22);
+            this.txtSearchSupplier.TabIndex = 0;
+            this.txtSearchSupplier.TextChanged += new System.EventHandler(this.txtSearchSupplier_TextChanged);
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuCustomLabel4.ImageIndex = 4;
+            this.bunifuCustomLabel4.ImageList = this.imagesList;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(14, 13);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(136, 30);
+            this.bunifuCustomLabel4.TabIndex = 22;
+            this.bunifuCustomLabel4.Text = "Supplier";
+            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // settingsPanel
             // 
@@ -2237,7 +3602,7 @@
             this.panelAnimator.SetDecoration(this.settingsPanel, BunifuAnimatorNS.DecorationType.None);
             this.settingsPanel.Location = new System.Drawing.Point(9, 13);
             this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(1100, 813);
+            this.settingsPanel.Size = new System.Drawing.Size(1101, 813);
             this.settingsPanel.TabIndex = 6;
             this.settingsPanel.Visible = false;
             // 
@@ -2842,7 +4207,7 @@
             this.panelAnimator.SetDecoration(this.stockPanel, BunifuAnimatorNS.DecorationType.None);
             this.stockPanel.Location = new System.Drawing.Point(9, 13);
             this.stockPanel.Name = "stockPanel";
-            this.stockPanel.Size = new System.Drawing.Size(1100, 813);
+            this.stockPanel.Size = new System.Drawing.Size(1101, 813);
             this.stockPanel.TabIndex = 4;
             this.stockPanel.Visible = false;
             // 
@@ -2858,7 +4223,7 @@
             this.btnViewPurchaseOrder.FlatAppearance.BorderSize = 0;
             this.btnViewPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewPurchaseOrder.ForeColor = System.Drawing.Color.White;
-            this.btnViewPurchaseOrder.Location = new System.Drawing.Point(749, 627);
+            this.btnViewPurchaseOrder.Location = new System.Drawing.Point(750, 627);
             this.btnViewPurchaseOrder.Name = "btnViewPurchaseOrder";
             this.btnViewPurchaseOrder.Size = new System.Drawing.Size(139, 41);
             this.btnViewPurchaseOrder.TabIndex = 34;
@@ -2878,7 +4243,7 @@
             this.btnPurchaseOrder.FlatAppearance.BorderSize = 0;
             this.btnPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPurchaseOrder.ForeColor = System.Drawing.Color.White;
-            this.btnPurchaseOrder.Location = new System.Drawing.Point(925, 627);
+            this.btnPurchaseOrder.Location = new System.Drawing.Point(926, 627);
             this.btnPurchaseOrder.Name = "btnPurchaseOrder";
             this.btnPurchaseOrder.Size = new System.Drawing.Size(139, 41);
             this.btnPurchaseOrder.TabIndex = 35;
@@ -2890,8 +4255,8 @@
             // 
             this.stockGridView.AllowUserToAddRows = false;
             this.stockGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
+            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.stockGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2899,14 +4264,14 @@
             this.stockGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.stockGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stockGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.stockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
@@ -2922,19 +4287,19 @@
             this.stockGridView.Name = "stockGridView";
             this.stockGridView.ReadOnly = true;
             this.stockGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.stockGridView.RowHeadersVisible = false;
             this.stockGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.stockGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.stockGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stockGridView.Size = new System.Drawing.Size(706, 619);
+            this.stockGridView.Size = new System.Drawing.Size(707, 619);
             this.stockGridView.TabIndex = 27;
             this.stockGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellClick);
             this.stockGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockGridView_CellDoubleClick);
@@ -2951,7 +4316,7 @@
             this.btnAddNewStock.FlatAppearance.BorderSize = 0;
             this.btnAddNewStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewStock.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewStock.Location = new System.Drawing.Point(941, 39);
+            this.btnAddNewStock.Location = new System.Drawing.Point(942, 39);
             this.btnAddNewStock.Name = "btnAddNewStock";
             this.btnAddNewStock.Size = new System.Drawing.Size(139, 41);
             this.btnAddNewStock.TabIndex = 26;
@@ -3008,7 +4373,7 @@
             this.panelAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Enabled = false;
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(730, 159);
+            this.panel1.Location = new System.Drawing.Point(731, 159);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(352, 462);
             this.panel1.TabIndex = 24;
@@ -3342,7 +4707,7 @@
             this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(19, 86);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1063, 60);
+            this.panel3.Size = new System.Drawing.Size(1064, 60);
             this.panel3.TabIndex = 23;
             this.panel3.Text = "Search Category";
             // 
@@ -3355,7 +4720,7 @@
             this.logoAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
             this.textAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(766, 23);
+            this.label23.Location = new System.Drawing.Point(767, 23);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(61, 14);
             this.label23.TabIndex = 5;
@@ -3376,7 +4741,7 @@
             "Barcode",
             "Brand",
             "Name"});
-            this.cmbSearchStockBy.Location = new System.Drawing.Point(833, 19);
+            this.cmbSearchStockBy.Location = new System.Drawing.Point(834, 19);
             this.cmbSearchStockBy.Name = "cmbSearchStockBy";
             this.cmbSearchStockBy.Size = new System.Drawing.Size(216, 22);
             this.cmbSearchStockBy.TabIndex = 4;
@@ -3407,7 +4772,7 @@
             this.txtProductSearch.Enabled = false;
             this.txtProductSearch.Location = new System.Drawing.Point(41, 19);
             this.txtProductSearch.Name = "txtProductSearch";
-            this.txtProductSearch.Size = new System.Drawing.Size(719, 22);
+            this.txtProductSearch.Size = new System.Drawing.Size(720, 22);
             this.txtProductSearch.TabIndex = 0;
             this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
             // 
@@ -3428,531 +4793,6 @@
             this.bunifuCustomLabel5.TabIndex = 22;
             this.bunifuCustomLabel5.Text = "Stock";
             this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // reportPanel
-            // 
-            this.reportPanel.Controls.Add(this.panel10);
-            this.reportPanel.Controls.Add(this.bunifuCustomLabel11);
-            this.panelAnimator2.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.reportPanel, BunifuAnimatorNS.DecorationType.None);
-            this.reportPanel.Location = new System.Drawing.Point(9, 13);
-            this.reportPanel.Name = "reportPanel";
-            this.reportPanel.Size = new System.Drawing.Size(1100, 813);
-            this.reportPanel.TabIndex = 7;
-            this.reportPanel.Visible = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel10.Controls.Add(this.label43);
-            this.panel10.Controls.Add(this.btnViewAll);
-            this.panel10.Controls.Add(this.btnViewAllTransactions);
-            this.panel10.Controls.Add(this.bunifuCustomLabel12);
-            this.panelAnimator2.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel10, BunifuAnimatorNS.DecorationType.None);
-            this.panel10.ForeColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(15, 60);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(295, 201);
-            this.panel10.TabIndex = 24;
-            // 
-            // label43
-            // 
-            this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.panelAnimator2.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
-            this.label43.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label43.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.White;
-            this.label43.Location = new System.Drawing.Point(0, 173);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(295, 28);
-            this.label43.TabIndex = 38;
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnViewAll
-            // 
-            this.btnViewAll.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnViewAll.BackColor = System.Drawing.Color.Green;
-            this.btnViewAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnViewAll.BorderRadius = 0;
-            this.btnViewAll.ButtonText = "View All Transactions";
-            this.btnViewAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textAnimator.SetDecoration(this.btnViewAll, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnViewAll, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnViewAll, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.btnViewAll, BunifuAnimatorNS.DecorationType.None);
-            this.btnViewAll.DisabledColor = System.Drawing.Color.Gray;
-            this.btnViewAll.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnViewAll.Iconimage = null;
-            this.btnViewAll.Iconimage_right = null;
-            this.btnViewAll.Iconimage_right_Selected = null;
-            this.btnViewAll.Iconimage_Selected = null;
-            this.btnViewAll.IconMarginLeft = 0;
-            this.btnViewAll.IconMarginRight = 0;
-            this.btnViewAll.IconRightVisible = true;
-            this.btnViewAll.IconRightZoom = 0D;
-            this.btnViewAll.IconVisible = true;
-            this.btnViewAll.IconZoom = 50D;
-            this.btnViewAll.IsTab = true;
-            this.btnViewAll.Location = new System.Drawing.Point(28, 111);
-            this.btnViewAll.Name = "btnViewAll";
-            this.btnViewAll.Normalcolor = System.Drawing.Color.Green;
-            this.btnViewAll.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnViewAll.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnViewAll.selected = false;
-            this.btnViewAll.Size = new System.Drawing.Size(227, 47);
-            this.btnViewAll.TabIndex = 26;
-            this.btnViewAll.Text = "View All Transactions";
-            this.btnViewAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnViewAll.Textcolor = System.Drawing.Color.White;
-            this.btnViewAll.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
-            // 
-            // btnViewAllTransactions
-            // 
-            this.btnViewAllTransactions.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnViewAllTransactions.BackColor = System.Drawing.Color.Green;
-            this.btnViewAllTransactions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnViewAllTransactions.BorderRadius = 0;
-            this.btnViewAllTransactions.ButtonText = "View Transactions of Customers";
-            this.btnViewAllTransactions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textAnimator.SetDecoration(this.btnViewAllTransactions, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnViewAllTransactions, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnViewAllTransactions, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.btnViewAllTransactions, BunifuAnimatorNS.DecorationType.None);
-            this.btnViewAllTransactions.DisabledColor = System.Drawing.Color.Gray;
-            this.btnViewAllTransactions.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnViewAllTransactions.Iconimage = null;
-            this.btnViewAllTransactions.Iconimage_right = null;
-            this.btnViewAllTransactions.Iconimage_right_Selected = null;
-            this.btnViewAllTransactions.Iconimage_Selected = null;
-            this.btnViewAllTransactions.IconMarginLeft = 0;
-            this.btnViewAllTransactions.IconMarginRight = 0;
-            this.btnViewAllTransactions.IconRightVisible = true;
-            this.btnViewAllTransactions.IconRightZoom = 0D;
-            this.btnViewAllTransactions.IconVisible = true;
-            this.btnViewAllTransactions.IconZoom = 50D;
-            this.btnViewAllTransactions.IsTab = true;
-            this.btnViewAllTransactions.Location = new System.Drawing.Point(28, 61);
-            this.btnViewAllTransactions.Name = "btnViewAllTransactions";
-            this.btnViewAllTransactions.Normalcolor = System.Drawing.Color.Green;
-            this.btnViewAllTransactions.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btnViewAllTransactions.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnViewAllTransactions.selected = false;
-            this.btnViewAllTransactions.Size = new System.Drawing.Size(227, 44);
-            this.btnViewAllTransactions.TabIndex = 26;
-            this.btnViewAllTransactions.Text = "View Transactions of Customers";
-            this.btnViewAllTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnViewAllTransactions.Textcolor = System.Drawing.Color.White;
-            this.btnViewAllTransactions.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAllTransactions.Click += new System.EventHandler(this.btnViewAllTransactions_Click);
-            // 
-            // bunifuCustomLabel12
-            // 
-            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomLabel12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuCustomLabel12.ImageKey = "qrcode.png";
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(8, 8);
-            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(78, 30);
-            this.bunifuCustomLabel12.TabIndex = 23;
-            this.bunifuCustomLabel12.Text = "View Orders";
-            this.bunifuCustomLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // bunifuCustomLabel11
-            // 
-            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomLabel11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuCustomLabel11.ImageIndex = 0;
-            this.bunifuCustomLabel11.ImageList = this.imagesList;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(15, 13);
-            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(121, 30);
-            this.bunifuCustomLabel11.TabIndex = 5;
-            this.bunifuCustomLabel11.Text = "Reports";
-            this.bunifuCustomLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // supplierPanel
-            // 
-            this.supplierPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supplierPanel.Controls.Add(this.supplierGridView);
-            this.supplierPanel.Controls.Add(this.btnAddNewSupplier);
-            this.supplierPanel.Controls.Add(this.txtTotalSuppliers);
-            this.supplierPanel.Controls.Add(this.panel4);
-            this.supplierPanel.Controls.Add(this.panel5);
-            this.supplierPanel.Controls.Add(this.bunifuCustomLabel4);
-            this.panelAnimator2.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.supplierPanel, BunifuAnimatorNS.DecorationType.None);
-            this.supplierPanel.Location = new System.Drawing.Point(9, 13);
-            this.supplierPanel.Name = "supplierPanel";
-            this.supplierPanel.Size = new System.Drawing.Size(1100, 813);
-            this.supplierPanel.TabIndex = 4;
-            this.supplierPanel.Visible = false;
-            // 
-            // supplierGridView
-            // 
-            this.supplierGridView.AllowUserToAddRows = false;
-            this.supplierGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
-            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.supplierGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.supplierGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.supplierGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.supplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.supplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.supplierGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.panelAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
-            this.supplierGridView.DoubleBuffered = true;
-            this.supplierGridView.EnableHeadersVisualStyles = false;
-            this.supplierGridView.GridColor = System.Drawing.Color.White;
-            this.supplierGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.supplierGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.supplierGridView.Location = new System.Drawing.Point(19, 159);
-            this.supplierGridView.MultiSelect = false;
-            this.supplierGridView.Name = "supplierGridView";
-            this.supplierGridView.ReadOnly = true;
-            this.supplierGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.supplierGridView.RowHeadersVisible = false;
-            this.supplierGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.supplierGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.supplierGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.supplierGridView.Size = new System.Drawing.Size(706, 619);
-            this.supplierGridView.TabIndex = 32;
-            this.supplierGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierGridView_CellClick);
-            // 
-            // btnAddNewSupplier
-            // 
-            this.btnAddNewSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddNewSupplier.BackColor = System.Drawing.Color.Green;
-            this.btnAddNewSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnAddNewSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.btnAddNewSupplier.FlatAppearance.BorderSize = 0;
-            this.btnAddNewSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewSupplier.Location = new System.Drawing.Point(942, 39);
-            this.btnAddNewSupplier.Name = "btnAddNewSupplier";
-            this.btnAddNewSupplier.Size = new System.Drawing.Size(139, 41);
-            this.btnAddNewSupplier.TabIndex = 31;
-            this.btnAddNewSupplier.Text = "Add New Supplier";
-            this.btnAddNewSupplier.UseVisualStyleBackColor = false;
-            this.btnAddNewSupplier.Click += new System.EventHandler(this.btnAddNewSupplier_Click);
-            // 
-            // txtTotalSuppliers
-            // 
-            this.txtTotalSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtTotalSuppliers.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtTotalSuppliers, BunifuAnimatorNS.DecorationType.None);
-            this.txtTotalSuppliers.ForeColor = System.Drawing.Color.White;
-            this.txtTotalSuppliers.Location = new System.Drawing.Point(17, 787);
-            this.txtTotalSuppliers.Name = "txtTotalSuppliers";
-            this.txtTotalSuppliers.Size = new System.Drawing.Size(168, 14);
-            this.txtTotalSuppliers.TabIndex = 30;
-            this.txtTotalSuppliers.Text = "Total number of suppliers: {0}";
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel4.Controls.Add(this.label36);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label34);
-            this.panel4.Controls.Add(this.label35);
-            this.panel4.Controls.Add(this.txtSupplierEmail);
-            this.panel4.Controls.Add(this.txtSupplierContact);
-            this.panel4.Controls.Add(this.txtSupplierAddress);
-            this.panel4.Controls.Add(this.txtSupplierId);
-            this.panel4.Controls.Add(this.txtSupplierName);
-            this.panel4.Controls.Add(this.btnDeleteSupplier);
-            this.panel4.Controls.Add(this.btnUpdateSupplier);
-            this.panelAnimator2.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.Enabled = false;
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(730, 159);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(352, 377);
-            this.panel4.TabIndex = 29;
-            this.panel4.Text = "Category Information";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.label36.Location = new System.Drawing.Point(25, 67);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(67, 14);
-            this.label36.TabIndex = 14;
-            this.label36.Text = "Supplier Id";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Location = new System.Drawing.Point(53, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 14);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Name";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.label11.Location = new System.Drawing.Point(41, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 14);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "Address";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.label34.Location = new System.Drawing.Point(54, 249);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(38, 14);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "Email";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.panelAnimator2.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.label35.Location = new System.Drawing.Point(45, 222);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(47, 14);
-            this.label35.TabIndex = 16;
-            this.label35.Text = "Contact";
-            // 
-            // txtSupplierEmail
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierEmail, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierEmail.Location = new System.Drawing.Point(98, 245);
-            this.txtSupplierEmail.Name = "txtSupplierEmail";
-            this.txtSupplierEmail.Size = new System.Drawing.Size(229, 22);
-            this.txtSupplierEmail.TabIndex = 21;
-            // 
-            // txtSupplierContact
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierContact, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierContact.Location = new System.Drawing.Point(98, 218);
-            this.txtSupplierContact.Name = "txtSupplierContact";
-            this.txtSupplierContact.Size = new System.Drawing.Size(229, 22);
-            this.txtSupplierContact.TabIndex = 20;
-            // 
-            // txtSupplierAddress
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierAddress, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierAddress.Location = new System.Drawing.Point(98, 119);
-            this.txtSupplierAddress.Multiline = true;
-            this.txtSupplierAddress.Name = "txtSupplierAddress";
-            this.txtSupplierAddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtSupplierAddress.Size = new System.Drawing.Size(229, 93);
-            this.txtSupplierAddress.TabIndex = 19;
-            // 
-            // txtSupplierId
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierId, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierId.Location = new System.Drawing.Point(98, 64);
-            this.txtSupplierId.Name = "txtSupplierId";
-            this.txtSupplierId.ReadOnly = true;
-            this.txtSupplierId.Size = new System.Drawing.Size(79, 22);
-            this.txtSupplierId.TabIndex = 18;
-            // 
-            // txtSupplierName
-            // 
-            this.panelAnimator2.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSupplierName, BunifuAnimatorNS.DecorationType.None);
-            this.txtSupplierName.Location = new System.Drawing.Point(98, 92);
-            this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.Size = new System.Drawing.Size(229, 22);
-            this.txtSupplierName.TabIndex = 18;
-            // 
-            // btnDeleteSupplier
-            // 
-            this.btnDeleteSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDeleteSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDeleteSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnDeleteSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.btnDeleteSupplier.Enabled = false;
-            this.btnDeleteSupplier.FlatAppearance.BorderSize = 0;
-            this.btnDeleteSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteSupplier.Location = new System.Drawing.Point(195, 320);
-            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
-            this.btnDeleteSupplier.Size = new System.Drawing.Size(139, 41);
-            this.btnDeleteSupplier.TabIndex = 13;
-            this.btnDeleteSupplier.Text = "Delete";
-            this.btnDeleteSupplier.UseVisualStyleBackColor = false;
-            this.btnDeleteSupplier.Click += new System.EventHandler(this.btnDeleteSupplier_Click);
-            // 
-            // btnUpdateSupplier
-            // 
-            this.btnUpdateSupplier.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnUpdateSupplier.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnUpdateSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator2.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.btnUpdateSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.btnUpdateSupplier.Enabled = false;
-            this.btnUpdateSupplier.FlatAppearance.BorderSize = 0;
-            this.btnUpdateSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateSupplier.Location = new System.Drawing.Point(19, 320);
-            this.btnUpdateSupplier.Name = "btnUpdateSupplier";
-            this.btnUpdateSupplier.Size = new System.Drawing.Size(139, 41);
-            this.btnUpdateSupplier.TabIndex = 13;
-            this.btnUpdateSupplier.Text = "Update";
-            this.btnUpdateSupplier.UseVisualStyleBackColor = false;
-            this.btnUpdateSupplier.Click += new System.EventHandler(this.btnUpdateSupplier_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.panel5.Controls.Add(this.pictureBox9);
-            this.panel5.Controls.Add(this.txtSearchSupplier);
-            this.panelAnimator2.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(19, 86);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1063, 60);
-            this.panel5.TabIndex = 28;
-            this.panel5.Text = "Search Category";
-            // 
-            // pictureBox9
-            // 
-            this.panelAnimator2.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox9.Image = global::PointOfSaleUI.Properties.Resources.search2;
-            this.pictureBox9.Location = new System.Drawing.Point(13, 19);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // txtSearchSupplier
-            // 
-            this.txtSearchSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelAnimator2.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.txtSearchSupplier, BunifuAnimatorNS.DecorationType.None);
-            this.txtSearchSupplier.Location = new System.Drawing.Point(41, 19);
-            this.txtSearchSupplier.Name = "txtSearchSupplier";
-            this.txtSearchSupplier.Size = new System.Drawing.Size(1008, 22);
-            this.txtSearchSupplier.TabIndex = 0;
-            this.txtSearchSupplier.TextChanged += new System.EventHandler(this.txtSearchSupplier_TextChanged);
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.panelAnimator2.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuCustomLabel4.ImageIndex = 4;
-            this.bunifuCustomLabel4.ImageList = this.imagesList;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(14, 13);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(136, 30);
-            this.bunifuCustomLabel4.TabIndex = 22;
-            this.bunifuCustomLabel4.Text = "Supplier";
-            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // logoAnimator
             // 
@@ -4047,12 +4887,213 @@
             // 
             this.saveQRDialog.Filter = "PNG Files (*.png) | *.png";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.bunifuTileButton2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.bunifuTileButton1, 0, 0);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 403);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(348, 159);
+            this.tableLayoutPanel3.TabIndex = 27;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.bunifuTileButton4, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bunifuTileButton3, 0, 0);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(357, 403);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(349, 159);
+            this.tableLayoutPanel4.TabIndex = 28;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.bunifuTileButton6, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.bunifuTileButton5, 0, 0);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(712, 403);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(350, 159);
+            this.tableLayoutPanel5.TabIndex = 29;
+            // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.Tomato;
+            this.bunifuTileButton1.color = System.Drawing.Color.Tomato;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.Coral;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Calibri", 15F);
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton1.Image = global::PointOfSaleUI.Properties.Resources.dashboard;
+            this.bunifuTileButton1.ImagePosition = 20;
+            this.bunifuTileButton1.ImageZoom = 50;
+            this.bunifuTileButton1.LabelPosition = 41;
+            this.bunifuTileButton1.LabelText = "Sales Report";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(6, 7);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(162, 145);
+            this.bunifuTileButton1.TabIndex = 29;
+            // 
+            // bunifuTileButton2
+            // 
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.Orange;
+            this.bunifuTileButton2.color = System.Drawing.Color.Orange;
+            this.bunifuTileButton2.colorActive = System.Drawing.Color.DarkOrange;
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuTileButton2.Font = new System.Drawing.Font("Calibri", 15F);
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton2.Image = global::PointOfSaleUI.Properties.Resources.staff;
+            this.bunifuTileButton2.ImagePosition = 20;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.LabelPosition = 41;
+            this.bunifuTileButton2.LabelText = "Staff Report";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(180, 7);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(162, 145);
+            this.bunifuTileButton2.TabIndex = 30;
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Calibri", 15F);
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = global::PointOfSaleUI.Properties.Resources.categories;
+            this.bunifuTileButton3.ImagePosition = 20;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 41;
+            this.bunifuTileButton3.LabelText = "Categories Report";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(6, 7);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(162, 145);
+            this.bunifuTileButton3.TabIndex = 29;
+            // 
+            // bunifuTileButton4
+            // 
+            this.bunifuTileButton4.BackColor = System.Drawing.Color.Teal;
+            this.bunifuTileButton4.color = System.Drawing.Color.Teal;
+            this.bunifuTileButton4.colorActive = System.Drawing.Color.DarkCyan;
+            this.bunifuTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuTileButton4.Font = new System.Drawing.Font("Calibri", 15F);
+            this.bunifuTileButton4.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton4.Image = global::PointOfSaleUI.Properties.Resources.stock;
+            this.bunifuTileButton4.ImagePosition = 20;
+            this.bunifuTileButton4.ImageZoom = 50;
+            this.bunifuTileButton4.LabelPosition = 41;
+            this.bunifuTileButton4.LabelText = "Stocks Report";
+            this.bunifuTileButton4.Location = new System.Drawing.Point(180, 7);
+            this.bunifuTileButton4.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuTileButton4.Name = "bunifuTileButton4";
+            this.bunifuTileButton4.Size = new System.Drawing.Size(163, 145);
+            this.bunifuTileButton4.TabIndex = 30;
+            // 
+            // bunifuTileButton5
+            // 
+            this.bunifuTileButton5.BackColor = System.Drawing.Color.SlateBlue;
+            this.bunifuTileButton5.color = System.Drawing.Color.SlateBlue;
+            this.bunifuTileButton5.colorActive = System.Drawing.Color.DarkSlateBlue;
+            this.bunifuTileButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuTileButton5.Font = new System.Drawing.Font("Calibri", 15F);
+            this.bunifuTileButton5.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton5.Image = global::PointOfSaleUI.Properties.Resources.supplier;
+            this.bunifuTileButton5.ImagePosition = 20;
+            this.bunifuTileButton5.ImageZoom = 50;
+            this.bunifuTileButton5.LabelPosition = 41;
+            this.bunifuTileButton5.LabelText = "Suppliers Report";
+            this.bunifuTileButton5.Location = new System.Drawing.Point(6, 7);
+            this.bunifuTileButton5.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuTileButton5.Name = "bunifuTileButton5";
+            this.bunifuTileButton5.Size = new System.Drawing.Size(163, 145);
+            this.bunifuTileButton5.TabIndex = 29;
+            // 
+            // bunifuTileButton6
+            // 
+            this.bunifuTileButton6.BackColor = System.Drawing.Color.Orchid;
+            this.bunifuTileButton6.color = System.Drawing.Color.Orchid;
+            this.bunifuTileButton6.colorActive = System.Drawing.Color.MediumVioletRed;
+            this.bunifuTileButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuTileButton6.Font = new System.Drawing.Font("Calibri", 15F);
+            this.bunifuTileButton6.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton6.Image = global::PointOfSaleUI.Properties.Resources.transaction;
+            this.bunifuTileButton6.ImagePosition = 20;
+            this.bunifuTileButton6.ImageZoom = 50;
+            this.bunifuTileButton6.LabelPosition = 41;
+            this.bunifuTileButton6.LabelText = "Transactions Report";
+            this.bunifuTileButton6.Location = new System.Drawing.Point(181, 7);
+            this.bunifuTileButton6.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuTileButton6.Name = "bunifuTileButton6";
+            this.bunifuTileButton6.Size = new System.Drawing.Size(163, 145);
+            this.bunifuTileButton6.TabIndex = 30;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1418, 838);
+            this.ClientSize = new System.Drawing.Size(1419, 836);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sideMenu);
             this.panelAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -4061,7 +5102,7 @@
             this.panelAnimator2.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinimumSize = new System.Drawing.Size(1220, 725);
+            this.MinimumSize = new System.Drawing.Size(1435, 875);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -4104,6 +5145,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smalllogo)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.reportPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.supplierPanel.ResumeLayout(false);
+            this.supplierPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.settingsPanel.ResumeLayout(false);
             this.settingsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxLoginAttempts)).EndInit();
@@ -4121,16 +5178,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.reportPanel.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.supplierPanel.ResumeLayout(false);
-            this.supplierPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4336,12 +5386,67 @@
         private System.Windows.Forms.Panel reportPanel;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label43;
-        private Bunifu.Framework.UI.BunifuFlatButton btnViewAllTransactions;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
         private System.Windows.Forms.Label lblWarning;
-        private Bunifu.Framework.UI.BunifuFlatButton btnViewAll;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.NumericUpDown numMaxLoginAttempts;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportAnnualSales;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportMonthlySales;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportDailyAverageSales;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportTodaysSales;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.ComboBox cmbReportStaffNames;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportStaffAnnualSales;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel22;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportStaffMonthlySales;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel24;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel26;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtReportNoOfStaff;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel28;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel29;
+        private System.Windows.Forms.Panel panel12;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel21;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel23;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel25;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel27;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
+        private System.Windows.Forms.Panel panel13;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel31;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel32;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel33;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel34;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel35;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel18;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel19;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel20;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel30;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel37;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel38;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel39;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel36;
+        private System.Windows.Forms.Panel panel15;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel45;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel46;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel40;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel41;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel42;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel43;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel44;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton6;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton4;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
     }
 }

@@ -1089,5 +1089,10 @@ namespace PointOfSaleUI.UI
             Properties.Settings.Default.NumberofRetries = Convert.ToInt32(numMaxLoginAttempts.Value);
             Properties.Settings.Default.Save();
         }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
