@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewSupplier));
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +41,6 @@
             this.txtContact = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.lblWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +89,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(363, 260);
             this.panel1.TabIndex = 1;
+            // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 236);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(363, 24);
+            this.lblWarning.TabIndex = 37;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
             // 
             // label21
             // 
@@ -155,20 +170,6 @@
             this.txtName.Size = new System.Drawing.Size(229, 21);
             this.txtName.TabIndex = 4;
             // 
-            // lblWarning
-            // 
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.White;
-            this.lblWarning.Location = new System.Drawing.Point(0, 236);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblWarning.Size = new System.Drawing.Size(363, 24);
-            this.lblWarning.TabIndex = 37;
-            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWarning.Visible = false;
-            // 
             // NewSupplier
             // 
             this.AcceptButton = this.btnAdd;
@@ -182,6 +183,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "NewSupplier";

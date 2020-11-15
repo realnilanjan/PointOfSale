@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowQR));
             this.lblWarning = new System.Windows.Forms.Label();
             this.picUPIQR = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picUPIQR)).BeginInit();
@@ -69,6 +70,7 @@
             this.Controls.Add(this.lblWarning);
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ShowQR";

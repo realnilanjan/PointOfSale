@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewStaff));
             this.label21 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -45,9 +46,9 @@
             this.txtNewVerifyPassword = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.Panel();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.chkShowPasswords = new System.Windows.Forms.CheckBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.lblWarning = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -220,6 +221,20 @@
             this.groupBox2.TabIndex = 28;
             this.groupBox2.Text = "Login Information";
             // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 180);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(322, 24);
+            this.lblWarning.TabIndex = 38;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
+            // 
             // chkShowPasswords
             // 
             this.chkShowPasswords.AutoSize = true;
@@ -247,20 +262,6 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // lblWarning
-            // 
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.White;
-            this.lblWarning.Location = new System.Drawing.Point(0, 180);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblWarning.Size = new System.Drawing.Size(322, 24);
-            this.lblWarning.TabIndex = 38;
-            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWarning.Visible = false;
-            // 
             // NewStaff
             // 
             this.AcceptButton = this.btnAdd;
@@ -274,6 +275,7 @@
             this.Controls.Add(this.label21);
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "NewStaff";

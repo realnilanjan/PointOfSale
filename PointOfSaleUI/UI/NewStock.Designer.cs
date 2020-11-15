@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewStock));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.chkIsTaxable = new System.Windows.Forms.CheckBox();
             this.cmbSupplier = new System.Windows.Forms.ComboBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
@@ -51,7 +53,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +88,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(666, 295);
             this.panel1.TabIndex = 1;
+            // 
+            // lblWarning
+            // 
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(0, 260);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lblWarning.Size = new System.Drawing.Size(666, 35);
+            this.lblWarning.TabIndex = 36;
+            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWarning.Visible = false;
             // 
             // chkIsTaxable
             // 
@@ -283,20 +298,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Stock";
             // 
-            // lblWarning
-            // 
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.White;
-            this.lblWarning.Location = new System.Drawing.Point(0, 260);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblWarning.Size = new System.Drawing.Size(666, 35);
-            this.lblWarning.TabIndex = 36;
-            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWarning.Visible = false;
-            // 
             // NewStock
             // 
             this.AcceptButton = this.btnAdd;
@@ -309,6 +310,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "NewStock";

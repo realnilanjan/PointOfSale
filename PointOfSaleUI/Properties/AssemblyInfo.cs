@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PointOfSaleUI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Point Of Sale")]
+[assembly: AssemblyDescription("A simple customizable POS Application")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Helix Studios")]
 [assembly: AssemblyProduct("PointOfSaleUI")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © Helix Studios 2020")]
+[assembly: AssemblyTrademark("Helix Studios")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
