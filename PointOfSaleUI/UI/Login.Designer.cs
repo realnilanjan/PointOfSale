@@ -34,8 +34,6 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.chkRememberMe = new System.Windows.Forms.CheckBox();
-            this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
             this.chkShowHidePassword = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWarning = new System.Windows.Forms.Label();
@@ -105,39 +103,11 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // chkRememberMe
-            // 
-            this.chkRememberMe.AutoSize = true;
-            this.chkRememberMe.ForeColor = System.Drawing.Color.White;
-            this.chkRememberMe.Location = new System.Drawing.Point(235, 223);
-            this.chkRememberMe.Name = "chkRememberMe";
-            this.chkRememberMe.Size = new System.Drawing.Size(105, 18);
-            this.chkRememberMe.TabIndex = 6;
-            this.chkRememberMe.Text = "Remember Me";
-            this.chkRememberMe.UseVisualStyleBackColor = true;
-            // 
-            // lnkForgotPassword
-            // 
-            this.lnkForgotPassword.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
-            this.lnkForgotPassword.AutoSize = true;
-            this.lnkForgotPassword.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lnkForgotPassword.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkForgotPassword.ForeColor = System.Drawing.Color.White;
-            this.lnkForgotPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkForgotPassword.LinkColor = System.Drawing.Color.Silver;
-            this.lnkForgotPassword.Location = new System.Drawing.Point(233, 244);
-            this.lnkForgotPassword.Name = "lnkForgotPassword";
-            this.lnkForgotPassword.Size = new System.Drawing.Size(126, 14);
-            this.lnkForgotPassword.TabIndex = 7;
-            this.lnkForgotPassword.TabStop = true;
-            this.lnkForgotPassword.Text = "Forgot Password? Reset";
-            this.lnkForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // chkShowHidePassword
             // 
             this.chkShowHidePassword.AutoSize = true;
             this.chkShowHidePassword.ForeColor = System.Drawing.Color.White;
-            this.chkShowHidePassword.Location = new System.Drawing.Point(235, 202);
+            this.chkShowHidePassword.Location = new System.Drawing.Point(235, 211);
             this.chkShowHidePassword.Name = "chkShowHidePassword";
             this.chkShowHidePassword.Size = new System.Drawing.Size(110, 18);
             this.chkShowHidePassword.TabIndex = 5;
@@ -166,7 +136,6 @@
             this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.lblWarning.Size = new System.Drawing.Size(579, 35);
             this.lblWarning.TabIndex = 36;
-            this.lblWarning.Text = "Warning";
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblWarning.Visible = false;
             // 
@@ -179,9 +148,7 @@
             this.ClientSize = new System.Drawing.Size(579, 400);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lnkForgotPassword);
             this.Controls.Add(this.chkShowHidePassword);
-            this.Controls.Add(this.chkRememberMe);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
@@ -208,8 +175,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.CheckBox chkRememberMe;
-        private System.Windows.Forms.LinkLabel lnkForgotPassword;
         private System.Windows.Forms.CheckBox chkShowHidePassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblWarning;

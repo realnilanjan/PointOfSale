@@ -4,7 +4,15 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT [UserId], [Fullname], [Username], [Password], [UserRole], [Contact], [EmailAddress], [Status]
+	SELECT 
+		[UserId], 
+		[Fullname], 
+		[Username], 
+		[Password], 
+		[UserRole], 
+		[Contact], 
+		[EmailAddress], 
+		[Status]
 	FROM [dbo].[User]
 	WHERE [Username]=@Username AND [Password]=@Password;
 END
