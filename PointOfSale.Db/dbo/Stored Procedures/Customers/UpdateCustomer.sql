@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[UpdateCustomer]
-	@CustomerID int,
+	@CustomerId int,
 	@CustomerName nvarchar(50),
 	@CustomerEmail nvarchar(100),
 	@CustomerPhone nvarchar(10),
@@ -13,5 +13,5 @@ BEGIN
 	UPDATE [Customer]
 	SET CustomerName = @CustomerName, CustomerEmail = @CustomerEmail, CustomerPhone = @CustomerPhone, CustomerAddressLine1 = @CustomerAddressLine1, CustomerAddressLine2 = @CustomerAddressLine2,
 		CustomerAddressPin = @CustomerAddressPin, RegistrationDate = @RegistrationDate
-	WHERE CustomerID = @CustomerID;
+	WHERE CustomerId = @CustomerId;
 END
