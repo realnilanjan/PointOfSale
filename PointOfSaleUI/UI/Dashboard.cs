@@ -1072,18 +1072,6 @@ namespace PointOfSaleUI.UI
             this.LoadReports();
         }
 
-        private void btnViewAllTransactions_Click(object sender, EventArgs e)
-        {
-            ViewAllTransaction allTransactions = new ViewAllTransaction(true);
-            allTransactions.ShowDialog();
-        }
-
-        private void btnViewAll_Click(object sender, EventArgs e)
-        {
-            ViewAllTransaction allTransactions = new ViewAllTransaction(false);
-            allTransactions.ShowDialog();
-        }
-
         private void numMaxLoginAttempts_ValueChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.NumberofRetries = Convert.ToInt32(numMaxLoginAttempts.Value);
