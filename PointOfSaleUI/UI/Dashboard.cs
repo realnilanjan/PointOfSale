@@ -1082,5 +1082,11 @@ namespace PointOfSaleUI.UI
         {
 
         }
+
+        private void btnSalesReport_Click(object sender, EventArgs e)
+        {
+            SalesReport salesReport = new SalesReport();
+            salesReport.ShowDialog();
+        }
     }
 }

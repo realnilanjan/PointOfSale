@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation8 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.imagesList = new System.Windows.Forms.ImageList(this.components);
             this.txtTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -148,6 +148,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.reportPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnTransactionreport = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnSupplierReport = new Bunifu.Framework.UI.BunifuTileButton();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnStockReport = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnCategoriesreport = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel10 = new System.Windows.Forms.Panel();
             this.txtReportAnnualSales = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -198,6 +204,9 @@
             this.bunifuCustomLabel23 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel25 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnStaffReport = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnSalesReport = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.supplierPanel = new System.Windows.Forms.Panel();
             this.supplierGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -299,15 +308,6 @@
             this.dashToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.stockColorDialog = new System.Windows.Forms.ColorDialog();
             this.saveQRDialog = new System.Windows.Forms.OpenFileDialog();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton4 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton6 = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.biglogo)).BeginInit();
             this.dashPanel.SuspendLayout();
             this.metroPanel5.SuspendLayout();
@@ -339,12 +339,15 @@
             this.panel2.SuspendLayout();
             this.reportPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.supplierPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).BeginInit();
             this.panel4.SuspendLayout();
@@ -361,9 +364,6 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // imagesList
@@ -903,8 +903,8 @@
             // 
             this.userGridView.AllowUserToAddRows = false;
             this.userGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gainsboro;
-            this.userGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.userGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.userGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -912,14 +912,14 @@
             this.userGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.userGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.userGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.userGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.userGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.userGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.userGridView, BunifuAnimatorNS.DecorationType.None);
@@ -935,14 +935,14 @@
             this.userGridView.Name = "userGridView";
             this.userGridView.ReadOnly = true;
             this.userGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.userGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.userGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.userGridView.RowHeadersVisible = false;
             this.userGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.userGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -1448,8 +1448,8 @@
             // 
             this.categoryGridView.AllowUserToAddRows = false;
             this.categoryGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Gainsboro;
-            this.categoryGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
+            this.categoryGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.categoryGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1457,14 +1457,14 @@
             this.categoryGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.categoryGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.categoryGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.categoryGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.categoryGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.categoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.categoryGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.categoryGridView, BunifuAnimatorNS.DecorationType.None);
@@ -1480,14 +1480,14 @@
             this.categoryGridView.Name = "categoryGridView";
             this.categoryGridView.ReadOnly = true;
             this.categoryGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.categoryGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.categoryGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.categoryGridView.RowHeadersVisible = false;
             this.categoryGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.categoryGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -2327,6 +2327,140 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 164F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1065, 565);
             this.tableLayoutPanel1.TabIndex = 27;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.btnTransactionreport, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnSupplierReport, 0, 0);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(712, 403);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(350, 159);
+            this.tableLayoutPanel5.TabIndex = 29;
+            // 
+            // btnTransactionreport
+            // 
+            this.btnTransactionreport.BackColor = System.Drawing.Color.Orchid;
+            this.btnTransactionreport.color = System.Drawing.Color.Orchid;
+            this.btnTransactionreport.colorActive = System.Drawing.Color.MediumVioletRed;
+            this.btnTransactionreport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.btnTransactionreport, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnTransactionreport, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnTransactionreport, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.btnTransactionreport, BunifuAnimatorNS.DecorationType.None);
+            this.btnTransactionreport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTransactionreport.Font = new System.Drawing.Font("Calibri", 15F);
+            this.btnTransactionreport.ForeColor = System.Drawing.Color.White;
+            this.btnTransactionreport.Image = global::PointOfSaleUI.Properties.Resources.transaction;
+            this.btnTransactionreport.ImagePosition = 20;
+            this.btnTransactionreport.ImageZoom = 50;
+            this.btnTransactionreport.LabelPosition = 41;
+            this.btnTransactionreport.LabelText = "Transactions Report";
+            this.btnTransactionreport.Location = new System.Drawing.Point(181, 7);
+            this.btnTransactionreport.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.btnTransactionreport.Name = "btnTransactionreport";
+            this.btnTransactionreport.Size = new System.Drawing.Size(163, 145);
+            this.btnTransactionreport.TabIndex = 30;
+            // 
+            // btnSupplierReport
+            // 
+            this.btnSupplierReport.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnSupplierReport.color = System.Drawing.Color.SlateBlue;
+            this.btnSupplierReport.colorActive = System.Drawing.Color.DarkSlateBlue;
+            this.btnSupplierReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.btnSupplierReport, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnSupplierReport, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnSupplierReport, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.btnSupplierReport, BunifuAnimatorNS.DecorationType.None);
+            this.btnSupplierReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSupplierReport.Font = new System.Drawing.Font("Calibri", 15F);
+            this.btnSupplierReport.ForeColor = System.Drawing.Color.White;
+            this.btnSupplierReport.Image = global::PointOfSaleUI.Properties.Resources.supplier;
+            this.btnSupplierReport.ImagePosition = 20;
+            this.btnSupplierReport.ImageZoom = 50;
+            this.btnSupplierReport.LabelPosition = 41;
+            this.btnSupplierReport.LabelText = "Suppliers Report";
+            this.btnSupplierReport.Location = new System.Drawing.Point(6, 7);
+            this.btnSupplierReport.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.btnSupplierReport.Name = "btnSupplierReport";
+            this.btnSupplierReport.Size = new System.Drawing.Size(163, 145);
+            this.btnSupplierReport.TabIndex = 29;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btnStockReport, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnCategoriesreport, 0, 0);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(357, 403);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(349, 159);
+            this.tableLayoutPanel4.TabIndex = 28;
+            // 
+            // btnStockReport
+            // 
+            this.btnStockReport.BackColor = System.Drawing.Color.Teal;
+            this.btnStockReport.color = System.Drawing.Color.Teal;
+            this.btnStockReport.colorActive = System.Drawing.Color.DarkCyan;
+            this.btnStockReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.btnStockReport, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnStockReport, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnStockReport, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.btnStockReport, BunifuAnimatorNS.DecorationType.None);
+            this.btnStockReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStockReport.Font = new System.Drawing.Font("Calibri", 15F);
+            this.btnStockReport.ForeColor = System.Drawing.Color.White;
+            this.btnStockReport.Image = global::PointOfSaleUI.Properties.Resources.stock;
+            this.btnStockReport.ImagePosition = 20;
+            this.btnStockReport.ImageZoom = 50;
+            this.btnStockReport.LabelPosition = 41;
+            this.btnStockReport.LabelText = "Stocks Report";
+            this.btnStockReport.Location = new System.Drawing.Point(180, 7);
+            this.btnStockReport.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.btnStockReport.Name = "btnStockReport";
+            this.btnStockReport.Size = new System.Drawing.Size(163, 145);
+            this.btnStockReport.TabIndex = 30;
+            // 
+            // btnCategoriesreport
+            // 
+            this.btnCategoriesreport.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCategoriesreport.color = System.Drawing.Color.SeaGreen;
+            this.btnCategoriesreport.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnCategoriesreport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.btnCategoriesreport, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnCategoriesreport, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnCategoriesreport, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.btnCategoriesreport, BunifuAnimatorNS.DecorationType.None);
+            this.btnCategoriesreport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCategoriesreport.Font = new System.Drawing.Font("Calibri", 15F);
+            this.btnCategoriesreport.ForeColor = System.Drawing.Color.White;
+            this.btnCategoriesreport.Image = global::PointOfSaleUI.Properties.Resources.categories;
+            this.btnCategoriesreport.ImagePosition = 20;
+            this.btnCategoriesreport.ImageZoom = 50;
+            this.btnCategoriesreport.LabelPosition = 41;
+            this.btnCategoriesreport.LabelText = "Categories Report";
+            this.btnCategoriesreport.Location = new System.Drawing.Point(6, 7);
+            this.btnCategoriesreport.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.btnCategoriesreport.Name = "btnCategoriesreport";
+            this.btnCategoriesreport.Size = new System.Drawing.Size(162, 145);
+            this.btnCategoriesreport.TabIndex = 29;
             // 
             // panel10
             // 
@@ -3201,6 +3335,74 @@
             this.bunifuCustomLabel27.Text = "Stocks Report Summary";
             this.bunifuCustomLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.btnStaffReport, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnSalesReport, 0, 0);
+            this.panelAnimator2.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 403);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(348, 159);
+            this.tableLayoutPanel3.TabIndex = 27;
+            // 
+            // btnStaffReport
+            // 
+            this.btnStaffReport.BackColor = System.Drawing.Color.Orange;
+            this.btnStaffReport.color = System.Drawing.Color.Orange;
+            this.btnStaffReport.colorActive = System.Drawing.Color.DarkOrange;
+            this.btnStaffReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.btnStaffReport, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnStaffReport, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnStaffReport, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.btnStaffReport, BunifuAnimatorNS.DecorationType.None);
+            this.btnStaffReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStaffReport.Font = new System.Drawing.Font("Calibri", 15F);
+            this.btnStaffReport.ForeColor = System.Drawing.Color.White;
+            this.btnStaffReport.Image = global::PointOfSaleUI.Properties.Resources.staff;
+            this.btnStaffReport.ImagePosition = 20;
+            this.btnStaffReport.ImageZoom = 50;
+            this.btnStaffReport.LabelPosition = 41;
+            this.btnStaffReport.LabelText = "Staff Report";
+            this.btnStaffReport.Location = new System.Drawing.Point(180, 7);
+            this.btnStaffReport.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.btnStaffReport.Name = "btnStaffReport";
+            this.btnStaffReport.Size = new System.Drawing.Size(162, 145);
+            this.btnStaffReport.TabIndex = 30;
+            // 
+            // btnSalesReport
+            // 
+            this.btnSalesReport.BackColor = System.Drawing.Color.Tomato;
+            this.btnSalesReport.color = System.Drawing.Color.Tomato;
+            this.btnSalesReport.colorActive = System.Drawing.Color.Coral;
+            this.btnSalesReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelAnimator.SetDecoration(this.btnSalesReport, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.btnSalesReport, BunifuAnimatorNS.DecorationType.None);
+            this.textAnimator.SetDecoration(this.btnSalesReport, BunifuAnimatorNS.DecorationType.None);
+            this.panelAnimator2.SetDecoration(this.btnSalesReport, BunifuAnimatorNS.DecorationType.None);
+            this.btnSalesReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSalesReport.Font = new System.Drawing.Font("Calibri", 15F);
+            this.btnSalesReport.ForeColor = System.Drawing.Color.White;
+            this.btnSalesReport.Image = global::PointOfSaleUI.Properties.Resources.dashboard;
+            this.btnSalesReport.ImagePosition = 20;
+            this.btnSalesReport.ImageZoom = 50;
+            this.btnSalesReport.LabelPosition = 41;
+            this.btnSalesReport.LabelText = "Sales Report";
+            this.btnSalesReport.Location = new System.Drawing.Point(6, 7);
+            this.btnSalesReport.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.btnSalesReport.Name = "btnSalesReport";
+            this.btnSalesReport.Size = new System.Drawing.Size(162, 145);
+            this.btnSalesReport.TabIndex = 29;
+            this.btnSalesReport.Click += new System.EventHandler(this.btnSalesReport_Click);
+            // 
             // bunifuCustomLabel11
             // 
             this.panelAnimator2.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
@@ -3244,8 +3446,8 @@
             // 
             this.supplierGridView.AllowUserToAddRows = false;
             this.supplierGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Gainsboro;
-            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            this.supplierGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.supplierGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -3253,14 +3455,14 @@
             this.supplierGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.supplierGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.supplierGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.supplierGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.supplierGridView, BunifuAnimatorNS.DecorationType.None);
@@ -3276,14 +3478,14 @@
             this.supplierGridView.Name = "supplierGridView";
             this.supplierGridView.ReadOnly = true;
             this.supplierGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.supplierGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.supplierGridView.RowHeadersVisible = false;
             this.supplierGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.supplierGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -4255,8 +4457,8 @@
             // 
             this.stockGridView.AllowUserToAddRows = false;
             this.stockGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Gainsboro;
-            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
+            this.stockGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.stockGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -4264,14 +4466,14 @@
             this.stockGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.stockGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stockGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.stockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.stockGridView, BunifuAnimatorNS.DecorationType.None);
@@ -4287,14 +4489,14 @@
             this.stockGridView.Name = "stockGridView";
             this.stockGridView.ReadOnly = true;
             this.stockGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.stockGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.stockGridView.RowHeadersVisible = false;
             this.stockGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.stockGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -4798,85 +5000,85 @@
             // 
             this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
             this.logoAnimator.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 0;
-            animation7.Padding = new System.Windows.Forms.Padding(30);
-            animation7.RotateCoeff = 0.5F;
-            animation7.RotateLimit = 0.2F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 0F;
-            this.logoAnimator.DefaultAnimation = animation7;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
+            animation3.RotateCoeff = 0.5F;
+            animation3.RotateLimit = 0.2F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.logoAnimator.DefaultAnimation = animation3;
             // 
             // panelAnimator
             // 
             this.panelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.panelAnimator.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 1;
-            animation6.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 2F;
-            animation6.TransparencyCoeff = 0F;
-            this.panelAnimator.DefaultAnimation = animation6;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 1;
+            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 2F;
+            animation2.TransparencyCoeff = 0F;
+            this.panelAnimator.DefaultAnimation = animation2;
             // 
             // panelAnimator2
             // 
             this.panelAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.panelAnimator2.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.panelAnimator2.DefaultAnimation = animation5;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.panelAnimator2.DefaultAnimation = animation1;
             // 
             // textAnimator
             // 
             this.textAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.textAnimator.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 0F;
-            this.textAnimator.DefaultAnimation = animation8;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.textAnimator.DefaultAnimation = animation4;
             this.textAnimator.MaxAnimationTime = 1000;
             // 
             // dashToolTip
@@ -4886,207 +5088,6 @@
             // saveQRDialog
             // 
             this.saveQRDialog.Filter = "PNG Files (*.png) | *.png";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.bunifuTileButton2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.bunifuTileButton1, 0, 0);
-            this.panelAnimator2.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 403);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(348, 159);
-            this.tableLayoutPanel3.TabIndex = 27;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.bunifuTileButton4, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.bunifuTileButton3, 0, 0);
-            this.panelAnimator2.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(357, 403);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(349, 159);
-            this.tableLayoutPanel4.TabIndex = 28;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.bunifuTileButton6, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.bunifuTileButton5, 0, 0);
-            this.panelAnimator2.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(712, 403);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(350, 159);
-            this.tableLayoutPanel5.TabIndex = 29;
-            // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.Tomato;
-            this.bunifuTileButton1.color = System.Drawing.Color.Tomato;
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.Coral;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTileButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Calibri", 15F);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = global::PointOfSaleUI.Properties.Resources.dashboard;
-            this.bunifuTileButton1.ImagePosition = 20;
-            this.bunifuTileButton1.ImageZoom = 50;
-            this.bunifuTileButton1.LabelPosition = 41;
-            this.bunifuTileButton1.LabelText = "Sales Report";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(6, 7);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(162, 145);
-            this.bunifuTileButton1.TabIndex = 29;
-            // 
-            // bunifuTileButton2
-            // 
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.Orange;
-            this.bunifuTileButton2.color = System.Drawing.Color.Orange;
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.DarkOrange;
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTileButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Calibri", 15F);
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton2.Image = global::PointOfSaleUI.Properties.Resources.staff;
-            this.bunifuTileButton2.ImagePosition = 20;
-            this.bunifuTileButton2.ImageZoom = 50;
-            this.bunifuTileButton2.LabelPosition = 41;
-            this.bunifuTileButton2.LabelText = "Staff Report";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(180, 7);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(162, 145);
-            this.bunifuTileButton2.TabIndex = 30;
-            // 
-            // bunifuTileButton3
-            // 
-            this.bunifuTileButton3.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton3.color = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton3.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTileButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuTileButton3.Font = new System.Drawing.Font("Calibri", 15F);
-            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton3.Image = global::PointOfSaleUI.Properties.Resources.categories;
-            this.bunifuTileButton3.ImagePosition = 20;
-            this.bunifuTileButton3.ImageZoom = 50;
-            this.bunifuTileButton3.LabelPosition = 41;
-            this.bunifuTileButton3.LabelText = "Categories Report";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(6, 7);
-            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(162, 145);
-            this.bunifuTileButton3.TabIndex = 29;
-            // 
-            // bunifuTileButton4
-            // 
-            this.bunifuTileButton4.BackColor = System.Drawing.Color.Teal;
-            this.bunifuTileButton4.color = System.Drawing.Color.Teal;
-            this.bunifuTileButton4.colorActive = System.Drawing.Color.DarkCyan;
-            this.bunifuTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.bunifuTileButton4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTileButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuTileButton4.Font = new System.Drawing.Font("Calibri", 15F);
-            this.bunifuTileButton4.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton4.Image = global::PointOfSaleUI.Properties.Resources.stock;
-            this.bunifuTileButton4.ImagePosition = 20;
-            this.bunifuTileButton4.ImageZoom = 50;
-            this.bunifuTileButton4.LabelPosition = 41;
-            this.bunifuTileButton4.LabelText = "Stocks Report";
-            this.bunifuTileButton4.Location = new System.Drawing.Point(180, 7);
-            this.bunifuTileButton4.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuTileButton4.Name = "bunifuTileButton4";
-            this.bunifuTileButton4.Size = new System.Drawing.Size(163, 145);
-            this.bunifuTileButton4.TabIndex = 30;
-            // 
-            // bunifuTileButton5
-            // 
-            this.bunifuTileButton5.BackColor = System.Drawing.Color.SlateBlue;
-            this.bunifuTileButton5.color = System.Drawing.Color.SlateBlue;
-            this.bunifuTileButton5.colorActive = System.Drawing.Color.DarkSlateBlue;
-            this.bunifuTileButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.bunifuTileButton5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTileButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuTileButton5.Font = new System.Drawing.Font("Calibri", 15F);
-            this.bunifuTileButton5.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton5.Image = global::PointOfSaleUI.Properties.Resources.supplier;
-            this.bunifuTileButton5.ImagePosition = 20;
-            this.bunifuTileButton5.ImageZoom = 50;
-            this.bunifuTileButton5.LabelPosition = 41;
-            this.bunifuTileButton5.LabelText = "Suppliers Report";
-            this.bunifuTileButton5.Location = new System.Drawing.Point(6, 7);
-            this.bunifuTileButton5.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuTileButton5.Name = "bunifuTileButton5";
-            this.bunifuTileButton5.Size = new System.Drawing.Size(163, 145);
-            this.bunifuTileButton5.TabIndex = 29;
-            // 
-            // bunifuTileButton6
-            // 
-            this.bunifuTileButton6.BackColor = System.Drawing.Color.Orchid;
-            this.bunifuTileButton6.color = System.Drawing.Color.Orchid;
-            this.bunifuTileButton6.colorActive = System.Drawing.Color.MediumVioletRed;
-            this.bunifuTileButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAnimator.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
-            this.textAnimator.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
-            this.panelAnimator2.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTileButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuTileButton6.Font = new System.Drawing.Font("Calibri", 15F);
-            this.bunifuTileButton6.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton6.Image = global::PointOfSaleUI.Properties.Resources.transaction;
-            this.bunifuTileButton6.ImagePosition = 20;
-            this.bunifuTileButton6.ImageZoom = 50;
-            this.bunifuTileButton6.LabelPosition = 41;
-            this.bunifuTileButton6.LabelText = "Transactions Report";
-            this.bunifuTileButton6.Location = new System.Drawing.Point(181, 7);
-            this.bunifuTileButton6.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuTileButton6.Name = "bunifuTileButton6";
-            this.bunifuTileButton6.Size = new System.Drawing.Size(163, 145);
-            this.bunifuTileButton6.TabIndex = 30;
             // 
             // Dashboard
             // 
@@ -5148,12 +5149,15 @@
             this.panel2.ResumeLayout(false);
             this.reportPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.supplierPanel.ResumeLayout(false);
             this.supplierPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).EndInit();
@@ -5179,9 +5183,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -5441,13 +5442,13 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel44;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton6;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton5;
+        private Bunifu.Framework.UI.BunifuTileButton btnTransactionreport;
+        private Bunifu.Framework.UI.BunifuTileButton btnSupplierReport;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton4;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+        private Bunifu.Framework.UI.BunifuTileButton btnStockReport;
+        private Bunifu.Framework.UI.BunifuTileButton btnCategoriesreport;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private Bunifu.Framework.UI.BunifuTileButton btnStaffReport;
+        private Bunifu.Framework.UI.BunifuTileButton btnSalesReport;
     }
 }

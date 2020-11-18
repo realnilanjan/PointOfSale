@@ -104,8 +104,9 @@ namespace PointOfSaleUI.UI
                         Properties.Settings.Default.Save();
 
                         Login login = new Login();
-                        this.Close();
+                        this.Hide();
                         login.ShowDialog();
+                        this.Close();
                     }
                     else
                     {
