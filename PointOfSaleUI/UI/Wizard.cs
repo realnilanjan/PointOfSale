@@ -3,18 +3,15 @@ using PointOfSale.Lib.Encryptions;
 using PointOfSale.Lib.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleUI.UI
 {
     public partial class Wizard : Form
     {
+        SQLDataAccess dataAccess = new SQLDataAccess();
+
         int businessTypeSelected;
         int userRoleSelected;
 
@@ -96,12 +93,27 @@ namespace PointOfSaleUI.UI
                             Status = "1"
                         };
 
-                        SQLDataAccess dataAccess = new SQLDataAccess();
                         dataAccess.SaveData("dbo.SaveBusiness", businessModel, "POS");
                         dataAccess.SaveData("dbo.SaveUser", newUserModel, "POS");
 
+                        List<QuantityDescModel> quantityDescModel = new List<QuantityDescModel>();
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "Kilo" });
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "Gram(s)" });
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "Litre(s)" });
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "ML" });
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "Pack(s)" });
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "Pouch" });
+                        quantityDescModel.Add(new QuantityDescModel { QtyDescription = "Dozen(s)" });
+
+                        foreach (var item in quantityDescModel)
+                        {
+                            dataAccess.SaveData("dbo.SaveQuantityDescOnce", item, "POS");
+                        }
+
                         Properties.Settings.Default.WizardStep++;
                         Properties.Settings.Default.Save();
+
+                        BusinessInformation.BusinessInfo = dataAccess.GetBusinessInformation();
 
                         Login login = new Login();
                         this.Hide();

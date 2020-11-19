@@ -17,10 +17,10 @@ namespace PointOfSaleUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             SQLDataAccess dataAccess = new SQLDataAccess();
-            BusinessInformation.BusinessInfo = dataAccess.GetBusinessInformation();
 
             if (Properties.Settings.Default.WizardStep == 3)
             {
+                BusinessInformation.BusinessInfo = dataAccess.GetBusinessInformation();
                 Application.Run(new UI.Login());
             }
             else

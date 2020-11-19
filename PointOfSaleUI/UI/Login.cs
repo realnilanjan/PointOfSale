@@ -17,6 +17,8 @@ namespace PointOfSaleUI.UI
         public Login()
         {
             InitializeComponent();
+            this.Text = BusinessInformation.BusinessInfo[0].BusinessName + " POS - Login";
+            txtHeader.Text = String.Format(txtHeader.Text, BusinessInformation.BusinessInfo[0].BusinessName);
         }
 
         private void chkShowHidePassword_CheckedChanged(object sender, EventArgs e)

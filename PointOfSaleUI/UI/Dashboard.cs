@@ -45,6 +45,7 @@ namespace PointOfSaleUI.UI
             txtUserFullName.Text = _loggedInUser.Fullname;
             txtUserRole.Text = _loggedInUser.UserRole;
             txtBusinessName.Text = BusinessInformation.BusinessInfo[0].BusinessName;
+            this.Text = BusinessInformation.BusinessInfo[0].BusinessName + " - Dashboard";
             this.RefreshDashboard();
         }
 
