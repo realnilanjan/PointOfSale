@@ -209,6 +209,36 @@ namespace PointOfSaleUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Image__Check {
+            get {
+                object obj = ResourceManager.GetObject("Image__Check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Image__Offline {
+            get {
+                object obj = ResourceManager.GetObject("Image__Offline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Image__Online {
+            get {
+                object obj = ResourceManager.GetObject("Image__Online", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invalid login credentials provided.
         /// </summary>
         internal static string INVALID_CREDENTIALS {

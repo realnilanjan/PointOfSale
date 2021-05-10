@@ -41,6 +41,9 @@ namespace PointOfSaleUI.UI
         public Dashboard(LoggedInUserModel loggedInUser)
         {
             InitializeComponent();
+
+            
+
             this._loggedInUser = loggedInUser;
             txtUserFullName.Text = _loggedInUser.Fullname;
             txtUserRole.Text = _loggedInUser.UserRole;
@@ -400,8 +403,18 @@ namespace PointOfSaleUI.UI
 
         private void dateTimer_Tick(object sender, EventArgs e)
         {
-            txtDate.Text = DateTime.Now.ToString("D");
-            txtTime.Text = DateTime.Now.ToString("T");
+            if(InternetConnectionState.CheckInternet() == true)
+            {
+                //TODO: Get time from NTP and display
+                DateTime date = GetTime.NetworkTime();
+                txtDate.Text = date.ToString("D");
+                txtTime.Text = date.ToString("T");
+            }
+            else
+            {
+                txtDate.Text = DateTime.Now.ToString("D");
+                txtTime.Text = DateTime.Now.ToString("T");
+            }
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -1079,15 +1092,24 @@ namespace PointOfSaleUI.UI
             Properties.Settings.Default.Save();
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnSalesReport_Click(object sender, EventArgs e)
         {
             SalesReport salesReport = new SalesReport();
             salesReport.ShowDialog();
+        }
+
+        private void InternetConnectionTimer_Tick(object sender, EventArgs e)
+        {
+            if (InternetConnectionState.CheckInternet() == true)
+            {
+                InternetStatus.Image = Properties.Resources.Image__Online;
+                lblInternetStatus.Text = "Online";
+            }
+            else
+            {
+                InternetStatus.Image = Properties.Resources.Image__Offline;
+                lblInternetStatus.Text = "Offline";
+            }
         }
     }
 }

@@ -391,6 +391,9 @@
     <None Include="Resources\payout.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Image__Check.png" />
+    <None Include="Resources\Image__Offline.png" />
+    <None Include="Resources\Image__Online.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
