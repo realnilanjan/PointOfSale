@@ -34,12 +34,13 @@ namespace PointOfSaleUI.UI.Reports
                     new ReportParameter("pDeliveryRate", "₹" + orderDetail.ShippingRate.ToString("N2")),
                     new ReportParameter("pCashierName", orderDetail.Fullname),
                     new ReportParameter("pGrandTotal", "₹" + orderDetail.GrandTotal.ToString("N2")),
+                    new ReportParameter("pSubTotal", "₹" + orderDetail.SubTotal.ToString("N2")),
                     new ReportParameter("pTransactionMode", orderDetail.Mode),
                     new ReportParameter("pBusinessName", businessInformation[0].BusinessName),
                     new ReportParameter("pBusinessGSTIN", businessInformation[0].GSTNumber),
                     new ReportParameter("pBusinessAddress", businessInformation[0].BusinsessAddress),
                     new ReportParameter("pBusinessEmail", businessInformation[0].BusinessEmail),
-                    new ReportParameter("pBusinessContact", businessInformation[0].BusinessContact),
+                    new ReportParameter("pBusinessContact", businessInformation[0].BusinessContact)
                 };
                 this.reportViewer.LocalReport.SetParameters(parameter);
                 this.reportViewer.RefreshReport();
@@ -61,12 +62,13 @@ namespace PointOfSaleUI.UI.Reports
                     new ReportParameter("pCashierName", orderDetail.Fullname),
                     new ReportParameter("pDeliveryRate", "₹" + orderDetail.ShippingRate.ToString("N2")),
                     new ReportParameter("pGrandTotal", "₹" + orderDetail.GrandTotal.ToString("N2")),
+                    new ReportParameter("pSubTotal", "₹" + orderDetail.SubTotal.ToString("N2")),
                     new ReportParameter("pTransactionMode", orderDetail.Mode),
                     new ReportParameter("pBusinessName", businessInformation[0].BusinessName),
                     new ReportParameter("pBusinessGSTIN", businessInformation[0].GSTNumber),
                     new ReportParameter("pBusinessAddress", businessInformation[0].BusinsessAddress),
                     new ReportParameter("pBusinessEmail", businessInformation[0].BusinessEmail),
-                    new ReportParameter("pBusinessContact", businessInformation[0].BusinessContact),
+                    new ReportParameter("pBusinessContact", businessInformation[0].BusinessContact)
                 };
                 this.reportViewer.LocalReport.SetParameters(parameter);
                 this.reportViewer.RefreshReport();
