@@ -78,21 +78,21 @@ namespace PointOfSaleUI.UI
                     else
                     {
                         Messages.DisplayMessage(Properties.Resources.USER_BLOCKED, lblWarning, Color.Red);
-                        LibraryFunctions.DoErrorShake(this);
+                        Utils.DoErrorShake(this);
                         this.ClearAll();
                     }
                 }
                 else if ((user == null) && (TimesTried == NumberofRetries))
                 {
                     Messages.DisplayMessage(Properties.Resources.MAX_RETRIES, lblWarning, Color.Red);
-                    LibraryFunctions.DoErrorShake(this);
+                    Utils.DoErrorShake(this);
                     this.ClearAll();
                 }
                 else
                 {
                     Messages.DisplayMessage(Properties.Resources.INVALID_CREDENTIALS, lblWarning, Color.Red);
                     TimesTried ++;
-                    LibraryFunctions.DoErrorShake(this);
+                    Utils.DoErrorShake(this);
                     this.ClearAll();
                 }
             }
@@ -101,19 +101,19 @@ namespace PointOfSaleUI.UI
                 if (txtUserName.Text == "")
                 {
                     Messages.DisplayMessage("Please provide the username.", lblWarning, Color.Red);
-                    LibraryFunctions.DoErrorShake(this);
+                    Utils.DoErrorShake(this);
                     txtUserName.Focus();
                 }
                 else if (txtPassword.Text == "")
                 {
                     Messages.DisplayMessage("Please provide the password.", lblWarning, Color.Red);
-                    LibraryFunctions.DoErrorShake(this);
+                    Utils.DoErrorShake(this);
                     txtPassword.Focus();
                 }
                 else if ((txtUserName.Text == "") && (txtPassword.Text == ""))
                 {
                     Messages.DisplayMessage(Properties.Resources.FILL_ALL_DETAILS_LOGIN, lblWarning, Color.Red);
-                    LibraryFunctions.DoErrorShake(this);
+                    Utils.DoErrorShake(this);
                     txtUserName.Focus();
                 }
             }

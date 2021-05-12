@@ -1059,6 +1059,7 @@
             this.btnOpenDrawer.Name = "btnOpenDrawer";
             this.btnOpenDrawer.Size = new System.Drawing.Size(128, 128);
             this.btnOpenDrawer.TabIndex = 8;
+            this.btnOpenDrawer.Click += new System.EventHandler(this.btnOpenDrawer_Click);
             // 
             // btnCalculator
             // 

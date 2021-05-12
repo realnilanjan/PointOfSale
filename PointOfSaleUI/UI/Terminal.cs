@@ -22,7 +22,7 @@ namespace PointOfSaleUI.UI
     {
         SQLDataAccess dataAccess = new SQLDataAccess();
 
-        private decimal DeliveryRate { get { return Properties.Settings.Default.DeliveryRate; } }
+        private decimal DeliveryRate { get { return Properties.Settings.Default.DeliveryRate; } } //TODO: Add a setting for setting value
         private decimal GetTaxRate { get { return TaxRate / 100; } }
         List<CartItemModel> Cart = new List<CartItemModel>();
         List<OrderPrintDetail> printDetails = new List<OrderPrintDetail>();
@@ -236,7 +236,6 @@ namespace PointOfSaleUI.UI
                             gridCart.DataSource = Cart;
                             gridCart.Refresh();
                         }
-
                     }
                     else
                     {
@@ -284,14 +283,8 @@ namespace PointOfSaleUI.UI
 
         private void txtCouponCode_TextChanged(object sender, EventArgs e)
         {
-            if (txtCouponCode.Text.Length == 8)
-            {
-                btnApplyCoupon.Enabled = true;
-            }
-            else
-            {
-                btnApplyCoupon.Enabled = false;
-            }
+            if (txtCouponCode.Text.Length == 8) { btnApplyCoupon.Enabled = true; }
+            else { btnApplyCoupon.Enabled = false; }
         }
 
         private void chkDelivery_OnChange(object sender, EventArgs e)
@@ -619,7 +612,7 @@ namespace PointOfSaleUI.UI
                 string FileName = CartInvoiceNumber + "_" + DateTime.Now.ToString("dd-MM-yyyy HH mm ss") + ".xml";
                 
                 //TODO: Save Shipping and coupon transactions
-                LibraryFunctions.SaveDrafts(Cart, FileName);
+                Utils.SaveDrafts(Cart, FileName);
                 Messages.DisplayMessage("This transaction is saved. Please serve the next customer.", lblWarning, Color.OrangeRed);
                 this.VoidTransaction();
             }
@@ -637,7 +630,7 @@ namespace PointOfSaleUI.UI
             {
                 Cart.Clear();
                 IsLoadedFromDrafts = true;
-                Cart = LibraryFunctions.ReadDrafts(savedTransactionDrafts.TransactionFile);
+                Cart = Utils.ReadDrafts(savedTransactionDrafts.TransactionFile);
                 gridCart.DataSource = Cart;
                 this.CalculateTotal();
             }
@@ -669,12 +662,16 @@ namespace PointOfSaleUI.UI
                 //TODO: Do something
             }
         }
-
         private void btnSalesHistory_Click(object sender, EventArgs e)
         {
             //TODO: Get all sales history
             TerminalTransactions terminalTransactions = new TerminalTransactions();
             terminalTransactions.ShowDialog();
+        }
+
+        private void btnOpenDrawer_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

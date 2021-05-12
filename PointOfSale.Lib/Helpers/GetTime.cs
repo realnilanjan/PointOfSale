@@ -58,9 +58,10 @@ namespace PointOfSale.Lib.Helpers
 
                 return networkDateTime.ToLocalTime();
             }
-            catch (SocketException)
+            catch (SocketException ex)
             {
-                throw;
+                //TODO: Need exception handling here
+                throw ex;
             }
         }
 

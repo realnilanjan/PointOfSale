@@ -75,9 +75,7 @@ namespace PointOfSale.Lib.DataAccess
             var rows = LoadData<QuantityDescriptionModel, dynamic>("dbo.LoadAllQuantityDescriptions", new { }, "POS");
             return rows;
         }
-
        
-
         public List<ProductDataModel> LoadAllProducts()
         {
             var rows = LoadData<ProductDataModel, dynamic>("dbo.LoadAllProducts", new { }, "POS");

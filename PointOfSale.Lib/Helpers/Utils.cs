@@ -2,7 +2,6 @@
 using PointOfSale.Lib.TerminalModels;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -11,10 +10,8 @@ using System.Xml.Serialization;
 
 namespace PointOfSale.Lib.Helpers
 {
-    public static class LibraryFunctions
+    public static class Utils
     {
-        
-
         public static void FillCombo(List<CategoryDataModel> categoriesSource, ComboBox control)
         {
             control.DataSource = categoriesSource;
@@ -40,7 +37,7 @@ namespace PointOfSale.Lib.Helpers
         {
             var original = form.Location;
             var rnd = new Random(1337);
-            const int shake_amplitude = 10;
+            const int shake_amplitude = 10;         //TODO: Add a setting for changing value
             for (int i = 0; i < 10; i++)
             {
                 form.Location = new Point(original.X + rnd.Next(-shake_amplitude, shake_amplitude), original.Y + rnd.Next(-shake_amplitude, shake_amplitude));
@@ -62,7 +59,7 @@ namespace PointOfSale.Lib.Helpers
 
         public static void SaveDrafts(List<CartItemModel> cartItems, string fileName)
         {
-            string DraftsDirPath = Environment.CurrentDirectory + @"\Saved Transactions\";
+            string DraftsDirPath = Environment.CurrentDirectory + @"\Saved Transactions\";      //TODO: Add a setting for renaming
             if (!(Directory.Exists(DraftsDirPath)))
             {
                 Directory.CreateDirectory(DraftsDirPath);

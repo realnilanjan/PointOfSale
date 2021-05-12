@@ -18,5 +18,6 @@ namespace PointOfSale.Lib.Models.ReportModels
         public string Mode { get; set; }
         public DateTime SaleDate { get; set; }
         public decimal GrandTotal { get; set; }
+        public decimal SubTotal { get; set; }
     }
 }

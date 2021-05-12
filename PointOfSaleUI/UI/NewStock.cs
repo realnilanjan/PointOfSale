@@ -22,9 +22,9 @@ namespace PointOfSaleUI.UI
             categories = dataAccess.LoadAllCategories();
             suppliers = dataAccess.LoadAllSuppliers();
             quantityDescriptions = dataAccess.LoadAllQuantityDescriptions();
-            LibraryFunctions.FillCombo(categories, cmbCategory);
-            LibraryFunctions.FillCombo(suppliers, cmbSupplier);
-            LibraryFunctions.FillCombo(quantityDescriptions, cmbQtyDescId);
+            Utils.FillCombo(categories, cmbCategory);
+            Utils.FillCombo(suppliers, cmbSupplier);
+            Utils.FillCombo(quantityDescriptions, cmbQtyDescId);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

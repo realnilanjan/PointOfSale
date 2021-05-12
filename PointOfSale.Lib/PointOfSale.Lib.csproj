@@ -60,7 +60,7 @@
     <Compile Include="Encryptions\EncryptTo.cs" />
     <Compile Include="Helpers\GetTime.cs" />
     <Compile Include="Helpers\InternetConnectionState.cs" />
-    <Compile Include="Helpers\LibraryFunctions.cs" />
+    <Compile Include="Helpers\Utils.cs" />
     <Compile Include="Helpers\Generate.cs" />
     <Compile Include="Helpers\Messages.cs" />
     <Compile Include="Models\BusinessInformation.cs" />
