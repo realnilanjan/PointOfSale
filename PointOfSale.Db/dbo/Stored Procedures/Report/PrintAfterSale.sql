@@ -17,7 +17,8 @@ BEGIN
 		Sale.SaleDate,
 		[User].Fullname,
 		[Transaction].CardType AS 'Mode',
-		Sale.GrandTotal
+		Sale.GrandTotal,
+		Sale.SubTotal
 	FROM
 		[Sale]
 		INNER JOIN
