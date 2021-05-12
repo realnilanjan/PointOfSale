@@ -1006,7 +1006,7 @@
           </Border>
         </Style>
       </Body>
-      <Width>6.75889in</Width>
+      <Width>6.83717in</Width>
       <Page>
         <PageHeader>
           <Height>2.39599cm</Height>
@@ -1651,9 +1651,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.12319cm</Top>
-              <Left>11.65262cm</Left>
-              <Height>0.6cm</Height>
+              <Top>0.87412cm</Top>
+              <Left>11.6632cm</Left>
+              <Height>0.40416cm</Height>
               <Width>2.48235cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
@@ -1661,10 +1661,7 @@
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
             <Textbox Name="Textbox21">
@@ -1687,9 +1684,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.4643cm</Top>
-              <Left>11.65262cm</Left>
-              <Height>0.6cm</Height>
+              <Top>1.78656cm</Top>
+              <Left>11.6632cm</Left>
+              <Height>0.4cm</Height>
               <Width>2.48235cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
@@ -1697,10 +1694,7 @@
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
             <Textbox Name="Textbox23">
@@ -1723,9 +1717,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>2.13486cm</Top>
-              <Left>11.65262cm</Left>
-              <Height>0.6cm</Height>
+              <Top>2.2407cm</Top>
+              <Left>11.6632cm</Left>
+              <Height>0.4cm</Height>
               <Width>2.48235cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
@@ -1733,10 +1727,7 @@
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
             <Textbox Name="Textbox25">
@@ -1760,9 +1751,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.12319cm</Top>
+              <Top>0.8762cm</Top>
               <Left>14.65851cm</Left>
-              <Height>0.6cm</Height>
+              <Height>0.4cm</Height>
               <Width>1.69952cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
@@ -1771,8 +1762,6 @@
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
               </Style>
             </Textbox>
@@ -1797,9 +1786,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.4643cm</Top>
+              <Top>1.78656cm</Top>
               <Left>14.24081cm</Left>
-              <Height>0.6cm</Height>
+              <Height>0.4cm</Height>
               <Width>2.11722cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
@@ -1808,8 +1797,6 @@
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
               </Style>
             </Textbox>
@@ -1834,9 +1821,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>2.13486cm</Top>
+              <Top>2.2407cm</Top>
               <Left>14.24081cm</Left>
-              <Height>0.6cm</Height>
+              <Height>0.4cm</Height>
               <Width>2.11722cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
@@ -1845,8 +1832,6 @@
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
               </Style>
             </Textbox>
@@ -1870,9 +1855,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>0.79375cm</Top>
-              <Left>11.65262cm</Left>
-              <Height>0.6cm</Height>
+              <Top>1.33242cm</Top>
+              <Left>11.6632cm</Left>
+              <Height>0.4cm</Height>
               <Width>2.48236cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
@@ -1880,10 +1865,7 @@
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
             <Textbox Name="Textbox29">
@@ -1907,9 +1889,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>0.79375cm</Top>
+              <Top>1.33242cm</Top>
               <Left>14.24081cm</Left>
-              <Height>0.6cm</Height>
+              <Height>0.4cm</Height>
               <Width>2.11722cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
@@ -1918,8 +1900,6 @@
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
               </Style>
             </Textbox>
@@ -1944,9 +1924,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.10583cm</Top>
+              <Top>0.9075cm</Top>
               <Left>14.24081cm</Left>
-              <Height>0.62117cm</Height>
+              <Height>0.33741cm</Height>
               <Width>0.4177cm</Width>
               <ZIndex>10</ZIndex>
               <Style>
@@ -1954,11 +1934,73 @@
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
                 <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox46">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Subtotal:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>0.41997cm</Top>
+              <Left>11.6632cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.48236cm</Width>
+              <ZIndex>11</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="pSubTotal">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!pSubTotal.Value</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>pSubTotal</rd:DefaultName>
+              <Top>0.41997cm</Top>
+              <Left>14.24081cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.11722cm</Width>
+              <ZIndex>12</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingRight>2pt</PaddingRight>
               </Style>
             </Textbox>
           </ReportItems>
@@ -2074,6 +2116,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="pSubTotal">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -2174,6 +2220,11 @@
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>4</RowIndex>
           <ParameterName>pTransactionMode</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>pSubTotal</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
