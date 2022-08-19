@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Terminal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.Panel();
             this.txtBusinessName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbl1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -146,7 +146,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(216, 50);
+            this.groupBox1.Size = new System.Drawing.Size(216, 44);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.Text = "Personal Information";
             // 
@@ -154,7 +154,7 @@
             // 
             this.txtBusinessName.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtBusinessName.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessName.Location = new System.Drawing.Point(0, 24);
+            this.txtBusinessName.Location = new System.Drawing.Point(0, 18);
             this.txtBusinessName.Name = "txtBusinessName";
             this.txtBusinessName.Size = new System.Drawing.Size(216, 26);
             this.txtBusinessName.TabIndex = 1;
@@ -182,7 +182,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(447, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 50);
+            this.panel1.Size = new System.Drawing.Size(216, 44);
             this.panel1.TabIndex = 28;
             this.panel1.Text = "Personal Information";
             // 
@@ -190,7 +190,7 @@
             // 
             this.txtBusinessAddress.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtBusinessAddress.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessAddress.Location = new System.Drawing.Point(0, 24);
+            this.txtBusinessAddress.Location = new System.Drawing.Point(0, 18);
             this.txtBusinessAddress.Name = "txtBusinessAddress";
             this.txtBusinessAddress.Size = new System.Drawing.Size(216, 26);
             this.txtBusinessAddress.TabIndex = 1;
@@ -218,7 +218,7 @@
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(669, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 50);
+            this.panel2.Size = new System.Drawing.Size(219, 44);
             this.panel2.TabIndex = 28;
             this.panel2.Text = "Personal Information";
             // 
@@ -227,7 +227,7 @@
             this.lnkSelectCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lnkSelectCustomer.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lnkSelectCustomer.LinkColor = System.Drawing.Color.Silver;
-            this.lnkSelectCustomer.Location = new System.Drawing.Point(0, 24);
+            this.lnkSelectCustomer.Location = new System.Drawing.Point(0, 18);
             this.lnkSelectCustomer.Name = "lnkSelectCustomer";
             this.lnkSelectCustomer.Size = new System.Drawing.Size(219, 26);
             this.lnkSelectCustomer.TabIndex = 2;
@@ -269,7 +269,7 @@
             this.panel3.Controls.Add(this.bunifuCustomLabel9);
             this.panel3.Controls.Add(this.bunifuCustomLabel8);
             this.panel3.Controls.Add(this.bunifuCustomLabel7);
-            this.panel3.Location = new System.Drawing.Point(12, 68);
+            this.panel3.Location = new System.Drawing.Point(12, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(891, 165);
             this.panel3.TabIndex = 0;
@@ -492,7 +492,7 @@
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(0, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(395, 53);
+            this.panel4.Size = new System.Drawing.Size(395, 47);
             this.panel4.TabIndex = 28;
             this.panel4.Text = "Personal Information";
             // 
@@ -500,9 +500,9 @@
             // 
             this.txtInvoiceNumber.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtInvoiceNumber.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInvoiceNumber.Location = new System.Drawing.Point(0, 19);
+            this.txtInvoiceNumber.Location = new System.Drawing.Point(0, 18);
             this.txtInvoiceNumber.Name = "txtInvoiceNumber";
-            this.txtInvoiceNumber.Size = new System.Drawing.Size(395, 34);
+            this.txtInvoiceNumber.Size = new System.Drawing.Size(395, 29);
             this.txtInvoiceNumber.TabIndex = 1;
             this.txtInvoiceNumber.Text = "MEM-000000";
             this.txtInvoiceNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -514,7 +514,7 @@
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(395, 24);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(395, 18);
             this.bunifuCustomLabel3.TabIndex = 0;
             this.bunifuCustomLabel3.Text = "Invoice Number";
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -528,9 +528,9 @@
             this.panel5.Controls.Add(this.txtCashierName);
             this.panel5.Controls.Add(this.bunifuCustomLabel5);
             this.panel5.Controls.Add(this.bunifuCustomLabel4);
-            this.panel5.Location = new System.Drawing.Point(0, 292);
+            this.panel5.Location = new System.Drawing.Point(0, 284);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(395, 100);
+            this.panel5.Size = new System.Drawing.Size(395, 81);
             this.panel5.TabIndex = 29;
             // 
             // txtUserRole
@@ -538,7 +538,7 @@
             this.txtUserRole.AutoSize = true;
             this.txtUserRole.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserRole.ForeColor = System.Drawing.Color.White;
-            this.txtUserRole.Location = new System.Drawing.Point(131, 60);
+            this.txtUserRole.Location = new System.Drawing.Point(131, 51);
             this.txtUserRole.Name = "txtUserRole";
             this.txtUserRole.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.txtUserRole.Size = new System.Drawing.Size(22, 17);
@@ -551,7 +551,7 @@
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(59, 60);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(59, 51);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(63, 17);
@@ -564,7 +564,7 @@
             this.txtCashierName.AutoSize = true;
             this.txtCashierName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCashierName.ForeColor = System.Drawing.Color.White;
-            this.txtCashierName.Location = new System.Drawing.Point(131, 37);
+            this.txtCashierName.Location = new System.Drawing.Point(131, 28);
             this.txtCashierName.Name = "txtCashierName";
             this.txtCashierName.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.txtCashierName.Size = new System.Drawing.Size(22, 17);
@@ -577,7 +577,7 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(74, 37);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(74, 28);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(51, 17);
@@ -593,7 +593,7 @@
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(395, 37);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(395, 21);
             this.bunifuCustomLabel4.TabIndex = 0;
             this.bunifuCustomLabel4.Text = "Staff Information";
             this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -621,9 +621,9 @@
             this.panel6.Controls.Add(this.txtTotalItems);
             this.panel6.Controls.Add(this.bunifuCustomLabel19);
             this.panel6.Controls.Add(this.bunifuCustomLabel15);
-            this.panel6.Location = new System.Drawing.Point(0, 56);
+            this.panel6.Location = new System.Drawing.Point(0, 52);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(395, 236);
+            this.panel6.Size = new System.Drawing.Size(395, 230);
             this.panel6.TabIndex = 29;
             // 
             // chkDelivery
@@ -858,7 +858,7 @@
             this.bunifuCustomLabel15.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
             this.bunifuCustomLabel15.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(395, 27);
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(395, 23);
             this.bunifuCustomLabel15.TabIndex = 0;
             this.bunifuCustomLabel15.Text = "Cart Information";
             this.bunifuCustomLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1133,7 +1133,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(891, 56);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(891, 50);
             this.tableLayoutPanel1.TabIndex = 30;
             // 
             // panel8
@@ -1145,7 +1145,7 @@
             this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(225, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(216, 50);
+            this.panel8.Size = new System.Drawing.Size(216, 44);
             this.panel8.TabIndex = 29;
             this.panel8.Text = "Personal Information";
             // 
@@ -1153,7 +1153,7 @@
             // 
             this.txtBusinessContact.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtBusinessContact.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusinessContact.Location = new System.Drawing.Point(0, 24);
+            this.txtBusinessContact.Location = new System.Drawing.Point(0, 18);
             this.txtBusinessContact.Name = "txtBusinessContact";
             this.txtBusinessContact.Size = new System.Drawing.Size(216, 26);
             this.txtBusinessContact.TabIndex = 1;
@@ -1181,9 +1181,9 @@
             this.panel7.Controls.Add(this.btnApplyCoupon);
             this.panel7.Controls.Add(this.txtCouponCode);
             this.panel7.Controls.Add(this.bunifuCustomLabel26);
-            this.panel7.Location = new System.Drawing.Point(0, 392);
+            this.panel7.Location = new System.Drawing.Point(1, 364);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(395, 99);
+            this.panel7.Size = new System.Drawing.Size(394, 99);
             this.panel7.TabIndex = 31;
             // 
             // lblCouponWarning
@@ -1195,7 +1195,7 @@
             this.lblCouponWarning.Location = new System.Drawing.Point(0, 79);
             this.lblCouponWarning.Name = "lblCouponWarning";
             this.lblCouponWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lblCouponWarning.Size = new System.Drawing.Size(395, 20);
+            this.lblCouponWarning.Size = new System.Drawing.Size(394, 20);
             this.lblCouponWarning.TabIndex = 38;
             this.lblCouponWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCouponWarning.Visible = false;
@@ -1284,7 +1284,7 @@
             this.txtCouponCode.Location = new System.Drawing.Point(42, 31);
             this.txtCouponCode.MaxLength = 8;
             this.txtCouponCode.Name = "txtCouponCode";
-            this.txtCouponCode.Size = new System.Drawing.Size(167, 34);
+            this.txtCouponCode.Size = new System.Drawing.Size(166, 34);
             this.txtCouponCode.TabIndex = 12;
             this.txtCouponCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCouponCode.TextChanged += new System.EventHandler(this.txtCouponCode_TextChanged);
@@ -1297,7 +1297,7 @@
             this.bunifuCustomLabel26.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
             this.bunifuCustomLabel26.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.bunifuCustomLabel26.Size = new System.Drawing.Size(395, 25);
+            this.bunifuCustomLabel26.Size = new System.Drawing.Size(394, 25);
             this.bunifuCustomLabel26.TabIndex = 0;
             this.bunifuCustomLabel26.Text = "Coupons";
             this.bunifuCustomLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1306,8 +1306,8 @@
             // 
             this.gridCart.AllowUserToAddRows = false;
             this.gridCart.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.gridCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridCart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1315,39 +1315,39 @@
             this.gridCart.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gridCart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCart.DoubleBuffered = true;
             this.gridCart.EnableHeadersVisualStyles = false;
             this.gridCart.GridColor = System.Drawing.Color.White;
             this.gridCart.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.gridCart.HeaderForeColor = System.Drawing.Color.White;
-            this.gridCart.Location = new System.Drawing.Point(12, 267);
+            this.gridCart.Location = new System.Drawing.Point(12, 261);
             this.gridCart.MultiSelect = false;
             this.gridCart.Name = "gridCart";
             this.gridCart.ReadOnly = true;
             this.gridCart.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridCart.RowHeadersVisible = false;
             this.gridCart.RowHeadersWidth = 82;
             this.gridCart.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridCart.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.gridCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridCart.Size = new System.Drawing.Size(891, 579);
+            this.gridCart.Size = new System.Drawing.Size(891, 538);
             this.gridCart.TabIndex = 32;
             this.gridCart.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridCart_KeyDown);
             // 
@@ -1375,7 +1375,7 @@
             this.btnSaveDraft.IconVisible = true;
             this.btnSaveDraft.IconZoom = 50D;
             this.btnSaveDraft.IsTab = false;
-            this.btnSaveDraft.Location = new System.Drawing.Point(12, 857);
+            this.btnSaveDraft.Location = new System.Drawing.Point(12, 805);
             this.btnSaveDraft.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnSaveDraft.Name = "btnSaveDraft";
             this.btnSaveDraft.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1413,7 +1413,7 @@
             this.btnOpenDrafts.IconVisible = true;
             this.btnOpenDrafts.IconZoom = 50D;
             this.btnOpenDrafts.IsTab = false;
-            this.btnOpenDrafts.Location = new System.Drawing.Point(184, 857);
+            this.btnOpenDrafts.Location = new System.Drawing.Point(184, 805);
             this.btnOpenDrafts.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnOpenDrafts.Name = "btnOpenDrafts";
             this.btnOpenDrafts.Normalcolor = System.Drawing.Color.Teal;
@@ -1441,7 +1441,7 @@
             this.lblWarning.BackColor = System.Drawing.Color.Transparent;
             this.lblWarning.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarning.ForeColor = System.Drawing.Color.White;
-            this.lblWarning.Location = new System.Drawing.Point(12, 236);
+            this.lblWarning.Location = new System.Drawing.Point(12, 230);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.lblWarning.Size = new System.Drawing.Size(891, 28);
@@ -1460,12 +1460,12 @@
             this.RightPanel.Controls.Add(this.panel7);
             this.RightPanel.Location = new System.Drawing.Point(909, 12);
             this.RightPanel.Name = "RightPanel";
-            this.RightPanel.Size = new System.Drawing.Size(395, 905);
+            this.RightPanel.Size = new System.Drawing.Size(395, 855);
             this.RightPanel.TabIndex = 38;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1479,7 +1479,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnLogout, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnCalculator, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnOpenDrawer, 0, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 497);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 465);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1498,7 +1498,7 @@
             this.tableLayoutPanel3.Controls.Add(this.txtDate, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.bunifuCustomLabel18, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtTime, 1, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(329, 857);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(329, 805);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1511,7 +1511,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1306, 925);
+            this.ClientSize = new System.Drawing.Size(1306, 873);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.RightPanel);
             this.Controls.Add(this.lblWarning);
@@ -1523,6 +1523,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(1322, 910);
             this.Name = "Terminal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POS Terminal";
