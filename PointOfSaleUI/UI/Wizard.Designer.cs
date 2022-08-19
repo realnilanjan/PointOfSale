@@ -98,7 +98,7 @@
             this.lnkCreateAdminAccount.LinkColor = System.Drawing.Color.White;
             this.lnkCreateAdminAccount.Location = new System.Drawing.Point(16, 118);
             this.lnkCreateAdminAccount.Name = "lnkCreateAdminAccount";
-            this.lnkCreateAdminAccount.Size = new System.Drawing.Size(147, 13);
+            this.lnkCreateAdminAccount.Size = new System.Drawing.Size(283, 27);
             this.lnkCreateAdminAccount.TabIndex = 1;
             this.lnkCreateAdminAccount.TabStop = true;
             this.lnkCreateAdminAccount.Text = "Create Administrator Account";
@@ -116,7 +116,7 @@
             this.lnkSetupBusinessInfo.LinkColor = System.Drawing.Color.White;
             this.lnkSetupBusinessInfo.Location = new System.Drawing.Point(16, 84);
             this.lnkSetupBusinessInfo.Name = "lnkSetupBusinessInfo";
-            this.lnkSetupBusinessInfo.Size = new System.Drawing.Size(131, 13);
+            this.lnkSetupBusinessInfo.Size = new System.Drawing.Size(265, 27);
             this.lnkSetupBusinessInfo.TabIndex = 0;
             this.lnkSetupBusinessInfo.TabStop = true;
             this.lnkSetupBusinessInfo.Text = "Setup Business Information";
@@ -130,7 +130,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label1.Location = new System.Drawing.Point(252, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 33);
+            this.label1.Size = new System.Drawing.Size(318, 66);
             this.label1.TabIndex = 0;
             this.label1.Text = "Setup Wizard";
             // 
@@ -205,7 +205,7 @@
             // 
             this.txtFullName.Location = new System.Drawing.Point(122, 22);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(186, 23);
+            this.txtFullName.Size = new System.Drawing.Size(186, 39);
             this.txtFullName.TabIndex = 7;
             // 
             // label16
@@ -214,7 +214,7 @@
             this.label16.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(17, 26);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(69, 14);
+            this.label16.Size = new System.Drawing.Size(125, 29);
             this.label16.TabIndex = 0;
             this.label16.Text = "Full Name*";
             // 
@@ -228,7 +228,7 @@
             "Manager"});
             this.cmbUserRole.Location = new System.Drawing.Point(122, 138);
             this.cmbUserRole.Name = "cmbUserRole";
-            this.cmbUserRole.Size = new System.Drawing.Size(186, 23);
+            this.cmbUserRole.Size = new System.Drawing.Size(186, 40);
             this.cmbUserRole.TabIndex = 11;
             this.cmbUserRole.SelectedIndexChanged += new System.EventHandler(this.cmbUserRole_SelectedIndexChanged);
             // 
@@ -236,21 +236,22 @@
             // 
             this.txtUserEmail.Location = new System.Drawing.Point(122, 198);
             this.txtUserEmail.Name = "txtUserEmail";
-            this.txtUserEmail.Size = new System.Drawing.Size(186, 23);
+            this.txtUserEmail.Size = new System.Drawing.Size(186, 39);
             this.txtUserEmail.TabIndex = 13;
             // 
             // txtUserContact
             // 
             this.txtUserContact.Location = new System.Drawing.Point(122, 169);
+            this.txtUserContact.MaxLength = 10;
             this.txtUserContact.Name = "txtUserContact";
-            this.txtUserContact.Size = new System.Drawing.Size(186, 23);
+            this.txtUserContact.Size = new System.Drawing.Size(186, 39);
             this.txtUserContact.TabIndex = 12;
             // 
             // txtVerifyPassword
             // 
             this.txtVerifyPassword.Location = new System.Drawing.Point(122, 109);
             this.txtVerifyPassword.Name = "txtVerifyPassword";
-            this.txtVerifyPassword.Size = new System.Drawing.Size(186, 23);
+            this.txtVerifyPassword.Size = new System.Drawing.Size(186, 39);
             this.txtVerifyPassword.TabIndex = 10;
             this.txtVerifyPassword.UseSystemPasswordChar = true;
             // 
@@ -258,7 +259,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(122, 80);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(186, 23);
+            this.txtPassword.Size = new System.Drawing.Size(186, 39);
             this.txtPassword.TabIndex = 9;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -266,7 +267,7 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(122, 51);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(186, 23);
+            this.txtUsername.Size = new System.Drawing.Size(186, 39);
             this.txtUsername.TabIndex = 8;
             // 
             // label9
@@ -275,7 +276,7 @@
             this.label9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(17, 202);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 14);
+            this.label9.Size = new System.Drawing.Size(68, 29);
             this.label9.TabIndex = 6;
             this.label9.Text = "Email";
             // 
@@ -285,7 +286,7 @@
             this.label10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(17, 173);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 14);
+            this.label10.Size = new System.Drawing.Size(90, 29);
             this.label10.TabIndex = 5;
             this.label10.Text = "Contact";
             // 
@@ -295,7 +296,7 @@
             this.label11.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(17, 142);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 14);
+            this.label11.Size = new System.Drawing.Size(106, 29);
             this.label11.TabIndex = 4;
             this.label11.Text = "User Role";
             // 
@@ -305,7 +306,7 @@
             this.label12.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(17, 113);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 14);
+            this.label12.Size = new System.Drawing.Size(179, 29);
             this.label12.TabIndex = 3;
             this.label12.Text = "Verify Password*";
             // 
@@ -315,7 +316,7 @@
             this.label13.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(17, 84);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 14);
+            this.label13.Size = new System.Drawing.Size(117, 29);
             this.label13.TabIndex = 2;
             this.label13.Text = "Password*";
             // 
@@ -325,7 +326,7 @@
             this.label14.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(17, 55);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 14);
+            this.label14.Size = new System.Drawing.Size(125, 29);
             this.label14.TabIndex = 1;
             this.label14.Text = "Username*";
             // 
@@ -335,7 +336,7 @@
             this.label15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(8, 9);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(140, 15);
+            this.label15.Size = new System.Drawing.Size(273, 32);
             this.label15.TabIndex = 0;
             this.label15.Text = "Configure Administrator";
             // 
@@ -380,7 +381,7 @@
             "Retail"});
             this.cmbBusinessType.Location = new System.Drawing.Point(117, 85);
             this.cmbBusinessType.Name = "cmbBusinessType";
-            this.cmbBusinessType.Size = new System.Drawing.Size(186, 23);
+            this.cmbBusinessType.Size = new System.Drawing.Size(186, 40);
             this.cmbBusinessType.TabIndex = 8;
             this.cmbBusinessType.SelectedIndexChanged += new System.EventHandler(this.cmbBusinessType_SelectedIndexChanged);
             // 
@@ -388,14 +389,14 @@
             // 
             this.txtEmailAddress.Location = new System.Drawing.Point(117, 185);
             this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(186, 23);
+            this.txtEmailAddress.Size = new System.Drawing.Size(186, 39);
             this.txtEmailAddress.TabIndex = 11;
             // 
             // txtContactNumber
             // 
             this.txtContactNumber.Location = new System.Drawing.Point(117, 156);
             this.txtContactNumber.Name = "txtContactNumber";
-            this.txtContactNumber.Size = new System.Drawing.Size(186, 23);
+            this.txtContactNumber.Size = new System.Drawing.Size(186, 39);
             this.txtContactNumber.TabIndex = 10;
             // 
             // txtBusinessAddress
@@ -410,14 +411,14 @@
             // 
             this.txtGSTIN.Location = new System.Drawing.Point(117, 56);
             this.txtGSTIN.Name = "txtGSTIN";
-            this.txtGSTIN.Size = new System.Drawing.Size(186, 23);
+            this.txtGSTIN.Size = new System.Drawing.Size(186, 39);
             this.txtGSTIN.TabIndex = 7;
             // 
             // txtBusinessName
             // 
             this.txtBusinessName.Location = new System.Drawing.Point(117, 27);
             this.txtBusinessName.Name = "txtBusinessName";
-            this.txtBusinessName.Size = new System.Drawing.Size(186, 23);
+            this.txtBusinessName.Size = new System.Drawing.Size(186, 39);
             this.txtBusinessName.TabIndex = 6;
             // 
             // label8
@@ -426,7 +427,7 @@
             this.label8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 183);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 14);
+            this.label8.Size = new System.Drawing.Size(68, 29);
             this.label8.TabIndex = 5;
             this.label8.Text = "Email";
             // 
@@ -436,7 +437,7 @@
             this.label7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 160);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 14);
+            this.label7.Size = new System.Drawing.Size(102, 29);
             this.label7.TabIndex = 4;
             this.label7.Text = "Contact*";
             // 
@@ -446,7 +447,7 @@
             this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 114);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 14);
+            this.label6.Size = new System.Drawing.Size(103, 29);
             this.label6.TabIndex = 3;
             this.label6.Text = "Address*";
             // 
@@ -456,7 +457,7 @@
             this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 89);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 14);
+            this.label5.Size = new System.Drawing.Size(161, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "Business Type*";
             // 
@@ -466,7 +467,7 @@
             this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 60);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 14);
+            this.label4.Size = new System.Drawing.Size(137, 29);
             this.label4.TabIndex = 1;
             this.label4.Text = "GST Number";
             // 
@@ -476,7 +477,7 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 14);
+            this.label3.Size = new System.Drawing.Size(173, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Business Name*";
             // 
@@ -486,7 +487,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 15);
+            this.label2.Size = new System.Drawing.Size(216, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Configure Business";
             // 
@@ -502,7 +503,7 @@
             // 
             // Wizard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(686, 460);

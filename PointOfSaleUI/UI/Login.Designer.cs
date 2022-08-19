@@ -58,7 +58,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(166, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 14);
+            this.label2.Size = new System.Drawing.Size(113, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
             // 
@@ -68,7 +68,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(166, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 14);
+            this.label3.Size = new System.Drawing.Size(105, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password";
             // 
@@ -76,7 +76,7 @@
             // 
             this.txtUserName.Location = new System.Drawing.Point(235, 143);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(300, 22);
+            this.txtUserName.Size = new System.Drawing.Size(300, 37);
             this.txtUserName.TabIndex = 3;
             this.txtUserName.Text = "realnilanjan";
             // 
@@ -84,9 +84,9 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(235, 176);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(300, 22);
+            this.txtPassword.Size = new System.Drawing.Size(300, 37);
             this.txtPassword.TabIndex = 4;
-            this.txtPassword.Text = "admin";
+            this.txtPassword.Text = "nilanjan";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
@@ -110,7 +110,7 @@
             this.chkShowHidePassword.ForeColor = System.Drawing.Color.White;
             this.chkShowHidePassword.Location = new System.Drawing.Point(235, 211);
             this.chkShowHidePassword.Name = "chkShowHidePassword";
-            this.chkShowHidePassword.Size = new System.Drawing.Size(110, 18);
+            this.chkShowHidePassword.Size = new System.Drawing.Size(196, 33);
             this.chkShowHidePassword.TabIndex = 5;
             this.chkShowHidePassword.Text = "Show Password";
             this.chkShowHidePassword.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@
             // Login
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(579, 400);

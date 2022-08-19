@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>PointOfSale.LDb</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{8716d6ab-1f3f-4b0b-8479-451050cb9cd2}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>PointOfSale.LDb</RootNamespace>
+    <AssemblyName>PointOfSale.LDb</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Stored Procedures\BusinessInfo" />
+    <Folder Include="dbo\Stored Procedures\Cart" />
+    <Folder Include="dbo\Stored Procedures\Categories" />
+    <Folder Include="dbo\Stored Procedures\Coupons" />
+    <Folder Include="dbo\Stored Procedures\Customers" />
+    <Folder Include="dbo\Stored Procedures\Product" />
+    <Folder Include="dbo\Stored Procedures\PurchasedStock" />
+    <Folder Include="dbo\Stored Procedures\Quantity" />
+    <Folder Include="dbo\Stored Procedures\ReceivedStock" />
+    <Folder Include="dbo\Stored Procedures\Report" />
+    <Folder Include="dbo\Stored Procedures\Sale" />
+    <Folder Include="dbo\Stored Procedures\StockToPurchase" />
+    <Folder Include="dbo\Stored Procedures\Supplier" />
+    <Folder Include="dbo\Stored Procedures\User" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="PublishLocations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Stored Procedures\BusinessInfo\GetBusinessInfo.sql" />
+    <Build Include="dbo\Stored Procedures\BusinessInfo\SaveBusiness.sql" />
+    <Build Include="dbo\Stored Procedures\Cart\GetProductForCart.sql" />
+    <Build Include="dbo\Stored Procedures\Categories\DeleteCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Categories\InsertCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Categories\LoadAllCategories.sql" />
+    <Build Include="dbo\Stored Procedures\Categories\UpdateCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\DeleteCoupon.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\GetAllCoupons.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\GetAppliedCoupon.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\InsertCoupon.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\SetCouponApplied.sql" />
+    <Build Include="dbo\Stored Procedures\Coupons\UpdateCoupon.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\DeleteCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\GetAllCustomers.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\GetCustomerDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\SaveCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\Customers\UpdateCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\Product\DeleteProduct.sql" />
+    <Build Include="dbo\Stored Procedures\Product\InsertProduct.sql" />
+    <Build Include="dbo\Stored Procedures\Product\LoadAllProducts.sql" />
+    <Build Include="dbo\Stored Procedures\Product\UpdateProduct.sql" />
+    <Build Include="dbo\Stored Procedures\PurchasedStock\DeleteStockPurchased.sql" />
+    <Build Include="dbo\Stored Procedures\PurchasedStock\InsertPurchasedStock.sql" />
+    <Build Include="dbo\Stored Procedures\PurchasedStock\LoadPurchasedStock.sql" />
+    <Build Include="dbo\Stored Procedures\PurchasedStock\UpdateOrder.sql" />
+    <Build Include="dbo\Stored Procedures\Quantity\LoadAllQuantityDescriptions.sql" />
+    <Build Include="dbo\Stored Procedures\Quantity\SaveQuantityDescOnce.sql" />
+    <Build Include="dbo\Stored Procedures\ReceivedStock\DeletePurchasedStock.sql" />
+    <Build Include="dbo\Stored Procedures\ReceivedStock\GetAllPurchasedStock.sql" />
+    <Build Include="dbo\Stored Procedures\ReceivedStock\InsertStockPurchased.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetAllSales.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetSalesByDate.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetSalesForToday.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetStocksSold.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetTotalSales.sql" />
+    <Build Include="dbo\Stored Procedures\Report\GetTotalTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Report\PrintAfterSale.sql" />
+    <Build Include="dbo\Stored Procedures\Report\PrintDetailsAfterSale.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\SaveSale.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\SaveSaleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\SaveTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Sale\UpdateSoldProduct.sql" />
+    <Build Include="dbo\Stored Procedures\StockToPurchase\DeletePurchaseOrder.sql" />
+    <Build Include="dbo\Stored Procedures\StockToPurchase\GetAllPurchaseOrders.sql" />
+    <Build Include="dbo\Stored Procedures\StockToPurchase\GetOrderedStockPurchases.sql" />
+    <Build Include="dbo\Stored Procedures\StockToPurchase\InsertStockPurchaseOrder.sql" />
+    <Build Include="dbo\Stored Procedures\StockToPurchase\ProductToStock.sql" />
+    <Build Include="dbo\Stored Procedures\Supplier\DeleteSupplier.sql" />
+    <Build Include="dbo\Stored Procedures\Supplier\InsertSupplier.sql" />
+    <Build Include="dbo\Stored Procedures\Supplier\LoadAllSuppliers.sql" />
+    <Build Include="dbo\Stored Procedures\Supplier\UpdateSupplier.sql" />
+    <Build Include="dbo\Stored Procedures\User\DeleteUser.sql" />
+    <Build Include="dbo\Stored Procedures\User\LoadAllUsers.sql" />
+    <Build Include="dbo\Stored Procedures\User\SaveUser.sql" />
+    <Build Include="dbo\Stored Procedures\User\UpdateUserWithoutPassword.sql" />
+    <Build Include="dbo\Stored Procedures\User\UpdateUserWithPassword.sql" />
+    <Build Include="dbo\Stored Procedures\User\UserLogin.sql" />
+    <Build Include="dbo\Tables\BusinessDetails.sql" />
+    <Build Include="dbo\Tables\Category.sql" />
+    <Build Include="dbo\Tables\Coupons.sql" />
+    <Build Include="dbo\Tables\Customer.sql" />
+    <Build Include="dbo\Tables\Products.sql" />
+    <Build Include="dbo\Tables\QuantityDescription.sql" />
+    <Build Include="dbo\Tables\Sale.sql" />
+    <Build Include="dbo\Tables\SaleDetail.sql" />
+    <Build Include="dbo\Tables\StockPurchased.sql" />
+    <Build Include="dbo\Tables\StockPurchaseOrder.sql" />
+    <Build Include="dbo\Tables\Suppliers.sql" />
+    <Build Include="dbo\Tables\Transaction.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Views\ViewAllBills.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishLocations\PointOfSale.LDb.publish.xml" />
+  </ItemGroup>
+</Project>
