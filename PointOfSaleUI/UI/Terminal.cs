@@ -236,7 +236,6 @@ namespace PointOfSaleUI.UI
                             gridCart.DataSource = Cart;
                             gridCart.Refresh();
                         }
-
                     }
                     else
                     {
@@ -334,7 +333,14 @@ namespace PointOfSaleUI.UI
         {
             if (e.KeyCode == Keys.Delete)
             {
-                DialogResult result = MessageBox.Show("Do you really want to delete the selected stocks?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = 
+                    MessageBox.Show(
+                        "Do you really want to delete the selected stocks?", 
+                        "Confirmation", 
+                        MessageBoxButtons.YesNo, 
+                        MessageBoxIcon.Question
+                        );
+
                 if (result == DialogResult.Yes)
                 {
                     foreach (DataGridViewRow row in gridCart.Rows)
@@ -363,7 +369,7 @@ namespace PointOfSaleUI.UI
 
         private void controlTimer_Tick(object sender, EventArgs e)
         {
-            if (Cart.Count > 0) 
+            if (Cart.Count > 0)
             { 
                 btnClear.Enabled = true; 
                 btnCheckout.Enabled = true;
@@ -378,14 +384,8 @@ namespace PointOfSaleUI.UI
                 btnSaveDraft.Enabled = false;
             }
 
-            if (LastSaleId == 0)
-            {
-                btnRePrintInvoice.Enabled = false;
-            }
-            else
-            {
-                btnRePrintInvoice.Enabled = true;
-            }
+            if (LastSaleId == 0) {  btnRePrintInvoice.Enabled = false; }
+            else { btnRePrintInvoice.Enabled = true; }
         }
 
         private void btnCalculator_Click(object sender, EventArgs e)
@@ -399,7 +399,14 @@ namespace PointOfSaleUI.UI
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to make this transaction void?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = 
+                MessageBox.Show(
+                    "Do you want to make this transaction void?", 
+                    "Confirmation", 
+                    MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Question
+                    );
+
             if (result == DialogResult.Yes)
             {
                 this.VoidTransaction();
@@ -431,15 +438,20 @@ namespace PointOfSaleUI.UI
             txtDelivery.Text = ShippingRate.ToString("N2");
             GrandTotal = 0;
             this.CalculateTotal();
-            if (IsLoadedFromDrafts == true)
-            {
-                File.Delete(RuntimeValues.DraftFileName);
-            }
+
+            if (IsLoadedFromDrafts == true) { File.Delete(RuntimeValues.DraftFileName); }
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to want to logoff?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = 
+                MessageBox.Show(
+                    "Do you want to want to logoff?", 
+                    "Confirmation", 
+                    MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Question
+                    );
+
             if (result == DialogResult.Yes)
             {
                 this.VoidTransaction();
