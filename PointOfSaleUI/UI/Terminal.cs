@@ -271,9 +271,9 @@ namespace PointOfSaleUI.UI
                     }
                     this.CalculateTotal();
                     SystemSounds.Asterisk.Play();
-                    Messages.DisplayMessage("The product is added in the cart.", lblWarning, Color.SeaGreen);
+                    Messages.DisplayMessage(Properties.Resources.PRODUCT_ADDED_TO_CART, lblWarning, Color.SeaGreen);
                     txtBarcode.Clear();
-                    txtItemQuantity.Text = "1";
+                    txtItemQuantity.Text = Cart.Count.ToString();
                 }
             }
             else
